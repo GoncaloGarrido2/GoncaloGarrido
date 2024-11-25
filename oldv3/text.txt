@@ -1,0 +1,139 @@
+Aqui estão todas as informações extraídas do seu portfólio:
+
+### Informações Pessoais
+- **Nome**: Gonçalo Garrido
+- **Email**: goncalosantosgarrido@gmail.com
+- **Idade**: 22 anos
+
+### Links de Redes Sociais
+- **GitHub**: [github.com/GoncaloGarrido2](https://github.com/GoncaloGarrido2)
+- **LinkedIn**: [linkedin.com/in/gonçalo-garrido-4301a0269](https://www.linkedin.com/in/gon%C3%A7alo-garrido-4301a0269/)
+- **Stack Overflow**: [stackoverflow.com/users/11312923/gonçalo-garrido](https://stackoverflow.com/users/11312923/gon%c3%a7alo-garrido)
+
+### Sobre
+- **Descrição**: Analista de Sistemas Informáticos com foco em programação Backend, desenvolvimento de software e manutenção de hardware. Possui um percurso diversificado que contribuiu para uma forte capacidade de adaptação e persistência, além de uma base sólida em programação, redes e gestão de sistemas.
+
+### Habilitações
+- **Linguagens de Programação**:
+  - C, C++, C#, VisualBasic, Blazor, Go, Lua, p5.js, MySQL, Microsoft SQL Server, PHP, Arduino, Kotlin, Java, JavaScript, HTML, CSS, React, R.
+- **Ferramentas de Programação**:
+  - VS Code, Unity, Android Studio, Visual Studio, SQL Server, MySQL, MongoDB, RStudio, GitHub, Eclipse.
+- **Outras Ferramentas de Desenvolvimento**:
+  - Figma, GIMP, Inkscape, Postman, PuTTY, Swagger.
+- **Sistemas Operativos**:
+  - Windows, Linux, Android, macOS, Raspberry Pi.
+
+### Projetos Web
+1. **Agro Non Stop**:
+   - **Descrição**: Loja virtual de produtos agrícolas.
+   - **Tecnologias**: HTML, CSS, PHP, JavaScript, SQL.
+   - **Link**: [agrononstop.pt](https://agrononstop.pt/)
+
+2. **Smile Papelaria**:
+   - **Descrição**: Plataforma de compra de artigos de papelaria.
+   - **Tecnologias**: HTML, CSS, PHP, JavaScript, SQL.
+   - **Link**: [smilepapelaria.com](https://smilepapelaria.com/)
+
+3. **DiAuto**:
+   - **Descrição**: Website de pesquisa de veículos em stand automóvel.
+   - **Tecnologias**: HTML, CSS, PHP, JavaScript, SQL.
+   - **Link**: [diauto.pt (Arquivo)](https://web.archive.org/web/20240423092826/https://diauto.pt/)
+
+4. **Noticias Esmad**:
+   - **Descrição**: Website de notícias.
+   - **Tecnologias**: HTML, CSS, JavaScript.
+   - **Link**: [Notícias Esmad](https://goncalogarrido2.github.io/Website-News-Fred/), [GitHub](https://github.com/GoncaloGarrido2/Website-News-Fred)
+
+5. **AutoDealer**:
+   - **Descrição**: Plataforma de comparação de veículos.
+   - **Tecnologias**: HTML, CSS, PHP, JavaScript, SQL, WordPress.
+   - **Link**: [autodealer.pt](http://www.autodealer.pt/)
+
+6. **Site Ginásio**:
+   - **Descrição**: Site para ginásio.
+   - **Tecnologias**: React, HTML, CSS, JavaScript.
+   - **Link GitHub**: [Site Ginásio](https://github.com/GoncaloGarrido2/Site-Ginasio)
+
+### Aplicações Móveis
+1. **GlutenFree**:
+   - **Descrição**: Aplicação para identificar produtos sem glúten.
+   - **Tecnologias**: Android, Java.
+   - **Links**: [Website](https://projetoslendarios.github.io/GlutenFreeApp-Docs/), [Google Play](https://play.google.com/store/apps/details?id=com.goncalogarrido.glutenfree&hl=en)
+
+2. **Android OCR Detect**:
+   - **Descrição**: Reconhecedor de objetos com OCR.
+   - **Tecnologias**: Kotlin, Firebase, GoogleVision.
+   - **Link GitHub**: [Android OCR Detect](https://github.com/GoncaloGarrido2/Android-Photo-Recognizer)
+
+### Projetos Adicionais
+1. **Smile e-commerce**:
+   - **Descrição**: Aplicação para gestão de vendas e stocks.
+   - **Tecnologias**: C#, HTML, CSS, PHP, JavaScript, SQL.
+   - **Relatório**: [PDF](assets/files/pap.pdf)
+
+2. **AHG ZOO**:
+   - **Descrição**: Website informativo para zoológico.
+   - **Tecnologias**: HTML, CSS, PHP, JavaScript, SQL.
+   - **Link**: [AHG ZOO](https://faculdadelicenciatura.github.io/tiwm22-ti-g02/src/index.html)
+
+3. **Caderno Digital**:
+   - **Descrição**: Aplicação web para edição de fotos e vídeos.
+   - **Tecnologias**: HTML, CSS, PHP, JavaScript, SQL.
+   - **Link**: [Caderno Digital](https://goncalogarrido.blogspot.com/)
+
+4. **Gestão de Farmácia**:
+   - **Descrição**: Projeto para gerenciar farmácias.
+   - **Tecnologias**: C.
+   - **Link GitHub**: [Gestão de Farmácia](https://github.com/FaculdadeLicenciatura/ProjetoFarmacia)
+
+### Experiência Profissional
+1. **WorkInNet**:
+   - **Cargo**: Desenvolvedor de aplicações Desktop.
+   - **Tecnologias**: VisualBasic, SQL.
+   - **Período**: Março 2024 - Junho 2024.
+
+2. **Core Soluções**:
+   - **Cargo**: Desenvolvedor de aplicações Web, Desktop e Android.
+   - **Tecnologias**: C#, SQL, PHP, Xamarin.
+   - **Período**: Setembro 2022 - Agosto 2023.
+
+3. **EdiPrinter**:
+   - **Cargo**: Desenvolvedor de aplicações Web, Desktop e Android.
+   - **Tecnologias**: C#, SQL, MAUI, Xamarin.
+   - **Período**: Dezembro 2020 - Fevereiro 2021.
+
+4. **Conta Própria**:
+   - **Cargo**: Desenvolvedor de websites e lojas virtuais.
+   - **Tecnologias**: HTML, CSS, JavaScript, PHP, SQL.
+   - **Período**: Fevereiro 2023 - Junho 2023.
+
+### Educação
+1. **IPMAIA - Licenciatura**:
+   - **Curso**: Tecnologias de Informação, Web e Multimédia.
+   - **Duração**: 3 anos.
+   - **Período**: Setembro 2022 - Presente.
+
+2. **UDESC - Mobilidade Académica**:
+   - **Curso**: Ciência da Computação.
+   - **Duração**: 6 meses.
+   - **Período**: Agosto 2023 - Dezembro 2023.
+
+3. **IPMAIA - CTeSP**:
+   - **Curso**: Técnico/a Especialista em Tecnologias e Programação de Sistemas de Informação.
+   - **Duração**: 2 anos + 6 meses de estágio.
+   - **Período**: Setembro 2020 - Junho 2022.
+
+4. **Escola Secundária D. Afonso Sanches**:
+   - **Curso**: Técnico de Gestão e Programação de Sistemas Informáticos.
+   - **Duração**: 3 anos com estágios anuais de 3 meses.
+   - **Média**: 17.
+   - **Período**: Setembro 2017 - Junho 2020.
+
+### Reconhecimentos
+1. **Topas 2018** - Participação no concurso de programação, Faculdade de Ciências do Porto.
+2. **Topas 2019** - Participação no concurso de programação, Faculdade de Ciências do Porto.
+3. **Tecla 2019** - Participação no concurso de programação, ESTGA.
+4. **Tecla 2020** - Participação no concurso de programação, ESTGA.
+5. **Certificação C# com Microsoft** - Conclusão bem-sucedida da certificação em Fundamentos de C#.
+
+Se precisar de mais detalhes ou ajustes, estou à disposição!
