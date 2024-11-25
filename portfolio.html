@@ -35,7 +35,7 @@
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center">
-        <h1 class="sitename">Pessoal</h1>
+        <h1 class="sitename">Gonçalo Garrido</h1>
       </a>
 
       <nav id="navmenu" class="navmenu">
@@ -43,7 +43,6 @@
           <li><a href="index.html">Início</a></li>
           <li><a href="about.html">Sobre</a></li>
           <li><a href="resume.html">Currículo</a></li>
-          <li><a href="services.html">Serviços</a></li>
           <li><a href="portfolio.html" class="active">Portfólio</a></li>
           <li><a href="contact.html">Contacto</a></li>
         </ul>
@@ -77,70 +76,90 @@
       </nav>
     </div><!-- Fim do Título da Página -->
 
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section">
-      <div class="container">
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">Todos</li>
-            <li data-filter=".filter-web">Projetos Web</li>
-            <li data-filter=".filter-mobile">Aplicações Móveis</li>
-            <li data-filter=".filter-other">Outros Projetos</li>
-          </ul>
+<!-- Portfolio Section -->
+<section id="portfolio" class="portfolio section">
+  <div class="container">
+    <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+      <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+        <li data-filter="*" class="filter-active">Todos</li>
+        <li data-filter=".filter-web">Projetos Web</li>
+        <li data-filter=".filter-mobile">Aplicações Móveis</li>
+        <li data-filter=".filter-desktop">Aplicações Desktop</li>
+        <li data-filter=".filter-other">Outros Projetos</li>
+      </ul>
 
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-            <!-- Projetos Web -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/ImagemProjetos/1.PNG" class="img-fluid" alt="Agro Non Stop">
-                <div class="portfolio-info" onclick="location.href='projetos/agro-non-stop-detail.html';">
-                  <h4>Agro Non Stop</h4>
-                  <p>Uma loja virtual focada na venda de produtos agrícolas.</p>
-                  <i class="bi bi-link-45deg"></i>
-                </div>
-              </div>
-            </div>
+      <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/ImagemProjetos/2.png" class="img-fluid" alt="Smile Papelaria">
-                <div class="portfolio-info" onclick="location.href='projetos/smile-papelaria-detail.html';">
-                  <h4>Smile Papelaria</h4>
-                  <p>Plataforma online para compra de artigos de papelaria.</p>
-                  <i class="bi bi-link-45deg"></i>
-                </div>
-              </div>
-            </div>
-
-            <!-- Aplicações Móveis -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-mobile">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/ImagemProjetos/8.png" class="img-fluid" alt="GlutenFree">
-                <div class="portfolio-info" onclick="location.href='projetos/gluten-free-detail.html';">
-                  <h4>GlutenFree</h4>
-                  <p>Aplicação móvel para identificação de produtos sem glúten.</p>
-                  <a href="https://play.google.com/store/apps/details?id=com.goncalogarrido.glutenfree" target="_blank">
-                    <img style="width: 120px; margin-top: 10px;" src="https://play.google.com/intl/en_us/badges/images/generic/pt_badge_web_generic.png" alt="Play Store">
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <!-- Outros Projetos -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-other">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/ImagemProjetos/5.png" class="img-fluid" alt="Smile e-commerce">
-                <div class="portfolio-info" onclick="location.href='projetos/smile-ecommerce-detail.html';">
-                  <h4>Smile e-commerce</h4>
-                  <p>Aplicação para gestão de vendas, stocks e clientes.</p>
-                  <i class="bi bi-link-45deg"></i>
-                </div>
-              </div>
+        <!-- Projetos Web -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
+          <div class="portfolio-content h-100">
+            <img src="assets/img/ImagemProjetos/1.PNG" class="img-fluid" alt="Agro Non Stop">
+            <div class="portfolio-info" onclick="location.href='projetos/agro-non-stop-detail.html';">
+              <h4>Agro Non Stop</h4>
+              <p>Loja virtual para venda de produtos agrícolas.</p>
             </div>
           </div>
         </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
+          <div class="portfolio-content h-100">
+            <img src="assets/img/ImagemProjetos/2.png" class="img-fluid" alt="Smile Papelaria">
+            <div class="portfolio-info" onclick="location.href='projetos/smile-papelaria-detail.html';">
+              <h4>Smile Papelaria</h4>
+              <p>Plataforma online para compra de artigos de papelaria.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
+          <div class="portfolio-content h-100">
+            <img src="assets/img/ImagemProjetos/3.png" class="img-fluid" alt="DiAuto">
+            <div class="portfolio-info" onclick="location.href='projetos/diauto-detail.html';">
+              <h4>DiAuto</h4>
+              <p>Website para visualização e pesquisa de veículos.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Aplicações Móveis -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-mobile">
+          <div class="portfolio-content h-100">
+            <img src="assets/img/ImagemProjetos/8.png" class="img-fluid" alt="GlutenFree">
+            <div class="portfolio-info" onclick="location.href='projetos/gluten-free-detail.html';">
+              <h4>GlutenFree</h4>
+              <p>App para identificação de produtos sem glúten.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Aplicações Desktop -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-desktop">
+          <div class="portfolio-content h-100">
+            <img src="assets/img/ImagemProjetos/5.png" class="img-fluid" alt="Smile e-commerce">
+            <div class="portfolio-info" onclick="location.href='projetos/smile-ecommerce-detail.html';">
+              <h4>Smile e-commerce</h4>
+              <p>App para gestão de vendas, stocks e clientes.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Outros Projetos -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-other">
+          <div class="portfolio-content h-100">
+            <img src="assets/img/ImagemProjetos/7.png" class="img-fluid" alt="Caderno Digital">
+            <div class="portfolio-info" onclick="location.href='projetos/caderno-digital-detail.html';">
+              <h4>Caderno Digital</h4>
+              <p>App web para gestão de fotos e vídeos.</p>
+            </div>
+          </div>
+        </div>
+
       </div>
-    </section>
+    </div>
+  </div>
+</section>
+
+
 
 <!-- Custom CSS for Hover Effect -->
 <style>
@@ -148,6 +167,24 @@
     position: relative;
     overflow: hidden;
     cursor: pointer;
+    width: 100%;
+    aspect-ratio: 4 / 2.7; /* Define retângulos com proporção fixa */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4; /* Cor de fundo para áreas sem imagem */
+    border-radius: 8px;
+  }
+
+  .portfolio-content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante que as imagens preencham o espaço sem distorção */
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .portfolio-content:hover img {
+    transform: scale(1.1); /* Zoom na imagem ao passar o mouse */
   }
 
   .portfolio-info {
@@ -155,39 +192,30 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.7);
     color: #fff;
     padding: 15px;
     text-align: center;
-    transform: translateY(100%);
-    transition: transform 0.4s ease-in-out;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
   }
 
   .portfolio-content:hover .portfolio-info {
-    transform: translateY(0);
-  }
-
-  .portfolio-content img {
-    transition: transform 0.4s ease-in-out;
-  }
-
-  .portfolio-content:hover img {
-    transform: scale(1.1);
+    opacity: 1; /* Aparece ao passar o mouse */
   }
 
   .portfolio-info h4 {
     margin: 0;
-    font-size: 1.25rem;
+    font-size: 1.6rem;
+  }
+
+  .portfolio-content:hover .portfolio-info h4 {
+    font-size: 1.6rem;
   }
 
   .portfolio-info p {
-    font-size: 0.9rem;
-    margin: 10px 0 0;
-  }
-
-  .portfolio-info img {
-    display: inline-block;
-    margin-top: 10px;
+    margin: 10px;
+    font-size: 1.6rem;
   }
 </style>
 
@@ -197,24 +225,16 @@
 
 <footer id="footer" class="footer dark-background">
   <div class="container">
-    <h3 class="sitename">Pessoal</h3>
-    <p>Obrigado por visitar o meu portfólio. Se tiver alguma questão ou estiver interessado em colaborar, não hesite em entrar em contacto.</p>
+    <h3 class="sitename">Gonçalo Garrido</h3>
+    <p>Obrigado por visitar o meu portfólio! Se tiver alguma questão ou estiver interessado em colaborar, não hesite em entrar em contacto comigo.</p>
     <div class="social-links d-flex justify-content-center">
-      <a href="https://twitter.com/seu_twitter" target="_blank"><i class="bi bi-twitter"></i></a>
-      <a href="https://facebook.com/seu_facebook" target="_blank"><i class="bi bi-facebook"></i></a>
-      <a href="https://instagram.com/seu_instagram" target="_blank"><i class="bi bi-instagram"></i></a>
-      <a href="https://linkedin.com/in/seu_linkedin" target="_blank"><i class="bi bi-linkedin"></i></a>
-    </div>
-    <div class="container">
-      <div class="copyright">
-        <span>Copyright</span> <strong class="px-1 sitename">Pessoal</strong> <span>Todos os Direitos Reservados</span>
-      </div>
-      <div class="credits">
-        Criado por <a href="https://github.com/seu_github" target="_blank">O Seu Nome</a>
-      </div>
+      <a href="https://github.com/GoncaloGarrido2" target="_blank" title="GitHub"><i class="bi bi-github"></i></a>
+      <a href="https://www.linkedin.com/in/gon%C3%A7alo-garrido-4301a0269/" target="_blank" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+      <a href="https://stackoverflow.com/users/11312923/gon%C3%A7alo-garrido" target="_blank" title="Stack Overflow"><i class="bi bi-stack-overflow"></i></a>
     </div>
   </div>
 </footer>
+
 
 <!-- Scroll Top -->
 <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
