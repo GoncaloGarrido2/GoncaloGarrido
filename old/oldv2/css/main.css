@@ -5284,3 +5284,18 @@ a.credit {
 /* Common Style */
 .section {
   padding-bottom: 0; }
+
+
+  body {
+    font-family: 'Roboto', 'Poppins', sans-serif !important;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif !important; /* Títulos em Poppins */
+    font-weight: 700 !important; /* Pesos para títulos */
+  }
+  
+  p, li, a, span {
+    font-family: 'Roboto', sans-serif !important; /* Textos menores em Roboto */
+    font-weight: 400 !important; /* Pesos para textos menores */
+  }
+  
