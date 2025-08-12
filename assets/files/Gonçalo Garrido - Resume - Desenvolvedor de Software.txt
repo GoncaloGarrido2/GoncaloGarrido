@@ -56,7 +56,7 @@ EXPERIÊNCIA PROFISSIONAL
   Colaborei no planeamento e execução do 4.º Fórum Nacional de Seguros.
 
 
-  * January 2024 – January 2025
+  * March 2024 – June 2024
     Desenvolvedor full stack em WorkInNet - Consultoria Informatica Lda, Remoto
       
   Envolvi-me no desenvolvimento full-stack, com foco na integração de componentes frontend e backend para criar soluções de software eficazes.
@@ -72,7 +72,7 @@ EXPERIÊNCIA PROFISSIONAL
   Apoiei na organização e execução da 8.ª Exposição de Automóveis Híbridos e Elétricos, colaborando no planeamento e coordenação da logística do evento.
 
 
-  * January 2022 – January 2023
+  * September 2022 – October 2023
     Programador de software em Core Soluções, Vila do Conde
       
   Desenvolvi e mantive aplicações de software para responder aos requisitos dos clientes.
@@ -81,7 +81,7 @@ EXPERIÊNCIA PROFISSIONAL
   Integração com sistemas para gestão empresarial.
 
 
-  * January 2022 – August 2022
+  * December 2020 – February 2021
     Estagiário de desenvolvimento em Ediprinter - Software Development, Vila do Conde, Porto, Portugal
       
   Estive envolvido em tarefas de desenvolvimento de software, com foco nas competências fundamentais de programação e no design de aplicações.
@@ -93,26 +93,26 @@ EXPERIÊNCIA PROFISSIONAL
 
 
 EDUCAÇÃO
-  * January 2022 – January 2025
+  * 2022 – 2025
     Politécnico da Maia - IPMAIA, Maia, Portugal Licenciatura em Tecnologias de Informação & Web e Multimédia
 
     
   Curso centrado no desenvolvimento de soluções tecnológicas e gestão de sistemas, com foco em desenvolvimento backend e integração de sistemas.
 
-  * January 2023 – January 2023
+  * August 2023 – December 2023
     Universidade do Estado de Santa Catarina, Joinville, Santa Catarina, Brasil Bacharelado e Licenciatura Ciência da Computação
 
     
   Centro de Ciências Tecnológicas - UDESC
   Participação em programa de mobilidade, com foco no desenvolvimento de soluções em TI e integração de sistemas.
 
-  * January 2020 – January 2022
+  * 2020 – 2022
     Politécnico da Maia - IPMAIA, Maia, Portugal CTeSP em Tecnologias e Programação de Sistemas de Informação
 
     
   Curso técnico especializado em programação e gestão de sistemas, com estágios práticos de 6 meses.
 
-  * January 2017 – January 2020
+  * 2017 – 2020
     Escola Secundária D. Afonso Sanches, Vila do Conde, Porto Ensino Secundário Profissional em Técnico de Gestão e Programação de Sistemas Informáticos
 
     
