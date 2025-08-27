@@ -26,6 +26,240 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- Custom Navigation Cards CSS -->
+  <style>
+    /* Navigation Cards Section */
+    .navigation-cards {
+      padding: 80px 0;
+      background: linear-gradient(135deg, rgba(24, 210, 110, 0.1) 0%, rgba(0, 0, 0, 0.9) 100%);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .navigation-cards::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: 
+        radial-gradient(circle at 20% 50%, rgba(24, 210, 110, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(24, 210, 110, 0.05) 0%, transparent 50%);
+      pointer-events: none;
+    }
+
+    .navigation-cards .container {
+      position: relative;
+      z-index: 2;
+    }
+
+    .navigation-cards h2 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      background: linear-gradient(135deg, #ffffff 0%, #18d26e 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .navigation-cards p {
+      color: #cccccc;
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    /* Navigation Card Styling */
+    .nav-card {
+      background: linear-gradient(145deg, rgba(26, 26, 26, 0.9) 0%, rgba(20, 20, 20, 0.95) 100%);
+      border: 1px solid rgba(24, 210, 110, 0.2);
+      border-radius: 20px;
+      padding: 2.5rem 2rem;
+      text-align: center;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      position: relative;
+      overflow: hidden;
+      backdrop-filter: blur(10px);
+      box-shadow: 
+        0 10px 30px rgba(0, 0, 0, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    }
+
+    .nav-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(24, 210, 110, 0.1), transparent);
+      transition: left 0.6s ease;
+    }
+
+    .nav-card:hover::before {
+      left: 100%;
+    }
+
+    .nav-card:hover {
+      transform: translateY(-10px) scale(1.02);
+      border-color: rgba(24, 210, 110, 0.6);
+      box-shadow: 
+        0 20px 40px rgba(24, 210, 110, 0.2),
+        0 0 0 1px rgba(24, 210, 110, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    }
+
+    /* Card Icon */
+    .nav-card-icon {
+      width: 80px;
+      height: 80px;
+      margin: 0 auto 1.5rem;
+      background: linear-gradient(135deg, #18d26e 0%, #14a85f 100%);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.4s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .nav-card-icon::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+      transition: transform 0.6s ease;
+      transform: rotate(-45deg) translateX(-100%);
+    }
+
+    .nav-card:hover .nav-card-icon::before {
+      transform: rotate(-45deg) translateX(100%);
+    }
+
+    .nav-card-icon i {
+      font-size: 2.5rem;
+      color: #ffffff;
+      transition: transform 0.3s ease;
+    }
+
+    .nav-card:hover .nav-card-icon {
+      transform: rotateY(360deg) scale(1.1);
+      box-shadow: 0 0 30px rgba(24, 210, 110, 0.5);
+    }
+
+    /* Card Content */
+    .nav-card h4 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      color: #ffffff;
+      transition: color 0.3s ease;
+    }
+
+    .nav-card:hover h4 {
+      color: #18d26e;
+    }
+
+    .nav-card p {
+      color: #cccccc;
+      font-size: 0.95rem;
+      line-height: 1.6;
+      margin-bottom: 2rem;
+      flex-grow: 1;
+    }
+
+    /* Card Button */
+    .nav-card-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 12px 24px;
+      background: linear-gradient(135deg, #18d26e 0%, #14a85f 100%);
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 25px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+      border: 2px solid transparent;
+    }
+
+    .nav-card-btn::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+      transition: left 0.5s ease;
+    }
+
+    .nav-card-btn:hover::before {
+      left: 100%;
+    }
+
+    .nav-card-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(24, 210, 110, 0.4);
+      border-color: rgba(255, 255, 255, 0.3);
+    }
+
+    .nav-card-btn i {
+      transition: transform 0.3s ease;
+    }
+
+    .nav-card-btn:hover i {
+      transform: translateX(5px);
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .navigation-cards {
+        padding: 60px 0;
+      }
+      
+      .navigation-cards h2 {
+        font-size: 2rem;
+      }
+      
+      .nav-card {
+        padding: 2rem 1.5rem;
+        margin-bottom: 2rem;
+      }
+      
+      .nav-card-icon {
+        width: 70px;
+        height: 70px;
+      }
+      
+      .nav-card-icon i {
+        font-size: 2rem;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .navigation-cards h2 {
+        font-size: 1.8rem;
+      }
+      
+      .nav-card h4 {
+        font-size: 1.3rem;
+      }
+    }
+  </style>
 </head>
 
 <body class="index-page">
@@ -34,7 +268,7 @@
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center">
-        <h1 class="sitename">Gonçalo Garrido</h1>
+        <h1 class="sitename">               </h1>
       </a>
 
       <nav id="navmenu" class="navmenu">
@@ -66,6 +300,82 @@
         </div>
       </div>
     </section><!-- /Hero Section -->
+
+    <!-- Navigation Cards Section -->
+    <section id="navigation-cards" class="navigation-cards section dark-background">
+      <div class="container" data-aos="fade-up">
+        <div class="row d-flex justify-content-center text-center">
+          <div class="col-lg-8">
+            <h2>Explorar o Meu Portfólio</h2>
+            <p class="mb-4">Navegue pelas diferentes secções para conhecer melhor o meu trabalho e experiência</p>
+          </div>
+        </div>
+        
+        <div class="row gy-4 justify-content-center" data-aos="fade-up" data-aos-delay="200">
+          
+          <!-- Sobre Card -->
+          <div class="col-lg-3 col-md-6">
+            <div class="nav-card" data-aos="zoom-in" data-aos-delay="100">
+              <div class="nav-card-icon">
+                <i class="bi bi-person-circle"></i>
+              </div>
+              <h4>Sobre Mim</h4>
+              <p>Conheça a minha história, competências e paixão pelo desenvolvimento de software.</p>
+              <a href="about.html" class="nav-card-btn">
+                <span>Explorar</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Currículo Card -->
+          <div class="col-lg-3 col-md-6">
+            <div class="nav-card" data-aos="zoom-in" data-aos-delay="200">
+              <div class="nav-card-icon">
+                <i class="bi bi-file-earmark-text"></i>
+              </div>
+              <h4>Currículo</h4>
+              <p>Consulte a minha formação académica, experiência profissional e competências técnicas.</p>
+              <a href="resume.html" class="nav-card-btn">
+                <span>Ver CV</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Portfólio Card -->
+          <div class="col-lg-3 col-md-6">
+            <div class="nav-card" data-aos="zoom-in" data-aos-delay="300">
+              <div class="nav-card-icon">
+                <i class="bi bi-collection"></i>
+              </div>
+              <h4>Portfólio</h4>
+              <p>Descubra os projetos nos quais trabalhei, desde aplicações web a mobile e desktop.</p>
+              <a href="portfolio.html" class="nav-card-btn">
+                <span>Ver Projetos</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Contactos Card -->
+          <div class="col-lg-3 col-md-6">
+            <div class="nav-card" data-aos="zoom-in" data-aos-delay="400">
+              <div class="nav-card-icon">
+                <i class="bi bi-envelope"></i>
+              </div>
+              <h4>Contactos</h4>
+              <p>Entre em contacto comigo para discutir oportunidades ou colaborações futuras.</p>
+              <a href="contact.html" class="nav-card-btn">
+                <span>Contactar</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section><!-- /Navigation Cards Section -->
 
   </main>
 
