@@ -1803,3 +1803,23 @@
     display: none !important;
   }
 }
+
+/*--------------------------------------------------------------
+# Center Header Title on Mobile (All Pages Except Index)
+--------------------------------------------------------------*/
+@media (max-width: 767px) {
+  /* Hide navigation menu on mobile for all pages except index */
+  body:not(.index-page) .navmenu {
+    display: none !important;
+  }
+  
+  /* Center the logo/title on mobile for all pages except index */
+  body:not(.index-page) .header .container-fluid {
+    justify-content: center !important;
+  }
+  
+  /* Ensure the logo is centered */
+  body:not(.index-page) .header .logo {
+    margin: 0 auto !important;
+  }
+}
