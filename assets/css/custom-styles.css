@@ -83,12 +83,12 @@
 }
 
 .nav-card:hover {
-  transform: translateY(-10px) scale(1.02);
-  border-color: rgba(24, 210, 110, 0.6);
+  transform: translateY(-5px) scale(1.01);
+  border-color: rgba(24, 210, 110, 0.5);
   box-shadow: 
-    0 20px 40px rgba(24, 210, 110, 0.2),
-    0 0 0 1px rgba(24, 210, 110, 0.3),
-    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    0 12px 30px rgba(24, 210, 110, 0.15),
+    0 0 0 1px rgba(24, 210, 110, 0.25),
+    inset 0 1px 0 rgba(255, 255, 255, 0.15);
 }
 
 /* Card Icon */
@@ -129,8 +129,8 @@
 }
 
 .nav-card:hover .nav-card-icon {
-  transform: rotateY(360deg) scale(1.1);
-  box-shadow: 0 0 30px rgba(24, 210, 110, 0.5);
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(24, 210, 110, 0.4);
 }
 
 /* Card Content */
@@ -188,9 +188,9 @@
 }
 
 .nav-card-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(24, 210, 110, 0.4);
-  border-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(24, 210, 110, 0.3);
+  border-color: rgba(255, 255, 255, 0.2);
 }
 
 .nav-card-btn i {
@@ -314,12 +314,12 @@
 }
 
 .portfolio-card:hover {
-  transform: translateY(-15px) scale(1.03);
-  border-color: rgba(24, 210, 110, 0.7);
+  transform: translateY(-8px) scale(1.015);
+  border-color: rgba(24, 210, 110, 0.5);
   box-shadow: 
-    0 25px 50px rgba(24, 210, 110, 0.3),
-    0 0 0 1px rgba(24, 210, 110, 0.5),
-    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    0 15px 35px rgba(24, 210, 110, 0.2),
+    0 0 0 1px rgba(24, 210, 110, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.15);
 }
 
 .portfolio-content {
@@ -343,8 +343,8 @@
 }
 
 .portfolio-card:hover .portfolio-content img {
-  transform: scale(1.1);
-  filter: brightness(1) contrast(1.2);
+  transform: scale(1.05);
+  filter: brightness(1) contrast(1.1);
 }
 
 .portfolio-description {
@@ -487,12 +487,12 @@
 }
 
 .contact-card:hover {
-  transform: translateY(-10px) scale(1.02);
-  border-color: rgba(24, 210, 110, 0.6);
+  transform: translateY(-5px) scale(1.01);
+  border-color: rgba(24, 210, 110, 0.4);
   box-shadow: 
-    0 20px 40px rgba(24, 210, 110, 0.2),
-    0 0 0 1px rgba(24, 210, 110, 0.3),
-    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    0 12px 30px rgba(24, 210, 110, 0.15),
+    0 0 0 1px rgba(24, 210, 110, 0.25),
+    inset 0 1px 0 rgba(255, 255, 255, 0.15);
 }
 
 /* Contact Icon */
@@ -533,8 +533,8 @@
 }
 
 .contact-card:hover .contact-icon {
-  transform: rotateY(360deg) scale(1.1);
-  box-shadow: 0 0 30px rgba(24, 210, 110, 0.5);
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(24, 210, 110, 0.4);
 }
 
 /* Contact Content */
@@ -742,17 +742,16 @@
 }
 
 /*--------------------------------------------------------------
-# About Page & Resume Page Enhancements
+# Resume Section Modern Enhancement
 --------------------------------------------------------------*/
-.about.section,
 .resume.section {
-  background: linear-gradient(135deg, rgba(24, 210, 110, 0.1) 0%, rgba(0, 0, 0, 0.9) 100%);
+  background: linear-gradient(135deg, rgba(24, 210, 110, 0.08) 0%, rgba(0, 0, 0, 0.95) 100%);
   position: relative;
   overflow: hidden;
   min-height: 100vh;
+  padding: 80px 0;
 }
 
-.about.section::before,
 .resume.section::before {
   content: '';
   position: absolute;
@@ -761,21 +760,240 @@
   right: 0;
   bottom: 0;
   background: 
-    radial-gradient(circle at 20% 30%, rgba(24, 210, 110, 0.15) 0%, transparent 50%),
-    radial-gradient(circle at 80% 70%, rgba(24, 210, 110, 0.1) 0%, transparent 50%),
-    radial-gradient(circle at 50% 50%, rgba(24, 210, 110, 0.05) 0%, transparent 70%);
+    radial-gradient(circle at 20% 30%, rgba(24, 210, 110, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 70%, rgba(24, 210, 110, 0.06) 0%, transparent 50%);
   pointer-events: none;
 }
 
-.about .container,
 .resume .container {
   position: relative;
   z-index: 2;
 }
 
+/* Resume Section Layout */
+.resume .row {
+  gap: 0;
+}
+
+.resume .col-lg-6 {
+  padding: 0 20px;
+}
+
+/* Resume Section Titles */
+.resume .resume-title {
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  position: relative;
+  text-align: left;
+  background: linear-gradient(135deg, #ffffff 0%, #18d26e 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  padding-left: 30px;
+}
+
+.resume .resume-title::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 30px;
+  background: linear-gradient(135deg, #18d26e 0%, #14a85f 100%);
+  border-radius: 2px;
+  box-shadow: 0 0 10px rgba(24, 210, 110, 0.5);
+}
+
+/* Resume Items */
+.resume .resume-item {
+  background: linear-gradient(145deg, rgba(26, 26, 26, 0.95) 0%, rgba(20, 20, 20, 0.98) 100%);
+  border: 1px solid rgba(24, 210, 110, 0.2);
+  border-radius: 15px;
+  padding: 1.8rem;
+  margin-bottom: 1.8rem;
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(8px);
+  box-shadow: 
+    0 4px 15px rgba(0, 0, 0, 0.15),
+    inset 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+
+.resume .resume-item::before {
+  display: none;
+}
+
+.resume .resume-item h4 {
+  color: #18d26e;
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.resume .resume-item h5 {
+  color: #999999;
+  font-style: italic;
+  font-size: 0.95rem;
+  margin-bottom: 0.8rem;
+  font-weight: 500;
+}
+
+.resume .resume-item p {
+  color: #cccccc;
+  line-height: 1.6;
+  font-size: 0.9rem;
+  margin-bottom: 0.8rem;
+}
+
+.resume .resume-item em {
+  color: #18d26e;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.resume .resume-item ul {
+  color: #cccccc;
+  line-height: 1.6;
+  margin: 0;
+  padding-left: 0;
+}
+
+.resume .resume-item ul li {
+  margin-bottom: 0.3rem;
+  position: relative;
+  padding-left: 15px;
+  list-style: none;
+  font-size: 0.9rem;
+}
+
+.resume .resume-item ul li::before {
+  content: '▶';
+  color: #18d26e;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 0.7rem;
+}
+
+.resume .resume-item a {
+  color: #18d26e;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.resume .resume-item a:hover {
+  color: #ffffff;
+}
+
+/* Timeline Effect */
+.resume .resume-item:last-child {
+  margin-bottom: 0;
+}
+
+.resume .resume-item::after {
+  content: '';
+  position: absolute;
+  left: -15px;
+  top: 20px;
+  width: 6px;
+  height: 6px;
+  background: #18d26e;
+  border-radius: 50%;
+  z-index: 3;
+}
+
+.resume .col-lg-6::before {
+  content: '';
+  position: absolute;
+  left: -2px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(180deg, transparent 0%, #18d26e 20%, #18d26e 80%, transparent 100%);
+  opacity: 0.3;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .resume .col-lg-6 {
+    padding: 0 15px;
+    margin-bottom: 3rem;
+  }
+  
+  .resume .col-lg-6::before {
+    display: none;
+  }
+  
+  .resume .resume-item::after {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-title h1 {
+    font-size: 2.8rem;
+  }
+  
+  .page-title p {
+    font-size: 1.1rem;
+  }
+  
+  .page-title .heading {
+    padding: 100px 0 50px;
+  }
+  
+  .resume .resume-title {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .resume .resume-item {
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .resume .resume-item h4 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .page-title h1 {
+    font-size: 2.2rem;
+  }
+  
+  .page-title .heading {
+    padding: 80px 0 40px;
+  }
+  
+  .resume .resume-title {
+    font-size: 1.6rem;
+  }
+  
+  .resume .resume-item {
+    padding: 1.2rem;
+  }
+  
+  .resume .resume-item h4 {
+    font-size: 1.1rem;
+  }
+  
+  .resume .resume-item h5 {
+    font-size: 0.9rem;
+  }
+  
+  .resume .resume-item p {
+    font-size: 0.85rem;
+  }
+}
+
 /* Page Title Enhancement */
 .page-title {
-  background: linear-gradient(135deg, rgba(24, 210, 110, 0.15) 0%, rgba(0, 0, 0, 0.95) 100%);
+  background: linear-gradient(135deg, rgba(24, 210, 110, 0.12) 0%, rgba(0, 0, 0, 0.98) 100%);
   position: relative;
   overflow: hidden;
 }
@@ -788,33 +1006,52 @@
   right: 0;
   bottom: 0;
   background: 
-    radial-gradient(circle at 30% 20%, rgba(24, 210, 110, 0.2) 0%, transparent 50%),
-    radial-gradient(circle at 70% 80%, rgba(24, 210, 110, 0.1) 0%, transparent 50%);
+    radial-gradient(circle at 30% 20%, rgba(24, 210, 110, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 70% 80%, rgba(24, 210, 110, 0.08) 0%, transparent 50%);
   pointer-events: none;
 }
 
 .page-title .heading {
   position: relative;
   z-index: 2;
-  padding: 80px 0 40px;
+  padding: 120px 0 60px;
 }
 
 .page-title h1 {
-  font-size: 3rem;
-  font-weight: 700;
+  font-size: 3.5rem;
+  font-weight: 800;
   background: linear-gradient(135deg, #ffffff 0%, #18d26e 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  text-shadow: 0 0 30px rgba(24, 210, 110, 0.3);
 }
 
 .page-title p {
   color: #cccccc;
-  font-size: 1.2rem;
-  line-height: 1.6;
-  max-width: 800px;
+  font-size: 1.3rem;
+  line-height: 1.7;
+  max-width: 900px;
   margin: 0 auto;
+}
+
+/* Breadcrumbs Enhancement */
+.page-title nav {
+  background: rgba(26, 26, 26, 0.8);
+  backdrop-filter: blur(10px);
+  border-top: 1px solid rgba(24, 210, 110, 0.2);
+}
+
+.page-title nav ol li a {
+  color: #18d26e;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.page-title nav ol li a:hover {
+  color: #ffffff;
+  text-shadow: 0 0 5px rgba(24, 210, 110, 0.5);
 }
 
 /* Skills Section Enhancement */
@@ -975,118 +1212,34 @@
   background-clip: text;
 }
 
-/* Resume Items Enhancement */
-.resume-item {
-  background: linear-gradient(145deg, rgba(26, 26, 26, 0.9) 0%, rgba(20, 20, 20, 0.95) 100%);
-  border: 1px solid rgba(24, 210, 110, 0.3);
-  border-radius: 25px;
-  padding: 2.5rem;
-  margin-bottom: 2.5rem;
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+/*--------------------------------------------------------------
+# About Page Enhancement
+--------------------------------------------------------------*/
+.about.section {
+  background: linear-gradient(135deg, rgba(24, 210, 110, 0.08) 0%, rgba(0, 0, 0, 0.95) 100%);
   position: relative;
   overflow: hidden;
-  backdrop-filter: blur(15px);
-  box-shadow: 
-    0 15px 35px rgba(0, 0, 0, 0.4),
-    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  min-height: 100vh;
+  padding: 80px 0;
 }
 
-.resume-item::before {
+.about.section::before {
   content: '';
   position: absolute;
   top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(24, 210, 110, 0.1), transparent);
-  transition: left 0.8s ease;
-}
-
-.resume-item:hover::before {
-  left: 100%;
-}
-
-.resume-item:hover {
-  transform: translateY(-8px) scale(1.02);
-  border-color: rgba(24, 210, 110, 0.6);
-  box-shadow: 
-    0 25px 50px rgba(24, 210, 110, 0.3),
-    0 0 0 1px rgba(24, 210, 110, 0.4),
-    inset 0 1px 0 rgba(255, 255, 255, 0.2);
-}
-
-.resume-item h4 {
-  color: #18d26e;
-  font-weight: 700;
-  font-size: 1.5rem;
-  margin-bottom: 0.8rem;
-  text-shadow: 0 0 10px rgba(24, 210, 110, 0.3);
-}
-
-.resume-item h5 {
-  color: #cccccc;
-  font-style: italic;
-  font-size: 1.1rem;
-  margin-bottom: 1.2rem;
-  font-weight: 600;
-}
-
-.resume-item p {
-  color: #b0b0b0;
-  line-height: 1.7;
-  font-size: 1rem;
-  margin-bottom: 1rem;
-}
-
-.resume-item em {
-  color: #18d26e;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.resume-item ul {
-  color: #b0b0b0;
-  line-height: 1.7;
-}
-
-.resume-item ul li {
-  margin-bottom: 0.5rem;
-  position: relative;
-  padding-left: 20px;
-}
-
-.resume-item ul li::before {
-  content: '▶';
-  color: #18d26e;
-  position: absolute;
   left: 0;
-  top: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 20% 30%, rgba(24, 210, 110, 0.12) 0%, transparent 50%),
+    radial-gradient(circle at 80% 70%, rgba(24, 210, 110, 0.08) 0%, transparent 50%),
+    radial-gradient(circle at 50% 50%, rgba(24, 210, 110, 0.05) 0%, transparent 70%);
+  pointer-events: none;
 }
 
-.resume-title {
-  color: #ffffff;
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 3rem;
+.about .container {
   position: relative;
-  text-align: center;
-  background: linear-gradient(135deg, #ffffff 0%, #18d26e 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-.resume-title::after {
-  content: '';
-  position: absolute;
-  bottom: -15px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 80px;
-  height: 4px;
-  background: linear-gradient(135deg, #18d26e 0%, #14a85f 100%);
-  border-radius: 2px;
-  box-shadow: 0 0 20px rgba(24, 210, 110, 0.5);
+  z-index: 2;
 }
 
 /*--------------------------------------------------------------
@@ -1188,12 +1341,12 @@
 }
 
 .recognitions .card:hover {
-  transform: translateY(-12px) scale(1.03);
-  border-color: rgba(24, 210, 110, 0.7);
+  transform: translateY(-6px) scale(1.015);
+  border-color: rgba(24, 210, 110, 0.5);
   box-shadow: 
-    0 25px 50px rgba(24, 210, 110, 0.3),
-    0 0 0 1px rgba(24, 210, 110, 0.5),
-    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    0 15px 35px rgba(24, 210, 110, 0.2),
+    0 0 0 1px rgba(24, 210, 110, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.15);
 }
 
 .recognitions .card-img-top {
@@ -1206,8 +1359,8 @@
 }
 
 .recognitions .card:hover .card-img-top {
-  transform: scale(1.08);
-  filter: brightness(1) contrast(1.2);
+  transform: scale(1.03);
+  filter: brightness(1) contrast(1.1);
 }
 
 .recognitions .card-body {
