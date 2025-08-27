@@ -27,6 +27,8 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
+  <!-- Custom Styles CSS -->
+  <link href="assets/css/custom-styles.css" rel="stylesheet">
 </head>
 
 <body class="portfolio-page">
@@ -365,110 +367,6 @@
     </div>
   </div>
 </section>
-
-<!-- Custom CSS for Hover Effect -->
-<style>
-/* Cartão principal */
-.portfolio-card {
-  background-color: #121212; /* Fundo preto */
-  border: 2px solid #1db954; /* Borda verde */
-  border-radius: 12px; /* Bordas arredondadas */
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between; /* Garante espaçamento interno consistente */
-  align-items: center; /* Alinha conteúdo ao centro */
-  height: auto; /* Altura dinâmica com base no conteúdo */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  margin: 20px; /* Adiciona margem ao redor dos cartões */
-}
-
-.portfolio-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-}
-
-/* Imagem dentro do cartão */
-.portfolio-content {
-  width: 100%;
-  aspect-ratio: 16 / 9; /* Proporção fixa para as imagens */
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #000; /* Cor de fundo para evitar espaços vazios */
-}
-
-.portfolio-content img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Ajusta a imagem ao espaço sem distorcer */
-}
-
-/* Links estilizados */
-.portfolio-links {
-  margin-top: 15px;
-  display: flex;
-  justify-content: center;
-  gap: 20px; /* Espaço entre os links */
-}
-
-.styled-link {
-  text-decoration: none;
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: #1db954; /* Verde */
-  position: relative;
-  padding-bottom: 3px; /* Espaço para o sublinhado */
-}
-
-.styled-link::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 2px;
-  width: 0;
-  background-color: #1db954; /* Verde para a linha */
-  transition: width 0.3s ease-in-out; /* Animação suave */
-}
-
-.styled-link:hover::after {
-  width: 100%; /* Sublinhado aparece ao passar o mouse */
-}
-
-/* Descrição ajustada */
-.portfolio-description {
-  padding: 15px;
-  text-align: center;
-  background-color: #121212;
-  color: #fff;
-  border-top: 2px solid #1db954;
-  min-height: 170px; /* Altura mínima para uniformizar o tamanho */
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* Centraliza o conteúdo verticalmente */
-}
-
-.portfolio-description h5 {
-  margin: 0;
-  font-size: 1.4rem;
-  color: #1db954;
-  font-weight: bold;
-}
-
-.portfolio-description p {
-  margin: 10px 0 0;
-  font-size: 1.1rem;
-  color: #aaa;
-}
-
-
-</style>
-
-
-
 
 </main>
 

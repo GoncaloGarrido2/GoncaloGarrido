@@ -33,26 +33,55 @@
 
 <body class="index-page">
 
-  <header id="header" class="header d-flex align-items-center fixed-top">
+    <header id="header" class="header hide-header-mobile d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center">
-        <h1 class="sitename">               </h1>
+        <h1 class="sitename">Gonçalo Garrido</h1>
       </a>
 
       <nav id="navmenu" class="navmenu">
-        <ul>
+        <!-- Desktop Menu - Hidden on mobile -->
+        <ul class="d-none d-xl-flex">
           <li><a href="index.html" class="active">Início</a></li>
           <li><a href="about.html">Sobre</a></li>
           <li><a href="resume.html">Currículo</a></li>
           <li><a href="portfolio.html">Portfólio</a></li>
           <li><a href="contact.html">Contactos</a></li>
         </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        
+        <!-- Modern Mobile Menu Button - Only on mobile -->
+        <div class="modern-mobile-nav-toggle d-xl-none">
+          <i class="bi bi-grid-3x3-gap"></i>
+        </div>
       </nav>
 
     </div>
   </header>
+
+  <!-- Modern Mobile Overlay Menu -->
+  <div class="modern-mobile-overlay">
+    <div class="modern-mobile-close">
+      <i class="bi bi-x-lg"></i>
+    </div>
+    <div class="modern-mobile-menu">
+      <a href="index.html" class="modern-mobile-item">
+        <i class="bi bi-house"></i> Início
+      </a>
+      <a href="about.html" class="modern-mobile-item">
+        <i class="bi bi-person"></i> Sobre
+      </a>
+      <a href="resume.html" class="modern-mobile-item">
+        <i class="bi bi-file-text"></i> Currículo
+      </a>
+      <a href="portfolio.html" class="modern-mobile-item">
+        <i class="bi bi-collection"></i> Portfólio
+      </a>
+      <a href="contact.html" class="modern-mobile-item">
+        <i class="bi bi-envelope"></i> Contactos
+      </a>
+    </div>
+  </div>
 
   <main class="main">
 
@@ -180,6 +209,60 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- Modern Mobile Menu JS -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const mobileToggle = document.querySelector('.modern-mobile-nav-toggle');
+      const mobileOverlay = document.querySelector('.modern-mobile-overlay');
+      const mobileClose = document.querySelector('.modern-mobile-close');
+      const mobileItems = document.querySelectorAll('.modern-mobile-item');
+
+      // Open menu
+      if (mobileToggle) {
+        mobileToggle.addEventListener('click', function(e) {
+          e.preventDefault();
+          mobileOverlay.classList.add('active');
+          document.body.style.overflow = 'hidden';
+        });
+      }
+
+      // Close menu
+      if (mobileClose) {
+        mobileClose.addEventListener('click', function(e) {
+          e.preventDefault();
+          mobileOverlay.classList.remove('active');
+          document.body.style.overflow = '';
+        });
+      }
+
+      // Close menu when clicking on overlay background
+      if (mobileOverlay) {
+        mobileOverlay.addEventListener('click', function(e) {
+          if (e.target === mobileOverlay) {
+            mobileOverlay.classList.remove('active');
+            document.body.style.overflow = '';
+          }
+        });
+      }
+
+      // Close menu when clicking on menu items
+      mobileItems.forEach(item => {
+        item.addEventListener('click', function() {
+          mobileOverlay.classList.remove('active');
+          document.body.style.overflow = '';
+        });
+      });
+
+      // Close menu with Escape key
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && mobileOverlay.classList.contains('active')) {
+          mobileOverlay.classList.remove('active');
+          document.body.style.overflow = '';
+        }
+      });
+    });
+  </script>
 
 </body>
 
