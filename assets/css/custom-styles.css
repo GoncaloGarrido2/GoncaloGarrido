@@ -855,10 +855,19 @@
   letter-spacing: normal !important;
   text-transform: none !important;
   line-height: 1.2 !important;
+  position: relative;
 }
 
 .skills .section-title h2::after {
-  display: none !important;
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 2px;
+  background: #18d26e;
+  border-radius: 1px;
 }
 
 .skills .section-title div {
@@ -1122,10 +1131,19 @@
   letter-spacing: normal !important;
   text-transform: none !important;
   line-height: 1.2 !important;
+  position: relative;
 }
 
 .recognitions .section-title h2::after {
-  display: none !important;
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 2px;
+  background: #18d26e;
+  border-radius: 1px;
 }
 
 .recognitions .section-title p {
