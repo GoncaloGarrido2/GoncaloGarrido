@@ -26,6 +26,370 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- Custom Contact Cards CSS -->
+  <style>
+    /* Contact Section Styling */
+    .contact.section {
+      padding: 80px 0;
+      background: linear-gradient(135deg, rgba(24, 210, 110, 0.05) 0%, rgba(0, 0, 0, 0.95) 100%);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .contact.section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: 
+        radial-gradient(circle at 30% 20%, rgba(24, 210, 110, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 70% 80%, rgba(24, 210, 110, 0.05) 0%, transparent 50%);
+      pointer-events: none;
+    }
+
+    .contact .container {
+      position: relative;
+      z-index: 2;
+    }
+
+    /* Contact Card Styling */
+    .contact-card {
+      background: linear-gradient(145deg, rgba(26, 26, 26, 0.9) 0%, rgba(20, 20, 20, 0.95) 100%);
+      border: 1px solid rgba(24, 210, 110, 0.2);
+      border-radius: 20px;
+      padding: 2.5rem 2rem;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      position: relative;
+      overflow: hidden;
+      backdrop-filter: blur(10px);
+      box-shadow: 
+        0 10px 30px rgba(0, 0, 0, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+      margin-bottom: 2rem;
+    }
+
+    .contact-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(24, 210, 110, 0.1), transparent);
+      transition: left 0.6s ease;
+    }
+
+    .contact-card:hover::before {
+      left: 100%;
+    }
+
+    .contact-card:hover {
+      transform: translateY(-10px) scale(1.02);
+      border-color: rgba(24, 210, 110, 0.6);
+      box-shadow: 
+        0 20px 40px rgba(24, 210, 110, 0.2),
+        0 0 0 1px rgba(24, 210, 110, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    }
+
+    /* Contact Icon */
+    .contact-icon {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 1.5rem;
+      background: linear-gradient(135deg, #18d26e 0%, #14a85f 100%);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.4s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .contact-icon::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+      transition: transform 0.6s ease;
+      transform: rotate(-45deg) translateX(-100%);
+    }
+
+    .contact-card:hover .contact-icon::before {
+      transform: rotate(-45deg) translateX(100%);
+    }
+
+    .contact-icon i {
+      font-size: 2.5rem;
+      color: #ffffff;
+      transition: transform 0.3s ease;
+    }
+
+    .contact-card:hover .contact-icon {
+      transform: rotateY(360deg) scale(1.1);
+      box-shadow: 0 0 30px rgba(24, 210, 110, 0.5);
+    }
+
+    /* Contact Content */
+    .contact-content {
+      width: 100%;
+    }
+
+    .contact-content h3 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      color: #ffffff;
+      transition: color 0.3s ease;
+    }
+
+    .contact-card:hover .contact-content h3 {
+      color: #18d26e;
+    }
+
+    .contact-content p {
+      color: #cccccc;
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+    }
+
+    .contact-link {
+      color: #18d26e;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1rem;
+      transition: all 0.3s ease;
+      display: inline-block;
+      margin-bottom: 1rem;
+    }
+
+    .contact-link:hover {
+      color: #ffffff;
+      transform: scale(1.05);
+    }
+
+    .contact-detail {
+      color: #999999;
+      font-size: 0.9rem;
+      font-style: italic;
+    }
+
+    /* Social Links in Contact */
+    .social-links-contact {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 1rem;
+    }
+
+    .social-btn {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 15px;
+      background: rgba(24, 210, 110, 0.1);
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+      border: 1px solid rgba(24, 210, 110, 0.2);
+    }
+
+    .social-btn:hover {
+      background: rgba(24, 210, 110, 0.2);
+      border-color: rgba(24, 210, 110, 0.5);
+      transform: translateX(5px);
+      color: #18d26e;
+    }
+
+    .social-btn i {
+      font-size: 1.2rem;
+    }
+
+    /* Availability Status */
+    .availability-status {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      margin-top: 1rem;
+      padding: 8px 16px;
+      background: rgba(24, 210, 110, 0.1);
+      border-radius: 20px;
+      border: 1px solid rgba(24, 210, 110, 0.3);
+    }
+
+    .status-indicator {
+      width: 10px;
+      height: 10px;
+      background: #18d26e;
+      border-radius: 50%;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0% {
+        box-shadow: 0 0 0 0 rgba(24, 210, 110, 0.7);
+      }
+      70% {
+        box-shadow: 0 0 0 10px rgba(24, 210, 110, 0);
+      }
+      100% {
+        box-shadow: 0 0 0 0 rgba(24, 210, 110, 0);
+      }
+    }
+
+    .status-text {
+      color: #18d26e;
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+
+    /* Call to Action Section */
+    .cta-section {
+      background: linear-gradient(145deg, rgba(26, 26, 26, 0.9) 0%, rgba(20, 20, 20, 0.95) 100%);
+      border: 1px solid rgba(24, 210, 110, 0.3);
+      border-radius: 20px;
+      padding: 3rem 2rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      backdrop-filter: blur(10px);
+    }
+
+    .cta-section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: 
+        radial-gradient(circle at 50% 50%, rgba(24, 210, 110, 0.1) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .cta-section h3 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      background: linear-gradient(135deg, #ffffff 0%, #18d26e 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .cta-section p {
+      color: #cccccc;
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .cta-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 15px 30px;
+      background: linear-gradient(135deg, #18d26e 0%, #14a85f 100%);
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: 600;
+      font-size: 1.1rem;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+      border: 2px solid transparent;
+    }
+
+    .cta-btn::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+      transition: left 0.5s ease;
+    }
+
+    .cta-btn:hover::before {
+      left: 100%;
+    }
+
+    .cta-btn:hover {
+      transform: translateY(-3px) scale(1.05);
+      box-shadow: 0 10px 30px rgba(24, 210, 110, 0.4);
+      border-color: rgba(255, 255, 255, 0.3);
+    }
+
+    .cta-btn i {
+      transition: transform 0.3s ease;
+    }
+
+    .cta-btn:hover i {
+      transform: translateX(5px);
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .contact.section {
+        padding: 60px 0;
+      }
+      
+      .contact-card {
+        padding: 2rem 1.5rem;
+        margin-bottom: 1.5rem;
+      }
+      
+      .contact-icon {
+        width: 70px;
+        height: 70px;
+      }
+      
+      .contact-icon i {
+        font-size: 2rem;
+      }
+
+      .cta-section {
+        padding: 2rem 1.5rem;
+      }
+
+      .cta-section h3 {
+        font-size: 1.5rem;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .contact-content h3 {
+        font-size: 1.3rem;
+      }
+
+      .social-links-contact {
+        gap: 8px;
+      }
+
+      .social-btn {
+        padding: 8px 12px;
+        font-size: 0.9rem;
+      }
+    }
+  </style>
 </head>
 
 <body class="contact-page">
@@ -79,55 +443,107 @@
     <section id="contact" class="contact section">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="row gy-4">
+        <div class="row gy-4 justify-content-center">
 
-          <div class="col-md-6">
-            <div class="info-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="200">
-              <i class="icon bi bi-geo-alt flex-shrink-0"></i>
-              <div>
+          <!-- Localização Card -->
+          <div class="col-lg-6 col-md-6">
+            <div class="contact-card" data-aos="zoom-in" data-aos-delay="100">
+              <div class="contact-icon">
+                <i class="bi bi-geo-alt"></i>
+              </div>
+              <div class="contact-content">
                 <h3>Localização</h3>
                 <p>Porto, Portugal</p>
-              </div>
-            </div>
-          </div><!-- End Info Item -->
-
-          <div class="col-md-6">
-            <div class="info-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="300">
-              <i class="icon bi bi-telephone flex-shrink-0"></i>
-              <div>
-                <h3>Contacto</h3>
-                <p>Indisponível</p>
-              </div>
-            </div>
-          </div><!-- End Info Item -->
-
-          <div class="col-md-6">
-            <div class="info-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="400">
-              <i class="icon bi bi-envelope flex-shrink-0"></i>
-              <div>
-                <h3>Email</h3>
-                <a href="mailto:goncalosantosgarrido@gmail.com">
-                  <p>Goncalosantosgarrido@gmail.com</p>
-                </a>
-              </div>
-            </div>
-            
-          </div><!-- End Info Item -->
-
-          <div class="col-md-6">
-            <div class="info-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="500">
-              <i class="icon bi bi-share flex-shrink-0"></i>
-              <div>
-                <h3>Redes Sociais</h3>
-                <div class="social-links">
-                  <a href="https://github.com/GoncaloGarrido2"><i class="bi bi-github"></i></a>
-                  <a href="https://www.linkedin.com/in/gon%C3%A7alo-garrido-4301a0269/"><i class="bi bi-linkedin"></i></a>
-                  <a href="https://stackoverflow.com/users/11312923/gon%C3%A7alo-garrido"><i class="bi bi-stack-overflow"></i></a>
+                <div class="contact-detail">
+                  <span>Disponível para trabalho remoto e presencial na região do Porto</span>
                 </div>
               </div>
             </div>
-          </div><!-- End Info Item -->
+          </div>
+
+          <!-- Email Card -->
+          <div class="col-lg-6 col-md-6">
+            <div class="contact-card" data-aos="zoom-in" data-aos-delay="200">
+              <div class="contact-icon">
+                <i class="bi bi-envelope"></i>
+              </div>
+              <div class="contact-content">
+                <h3>Email</h3>
+                <a href="mailto:goncalosantosgarrido@gmail.com" class="contact-link">
+                  Goncalosantosgarrido@gmail.com
+                </a>
+                <div class="contact-detail">
+                  <span>Resposta garantida em 24 horas</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Redes Sociais Card -->
+          <div class="col-lg-6 col-md-6">
+            <div class="contact-card" data-aos="zoom-in" data-aos-delay="300">
+              <div class="contact-icon">
+                <i class="bi bi-share"></i>
+              </div>
+              <div class="contact-content">
+                <h3>Redes Sociais</h3>
+                <div class="social-links-contact">
+                  <a href="https://github.com/GoncaloGarrido2" target="_blank" class="social-btn">
+                    <i class="bi bi-github"></i>
+                    <span>GitHub</span>
+                  </a>
+                  <a href="https://www.linkedin.com/in/gon%C3%A7alo-garrido-4301a0269/" target="_blank" class="social-btn">
+                    <i class="bi bi-linkedin"></i>
+                    <span>LinkedIn</span>
+                  </a>
+                  <a href="https://stackoverflow.com/users/11312923/gon%C3%A7alo-garrido" target="_blank" class="social-btn">
+                    <i class="bi bi-stack-overflow"></i>
+                    <span>Stack Overflow</span>
+                  </a>
+                </div>
+                <div class="contact-detail">
+                  <span>Siga-me para acompanhar os meus projetos</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Disponibilidade Card -->
+          <div class="col-lg-6 col-md-6">
+            <div class="contact-card" data-aos="zoom-in" data-aos-delay="400">
+              <div class="contact-icon">
+                <i class="bi bi-clock"></i>
+              </div>
+              <div class="contact-content">
+                <h3>Disponibilidade</h3>
+                <p>Disponível para novos projetos</p>
+                <div class="contact-detail">
+                  <span>Freelancer • Full-time • Part-time</span>
+                </div>
+                <div class="availability-status">
+                  <span class="status-indicator"></span>
+                  <span class="status-text">Atualmente disponível</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
+
+        <!-- Call to Action -->
+        <div class="row mt-5">
+          <div class="col-12 text-center" data-aos="fade-up" data-aos-delay="500">
+            <div class="cta-section">
+              <h3>Vamos Trabalhar Juntos?</h3>
+              <p>Tenho sempre interesse em discutir novos projetos e oportunidades interessantes.</p>
+              <a href="mailto:goncalosantosgarrido@gmail.com" class="cta-btn">
+                <i class="bi bi-envelope"></i>
+                <span>Enviar Email</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section><!-- /Contact Section -->
 
