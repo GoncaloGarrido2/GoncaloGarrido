@@ -852,6 +852,13 @@
   font-weight: 700;
   text-align: center;
   margin-bottom: 1rem;
+  letter-spacing: normal !important;
+  text-transform: none !important;
+  line-height: 1.2 !important;
+}
+
+.skills .section-title h2::after {
+  display: none !important;
 }
 
 .skills .section-title div {
@@ -1112,6 +1119,13 @@
   text-align: center;
   margin-bottom: 1.5rem;
   text-shadow: 0 0 30px rgba(24, 210, 110, 0.3);
+  letter-spacing: normal !important;
+  text-transform: none !important;
+  line-height: 1.2 !important;
+}
+
+.recognitions .section-title h2::after {
+  display: none !important;
 }
 
 .recognitions .section-title p {
@@ -1179,25 +1193,89 @@
 }
 
 .recognitions .card-body {
-  padding: 2rem;
+  padding: 2.5rem;
   background: linear-gradient(145deg, rgba(26, 26, 26, 0.95) 0%, rgba(20, 20, 20, 0.98) 100%);
   position: relative;
   z-index: 2;
+  border-top: 1px solid rgba(24, 210, 110, 0.2);
 }
 
 .recognitions .card-title {
-  color: #18d26e;
-  font-size: 1.6rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-  text-shadow: 0 0 15px rgba(24, 210, 110, 0.4);
+  color: #18d26e !important;
+  font-size: 1.8rem !important;
+  font-weight: 700 !important;
+  margin-bottom: 1.5rem !important;
+  text-shadow: 0 0 20px rgba(24, 210, 110, 0.5) !important;
+  text-decoration: none !important;
+  background: linear-gradient(135deg, #18d26e 0%, #14a85f 100%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+  line-height: 1.3 !important;
+  position: relative !important;
+}
+
+.recognitions .card-title::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 2px;
+  background: #18d26e;
+  border-radius: 1px;
 }
 
 .recognitions .card-text {
-  color: #cccccc;
-  font-size: 1.1rem;
-  line-height: 1.7;
-  margin-bottom: 0;
+  color: #e0e0e0 !important;
+  font-size: 1.1rem !important;
+  line-height: 1.8 !important;
+  margin-bottom: 1rem !important;
+  text-shadow: none !important;
+  background: none !important;
+  -webkit-background-clip: initial !important;
+  -webkit-text-fill-color: #e0e0e0 !important;
+  background-clip: initial !important;
+  font-weight: 400 !important;
+}
+
+.recognitions .card-text:last-child {
+  margin-bottom: 0 !important;
+}
+
+.recognitions .card-text strong {
+  color: #18d26e !important;
+  font-weight: 700 !important;
+  text-shadow: 0 0 10px rgba(24, 210, 110, 0.3) !important;
+}
+
+.recognitions .card-text a {
+  color: #18d26e !important;
+  text-decoration: none !important;
+  font-weight: 600 !important;
+  position: relative !important;
+  transition: all 0.3s ease !important;
+}
+
+.recognitions .card-text a::before {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #18d26e, #14a85f);
+  transition: width 0.3s ease;
+}
+
+.recognitions .card-text a:hover::before {
+  width: 100%;
+}
+
+.recognitions .card-text a:hover {
+  color: #ffffff !important;
+  text-shadow: 0 0 15px rgba(24, 210, 110, 0.6) !important;
 }
 
 /*--------------------------------------------------------------
@@ -1216,6 +1294,16 @@
   .skills .section-title h2,
   .recognitions .section-title h2 {
     font-size: 2rem;
+    letter-spacing: normal !important;
+    text-transform: none !important;
+    line-height: 1.3 !important;
+  }
+  
+  .recognitions .section-title p {
+    font-size: 1.1rem !important;
+    letter-spacing: normal !important;
+    line-height: 1.5 !important;
+    margin-bottom: 2rem !important;
   }
   
   .nav-card,
@@ -1255,6 +1343,29 @@
 
   .dev-icons i {
     font-size: 2rem !important;
+  }
+  
+  /* Responsive adjustments for recognition cards */
+  .recognitions .card {
+    margin-bottom: 1.5rem;
+  }
+  
+  .recognitions .card-body {
+    padding: 1.5rem !important;
+  }
+  
+  .recognitions .card-title {
+    font-size: 1.4rem !important;
+    margin-bottom: 1rem !important;
+  }
+  
+  .recognitions .card-text {
+    font-size: 1rem !important;
+    line-height: 1.6 !important;
+  }
+  
+  .recognitions .card-img-top {
+    height: 200px !important;
   }
 }
 
