@@ -1539,6 +1539,10 @@
   margin-bottom: 0 !important;
 }
 
+.card-text{
+  text-transform: none !important;
+}
+
 .recognitions .card-text strong {
   color: #18d26e !important;
   font-weight: 700 !important;
