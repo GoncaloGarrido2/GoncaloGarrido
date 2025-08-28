@@ -588,7 +588,7 @@ h6 {
 }
 
 .page-title .heading {
-  padding: 160px 0 80px 0;
+  padding: 220px 0 80px 0;
   border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
@@ -630,7 +630,7 @@ section,
   color: var(--default-color);
   background-color: var(--background-color);
   padding: 60px 0;
-  scroll-margin-top: 100px;
+  scroll-margin-top: 120px;
   overflow: clip;
 }
 
@@ -638,7 +638,7 @@ section,
 
   section,
   .section {
-    scroll-margin-top: 66px;
+    scroll-margin-top: 90px;
   }
 }
 
