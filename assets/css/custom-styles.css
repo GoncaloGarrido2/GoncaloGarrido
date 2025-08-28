@@ -1790,9 +1790,6 @@
   left: 0;
   right: 0;
   z-index: 10;
-  opacity: 1 !important;
-  visibility: visible !important;
-  display: block !important;
 }
 
 .scroll-indicator-center {
@@ -1800,9 +1797,6 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  opacity: 1 !important;
-  visibility: visible !important;
-  transform: none !important;
 }
 
 .scroll-down-btn {
@@ -1865,15 +1859,27 @@
   }
 }
 
-/* Force scroll indicator to always be visible and override AOS animations */
-.scroll-down-indicator,
-.scroll-down-indicator *,
-.scroll-indicator-center,
-.scroll-indicator-center * {
+/* Force scroll indicator to always be visible after AOS animation */
+.scroll-down-indicator[data-aos].aos-animate,
+.scroll-down-indicator[data-aos].aos-animate *,
+.scroll-indicator-center {
   opacity: 1 !important;
   visibility: visible !important;
-  animation: none !important;
-  transition: color 0.3s ease, transform 0.3s ease !important;
+}
+
+/* Allow AOS animation initially, but keep visible afterwards */
+.scroll-down-indicator {
+  position: absolute;
+  bottom: 60px;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+/* After AOS animation completes, ensure it stays visible */
+.scroll-down-indicator.aos-animate {
+  opacity: 1 !important;
+  visibility: visible !important;
 }
 
 /* Ensure all sections have proper background */
