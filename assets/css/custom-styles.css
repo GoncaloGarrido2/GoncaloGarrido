@@ -1786,10 +1786,13 @@
 --------------------------------------------------------------*/
 .scroll-down-indicator {
   position: absolute;
-  bottom: 30px;
+  bottom: 60px;
   left: 0;
   right: 0;
   z-index: 10;
+  opacity: 1 !important;
+  visibility: visible !important;
+  display: block !important;
 }
 
 .scroll-indicator-center {
@@ -1797,6 +1800,9 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: none !important;
 }
 
 .scroll-down-btn {
@@ -1847,7 +1853,7 @@
 /* Mobile adjustments for scroll indicator */
 @media (max-width: 768px) {
   .scroll-down-indicator {
-    bottom: 20px;
+    bottom: 40px;
   }
   
   .scroll-down-btn i {
@@ -1857,6 +1863,17 @@
   .scroll-down-btn span {
     font-size: 0.8rem;
   }
+}
+
+/* Force scroll indicator to always be visible and override AOS animations */
+.scroll-down-indicator,
+.scroll-down-indicator *,
+.scroll-indicator-center,
+.scroll-indicator-center * {
+  opacity: 1 !important;
+  visibility: visible !important;
+  animation: none !important;
+  transition: color 0.3s ease, transform 0.3s ease !important;
 }
 
 /* Ensure all sections have proper background */
