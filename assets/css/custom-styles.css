@@ -2378,3 +2378,260 @@ body {
     }
   }
 }
+
+/*--------------------------------------------------------------
+# Page Navigation Section
+--------------------------------------------------------------*/
+.page-navigation {
+  background: linear-gradient(135deg, rgba(24, 210, 110, 0.08) 0%, rgba(0, 0, 0, 0.95) 100%);
+  padding: 4rem 0;
+  position: relative;
+  overflow: hidden;
+  min-height: 40vh;
+}
+
+.page-navigation::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 20% 30%, rgba(24, 210, 110, 0.12) 0%, transparent 50%),
+    radial-gradient(circle at 80% 70%, rgba(24, 210, 110, 0.08) 0%, transparent 50%),
+    radial-gradient(circle at 50% 50%, rgba(24, 210, 110, 0.05) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.page-navigation .container {
+  position: relative;
+  z-index: 2;
+}
+
+.page-navigation-content {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.page-navigation h3 {
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, #ffffff 0%, #18d26e 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0 0 20px rgba(24, 210, 110, 0.3);
+  letter-spacing: normal;
+  text-transform: none;
+  line-height: 1.2;
+}
+
+.page-navigation p {
+  color: #cccccc;
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Navigation Button Styling */
+.nav-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.2rem 2.5rem;
+  background: linear-gradient(135deg, rgba(24, 210, 110, 0.15) 0%, rgba(24, 210, 110, 0.08) 50%, rgba(24, 210, 110, 0.15) 100%);
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 15px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  border: 2px solid rgba(24, 210, 110, 0.4);
+  box-shadow: 
+    0 8px 25px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  min-width: 200px;
+  backdrop-filter: blur(10px);
+}
+
+.nav-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(24, 210, 110, 0.3), transparent);
+  transition: left 0.6s ease;
+}
+
+.nav-btn:hover::before {
+  left: 100%;
+}
+
+.nav-btn:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(135deg, #18d26e 0%, #14a85f 50%, #18d26e 100%);
+  border-color: rgba(24, 210, 110, 0.8);
+  color: #ffffff;
+  box-shadow: 
+    0 12px 35px rgba(24, 210, 110, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.nav-btn i {
+  margin-left: 0.8rem;
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+.nav-btn:hover i {
+  transform: translateX(3px);
+}
+
+/* Previous Page Button */
+.nav-btn.prev i {
+  margin-left: 0;
+  margin-right: 0.8rem;
+  order: -1; /* Move icon to the left */
+}
+
+.nav-btn.prev:hover i {
+  transform: translateX(-3px);
+}
+
+/* Navigation Layout */
+.page-nav-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.page-nav-item {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.page-nav-item:first-child {
+  justify-content: flex-start;
+}
+
+.page-nav-item:last-child {
+  justify-content: flex-end;
+}
+
+/* Navigation Info */
+.nav-info {
+  flex: 1;
+  text-align: center;
+  padding: 0 2rem;
+}
+
+.nav-info h4 {
+  color: #ffffff;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.nav-info p {
+  color: #cccccc;
+  font-size: 0.95rem;
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Progress Indicator */
+.nav-progress {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.nav-progress-bar {
+  width: 100%;
+  max-width: 400px;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+  margin: 0 auto 0.5rem;
+  overflow: hidden;
+}
+
+.nav-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #18d26e, #14a85f);
+  border-radius: 2px;
+  transition: width 0.3s ease;
+}
+
+.nav-progress-text {
+  color: #cccccc;
+  font-size: 0.9rem;
+}
+
+/* Mobile Navigation Enhancement */
+@media (max-width: 768px) {
+  .page-navigation {
+    padding: 3rem 0;
+  }
+
+  .page-navigation h3 {
+    font-size: 1.5rem;
+  }
+
+  .page-navigation p {
+    font-size: 1rem;
+  }
+
+  .page-nav-row {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .nav-info {
+    order: -1;
+    padding: 0;
+  }
+
+  .nav-btn {
+    width: 100%;
+    max-width: 280px;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+  }
+
+  .page-nav-item {
+    justify-content: center !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .page-navigation {
+    padding: 2.5rem 0;
+  }
+
+  .page-navigation h3 {
+    font-size: 1.3rem;
+  }
+
+  .nav-btn {
+    padding: 0.9rem 1.5rem;
+    font-size: 0.95rem;
+  }
+
+  .nav-info h4 {
+    font-size: 1.1rem;
+  }
+
+  .nav-info p {
+    font-size: 0.9rem;
+  }
+}
