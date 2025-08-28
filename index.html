@@ -97,6 +97,16 @@
           <a href="https://stackoverflow.com/users/11312923/gon%c3%a7alo-garrido" target="_blank"><i class="bi bi-stack-overflow"></i></a>
         </div>
       </div>
+      
+      <!-- Scroll Down Indicator -->
+      <div class="scroll-down-indicator" data-aos="fade-up" data-aos-delay="500">
+        <div class="scroll-indicator-center">
+          <a href="#navigation-cards" class="scroll-down-btn">
+            <i class="bi bi-chevron-down"></i>
+            <span>Scroll para ver mais</span>
+          </a>
+        </div>
+      </div>
     </section><!-- /Hero Section -->
 
     <!-- Navigation Cards Section -->
@@ -261,6 +271,24 @@
           document.body.style.overflow = '';
         }
       });
+    });
+
+    // Smooth scroll for scroll-down indicator
+    document.addEventListener('DOMContentLoaded', function() {
+      const scrollDownBtn = document.querySelector('.scroll-down-btn');
+      if (scrollDownBtn) {
+        scrollDownBtn.addEventListener('click', function(e) {
+          e.preventDefault();
+          const targetId = this.getAttribute('href');
+          const targetSection = document.querySelector(targetId);
+          if (targetSection) {
+            targetSection.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start'
+            });
+          }
+        });
+      }
     });
   </script>
 
