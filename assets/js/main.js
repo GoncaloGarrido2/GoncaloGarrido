@@ -121,6 +121,34 @@
   }
 
   /**
+   * Calculate and render age from birthdate
+   */
+  function updateAge() {
+    const ageElement = document.querySelector('#current-age');
+    if (!ageElement) return;
+
+    const birthdateValue = ageElement.getAttribute('data-birthdate');
+    if (!birthdateValue) return;
+
+    const birthdate = new Date(`${birthdateValue}T00:00:00`);
+    if (Number.isNaN(birthdate.getTime())) return;
+
+    const today = new Date();
+    let age = today.getFullYear() - birthdate.getFullYear();
+    const hasHadBirthdayThisYear =
+      today.getMonth() > birthdate.getMonth() ||
+      (today.getMonth() === birthdate.getMonth() && today.getDate() >= birthdate.getDate());
+
+    if (!hasHadBirthdayThisYear) {
+      age -= 1;
+    }
+
+    ageElement.textContent = `${age} anos`;
+  }
+
+  updateAge();
+
+  /**
    * Initiate Pure Counter
    */
   new PureCounter();
