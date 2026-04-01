@@ -250,6 +250,46 @@
   justify-content: center;
 }
 
+/*--------------------------------------------------------------
+# Quick Exit Button
+--------------------------------------------------------------*/
+.quick-exit {
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #18d26e 0%, #14a85f 100%);
+  color: #ffffff;
+  z-index: 99998;
+  opacity: 1;
+  visibility: visible;
+  box-shadow: 0 8px 24px rgba(24, 210, 110, 0.28);
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.quick-exit i {
+  font-size: 22px;
+  line-height: 0;
+}
+
+.quick-exit:hover {
+  transform: translateY(-2px) scale(1.03);
+  color: #ffffff;
+  box-shadow: 0 10px 26px rgba(24, 210, 110, 0.4);
+}
+
+@media (max-width: 768px) {
+  .quick-exit {
+    left: 15px;
+    bottom: 15px;
+    width: 44px;
+    height: 44px;
+  }
+}
+
 /* Modern Filter Button Class */
 .portfolio-filter-btn {
   background: linear-gradient(145deg, rgba(26, 26, 26, 0.95) 0%, rgba(20, 20, 20, 0.98) 100%);
