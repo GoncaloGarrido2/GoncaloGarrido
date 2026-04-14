@@ -294,7 +294,7 @@
 .portfolio-filter-btn {
   background: linear-gradient(145deg, rgba(26, 26, 26, 0.95) 0%, rgba(20, 20, 20, 0.98) 100%);
   border: 3px solid rgba(24, 210, 110, 0.4);
-  padding: 8px 16px;
+  padding: 7px 14px;
   border-radius: 12px;
   color: #ffffff;
   cursor: pointer;
@@ -302,8 +302,8 @@
   position: relative;
   backdrop-filter: blur(12px);
   font-weight: 500;
-  font-size: 0.95rem;
-  min-width: 100px;
+  font-size: 0.9rem;
+  min-width: 92px;
   text-align: center;
   box-shadow: 
     0 6px 15px rgba(0, 0, 0, 0.3),
@@ -332,16 +332,16 @@
 .isotope-filters li {
   background: linear-gradient(145deg, rgba(26, 26, 26, 0.9) 0%, rgba(20, 20, 20, 0.95) 100%);
   border: 2px solid rgba(24, 210, 110, 0.3);
-  padding: 20px 40px;
-  border-radius: 15px;
+  padding: 14px 26px;
+  border-radius: 12px;
   color: #cccccc;
   cursor: pointer;
   transition: all 0.3s ease;
   position: relative;
   backdrop-filter: blur(10px);
   font-weight: 600;
-  font-size: 1.1rem;
-  min-width: 160px;
+  font-size: 1rem;
+  min-width: 132px;
   text-align: center;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   display: inline-block;
