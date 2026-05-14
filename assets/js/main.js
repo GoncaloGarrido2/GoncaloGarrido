@@ -108,10 +108,22 @@
    * Init typed.js
    */
   const selectTyped = document.querySelector('.typed');
-  if (selectTyped) {
+  let typedInstance = null;
+
+  function initTyped() {
+    if (!selectTyped || !window.Typed) return;
+
+    if (typedInstance && typeof typedInstance.destroy === 'function') {
+      typedInstance.destroy();
+    }
+
     let typed_strings = selectTyped.getAttribute('data-typed-items');
+    if (!typed_strings) return;
+
     typed_strings = typed_strings.split(',');
-    new Typed('.typed', {
+    selectTyped.textContent = '';
+
+    typedInstance = new Typed('.typed', {
       strings: typed_strings,
       loop: true,
       typeSpeed: 100,
@@ -119,6 +131,9 @@
       backDelay: 2000
     });
   }
+
+  window.portfolioRefreshTyped = initTyped;
+  initTyped();
 
   /**
    * Calculate and render age from birthdate
@@ -143,43 +158,54 @@
       age -= 1;
     }
 
-    ageElement.textContent = `${age} anos`;
+    const currentLanguage = document.documentElement.dataset.language || document.documentElement.lang || 'pt';
+    const isEnglish = currentLanguage.toLowerCase().startsWith('en');
+    const ageLabel = isEnglish ? (age === 1 ? 'year old' : 'years old') : 'anos';
+
+    ageElement.textContent = `${age} ${ageLabel}`;
   }
 
   updateAge();
+  window.addEventListener('portfolio:languageChanged', updateAge);
 
   /**
    * Initiate Pure Counter
    */
-  new PureCounter();
+  if (window.PureCounter) {
+    new PureCounter();
+  }
 
   /**
    * Animate the skills items on reveal
    */
   let skillsAnimation = document.querySelectorAll('.skills-animation');
-  skillsAnimation.forEach((item) => {
-    new Waypoint({
-      element: item,
-      offset: '80%',
-      handler: function(direction) {
-        let progress = item.querySelectorAll('.progress .progress-bar');
-        progress.forEach(el => {
-          el.style.width = el.getAttribute('aria-valuenow') + '%';
-        });
-      }
+  if (window.Waypoint) {
+    skillsAnimation.forEach((item) => {
+      new Waypoint({
+        element: item,
+        offset: '80%',
+        handler: function(direction) {
+          let progress = item.querySelectorAll('.progress .progress-bar');
+          progress.forEach(el => {
+            el.style.width = el.getAttribute('aria-valuenow') + '%';
+          });
+        }
+      });
     });
-  });
+  }
 
   /**
    * Init swiper sliders
    */
   function initSwiper() {
+    if (!window.Swiper) return;
+
     document.querySelectorAll(".init-swiper").forEach(function(swiperElement) {
       let config = JSON.parse(
         swiperElement.querySelector(".swiper-config").innerHTML.trim()
       );
 
-      if (swiperElement.classList.contains("swiper-tab")) {
+      if (swiperElement.classList.contains("swiper-tab") && typeof initSwiperWithCustomPagination === 'function') {
         initSwiperWithCustomPagination(swiperElement, config);
       } else {
         new Swiper(swiperElement, config);
@@ -192,14 +218,18 @@
   /**
    * Initiate glightbox
    */
-  const glightbox = GLightbox({
-    selector: '.glightbox'
-  });
+  if (window.GLightbox) {
+    GLightbox({
+      selector: '.glightbox'
+    });
+  }
 
   /**
    * Init isotope layout and filters
    */
   document.querySelectorAll('.isotope-layout').forEach(function(isotopeItem) {
+    if (!window.imagesLoaded || !window.Isotope) return;
+
     let layout = isotopeItem.getAttribute('data-layout') ?? 'masonry';
     let filter = isotopeItem.getAttribute('data-default-filter') ?? '*';
     let sort = isotopeItem.getAttribute('data-sort') ?? 'original-order';
