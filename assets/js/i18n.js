@@ -21,6 +21,90 @@
     "hero.cta.projects": { en: "View projects" },
     "hero.cta.cv": { en: "Download CV" },
     "hero.scroll": { en: "Scroll to see more" },
+    "hero.im": { en: "I'm" },
+    "cta.cv.pdf": { en: "Download CV (PDF)" },
+    "cta.view.project": { en: "View project" },
+    "cta.course.page": { en: "Course page" },
+    "cta.cert": { en: "View certificate" },
+    "cta.dev.page": { en: "Developer page" },
+    "cta.send.email": { en: "Send Email" },
+    "cta.explore": { en: "Explore" },
+    "cta.view.cv": { en: "View CV" },
+    "cta.view.projects": { en: "View Projects" },
+    "cta.contact": { en: "Contact" },
+
+    "meta.home.title": { en: "Gonçalo Garrido — Software developer" },
+    "meta.home.desc": {
+      en: "Software developer — backend, mobile and systems integration · Porto. Resume and portfolio of Gonçalo Garrido."
+    },
+    "meta.about.title": { en: "About — Gonçalo Garrido" },
+    "meta.about.desc": {
+      en: "About Gonçalo Garrido, software developer — backend, mobile and systems integration · Porto."
+    },
+    "meta.resume.title": { en: "Resume — Gonçalo Garrido" },
+    "meta.resume.desc": {
+      en: "Resume of Gonçalo Garrido, software developer — backend, mobile and systems integration · Porto."
+    },
+    "meta.portfolio.title": { en: "Portfolio — Gonçalo Garrido" },
+    "meta.portfolio.desc": {
+      en: "Gonçalo Garrido's projects: Papos, Focus Launcher, GlutenFree, Bookly, PocketCards and more — backend, mobile and systems integration."
+    },
+    "meta.contact.title": { en: "Contacts — Gonçalo Garrido" },
+    "meta.contact.desc": {
+      en: "Contact details for Gonçalo Garrido, software developer — backend, mobile and systems integration · Porto."
+    },
+
+    "page.about.title": { en: "About" },
+    "page.about.lead": {
+      en: "Software developer — backend, mobile and systems integration · Porto."
+    },
+    "page.resume.title": { en: "Resume" },
+    "page.resume.lead": {
+      en: "Education and professional experience as a software developer — backend, mobile and systems integration."
+    },
+    "page.portfolio.title": { en: "Portfolio" },
+    "page.portfolio.lead": {
+      en: "Featured projects with public proof (Play Store, demos and docs). Current WorkInNet/InspGest work is detailed on the resume."
+    },
+    "page.contact.title": { en: "Contacts" },
+    "page.contact.lead": {
+      en: "Get in touch for more information about my work and portfolio."
+    },
+
+    "about.role": { en: "Software developer" },
+    "about.tagline": {
+      en: "Backend, mobile and systems integration — with apps published on the Play Store and experience in business software."
+    },
+    "about.label.email": { en: "Email:" },
+    "about.label.city": { en: "City:" },
+    "about.label.education": { en: "Education:" },
+    "about.label.freelancer": { en: "Freelancer:" },
+    "about.value.education": { en: "Degree in IT" },
+    "about.value.available": { en: "Available" },
+    "about.bio": {
+      en: "Throughout my career I have mainly worked with C#, Kotlin and SQL on backends, Android apps and systems integration — including the InspGest ecosystem for vehicle inspection and freelance website projects."
+    },
+    "skills.title": { en: "Skills" },
+    "skills.stacks": { en: "Stacks" },
+    "skills.core": { en: "core" },
+    "skills.intro": { en: "Current focus in work and published projects:" },
+    "skills.csharp.body": {
+      en: "Backend, desktop and integrations (also VB.NET in the InspGest ecosystem)."
+    },
+    "skills.kotlin.body": {
+      en: "Mobile apps published on the Play Store and Android business clients."
+    },
+    "skills.sql.body": {
+      en: "Modelling, queries and scripts/migrations in inspection and business software."
+    },
+    "skills.node.body": {
+      en: "APIs and systems integration (e.g. ParadigmaXis); also PHP/Laravel on web projects."
+    },
+    "skills.also": { en: "Also used" },
+    "skills.also.intro": {
+      en: "Secondary tools and languages — occasional use, not the main focus:"
+    },
+
     "case.kicker": { en: "Case study" },
     "case.problem": { en: "Problem" },
     "case.role": { en: "Role" },
@@ -63,9 +147,10 @@
     "case.bookly.result": {
       en: "Complete academic product with public docs — a full-stack portfolio anchor."
     },
+
     "recog.title": { en: "Highlights" },
     "recog.intro": {
-      en: "Certifications, published apps and academic mobility — what carries weight for hiring."
+      en: "Certifications, published apps and academic mobility — what carries weight in recruiting."
     },
     "recog.csharp.title": { en: "C# certification with Microsoft" },
     "recog.csharp.body": {
@@ -80,257 +165,237 @@
       en: "Computer Science exchange (August–December 2023) at CCT/UDESC, Brazil."
     },
     "recog.archive": { en: "Earlier contests (2018–2020)" },
-    "portfolio.case": { en: "Case study" }
+    "recog.archive.topas": {
+      en: "Topas 2018 and 2019 — participation (Faculty of Sciences of Porto)"
+    },
+    "recog.archive.tecla": {
+      en: "Tecla 2019 and 2020 — participation (ESTGA)"
+    },
+    "recog.archive.esdas": {
+      en: "Technical course in IT Systems Management and Programming (ESDAS)"
+    },
+    "portfolio.case": { en: "Case study" },
+    "portfolio.filters": { en: "Filters:" },
+    "portfolio.filter.featured": { en: "Featured" },
+    "portfolio.filter.all": { en: "All" },
+    "portfolio.filter.mobile": { en: "Mobile apps" },
+    "portfolio.filter.web": { en: "Web projects" },
+    "portfolio.filter.other": { en: "Other" },
+
+    "proj.papos.body": {
+      en: "Daily word game in European Portuguese (Wordle-style), with five modes and offline play. I built the Android app and the web version."
+    },
+    "proj.papos.tech": { en: "Tech: Android / web · PT-PT dictionary." },
+    "proj.focus.body": {
+      en: "Minimalist Android launcher to reduce distractions: focus modes, automations and configurable screens. Published and maintained on the Play Store."
+    },
+    "proj.focus.tech": { en: "Tech: Android · productivity." },
+    "proj.gluten.body": {
+      en: "App for people with gluten intolerance: venue map, product info and a multilingual UI (17 languages). Maintained on the Play Store."
+    },
+    "proj.gluten.tech": { en: "Tech: Android · maps." },
+    "proj.bookly.body": {
+      en: "Web and Android management platform for stationery shops (school materials and books). IPMAIA degree project with public documentation."
+    },
+    "proj.bookly.tech": { en: "Tech: Laravel · Kotlin." },
+    "proj.pocket.body": {
+      en: "Digital manager for cards, coupons and tickets with QR codes and barcodes always at hand. Android app published on the Play Store."
+    },
+    "proj.pocket.tech": { en: "Tech: Jetpack Compose." },
+    "proj.sushi.body": {
+      en: "Android sushi-stacking game with Google Play Games. Published on the Play Store."
+    },
+    "proj.smile.body": {
+      en: "Stationery e-commerce (freelance). Site currently offline — copy on the Internet Archive."
+    },
+    "proj.smile.desktop.title": { en: "Smile — sales management" },
+    "proj.smile.desktop.body": {
+      en: "Desktop app linked to the Smile e-commerce (sales and customer management). Project report."
+    },
+    "proj.agro.body": {
+      en: "Online store for agricultural products (freelance). Site availability may vary."
+    },
+    "proj.diauto.body": {
+      en: "Website for viewing and searching vehicles. Archived."
+    },
+    "proj.autodealer.body": {
+      en: "Platform for viewing and comparing vehicles for sale."
+    },
+    "proj.ocr.body": {
+      en: "Academic experiment in text/object recognition with OCR."
+    },
+    "proj.gym.title": { en: "Gym website" },
+    "proj.gym.body": {
+      en: "Academic gym website project in JavaScript."
+    },
+    "proj.news.body": { en: "Academic news website." },
+    "proj.zoo.body": { en: "Academic informational zoo website." },
+    "proj.edit.body": { en: "Older photo and video editing project (blog)." },
+    "proj.pharmacy.title": { en: "Pharmacy Management" },
+    "proj.pharmacy.body": {
+      en: "Management of products, employees and prescriptions (academic project)."
+    },
+    "proj.report": { en: "Report" },
+
+    "resume.edu.title": { en: "Education" },
+    "resume.edu.lic.title": {
+      en: "Degree in Information Technologies, Web and Multimedia"
+    },
+    "resume.edu.lic.dates": { en: "2022 - September 2025" },
+    "resume.edu.lic.body": {
+      en: "Course focused on technological solutions and systems management, with an emphasis on backend development and system integration."
+    },
+    "resume.edu.udesc.title": {
+      en: "Bachelor's in Computer Science (exchange)"
+    },
+    "resume.edu.udesc.dates": { en: "August 2023 - December 2023" },
+    "resume.edu.udesc.body": {
+      en: "Participation in an exchange program focused on IT solutions and system integration."
+    },
+    "resume.edu.ctesp.title": {
+      en: "Higher Professional Technical Course in Information Systems Technologies and Programming"
+    },
+    "resume.edu.ctesp.body": {
+      en: "Specialized technical course in programming and systems management, with six-month practical internships."
+    },
+    "resume.edu.sec.title": {
+      en: "Technical Course in IT Systems Management and Programming"
+    },
+    "resume.edu.sec.body": {
+      en: "Development of desktop and web applications, databases and technical projects with practical integration through professional internships."
+    },
+    "resume.edu.sec.grade": { en: "Final grade: 17" },
+    "resume.exp.title": { en: "Professional Experience" },
+    "resume.exp.win.title": { en: "Software Developer" },
+    "resume.exp.win.dates": { en: "August 2025 – Present" },
+    "resume.exp.win.org": { en: "WorkInNet — InspGest (vehicle inspection)" },
+    "resume.exp.win.b1": {
+      en: "Development in the InspGest ecosystem for vehicle inspection centres in Portugal, with links to Brazil and Angola."
+    },
+    "resume.exp.win.b2": {
+      en: "Main stack: C#, VB.NET, Kotlin and SQL — desktop, mobile and services."
+    },
+    "resume.exp.win.b3": {
+      en: "Integration with workshop equipment and inspection-line operational flows."
+    },
+    "resume.exp.px.title": { en: "Full Stack Developer" },
+    "resume.exp.px.dates": { en: "March 2025 – August 2025" },
+    "resume.exp.px.b1": {
+      en: "Development of applications and APIs with Kotlin and Node.js."
+    },
+    "resume.exp.px.b2": { en: "Systems integration with WordPress." },
+    "resume.exp.win2.title": { en: "Desktop Application Developer" },
+    "resume.exp.win2.dates": { en: "March 2024 – June 2024" },
+    "resume.exp.win2.b1": {
+      en: "Desktop applications with Visual Basic and SQL, plus web components with Laravel."
+    },
+    "resume.exp.win2.b2": {
+      en: "Custom solutions for clients' operational efficiency."
+    },
+    "resume.exp.free.title": { en: "Website developer (freelance)" },
+    "resume.exp.free.dates": { en: "February 2023 – June 2024" },
+    "resume.exp.free.org": { en: "Self-employed" },
+    "resume.exp.free.b1": {
+      en: "Online stores and web apps for clients (e-commerce and institutional sites)."
+    },
+    "resume.exp.core.title": { en: "Web and Mobile Application Developer" },
+    "resume.exp.core.dates": { en: "September 2022 – August 2023" },
+    "resume.exp.core.b1": { en: "Applications in C#, PHP and Xamarin." },
+    "resume.exp.core.b2": {
+      en: "Integration with business management systems."
+    },
+    "resume.exp.edi.title": { en: "Developer Internship" },
+    "resume.exp.edi.dates": { en: "December 2020 – February 2021" },
+    "resume.exp.edi.b1": {
+      en: "Web and desktop applications in C# and SQL."
+    },
+    "resume.exp.edi.b2": {
+      en: "Use of modern frameworks such as MAUI and Xamarin."
+    },
+
+    "contact.location": { en: "Location" },
+    "contact.location.detail": {
+      en: "Available for remote and on-site work in the Porto area"
+    },
+    "contact.email.detail": { en: "Reply guaranteed within 24 hours" },
+    "contact.social": { en: "Social Networks" },
+    "contact.social.detail": { en: "Follow me to keep up with my projects" },
+    "contact.availability": { en: "Availability" },
+    "contact.availability.body": { en: "Available for new projects" },
+    "contact.availability.modes": { en: "Freelancer • Full-time • Part-time" },
+    "contact.availability.status": { en: "Currently available" },
+    "contact.cta.title": { en: "Shall we work together?" },
+    "contact.cta.body": {
+      en: "I am always interested in discussing new projects and interesting opportunities."
+    },
+
+    "navcard.section.title": { en: "Explore My Portfolio" },
+    "navcard.section.lead": {
+      en: "Browse the different sections to learn more about my work and experience"
+    },
+    "navcard.about.title": { en: "About Me" },
+    "navcard.about.body": {
+      en: "Learn about my story, skills and passion for software development."
+    },
+    "navcard.resume.body": {
+      en: "Explore my education, professional experience and technical skills."
+    },
+    "navcard.portfolio.body": {
+      en: "Discover the projects I have worked on, from web apps to mobile and desktop solutions."
+    },
+    "navcard.contact.body": {
+      en: "Get in touch with me to discuss opportunities or future collaborations."
+    },
+
+    "pagenav.about.title": { en: "Keep exploring" },
+    "pagenav.about.body": {
+      en: "Now that you know a little about me and my skills, discover my education and professional experience."
+    },
+    "pagenav.next": { en: "Next section" },
+    "pagenav.about.next": { en: "Explore my academic and professional path" },
+    "pagenav.about.progress": { en: "1 of 4 - About" },
+    "pagenav.resume.title": { en: "Continue the journey" },
+    "pagenav.resume.body": {
+      en: "After learning about my background and experience, explore the projects I developed and the solutions I created."
+    },
+    "pagenav.resume.next": { en: "Discover my projects and completed work" },
+    "pagenav.resume.progress": { en: "2 of 4 - Resume" },
+    "pagenav.portfolio.title": { en: "Almost there" },
+    "pagenav.portfolio.body": {
+      en: "After exploring my projects, it is time to get in touch."
+    },
+    "pagenav.portfolio.next": { en: "Get in touch with me for collaborations" },
+    "pagenav.portfolio.progress": { en: "3 of 4 - Portfolio" },
+    "pagenav.contact.title": { en: "End of the journey" },
+    "pagenav.contact.body": {
+      en: "Thank you for exploring my portfolio! I hope you found what you were looking for. Come back anytime."
+    },
+    "pagenav.restart": { en: "Start Again" },
+    "pagenav.restart.body": { en: "Return to the start to review everything again" },
+    "pagenav.contact.progress": { en: "4 of 4 - Contacts" },
+
+    "lang.switcher": { en: "Language selector" }
   };
 
+  /** Legacy string-match fallback (titles/meta still translated when not keyed). */
   const translations = {
-    "Início": "Home",
-    "Sobre": "About",
-    "Currículo": "Resume",
-    "Portfólio": "Portfolio",
-    "Contacto": "Contact",
-    "Contactos": "Contacts",
-    "Serviços": "Services",
-    "Detalhes": "Details",
-    "Página do curso": "Course page",
-    "Página do Projeto": "Project Page",
-    "Todos": "All",
-    "Projetos web": "Web projects",
-    "Destaques": "Featured",
-    "Aplicações móveis": "Mobile apps",
-    "Outros": "Other",
-    "Descarregar CV": "Download CV",
-    "Descarregar CV (PDF)": "Download CV (PDF)",
-    "Ver projetos": "View projects",
-    "Aplicações Móveis": "Mobile Apps",
-    "Jogo": "Game",
-    "Aplicações Desktop": "Desktop Apps",
-    "Outros Projetos": "Other Projects",
-    "Filtros:": "Filters:",
-    "Ver projeto": "View project",
-    "Ver Projetos": "View Projects",
-    "Ver CV": "View CV",
-    "Explorar": "Explore",
-    "Contactar": "Contact",
-    "Enviar Email": "Send Email",
-    "Scroll para ver mais": "Scroll to see more",
-    "Sou": "I'm",
-    "Explorar o Meu Portfólio": "Explore My Portfolio",
-    "Navegue pelas diferentes secções para conhecer melhor o meu trabalho e experiência": "Browse the different sections to learn more about my work and experience",
-    "Sobre Mim": "About Me",
-    "Conheça a minha história, competências e paixão pelo desenvolvimento de software.": "Learn about my story, skills and passion for software development.",
-    "Consulte a minha formação académica, experiência profissional e competências técnicas.": "Explore my education, professional experience and technical skills.",
-    "Descubra os projetos nos quais trabalhei, desde aplicações web a mobile e desktop.": "Discover the projects I have worked on, from web apps to mobile and desktop solutions.",
-    "Entre em contacto comigo para discutir oportunidades ou colaborações futuras.": "Get in touch with me to discuss opportunities or future collaborations.",
-
-    "Sobre - Gonçalo Garrido": "About - Gonçalo Garrido",
-    "Currículo - Gonçalo Garrido": "Resume - Gonçalo Garrido",
-    "Portfólio - Gonçalo Garrido": "Portfolio - Gonçalo Garrido",
-    "Contactos - Gonçalo Garrido": "Contact - Gonçalo Garrido",
-    "Gonçalo Garrido — Desenvolvedor de software": "Gonçalo Garrido — Software developer",
+    "Contactos - Gonçalo Garrido": "Contacts — Gonçalo Garrido",
+    "Contactos — Gonçalo Garrido": "Contacts — Gonçalo Garrido",
     "Sobre — Gonçalo Garrido": "About — Gonçalo Garrido",
     "Currículo — Gonçalo Garrido": "Resume — Gonçalo Garrido",
     "Portfólio — Gonçalo Garrido": "Portfolio — Gonçalo Garrido",
-    "Detalhes do Serviço - Gonçalo Garrido": "Service Details - Gonçalo Garrido",
+    "Gonçalo Garrido — Desenvolvedor de software": "Gonçalo Garrido — Software developer",
     "Desenvolvedor de software — backend, mobile e integração de sistemas · Porto. Currículo e portefólio de Gonçalo Garrido.": "Software developer — backend, mobile and systems integration · Porto. Resume and portfolio of Gonçalo Garrido.",
     "Sobre Gonçalo Garrido, desenvolvedor de software — backend, mobile e integração de sistemas · Porto.": "About Gonçalo Garrido, software developer — backend, mobile and systems integration · Porto.",
     "Currículo de Gonçalo Garrido, desenvolvedor de software — backend, mobile e integração de sistemas · Porto.": "Resume of Gonçalo Garrido, software developer — backend, mobile and systems integration · Porto.",
     "Contactos de Gonçalo Garrido, desenvolvedor de software — backend, mobile e integração de sistemas · Porto.": "Contact details for Gonçalo Garrido, software developer — backend, mobile and systems integration · Porto.",
-    "Gonçalo Garrido, Desenvolvedor, Portfólio, Currículo, Projetos": "Gonçalo Garrido, Developer, Portfolio, Resume, Projects",
-    "Sobre, Gonçalo Garrido, Desenvolvedor, Analista de Sistemas, Currículo, Portfólio": "About, Gonçalo Garrido, Developer, Systems Analyst, Resume, Portfolio",
-    "Currículo, Gonçalo Garrido, Desenvolvedor, Analista de Sistemas": "Resume, Gonçalo Garrido, Developer, Systems Analyst",
-    "Gonçalo Garrido, Desenvolvedor, Programador, Contactos": "Gonçalo Garrido, Developer, Programmer, Contacts",
-
-    "Desenvolvedor de software — backend, mobile e integração de sistemas · Porto.": "Software developer — backend, mobile and systems integration · Porto.",
-    "Desenvolvedor de software": "Software developer",
-    "Backend, mobile e integração de sistemas — com apps publicadas na Play Store e experiência em software de negócio.": "Backend, mobile and systems integration — with apps published on the Play Store and experience in business software.",
-    "Data de Nascimento:": "Date of Birth:",
-    "31 Janeiro 2002": "31 January 2002",
-    "Email:": "Email:",
-    "Cidade:": "City:",
-    "Idade:": "Age:",
-    "Formação:": "Education:",
-    "Licenciatura em TI": "Degree in IT",
-    "Freelancer:": "Freelancer:",
-    "Disponível": "Available",
-    "Ao longo do percurso, trabalhei sobretudo com C#, Kotlin e SQL em backends, apps Android e integração de sistemas — incluindo o ecossistema InspGest para inspeção automóvel e projetos freelance de websites.": "Throughout my career I have mainly worked with C#, Kotlin and SQL on backends, Android apps and systems integration — including the InspGest ecosystem for vehicle inspection and freelance website projects.",
-    "Habilitações": "Skills",
-    "As minhas": "My",
-    "Competências": "Skills",
-    "Linguagens de Programação": "Programming Languages",
-    "Ferramentas de Programação": "Programming Tools",
-    "Outras Ferramentas de Desenvolvimento": "Other Development Tools",
-    "Sistemas Operativos para os Quais Desenvolvi Software": "Operating Systems I Have Developed Software For",
-    "Reconhecimentos": "Recognitions",
-    "Algumas conquistas e certificações que marcaram a minha trajetória.": "Some achievements and certifications that marked my journey.",
-    "Gestão e Programação de Sistemas Informáticos": "IT Systems Management and Programming",
-    "Desenvolvimento de aplicações desktop e web, bases de dados e projetos técnicos com integração prática através de estágios profissionais.": "Development of desktop and web applications, databases and technical projects with practical integration through professional internships.",
-    "Participação no concurso de programação Topas edição de 2018, realizado pela Faculdade de Ciências do Porto.": "Participation in the 2018 Topas programming contest, held by the Faculty of Sciences of Porto.",
-    "Participação no concurso de programação Topas edição de 2019, realizado pela Faculdade de Ciências do Porto.": "Participation in the 2019 Topas programming contest, held by the Faculty of Sciences of Porto.",
-    "Participação no concurso de programação Tecla edição de 2019, realizado pela ESTGA.": "Participation in the 2019 Tecla programming contest, held by ESTGA.",
-    "Participação no concurso de programação Tecla edição de 2020, realizado pela ESTGA.": "Participation in the 2020 Tecla programming contest, held by ESTGA.",
-    "Certificação C# com Microsoft": "C# Certification with Microsoft",
-    "Este certificado atesta que": "This certificate confirms that",
-    "completou com sucesso a Certificação de Fundamentos de C# com a Microsoft a 17 de janeiro de 2024.": "successfully completed the Foundational C# Certification with Microsoft on January 17, 2024.",
-    "Verifique esta certificação em:": "Verify this certification at:",
-    "Continue a Explorar": "Keep Exploring",
-    "Agora que conhece um pouco sobre mim e as minhas competências, descubra a minha formação e experiência profissional.": "Now that you know a little about me and my skills, discover my education and professional experience.",
-    "Próxima secção": "Next section",
-    "Próxima Secção": "Next Section",
-    "Explore o meu percurso académico e profissional": "Explore my academic and professional path",
-    "1 de 4 - Sobre": "1 of 4 - About",
-
-    "Formação e experiência profissional como desenvolvedor de software — backend, mobile e integração de sistemas.": "Education and professional experience as a software developer — backend, mobile and systems integration.",
-    "Formação Académica": "Education",
-    "Licenciatura em Tecnologias de Informação, Web e Multimédia": "Degree in Information Technologies, Web and Multimedia",
-    "2022 - Setembro 2025": "2022 - September 2025",
-    "Curso centrado no desenvolvimento de soluções tecnológicas e gestão de sistemas, com foco em desenvolvimento backend e integração de sistemas.": "Course focused on technological solutions and systems management, with an emphasis on backend development and system integration.",
-    "Bacharelado em Ciência da Computação (mobilidade)": "Bachelor's in Computer Science (exchange)",
-    "Agosto 2023 - Dezembro 2023": "August 2023 - December 2023",
-    "Participação em programa de mobilidade, com foco no desenvolvimento de soluções em TI e integração de sistemas.": "Participation in an exchange program focused on IT solutions and system integration.",
-    "CTeSP em Tecnologias e Programação de Sistemas de Informação": "Higher Professional Technical Course in Information Systems Technologies and Programming",
-    "Curso técnico especializado em programação e gestão de sistemas, com estágios práticos de 6 meses.": "Specialized technical course in programming and systems management, with six-month practical internships.",
-    "Curso Técnico de Gestão e Programação de Sistemas Informáticos": "Technical Course in IT Systems Management and Programming",
-    "Média: 17": "Final grade: 17",
-    "Experiência Profissional": "Professional Experience",
-    "Desenvolvedor de Software": "Software Developer",
-    "Agosto 2025 - Presente": "August 2025 - Present",
-    "Desenvolvimento no ecossistema InspGest para centros de inspeção automóvel em Portugal, com ligações a Brasil e Angola.": "Development in the InspGest ecosystem for vehicle inspection centres in Portugal, with links to Brazil and Angola.",
-    "Stack principal: C#, VB.NET, Kotlin e SQL — desktop, mobile e serviços.": "Main stack: C#, VB.NET, Kotlin and SQL — desktop, mobile and services.",
-    "Integração com equipamentos de oficina e fluxos operacionais da linha de inspeção.": "Integration with workshop equipment and inspection-line operational flows.",
-    "WorkInNet — InspGest (inspeção automóvel)": "WorkInNet — InspGest (vehicle inspection)",
-    "Desenvolvedor Full Stack": "Full Stack Developer",
-    "Março 2025 - Agosto 2025": "March 2025 - August 2025",
-    "Desenvolvimento de aplicações e APIs com Kotlin e Node.js.": "Development of applications and APIs with Kotlin and Node.js.",
-    "Integração de sistemas com WordPress.": "Systems integration with WordPress.",
-    "Desenvolvedor de Aplicações Desktop": "Desktop Application Developer",
-    "Março 2024 - Junho 2024": "March 2024 - June 2024",
-    "Aplicações desktop com Visual Basic e SQL, e componentes web com Laravel.": "Desktop applications with Visual Basic and SQL, plus web components with Laravel.",
-    "Soluções à medida para eficiência operacional dos clientes.": "Custom solutions for clients' operational efficiency.",
-    "Desenvolvedor de websites (freelance)": "Website developer (freelance)",
-    "Fevereiro 2023 - Junho 2024": "February 2023 - June 2024",
-    "Conta própria": "Self-employed",
-    "Lojas virtuais e aplicações web para clientes (e-commerce e sites institucionais).": "Online stores and web apps for clients (e-commerce and institutional sites).",
-    "HTML, CSS, JavaScript, PHP e SQL.": "HTML, CSS, JavaScript, PHP and SQL.",
-    "Desenvolvedor de Aplicações Web e Mobile": "Web and Mobile Application Developer",
-    "Setembro 2022 - Agosto 2023": "September 2022 - August 2023",
-    "Aplicações em C#, PHP e Xamarin.": "Applications in C#, PHP and Xamarin.",
-    "Integração com sistemas de gestão empresarial.": "Integration with business management systems.",
-    "Estágio como Desenvolvedor": "Developer Internship",
-    "Dezembro 2020 - Fevereiro 2021": "December 2020 - February 2021",
-    "Aplicações web e desktop em C# e SQL.": "Web and desktop applications in C# and SQL.",
-    "Utilização de frameworks modernos como MAUI e Xamarin.": "Use of modern frameworks such as MAUI and Xamarin.",
-    "Continue a Jornada": "Continue the Journey",
-    "Após conhecer a minha formação e experiência, explore os projetos que desenvolvi e as soluções que criei.": "After learning about my background and experience, explore the projects I developed and the solutions I created.",
-    "Descubra os meus projetos e trabalhos desenvolvidos": "Discover my projects and completed work",
-    "2 de 4 - Currículo": "2 of 4 - Resume",
-
-    "Projetos em destaque com prova pública (Play Store, demos e documentação). O trabalho actual na WorkInNet/InspGest está detalhado no currículo.": "Featured projects with public proof (Play Store, demos and docs). Current WorkInNet/InspGest work is detailed on the resume.",
-    "App para pessoas com intolerância ao glúten: mapa de locais, informação de produtos e interface multilíngue (17 idiomas). Mantida na Play Store.": "App for people with gluten intolerance: venue map, product info and a multilingual UI (17 languages). Maintained on the Play Store.",
-    "Launcher Android minimalista para reduzir distrações: modos de foco, automações e ecrãs configuráveis. Publicado e mantido na Play Store.": "Minimalist Android launcher to reduce distractions: focus modes, automations and configurable screens. Published and maintained on the Play Store.",
-    "Gestor digital de cartões, cupões e bilhetes com QR e códigos de barras sempre à mão. App Android publicada na Play Store.": "Digital manager for cards, coupons and tickets with QR codes and barcodes always at hand. Android app published on the Play Store.",
-    "Aplicacao Android para gestao de inventario de medicamentos e calculo personalizado de dosagens.": "Android app for medicine inventory management and personalized dosage calculation.",
-    "Testa os teus reflexos num jogo simples e desafiante onde tens de alinhar pecas de sushi e construir a torre perfeita sem deixar cair nada.": "Test your reflexes in a simple, challenging game where you align sushi pieces and build the perfect tower without dropping anything.",
-    "Plataforma web e Android de gestão para papelarias (material e livros escolares). Projeto de licenciatura no IPMAIA com documentação pública.": "Web and Android management platform for stationery shops (school materials and books). IPMAIA degree project with public documentation.",
-    "Plataforma para compra de artigos de papelaria.": "Platform for buying stationery products.",
-    "Aplicação para reconhecer objetos usando OCR.": "App for recognizing objects using OCR.",
-    "Loja virtual focada na venda de produtos agrícolas.": "Online store focused on selling agricultural products.",
-    "App para gestão de vendas e clientes.": "App for sales and customer management.",
-    "Relatório": "Report",
-    "Projeto de site para um ginásio, desenvolvido em JavaScript.": "Gym website project developed in JavaScript.",
-    "Website para visualização e pesquisa de veículos.": "Website for viewing and searching vehicles.",
-    "Aplicação web para edição de fotos e vídeos.": "Web application for editing photos and videos.",
-    "Website sobre notícias com informações atualizadas.": "News website with up-to-date information.",
-    "Plataforma para visualizar e comparar veículos à venda.": "Platform for viewing and comparing vehicles for sale.",
-    "Website informativo para um zoológico.": "Informational website for a zoo.",
-    "Gestão de Farmácia": "Pharmacy Management",
-    "Gestão de produtos, funcionários e receitas (projeto académico).": "Management of products, employees and prescriptions (academic project).",
-    "Quase no final": "Almost there",
-    "Depois de explorar os meus projetos e competências, está na altura de entrarmos em contacto para futuros projetos.": "After exploring my projects and skills, it is time to get in touch for future projects.",
-    "Entre em contacto comigo para colaborações": "Get in touch with me for collaborations",
-    "3 de 4 - Portfólio": "3 of 4 - Portfolio",
-
-    "Entre em contacto comigo para mais informações sobre o meu trabalho e portfólio.": "Get in touch for more information about my work and portfolio.",
-    "Localização": "Location",
-    "Disponível para trabalho remoto e presencial na região do Porto": "Available for remote and on-site work in the Porto area",
-    "Resposta garantida em 24 horas": "Reply guaranteed within 24 hours",
-    "Redes Sociais": "Social Networks",
-    "Siga-me para acompanhar os meus projetos": "Follow me to keep up with my projects",
-    "Disponibilidade": "Availability",
-    "Disponível para novos projetos": "Available for new projects",
-    "Freelancer • Full-time • Part-time": "Freelancer • Full-time • Part-time",
-    "Atualmente disponível": "Currently available",
-    "Vamos Trabalhar Juntos?": "Shall We Work Together?",
-    "Tenho sempre interesse em discutir novos projetos e oportunidades interessantes.": "I am always interested in discussing new projects and interesting opportunities.",
-    "Fim da Jornada": "End of the Journey",
-    "Obrigado por explorar o meu portfólio! Espero que tenha encontrado o que procurava. Volte sempre que quiser.": "Thank you for exploring my portfolio! I hope you found what you were looking for. Come back anytime.",
-    "Recomeçar": "Start Again",
-    "Volte ao início para rever tudo novamente": "Return to the start to review everything again",
-    "4 de 4 - Contactos": "4 of 4 - Contacts",
-
-    "Detalhes do Serviço": "Service Details",
-    "Explore os serviços oferecidos por Gonçalo Garrido, desde desenvolvimento de websites até aplicações móveis personalizadas e soluções empresariais.": "Explore the services offered by Gonçalo Garrido, from website development to custom mobile apps and business solutions.",
-    "Desenvolvimento Web": "Web Development",
-    "Aplicações Móveis": "Mobile Apps",
-    "Design Gráfico": "Graphic Design",
-    "Gestão de Projetos": "Project Management",
-    "Consultoria em TI": "IT Consulting",
-    "Experiência Comprovada": "Proven Experience",
-    "Com vasta experiência em desenvolvimento de software, ofereço soluções completas e adaptadas às necessidades de cada cliente.": "With extensive experience in software development, I offer complete solutions tailored to each client's needs.",
-    "Soluções Inovadoras e Personalizadas": "Innovative and Custom Solutions",
-    "Combinando criatividade e tecnologia, desenvolvo projetos desde websites corporativos até aplicações móveis inovadoras e robustas.": "Combining creativity and technology, I develop projects from corporate websites to innovative and robust mobile applications.",
-    "Desenvolvimento Backend com integração de sistemas ERP.": "Backend development with ERP system integration.",
-    "Aplicações Mobile e Desktop adaptadas às suas necessidades.": "Mobile and desktop applications adapted to your needs.",
-    "Soluções escaláveis para crescimento sustentável.": "Scalable solutions for sustainable growth.",
-    "Seja um projeto simples ou uma solução empresarial complexa, estou comprometido em entregar resultados de alta qualidade que superem as expectativas.": "Whether it is a simple project or a complex business solution, I am committed to delivering high-quality results that exceed expectations.",
-
-    "Obrigado por visitar o meu portfólio! Se tiver alguma questão ou estiver interessado em colaborar, não hesite em entrar em contacto comigo.": "Thank you for visiting my portfolio! If you have any questions or are interested in collaborating, do not hesitate to contact me.",
-    "Se tiver alguma questão ou estiver interessado em colaborar, não hesite em entrar em contacto comigo.": "If you have any questions or are interested in collaborating, do not hesitate to contact me.",
-    "Obrigado por visitar. Caso precise de apoio nos seus projetos, não hesite em entrar em contacto!": "Thank you for visiting. If you need support with your projects, do not hesitate to get in touch!",
-    "Todos os Direitos Reservados": "All Rights Reserved",
-
-    "Jogo diário de palavras em português europeu (estilo Wordle), com cinco modos e funcionamento offline. Desenvolvi a app Android e a versão web.": "Daily word game in European Portuguese (Wordle-style), with five modes and offline play. I built the Android app and the web version.",
-    "Tech: Android / web · dicionário PT-PT.": "Tech: Android / web · PT-PT dictionary.",
-    "Tech: Android · produtividade.": "Tech: Android · productivity.",
-    "Tech: Android · mapas.": "Tech: Android · maps.",
-    "Tech: Laravel · Kotlin.": "Tech: Laravel · Kotlin.",
-    "Tech: Jetpack Compose.": "Tech: Jetpack Compose.",
-    "Jogo Android de empilhar sushi com Google Play Games. Publicado na Play Store.": "Android sushi-stacking game with Google Play Games. Published on the Play Store.",
-    "E-commerce de papelaria (freelance). Site actualmente offline — cópia no Internet Archive.": "Stationery e-commerce (freelance). Site currently offline — copy on the Internet Archive.",
-    "Aplicação desktop associada ao e-commerce Smile (gestão de vendas e clientes). Relatório do projeto.": "Desktop app linked to the Smile e-commerce (sales and customer management). Project report.",
-    "Smile — gestão de vendas": "Smile — sales management",
-    "Loja virtual de produtos agrícolas (freelance). Disponibilidade do site pode variar.": "Online store for agricultural products (freelance). Site availability may vary.",
-    "Website para visualização e pesquisa de veículos. Arquivado.": "Website for viewing and searching vehicles. Archived.",
-    "Experiência académica de reconhecimento de texto/objectos com OCR.": "Academic experiment in text/object recognition with OCR.",
-    "Projeto académico de site para um ginásio, em JavaScript.": "Academic gym website project in JavaScript.",
-    "Site Ginásio": "Gym website",
-    "Website académico de notícias.": "Academic news website.",
-    "Website informativo académico para um zoológico.": "Academic informational zoo website.",
-    "Projeto antigo de edição de fotos e vídeos (blog).": "Older photo and video editing project (blog).",
-    "Depois de explorar os meus projetos, está na altura de entrarmos em contacto.": "After exploring my projects, it is time to get in touch.",
-
-
-    "Stacks": "Stacks",
-    "núcleo": "core",
-    "Foco actual no trabalho e nos projetos publicados:": "Current focus in work and published projects:",
-    "Foco atual no trabalho e nos projetos publicados:": "Current focus in work and published projects:",
-    "C# / .NET": "C# / .NET",
-    "Backend, desktop e integrações (também VB.NET no ecossistema InspGest).": "Backend, desktop and integrations (also VB.NET in the InspGest ecosystem).",
-    "Kotlin / Android": "Kotlin / Android",
-    "Apps móveis publicadas na Play Store e clientes Android de negócio.": "Mobile apps published on the Play Store and Android business clients.",
-    "SQL Server": "SQL Server",
-    "Modelação, consultas e scripts/migrações em software de inspeção e negócio.": "Modelling, queries and scripts/migrations in inspection and business software.",
-    "Node.js": "Node.js",
-    "APIs e integração de sistemas (ex.: ParadigmaXis); também PHP/Laravel em projetos web.": "APIs and systems integration (e.g. ParadigmaXis); also PHP/Laravel on web projects.",
-    "Também usei": "Also used",
-    "Ferramentas e linguagens secundárias — contacto pontual, não o foco principal:": "Secondary tools and languages — occasional use, not the main focus:",
-    "Vamos trabalhar juntos?": "Shall we work together?",
-    "Fim da jornada": "End of the journey",
-    "Continue a explorar": "Keep exploring",
-    "Continue a jornada": "Continue the journey",
-    "Seletor de idioma": "Language selector",
-
-    "Todos os direitos reservados": "All rights reserved"
+    "Projetos em destaque com prova pública (Play Store, demos e documentação). O trabalho atual na WorkInNet/InspGest está detalhado no currículo.": "Featured projects with public proof (Play Store, demos and docs). Current WorkInNet/InspGest work is detailed on the resume.",
+    "Gonçalo Garrido, Desenvolvedor de software, Backend, Mobile, Integração de sistemas, Porto, Portfólio, Currículo": "Gonçalo Garrido, Software developer, Backend, Mobile, Systems integration, Porto, Portfolio, Resume",
+    "Sobre, Gonçalo Garrido, Desenvolvedor de software, Backend, Mobile, Porto, Currículo, Portfólio": "About, Gonçalo Garrido, Software developer, Backend, Mobile, Porto, Resume, Portfolio",
+    "Currículo, Gonçalo Garrido, Desenvolvedor de software, Backend, Mobile, WorkInNet, Porto": "Resume, Gonçalo Garrido, Software developer, Backend, Mobile, WorkInNet, Porto",
+    "Gonçalo Garrido, Desenvolvedor de software, Contactos, Porto": "Gonçalo Garrido, Software developer, Contacts, Porto",
+    "Gonçalo Garrido, Desenvolvedor de software, Portfólio, Apps, Play Store, Porto": "Gonçalo Garrido, Software developer, Portfolio, Apps, Play Store, Porto",
+    "Seletor de idioma": "Language selector"
   };
 
   const typedItemTranslations = {
@@ -462,6 +527,8 @@
   }
 
   function translateAttribute(element, attribute, language) {
+    if (element.hasAttribute("data-i18n-attr") || element.hasAttribute("data-i18n")) return;
+
     const original = getOriginalAttribute(element, attribute);
     if (!original) return;
 
@@ -496,12 +563,14 @@
   }
 
   function translateDocumentMetadata(language) {
-    if (!translateDocumentMetadata.originalTitle) {
-      translateDocumentMetadata.originalTitle = document.title;
+    const titleEl = document.querySelector("title");
+    if (titleEl && !titleEl.hasAttribute("data-i18n")) {
+      if (!translateDocumentMetadata.originalTitle) {
+        translateDocumentMetadata.originalTitle = document.title;
+      }
+      const originalTitle = translateDocumentMetadata.originalTitle;
+      document.title = language === "pt" ? originalTitle : (translations[originalTitle] || originalTitle);
     }
-
-    const originalTitle = translateDocumentMetadata.originalTitle;
-    document.title = language === "pt" ? originalTitle : (translations[originalTitle] || originalTitle);
 
     document.querySelectorAll("meta[name='description'], meta[name='keywords']").forEach((element) => {
       translateAttribute(element, "content", language);
@@ -544,6 +613,7 @@
     switcher.className = `language-switcher${extraClass ? ` ${extraClass}` : ""}`;
     switcher.setAttribute("role", "group");
     switcher.setAttribute("aria-label", "Seletor de idioma");
+    switcher.setAttribute("data-i18n-attr", "aria-label:lang.switcher");
 
     ["pt", "en"].forEach((language) => {
       const button = document.createElement("button");
