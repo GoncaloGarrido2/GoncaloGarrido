@@ -208,7 +208,7 @@
   background: linear-gradient(135deg, rgba(24, 210, 110, 0.1) 0%, rgba(0, 0, 0, 0.9) 100%);
   position: relative;
   overflow: hidden;
-  min-height: 100vh;
+  min-height: 0;
 }
 
 .portfolio.section::before {
@@ -890,7 +890,7 @@
   background: linear-gradient(135deg, rgba(24, 210, 110, 0.08) 0%, rgba(0, 0, 0, 0.95) 100%);
   position: relative;
   overflow: hidden;
-  min-height: 100vh;
+  min-height: 0;
   padding: 80px 0;
 }
 
@@ -1420,7 +1420,7 @@
   background: linear-gradient(135deg, rgba(24, 210, 110, 0.08) 0%, rgba(0, 0, 0, 0.95) 100%);
   position: relative;
   overflow: hidden;
-  min-height: 100vh;
+  min-height: 0;
   padding: 80px 0;
 }
 
@@ -1964,7 +1964,7 @@
   background: linear-gradient(135deg, rgba(24, 210, 110, 0.1) 0%, rgba(0, 0, 0, 0.9) 100%);
   position: relative;
   overflow: hidden;
-  min-height: 100vh;
+  min-height: 0;
 }
 
 .section::before {
