@@ -451,3 +451,65 @@ a,
   min-height: 180px;
   background: #0f1624 !important;
 }
+
+
+/* Absolute last-resort ink for Destaques / all content sections */
+#recognitions,
+#recognitions.recognitions.section,
+section#recognitions,
+section.recognitions.section,
+.recognitions.section,
+.recognitions {
+  background: #0b1220 !important;
+  background-color: #0b1220 !important;
+  background-image: none !important;
+  color: #e8eef5 !important;
+}
+#recognitions .recog-item,
+.recognition-primary .recog-item {
+  background: #151d2e !important;
+  background-image: none !important;
+  color: #e8eef5 !important;
+  border: 1px solid rgba(31, 185, 138, 0.3) !important;
+  border-radius: 2px;
+  padding: 1rem !important;
+}
+#recognitions .section-title h2,
+#recognitions .recog-item h3 {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+  background: none !important;
+}
+#recognitions .section-title p,
+#recognitions .recog-item p {
+  color: #c5d0dc !important;
+  -webkit-text-fill-color: #c5d0dc !important;
+}
+
+/* Soften white certificate floods inside Destaques */
+#recognitions .recog-item {
+  position: relative;
+  overflow: hidden;
+}
+#recognitions .recog-item img {
+  filter: brightness(0.82) saturate(0.92);
+  border-radius: 2px;
+}
+#recognitions .recog-item::after {
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 40%, rgba(11, 18, 32, 0.55) 100%);
+  border-radius: 2px;
+  z-index: 2;
+}
+#recognitions .recog-item h3,
+#recognitions .recog-item p,
+#recognitions .recog-item a {
+  position: relative;
+  z-index: 3;
+}
+
+/* page-title heading clearance bump */
+.page-title .heading { padding-top: calc(var(--header-offset, 78px) + 56px) !important; }
