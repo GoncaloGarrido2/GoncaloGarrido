@@ -1,0 +1,515 @@
+/* P4 UI fixes — load after custom-styles + brand */
+.portfolio.section,
+.about.section,
+.skills.section,
+.resume.section,
+.contact.section,
+.recognitions.section {
+  overflow: visible !important;
+}
+
+.header {
+  overflow: visible !important;
+}
+
+/* Keep filter label readable */
+.portfolio .row h5,
+.portfolio .row h5 b {
+  color: var(--brand-fog, #e8eef5);
+}
+
+/* Avoid gradient text vanishing on dark */
+.about .content h2,
+.resume .resume-title,
+.section-title h2,
+.contact-card h3 {
+  -webkit-text-fill-color: unset;
+  background: none;
+  color: #fff;
+}
+
+.portfolio-description h5 {
+  -webkit-text-fill-color: unset;
+  background: none;
+}
+
+/* Sticky filters clear header */
+.isotope-filters.text-center {
+  justify-content: center;
+}
+
+/* Prevent isotope items painting under header while sticky bar active */
+.portfolio .isotope-container {
+  padding-top: 0.5rem;
+}
+
+/* Case current link */
+.case-link[aria-current="page"] {
+  background: var(--brand-accent, #1fb98a);
+  color: var(--brand-ink, #0b1220);
+  border-color: var(--brand-accent, #1fb98a);
+}
+
+/* Index nav cards continuity */
+.navigation-cards.section {
+  background:
+    radial-gradient(ellipse at 50% 0%, rgba(31, 185, 138, 0.14), transparent 50%),
+    #0b1220;
+}
+
+@media (max-width: 768px) {
+  .portfolio-card {
+    margin-bottom: 1rem;
+  }
+}
+
+/* Page title: solid readable text (no invisible clipped gradients) */
+.page-title h1 {
+  background: none !important;
+  -webkit-background-clip: unset !important;
+  background-clip: unset !important;
+  -webkit-text-fill-color: #ffffff !important;
+  color: #ffffff !important;
+  text-shadow: none;
+}
+
+.page-title p {
+  color: color-mix(in srgb, #e8eef5, transparent 12%) !important;
+}
+
+/* AOS safety: never leave content at opacity 0 if AOS stalls */
+[data-aos] {
+  pointer-events: auto;
+}
+
+.js-aos-ready [data-aos]:not(.aos-animate) {
+  /* keep animation when ready */
+}
+
+/* Before AOS boots (or if disabled), show content */
+html:not(.aos-ready) [data-aos] {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+/* About portrait visible */
+.about .img-fluid {
+  opacity: 1;
+  border: 1px solid color-mix(in srgb, #1fb98a, transparent 70%);
+  border-radius: 2px;
+}
+
+/* Ensure portfolio grid not clipped */
+.portfolio .isotope-container,
+.portfolio .portfolio-item {
+  opacity: 1;
+}
+
+.portfolio .portfolio-item[data-aos]:not(.aos-animate) {
+  opacity: 1;
+}
+
+/* Tighten section top after page-title (custom-styles had 80px) */
+.about.section,
+.skills.section,
+.recognitions.section,
+.contact.section,
+.portfolio.section,
+.resume.section,
+.case-study.section {
+  padding-top: 2.25rem !important;
+}
+
+@media (max-width: 768px) {
+  .about.section,
+  .skills.section,
+  .recognitions.section,
+  .contact.section,
+  .portfolio.section,
+  .resume.section,
+  .case-study.section {
+    padding-top: 1.5rem !important;
+  }
+}
+
+/* Mobile language switcher: dock under header, not over cards */
+@media (max-width: 1199px) {
+  .mobile-language-switcher {
+    top: 14px;
+    bottom: auto !important;
+    right: 58px;
+    z-index: 1040;
+  }
+}
+
+/* Reduce empty gap above isotope grid on mobile */
+@media (max-width: 768px) {
+  .isotope-filters,
+  .portfolio-filters {
+    margin-bottom: 1.25rem !important;
+    position: relative;
+    top: auto;
+  }
+
+  .portfolio .isotope-container {
+    min-height: 0 !important;
+  }
+
+  .portfolio .row.gy-4 {
+    --bs-gutter-y: 1.25rem;
+  }
+
+  body:not(.index-page) .header .logo h1 {
+    font-size: 1.25rem;
+  }
+}
+
+/* Full-bleed breadcrumb continuity */
+.page-title nav {
+  border-bottom: 1px solid color-mix(in srgb, #1fb98a, transparent 78%);
+}
+
+/* Mobile: compress page-title so cards enter viewport sooner */
+@media (max-width: 768px) {
+  .page-title .heading {
+    padding: calc(var(--header-offset, 64px) + 20px) 0 20px !important;
+  }
+
+  .page-title h1 {
+    font-size: 2rem !important;
+    margin-bottom: 0.65rem !important;
+  }
+
+  .page-title p {
+    font-size: 0.95rem !important;
+    line-height: 1.45 !important;
+  }
+
+  .isotope-filters,
+  .portfolio-filters {
+    gap: 8px !important;
+    padding: 0.55rem 0.65rem !important;
+  }
+
+  .isotope-filters li,
+  .portfolio-filters li {
+    padding: 0.4rem 0.7rem !important;
+    font-size: 0.85rem !important;
+  }
+}
+
+/* ========== NUCLEAR: no white/pale panels anywhere ========== */
+:root,
+[data-bs-theme=light] {
+  --bs-body-bg: #0b1220 !important;
+  --bs-body-color: #e8eef5 !important;
+  --bs-border-color: color-mix(in srgb, #1fb98a, transparent 70%) !important;
+  --bs-secondary-bg: #151d2e !important;
+  --bs-tertiary-bg: #1a2438 !important;
+  --bs-card-bg: #151d2e !important;
+  --bs-card-color: #e8eef5 !important;
+  --background-color: #0b1220 !important;
+  --surface-color: #151d2e !important;
+  --default-color: #e8eef5 !important;
+  --heading-color: #ffffff !important;
+}
+
+html,
+body {
+  background: #0b1220 !important;
+  background-color: #0b1220 !important;
+  color: #e8eef5 !important;
+}
+
+main,
+.main,
+section,
+.section,
+.section.light-background,
+.light-background,
+.dark-background,
+.page-title,
+.page-title .heading,
+.page-title nav,
+.page-title .breadcrumbs,
+.about.section,
+.skills.section,
+.resume.section,
+.portfolio.section,
+.contact.section,
+.recognitions,
+.recognitions.section,
+.case-study,
+.case-study.section,
+.page-navigation,
+.navigation-cards,
+.navigation-cards.section,
+.footer,
+.footer.dark-background {
+  background-color: #0b1220 !important;
+  background-image:
+    radial-gradient(ellipse at 12% 0%, rgba(31, 185, 138, 0.1), transparent 42%),
+    radial-gradient(ellipse at 88% 100%, rgba(20, 143, 106, 0.08), transparent 48%) !important;
+  color: #e8eef5 !important;
+}
+
+/* Hero keeps its photo; only reinforce overlay feel via existing ::after */
+
+.card,
+.card-body,
+.list-group-item,
+.modal-content,
+.dropdown-menu,
+.accordion-item,
+.accordion-button,
+.popover,
+.toast,
+.nav-card,
+.contact-card,
+.portfolio-card,
+.portfolio-content,
+.portfolio-description,
+.portfolio-info,
+.core-stack,
+.resume-item,
+.recog-item,
+.cta-section,
+.skills-also,
+.recognition-archive,
+details,
+summary {
+  background-color: #151d2e !important;
+  background-image: none !important;
+  color: #e8eef5 !important;
+  border-color: color-mix(in srgb, #1fb98a, transparent 70%) !important;
+}
+
+.portfolio-content {
+  background: #0f1624 !important;
+}
+
+.portfolio-content img {
+  background: #0f1624 !important;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #1a2438 !important;
+  color: #e8eef5 !important;
+}
+
+/* Kill Bootstrap white utilities if used */
+.bg-white,
+.bg-light,
+.bg-body,
+.bg-body-tertiary,
+.bg-body-secondary,
+.text-bg-light {
+  background-color: #151d2e !important;
+  color: #e8eef5 !important;
+}
+
+/* AOS: never hide content (was causing "empty" dark panels) */
+[data-aos],
+[data-aos].aos-animate,
+[data-aos^=fade],
+[data-aos^=fade].aos-animate,
+html.aos-ready [data-aos],
+html:not(.aos-ready) [data-aos] {
+  opacity: 1 !important;
+  transform: none !important;
+  pointer-events: auto !important;
+}
+
+/* Readable headings everywhere */
+h1, h2, h3, h4, h5, h6,
+.section-title h2,
+.section-title span,
+.section-title .description-title,
+.page-title h1,
+.page-title p,
+.about .content h2,
+.about .content p,
+.about .content li,
+.about .content strong,
+.resume .resume-title,
+.resume .resume-item h4,
+.resume .resume-item h5,
+.resume .resume-item p,
+.resume .resume-item li,
+.contact-card h3,
+.contact-card p,
+.contact-card span,
+.skills-intro,
+.also-used-list,
+.recog-item p,
+.nav-card h4,
+.nav-card p,
+.page-navigation-content h3,
+.page-navigation-content p,
+.nav-info h4,
+.nav-info p {
+  color: #e8eef5 !important;
+  -webkit-text-fill-color: #e8eef5 !important;
+  background: none !important;
+  background-image: none !important;
+}
+
+.page-title h1,
+.about .content h2,
+.resume .resume-title,
+.section-title h2,
+.nav-card h4,
+.recog-item h3,
+.contact-card h3,
+.portfolio-description h5 {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+}
+
+a,
+.page-title nav ol li a,
+.styled-link,
+.contact-link {
+  color: #1fb98a;
+}
+
+/* Remove empty 100vh traps */
+.about.section,
+.resume.section,
+.portfolio.section,
+.contact.section {
+  min-height: 0 !important;
+}
+
+/* Isotope filters bar stays dark */
+.isotope-filters,
+.portfolio-filters {
+  background: #151d2e !important;
+  background-image: none !important;
+}
+
+/* Nav / logo must stay light on dark header */
+.header,
+.header .navmenu a,
+.navmenu a,
+.header .sitename,
+.logo .sitename {
+  color: #e8eef5 !important;
+  -webkit-text-fill-color: #e8eef5 !important;
+  background-image: none !important;
+}
+
+.logo .sitename,
+.header .logo h1 {
+  color: #1fb98a !important;
+  -webkit-text-fill-color: #1fb98a !important;
+}
+
+.navmenu a:hover,
+.navmenu .active,
+.navmenu a.active {
+  color: #1fb98a !important;
+}
+
+.hero h2 {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+}
+
+.hero .hero-pitch,
+.hero .hero-typed-line,
+.scroll-down-btn,
+.scroll-down-btn span {
+  color: #e8eef5 !important;
+  -webkit-text-fill-color: #e8eef5 !important;
+}
+
+/* Don't paint solid dark over hero photo */
+.hero.section,
+.hero {
+  background-color: transparent !important;
+  background-image: none !important;
+}
+
+/* Certificate / promo images: letterbox on ink so white docs don't flood the page */
+.recog-item img,
+.recognition-primary img,
+.recognitions img {
+  display: block;
+  width: 100%;
+  max-height: 220px;
+  object-fit: contain;
+  background: #0f1624 !important;
+  border: 1px solid color-mix(in srgb, #1fb98a, transparent 75%);
+  border-radius: 2px;
+  padding: 0.5rem;
+}
+
+.portfolio-content img {
+  object-fit: cover;
+  width: 100%;
+  min-height: 180px;
+  background: #0f1624 !important;
+}
+
+
+/* Absolute last-resort ink for Destaques / all content sections */
+#recognitions,
+#recognitions.recognitions.section,
+section#recognitions,
+section.recognitions.section,
+.recognitions.section,
+.recognitions {
+  background: #0b1220 !important;
+  background-color: #0b1220 !important;
+  background-image: none !important;
+  color: #e8eef5 !important;
+}
+#recognitions .recog-item,
+.recognition-primary .recog-item {
+  background: #151d2e !important;
+  background-image: none !important;
+  color: #e8eef5 !important;
+  border: 1px solid rgba(31, 185, 138, 0.3) !important;
+  border-radius: 2px;
+  padding: 1rem !important;
+}
+#recognitions .section-title h2,
+#recognitions .recog-item h3 {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+  background: none !important;
+}
+#recognitions .section-title p,
+#recognitions .recog-item p {
+  color: #c5d0dc !important;
+  -webkit-text-fill-color: #c5d0dc !important;
+}
+
+/* Soften white certificate floods inside Destaques */
+#recognitions .recog-item {
+  position: relative;
+  overflow: hidden;
+}
+#recognitions .recog-item img {
+  filter: brightness(0.82) saturate(0.92);
+  border-radius: 2px;
+}
+#recognitions .recog-item::after {
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 40%, rgba(11, 18, 32, 0.55) 100%);
+  border-radius: 2px;
+  z-index: 2;
+}
+#recognitions .recog-item h3,
+#recognitions .recog-item p,
+#recognitions .recog-item a {
+  position: relative;
+  z-index: 3;
+}
+
+/* page-title heading clearance bump */
+.page-title .heading { padding-top: calc(var(--header-offset, 78px) + 56px) !important; }

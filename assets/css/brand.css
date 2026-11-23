@@ -1,15 +1,17 @@
 /*--------------------------------------------------------------
-# Brand layer (P2) — less BootstrapMade default, clearer hierarchy
-# Direction: ink + sea-glass; Sora + IBM Plex Sans
+# Brand layer — ink + sea-glass; Sora + IBM Plex Sans
+# Unified atmospheric dark theme (no dead white panels)
 --------------------------------------------------------------*/
 :root {
   --brand-ink: #0b1220;
   --brand-ink-soft: #151d2e;
+  --brand-ink-mid: #1a2438;
   --brand-fog: #e8eef5;
   --brand-muted: #9aa8b8;
   --brand-accent: #1fb98a;
   --brand-accent-deep: #148f6a;
   --brand-glow: rgba(31, 185, 138, 0.35);
+  --brand-line: color-mix(in srgb, var(--brand-accent), transparent 72%);
 
   --default-font: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
   --heading-font: "Sora", "IBM Plex Sans", system-ui, sans-serif;
@@ -24,11 +26,19 @@
 
   --nav-color: var(--brand-fog);
   --nav-hover-color: var(--brand-accent);
+
+  --header-offset: 78px;
+}
+
+html {
+  scroll-padding-top: calc(var(--header-offset) + 12px);
 }
 
 body {
   font-family: var(--default-font);
   letter-spacing: 0.01em;
+  background-color: var(--brand-ink);
+  color: var(--brand-fog);
 }
 
 h1, h2, h3, h4, h5, h6,
@@ -39,7 +49,224 @@ h1, h2, h3, h4, h5, h6,
   letter-spacing: -0.02em;
 }
 
-/* Hero: brand-first composition */
+/*--------------------------------------------------------------
+# Fixed header clearance + stacking
+--------------------------------------------------------------*/
+.header.fixed-top,
+#header.header {
+  z-index: 1030;
+  overflow: visible;
+}
+
+.main {
+  position: relative;
+  z-index: 1;
+  isolation: isolate;
+}
+
+.page-title {
+  position: relative;
+  z-index: 2;
+}
+
+.page-title .heading {
+  background:
+    linear-gradient(160deg, rgba(11, 18, 32, 0.98), rgba(21, 29, 46, 0.94)),
+    radial-gradient(circle at 85% 20%, rgba(31, 185, 138, 0.22), transparent 45%);
+  padding: calc(var(--header-offset) + 48px) 0 40px;
+}
+
+@media (max-width: 576px) {
+  .page-title .heading {
+    padding: calc(var(--header-offset) + 28px) 0 28px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Unified section surfaces (dark atmosphere, not white slabs)
+--------------------------------------------------------------*/
+.about.section,
+.skills.section,
+.resume.section,
+.portfolio.section,
+.contact.section,
+.recognitions.section,
+.case-study.section,
+.page-navigation {
+  --default-color: var(--brand-fog);
+  --heading-color: #ffffff;
+  color: var(--default-color);
+  background:
+    radial-gradient(ellipse at 12% 0%, rgba(31, 185, 138, 0.12), transparent 42%),
+    radial-gradient(ellipse at 88% 100%, rgba(20, 143, 106, 0.1), transparent 48%),
+    linear-gradient(180deg, var(--brand-ink) 0%, var(--brand-ink-soft) 55%, var(--brand-ink) 100%);
+}
+
+.about.section,
+.skills.section,
+.recognitions.section,
+.contact.section,
+.portfolio.section,
+.resume.section,
+.case-study.section {
+  margin-top: 0;
+  padding-top: 2.25rem;
+  padding-bottom: 3.5rem;
+  overflow: visible;
+}
+
+.portfolio.section {
+  min-height: auto;
+  overflow: visible;
+}
+
+.portfolio.section::before,
+.about.section::before,
+.skills.section::before {
+  opacity: 0.55;
+}
+
+/* Readable body copy on dark surfaces */
+.about .content h2,
+.about .content p,
+.about .content li,
+.about .content strong,
+.resume .resume-title,
+.resume .resume-item h4,
+.resume .resume-item h5,
+.resume .resume-item p,
+.resume .resume-item li,
+.contact-card,
+.contact-card h3,
+.contact-card p,
+.contact-card span,
+.contact-detail,
+.recog-item p,
+.recog-item h3,
+.case-body p,
+.skills-intro,
+.also-used-list,
+.section-title h2,
+.section-title p,
+.page-navigation-content h3,
+.page-navigation-content p,
+.nav-info h4,
+.nav-info p {
+  color: var(--brand-fog);
+}
+
+.about .content p.fst-italic,
+.skills.section .core-stack p,
+.recognition-archive .archive-list,
+.recognition-archive summary {
+  color: var(--brand-muted);
+}
+
+.about .content h2,
+.resume .resume-item h4,
+.recog-item h3,
+.contact-card h3,
+.section-title .description-title {
+  color: #fff;
+}
+
+.skills.section .core-stack {
+  background: color-mix(in srgb, var(--brand-ink-mid), transparent 20%);
+  border: 1px solid var(--brand-line);
+  border-left: 3px solid var(--brand-accent);
+  border-radius: 2px;
+  padding: 1.25rem;
+  height: 100%;
+}
+
+.skills.section .core-stack i {
+  color: var(--brand-accent);
+}
+
+.skills.section .core-stack h3 {
+  color: #fff;
+  font-size: 1.05rem;
+  margin: 0.65rem 0 0.4rem;
+}
+
+.skills.section .core-stack p,
+.also-used-list {
+  color: var(--brand-muted);
+}
+
+.skills-also summary,
+.recognition-archive summary {
+  color: var(--brand-accent);
+}
+
+.core-stacks .core-stack:hover {
+  border-color: var(--brand-accent);
+}
+
+/* Portfolio filters: sticky under fixed header */
+.isotope-filters,
+.portfolio-filters {
+  position: sticky;
+  top: var(--header-offset);
+  z-index: 20;
+  background:
+    linear-gradient(180deg, rgba(11, 18, 32, 0.96) 0%, rgba(21, 29, 46, 0.92) 100%);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--brand-line);
+  border-radius: 2px;
+  padding: 0.85rem 1rem !important;
+  margin-bottom: 2rem !important;
+}
+
+.isotope-container {
+  overflow: visible;
+  position: relative;
+  z-index: 1;
+}
+
+.portfolio-card {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.portfolio-description h5 {
+  color: var(--brand-accent);
+}
+
+.portfolio-description p {
+  color: color-mix(in srgb, var(--brand-fog), transparent 8%);
+}
+
+/* Contact cards on dark */
+.contact-card {
+  background: color-mix(in srgb, var(--brand-ink-mid), transparent 10%);
+  border: 1px solid var(--brand-line);
+  border-radius: 2px;
+}
+
+.contact-link,
+.contact-card a.contact-link {
+  color: var(--brand-accent);
+}
+
+.cta-section h3,
+.cta-section p {
+  color: var(--brand-fog);
+}
+
+/* Resume timeline */
+.resume .resume-item {
+  border-left-color: var(--brand-accent);
+}
+
+.resume .resume-item::before {
+  background: var(--brand-accent);
+}
+
+/*--------------------------------------------------------------
+# Hero
+--------------------------------------------------------------*/
 .hero {
   position: relative;
   overflow: hidden;
@@ -91,21 +318,47 @@ h1, h2, h3, h4, h5, h6,
   animation: brand-rise 0.9s ease 0.36s both;
 }
 
-.hero-cta-primary {
+.hero-cta,
+.hero-cta-primary,
+.hero-cta-secondary,
+a.hero-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  padding: 0.7rem 1.25rem;
+  font-weight: 600;
+  text-decoration: none;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.hero-cta-primary,
+a.hero-cta-primary {
   background: var(--brand-accent);
   border-color: var(--brand-accent);
-  border-radius: 2px;
   color: var(--brand-ink);
 }
 
-.hero-cta-primary:hover {
+.hero-cta-primary:hover,
+a.hero-cta-primary:hover {
   background: var(--brand-accent-deep);
   border-color: var(--brand-accent-deep);
   color: #fff;
 }
 
-.hero-cta-secondary {
-  border-radius: 2px;
+.hero-cta-secondary,
+a.hero-cta-secondary {
+  background: transparent;
+  border-color: color-mix(in srgb, var(--brand-fog), transparent 55%);
+  color: var(--brand-fog);
+}
+
+.hero-cta-secondary:hover,
+a.hero-cta-secondary:hover {
+  border-color: var(--brand-accent);
+  color: var(--brand-accent);
 }
 
 @keyframes brand-rise {
@@ -129,7 +382,6 @@ h1, h2, h3, h4, h5, h6,
   }
 }
 
-/* Subtle scroll cue pulse */
 .scroll-down-btn i {
   animation: scroll-nudge 2.2s ease-in-out infinite;
 }
@@ -143,7 +395,13 @@ h1, h2, h3, h4, h5, h6,
   .scroll-down-btn i { animation: none; }
 }
 
-/* Case studies */
+/*--------------------------------------------------------------
+# Case studies
+--------------------------------------------------------------*/
+.case-page .main {
+  min-height: 60vh;
+}
+
 .case-kicker {
   text-transform: uppercase;
   letter-spacing: 0.14em;
@@ -162,7 +420,7 @@ h1, h2, h3, h4, h5, h6,
   overflow: hidden;
   border-radius: 2px;
   background: var(--brand-ink-soft);
-  border: 1px solid color-mix(in srgb, var(--brand-accent), transparent 75%);
+  border: 1px solid var(--brand-line);
 }
 
 .case-media img {
@@ -202,6 +460,7 @@ h1, h2, h3, h4, h5, h6,
   font-size: 0.9rem;
   font-weight: 600;
   border-radius: 2px;
+  text-decoration: none;
 }
 
 .case-link:hover {
@@ -210,9 +469,28 @@ h1, h2, h3, h4, h5, h6,
   border-color: var(--brand-accent);
 }
 
-/* Recognitions: primary vs archive */
+.case-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--brand-line);
+}
+
+/*--------------------------------------------------------------
+# Recognitions
+--------------------------------------------------------------*/
 .recognition-primary .recog-item {
   margin-bottom: 1.5rem;
+  padding: 1rem;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  background: color-mix(in srgb, var(--brand-ink-mid), transparent 35%);
+}
+
+.recognition-primary .recog-item:hover {
+  border-color: var(--brand-line);
 }
 
 .recognition-primary h3 {
@@ -229,7 +507,6 @@ h1, h2, h3, h4, h5, h6,
 .recognition-archive summary {
   cursor: pointer;
   font-weight: 600;
-  color: var(--brand-muted);
 }
 
 .recognition-archive summary:focus-visible {
@@ -240,43 +517,69 @@ h1, h2, h3, h4, h5, h6,
 .recognition-archive .archive-list {
   margin: 0.85rem 0 0;
   padding-left: 1.1rem;
-  color: var(--brand-muted);
   font-size: 0.95rem;
-}
-
-.page-title .heading {
-  background:
-    linear-gradient(160deg, rgba(11, 18, 32, 0.96), rgba(21, 29, 46, 0.92)),
-    radial-gradient(circle at 85% 20%, rgba(31, 185, 138, 0.2), transparent 45%);
 }
 
 .logo .sitename {
   font-weight: 700;
 }
 
-/* Light sections (about skills etc.) keep readable contrast */
-.about.section,
-.skills.section,
-.resume.section,
-.portfolio.section,
-.contact.section,
-.recognitions.section {
-  --default-color: #1c2430;
-  --heading-color: #0b1220;
-  color: var(--default-color);
-  background: #f4f7fa;
+/* Breadcrumbs stay readable */
+.page-title nav,
+.page-title .breadcrumbs {
+  background: rgba(11, 18, 32, 0.92);
+  border-top: 1px solid var(--brand-line);
 }
 
-.skills.section .core-stack {
-  background: color-mix(in srgb, var(--brand-accent), transparent 92%);
-  border-left-color: var(--brand-accent);
+.page-title nav ol li,
+.page-title nav ol li.current {
+  color: var(--brand-muted);
 }
 
-.skills.section .core-stack i {
-  color: var(--brand-accent-deep);
+.page-title nav ol li a {
+  color: var(--brand-accent);
 }
 
-.skills.section .core-stack p,
-.also-used-list {
-  color: #3a4656;
+/* Footer continuity */
+.footer.dark-background {
+  background:
+    radial-gradient(ellipse at 50% 0%, rgba(31, 185, 138, 0.12), transparent 50%),
+    var(--brand-ink);
+  border-top: 1px solid var(--brand-line);
+}
+
+/* CTA buttons used outside hero */
+.cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.7rem 1.2rem;
+  background: var(--brand-accent);
+  color: var(--brand-ink);
+  font-weight: 600;
+  border-radius: 2px;
+  text-decoration: none;
+  border: 1px solid var(--brand-accent);
+}
+
+.cta-btn:hover {
+  background: var(--brand-accent-deep);
+  border-color: var(--brand-accent-deep);
+  color: #fff;
+}
+
+/* Mobile nav / language switcher above content */
+.mobile-language-switcher {
+  z-index: 1040;
+}
+
+@media (max-width: 991px) {
+  :root {
+    --header-offset: 64px;
+  }
+
+  .isotope-filters,
+  .portfolio-filters {
+    top: var(--header-offset);
+  }
 }

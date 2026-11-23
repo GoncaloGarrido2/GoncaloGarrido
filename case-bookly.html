@@ -22,7 +22,54 @@
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/css/main.css" rel="stylesheet">
   <link href="assets/css/custom-styles.css" rel="stylesheet">
-  <link href="assets/css/brand.css" rel="stylesheet">
+
+<style id="theme-ink-critical">
+    /* Critical ink theme — defeats cache of old pale panels */
+    html, body { background:#0b1220 !important; color:#e8eef5 !important; }
+    #recognitions, #recognitions.recognitions, section.recognitions,
+    .recognitions, .recognitions.section, .about.section, .skills.section,
+    .resume.section, .portfolio.section, .contact.section, .case-study.section,
+    .page-navigation, .page-title, .page-title .heading, .page-title nav,
+    .navigation-cards, .footer {
+      background:#0b1220 !important;
+      background-color:#0b1220 !important;
+      background-image:none !important;
+      color:#e8eef5 !important;
+    }
+    .recognitions::before, .about.section::before, .skills.section::before,
+    .portfolio.section::before, .resume.section::before, .contact.section::before {
+      background: radial-gradient(ellipse at 20% 20%, rgba(31,185,138,0.12), transparent 50%) !important;
+      opacity:1 !important;
+    }
+    .recog-item, .core-stack, .resume-item, .contact-card, .nav-card,
+    .portfolio-card, .portfolio-description, .cta-section, .skills-also,
+    .card, .card-body {
+      background:#151d2e !important;
+      background-color:#151d2e !important;
+      background-image:none !important;
+      color:#e8eef5 !important;
+      border:1px solid rgba(31,185,138,0.28) !important;
+    }
+    .recog-item img, .recognition-primary img {
+      background:#0f1624 !important;
+      object-fit:contain;
+      max-height:220px;
+      width:100%;
+      padding:8px;
+    }
+    .section-title h2, .recog-item h3, .page-title h1, .about .content h2 {
+      color:#fff !important;
+      -webkit-text-fill-color:#fff !important;
+      background:none !important;
+    }
+    .section-title p, .recog-item p, .skills-intro, .about .content p {
+      color:#c5d0dc !important;
+      -webkit-text-fill-color:#c5d0dc !important;
+      background:none !important;
+    }
+    [data-aos] { opacity:1 !important; transform:none !important; }
+  </style>
+
 </head>
 <body class="case-page">
 <!-- SITE_HEADER_START -->
@@ -51,7 +98,7 @@
       <div class="container">
         <div class="row d-flex justify-content-center text-center">
           <div class="col-lg-8">
-            <p class="case-kicker" data-i18n="case.kicker">Case study</p>
+            <p class="case-kicker" data-i18n="case.kicker">Caso de estudo</p>
             <h1 data-i18n="case.bookly.title">Bookly</h1>
             <p class="mb-0" data-i18n="case.bookly.tagline">Gestão de material e livros escolares para papelarias</p>
           </div>
@@ -92,9 +139,14 @@
             <h2 data-i18n="case.result">Resultado</h2>
             <p data-i18n="case.bookly.result">Produto académico completo com docs públicos — âncora de portefólio full stack.</p>
           </article>
-          <p class="mt-4">
-            <a href="portfolio.html" class="hero-cta hero-cta-primary" data-i18n="case.back">Voltar ao portfólio</a>
-          </p>
+
+          <nav class="case-nav" aria-label="Outros cases">
+            <a class="case-link" href="case-papos.html">Papos</a>
+            <a class="case-link" href="case-focus-launcher.html">Focus Launcher</a>
+            <a class="case-link" href="case-bookly.html" aria-current="page">Bookly</a>
+            <a class="case-link" href="portfolio.html" data-i18n="case.back">Voltar ao portfólio</a>
+          </nav>
+
         </div>
       </div>
     </div>
