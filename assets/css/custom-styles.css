@@ -2712,3 +2712,68 @@ body {
     font-size: 0.9rem;
   }
 }
+
+/*--------------------------------------------------------------
+# Hero pitch + CTAs (P0)
+--------------------------------------------------------------*/
+.hero .hero-pitch {
+  max-width: 36rem;
+  margin: 0.35rem 0 0.75rem;
+  font-size: 1.05rem;
+  line-height: 1.45;
+  color: rgba(255, 255, 255, 0.88);
+  font-weight: 400;
+}
+
+.hero-cta-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 1.1rem 0 1.25rem;
+}
+
+.hero-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.7rem 1.25rem;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.hero-cta-primary {
+  background: #18d26e;
+  color: #0b1220;
+  border: 1px solid #18d26e;
+}
+
+.hero-cta-primary:hover {
+  background: #14a85f;
+  border-color: #14a85f;
+  color: #ffffff;
+}
+
+.hero-cta-secondary {
+  background: transparent;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.55);
+}
+
+.hero-cta-secondary:hover {
+  border-color: #18d26e;
+  color: #18d26e;
+}
+
+.page-title .cta-btn {
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 575px) {
+  .hero-cta-group {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

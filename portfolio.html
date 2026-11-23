@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="pt-pt">
+<html lang="pt-PT">
 
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Portfólio - Gonçalo Garrido</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <title>Portfólio — Gonçalo Garrido</title>
+  <meta name="description" content="Projetos de Gonçalo Garrido: Papos, Focus Launcher, GlutenFree, Bookly, PocketCards e mais — backend, mobile e integração de sistemas.">
+  <meta name="keywords" content="Portfólio, Gonçalo Garrido, Papos, Focus Launcher, GlutenFree, Bookly, PocketCards, Android, Desenvolvedor de software">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -46,7 +46,7 @@
           <li><a href="about.html">Sobre</a></li>
           <li><a href="resume.html">Currículo</a></li>
           <li><a href="portfolio.html" class="active">Portfólio</a></li>
-          <li><a href="contact.html">Contacto</a></li>
+          <li><a href="contact.html">Contactos</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -63,7 +63,7 @@
           <div class="row d-flex justify-content-center text-center">
             <div class="col-lg-8">
               <h1>Portfólio</h1>
-              <p class="mb-0">Bem-vindo ao meu portfólio! Aqui poderá explorar os projetos nos quais estive envolvido, desde desenvolvimento web a aplicações móveis e muito mais.</p>
+              <p class="mb-0">Projetos em destaque com prova pública (Play Store, demos e documentação). O trabalho actual na WorkInNet/InspGest está detalhado no currículo.</p>
             </div>
           </div>
         </div>
@@ -82,7 +82,7 @@
 <!-- Portfolio Section -->
 <section id="portfolio" class="portfolio section">
   <div class="container">
-    <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+    <div class="isotope-layout" data-default-filter=".filter-featured" data-layout="masonry" data-sort="original-order">
 
       <div class="row d-flex justify-content-center text-center">
         <div class="col-lg-8" data-aos="fade-up">
@@ -91,42 +91,43 @@
       </div>
       
       <ul class="isotope-filters text-center" data-aos="fade-up" data-aos-delay="100">
-        <li data-filter="*" class="filter-active portfolio-filter-btn">Todos</li>
-        <li data-filter=".filter-web" class="portfolio-filter-btn">Projetos Web</li>
-        <li data-filter=".filter-mobile" class="portfolio-filter-btn">Aplicações Móveis</li>
-        <li data-filter=".filter-game" class="portfolio-filter-btn">Jogo</li>
-        <li data-filter=".filter-desktop" class="portfolio-filter-btn">Aplicações Desktop</li>
-        <li data-filter=".filter-other" class="portfolio-filter-btn">Outros Projetos</li>
+        <li data-filter=".filter-featured" class="filter-active portfolio-filter-btn">Destaques</li>
+        <li data-filter="*" class="portfolio-filter-btn">Todos</li>
+        <li data-filter=".filter-mobile" class="portfolio-filter-btn">Aplicações móveis</li>
+        <li data-filter=".filter-web" class="portfolio-filter-btn">Projetos web</li>
+        <li data-filter=".filter-other" class="portfolio-filter-btn">Outros</li>
       </ul>
     
       <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
-        <!-- GlutenFree -->
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-mobile">
+        <!-- Papos (destaque) -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-featured filter-mobile filter-web">
           <div class="portfolio-card">
-            <a href="https://play.google.com/store/apps/details?id=com.goncalogarrido.glutenfree&hl=en" class="portfolio-link" target="_blank">
+            <a href="https://papos.delty.party" class="portfolio-link" target="_blank" rel="noopener">
               <div class="portfolio-content">
-                <img src="assets/img/ImagemProjetos/8.png" class="img-fluid" alt="GlutenFree">
+                <img src="assets/img/ImagemProjetos/19-papos.svg" class="img-fluid" alt="Papos — palavra do dia">
                 <div class="portfolio-info">
                   <p>Ver projeto</p>
                 </div>
               </div>
             </a>
             <div class="portfolio-description">
-              <h5>GlutenFree</h5>
-              <p>Aplicação para identificar produtos sem glúten.</p>
+              <h5>Papos</h5>
+              <p>Jogo diário de palavras em português europeu (estilo Wordle), com cinco modos e funcionamento offline. Desenvolvi a app Android e a versão web.</p>
+              <p>Tech: Android / web · dicionário PT-PT.</p>
               <div class="portfolio-links">
-                <a href="https://projetoslendarios.github.io/GlutenFreeApp-Docs/" class="styled-link" target="_blank">Detalhes</a>
-                <a href="https://play.google.com/store/apps/details?id=com.goncalogarrido.glutenfree&hl=en" class="styled-link" target="_blank">Play Store</a>
+                <a href="https://play.google.com/store/apps/details?id=com.goncalogarrido.papos" class="styled-link" target="_blank" rel="noopener">Play Store</a>
+                <a href="https://papos.delty.party" class="styled-link" target="_blank" rel="noopener">Web</a>
+                <a href="https://projetoslendarios.github.io/PaposApp-Docs/" class="styled-link" target="_blank" rel="noopener">Docs</a>
               </div>
             </div>
           </div>
         </div>
 
         <!-- Focus Launcher -->
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-mobile">
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-featured filter-mobile">
           <div class="portfolio-card">
-            <a href="https://play.google.com/store/apps/details?id=com.goncalogarrido.launcher" class="portfolio-link" target="_blank">
+            <a href="https://play.google.com/store/apps/details?id=com.goncalogarrido.launcher" class="portfolio-link" target="_blank" rel="noopener">
               <div class="portfolio-content">
                 <img src="assets/img/ImagemProjetos/15.png" class="img-fluid" alt="Focus Launcher">
                 <div class="portfolio-info">
@@ -136,83 +137,43 @@
             </a>
             <div class="portfolio-description">
               <h5>Focus Launcher</h5>
-              <p>Launcher Android focado em produtividade e concentracao.</p>
+              <p>Launcher Android minimalista para reduzir distrações: modos de foco, automações e ecrãs configuráveis. Publicado e mantido na Play Store.</p>
+              <p>Tech: Android · produtividade.</p>
               <div class="portfolio-links">
-                <a href="https://projetoslendarios.github.io/FocusLauncherApp-Docs/" class="styled-link" target="_blank">Detalhes</a>
-                <a href="https://play.google.com/store/apps/details?id=com.goncalogarrido.launcher" class="styled-link" target="_blank">Play Store</a>
+                <a href="https://projetoslendarios.github.io/FocusLauncherApp-Docs/" class="styled-link" target="_blank" rel="noopener">Docs</a>
+                <a href="https://play.google.com/store/apps/details?id=com.goncalogarrido.launcher" class="styled-link" target="_blank" rel="noopener">Play Store</a>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- PocketCards -->
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-mobile">
+        <!-- GlutenFree -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-featured filter-mobile">
           <div class="portfolio-card">
-            <a href="https://projetoslendarios.github.io/PocketCardsApp-Docs/" class="portfolio-link" target="_blank">
+            <a href="https://play.google.com/store/apps/details?id=com.goncalogarrido.glutenfree&amp;hl=pt" class="portfolio-link" target="_blank" rel="noopener">
               <div class="portfolio-content">
-                <img src="assets/img/ImagemProjetos/16.png" class="img-fluid" alt="PocketCards">
+                <img src="assets/img/ImagemProjetos/8.png" class="img-fluid" alt="GlutenFree">
                 <div class="portfolio-info">
                   <p>Ver projeto</p>
                 </div>
               </div>
             </a>
             <div class="portfolio-description">
-              <h5>PocketCards</h5>
-              <p>Guarda cartoes, cupoes e bilhetes numa app simples e rapida, com QR codes e codigos de barras sempre prontos a usar.</p>
+              <h5>GlutenFree</h5>
+              <p>App para pessoas com intolerância ao glúten: mapa de locais, informação de produtos e interface multilíngue (17 idiomas). Mantida na Play Store.</p>
+              <p>Tech: Android · mapas.</p>
               <div class="portfolio-links">
-                <a href="https://projetoslendarios.github.io/PocketCardsApp-Docs/" class="styled-link" target="_blank">Docs</a>
-                <a href="https://play.google.com/store/apps/details?id=com.goncalogarrido.pocketcards" class="styled-link" target="_blank">Play Store</a>
+                <a href="https://projetoslendarios.github.io/GlutenFreeApp-Docs/" class="styled-link" target="_blank" rel="noopener">Docs</a>
+                <a href="https://play.google.com/store/apps/details?id=com.goncalogarrido.glutenfree&amp;hl=pt" class="styled-link" target="_blank" rel="noopener">Play Store</a>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- DoseExata -->
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-mobile">
+        <!-- Bookly -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-featured filter-web filter-mobile">
           <div class="portfolio-card">
-            <a href="https://github.com/ProjetosLendarios/DoseExataApp" class="portfolio-link" target="_blank">
-              <div class="portfolio-content">
-                <img src="assets/img/ImagemProjetos/17.png" class="img-fluid" alt="DoseExata">
-                <div class="portfolio-info">
-                  <p>Ver projeto</p>
-                </div>
-              </div>
-            </a>
-            <div class="portfolio-description">
-              <h5>DoseExata</h5>
-              <p>Aplicacao Android para gestao de inventario de medicamentos e calculo personalizado de dosagens.</p>
-              <div class="portfolio-links">
-                <a href="https://github.com/ProjetosLendarios/DoseExataApp" class="styled-link" target="_blank">GitHub</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Sushi Stack -->
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-mobile filter-game">
-          <div class="portfolio-card">
-            <a href="https://projetoslendarios.github.io/Sushi-Stack-Docs/" class="portfolio-link" target="_blank">
-              <div class="portfolio-content">
-                <img src="assets/img/ImagemProjetos/18.png" class="img-fluid" alt="Sushi Stack">
-                <div class="portfolio-info">
-                  <p>Ver projeto</p>
-                </div>
-              </div>
-            </a>
-            <div class="portfolio-description">
-              <h5>Sushi Stack</h5>
-              <p>Testa os teus reflexos num jogo simples e desafiante onde tens de alinhar pecas de sushi e construir a torre perfeita sem deixar cair nada.</p>
-              <div class="portfolio-links">
-                <a href="https://projetoslendarios.github.io/Sushi-Stack-Docs/" class="styled-link" target="_blank">Docs</a>
-                <a href="https://play.google.com/store/apps/details?id=com.goncalogarrido.sushistack" class="styled-link" target="_blank">Play Store</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web filter-mobile filter-desktop">
-          <div class="portfolio-card">
-            <a href="https://projetobookly.github.io/Bookly-Docs/" class="portfolio-link" target="_blank">
+            <a href="https://projetobookly.github.io/Bookly-Docs/" class="portfolio-link" target="_blank" rel="noopener">
               <div class="portfolio-content">
                 <img src="assets/img/ImagemProjetos/14.png" class="img-fluid" alt="Bookly">
                 <div class="portfolio-info">
@@ -222,18 +183,65 @@
             </a>
             <div class="portfolio-description">
               <h5>Bookly</h5>
-              <p>Sistema de Organização de Material e Livros Escolares.</p>
+              <p>Plataforma web e Android de gestão para papelarias (material e livros escolares). Projeto de licenciatura no IPMAIA com documentação pública.</p>
+              <p>Tech: Laravel · Kotlin.</p>
               <div class="portfolio-links">
-                <a href="https://github.com/ProjetoBookly/Bookly-Docs" class="styled-link" target="_blank">GitHub</a>
-                <a href="https://projetobookly.github.io/Bookly-Docs/" class="styled-link" target="_blank">Página do Projeto</a>
+                <a href="https://projetobookly.github.io/Bookly-Docs/" class="styled-link" target="_blank" rel="noopener">Docs</a>
+                <a href="https://github.com/ProjetoBookly/Bookly-Docs" class="styled-link" target="_blank" rel="noopener">GitHub</a>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
+        <!-- PocketCards -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-featured filter-mobile">
           <div class="portfolio-card">
-            <a href="https://smilepapelaria.com/" class="portfolio-link" target="_blank">
+            <a href="https://play.google.com/store/apps/details?id=com.goncalogarrido.pocketcards" class="portfolio-link" target="_blank" rel="noopener">
+              <div class="portfolio-content">
+                <img src="assets/img/ImagemProjetos/16.png" class="img-fluid" alt="PocketCards">
+                <div class="portfolio-info">
+                  <p>Ver projeto</p>
+                </div>
+              </div>
+            </a>
+            <div class="portfolio-description">
+              <h5>PocketCards</h5>
+              <p>Gestor digital de cartões, cupões e bilhetes com QR e códigos de barras sempre à mão. App Android publicada na Play Store.</p>
+              <p>Tech: Jetpack Compose.</p>
+              <div class="portfolio-links">
+                <a href="https://projetoslendarios.github.io/PocketCardsApp-Docs/" class="styled-link" target="_blank" rel="noopener">Docs</a>
+                <a href="https://play.google.com/store/apps/details?id=com.goncalogarrido.pocketcards" class="styled-link" target="_blank" rel="noopener">Play Store</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sushi Stack (outros / secundário) -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-mobile filter-other">
+          <div class="portfolio-card">
+            <a href="https://play.google.com/store/apps/details?id=com.goncalogarrido.sushistack" class="portfolio-link" target="_blank" rel="noopener">
+              <div class="portfolio-content">
+                <img src="assets/img/ImagemProjetos/18.png" class="img-fluid" alt="Sushi Stack">
+                <div class="portfolio-info">
+                  <p>Ver projeto</p>
+                </div>
+              </div>
+            </a>
+            <div class="portfolio-description">
+              <h5>Sushi Stack</h5>
+              <p>Jogo Android de empilhar sushi com Google Play Games. Publicado na Play Store.</p>
+              <div class="portfolio-links">
+                <a href="https://projetoslendarios.github.io/Sushi-Stack-Docs/" class="styled-link" target="_blank" rel="noopener">Docs</a>
+                <a href="https://play.google.com/store/apps/details?id=com.goncalogarrido.sushistack" class="styled-link" target="_blank" rel="noopener">Play Store</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Smile (arquivo / outros) -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web filter-other">
+          <div class="portfolio-card">
+            <a href="https://web.archive.org/web/20241007114424/https://smilepapelaria.com/index.php" class="portfolio-link" target="_blank" rel="noopener">
               <div class="portfolio-content">
                 <img src="assets/img/ImagemProjetos/2.png" class="img-fluid" alt="Smile Papelaria">
                 <div class="portfolio-info">
@@ -243,37 +251,37 @@
             </a>
             <div class="portfolio-description">
               <h5>Smile Papelaria</h5>
-              <p>Plataforma para compra de artigos de papelaria.</p>
+              <p>E-commerce de papelaria (freelance). Site actualmente offline — cópia no Internet Archive.</p>
               <div class="portfolio-links">
-                <a href="https://web.archive.org/web/20241007114424/https://smilepapelaria.com/index.php" class="styled-link" target="_blank">Detalhes</a>
+                <a href="https://web.archive.org/web/20241007114424/https://smilepapelaria.com/index.php" class="styled-link" target="_blank" rel="noopener">Archive</a>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-mobile">
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-other">
           <div class="portfolio-card">
-            <a href="https://github.com/GoncaloGarrido2/Android-Photo-Recognizer" class="portfolio-link" target="_blank">
+            <a href="assets/files/pap.pdf" class="portfolio-link" target="_blank" rel="noopener">
               <div class="portfolio-content">
-                <img src="assets/img/ImagemProjetos/11.png" class="img-fluid" alt="Android OCR Detect">
+                <img src="assets/img/ImagemProjetos/5.png" class="img-fluid" alt="Smile e-commerce desktop">
                 <div class="portfolio-info">
                   <p>Ver projeto</p>
                 </div>
               </div>
             </a>
             <div class="portfolio-description">
-              <h5>Android OCR Detect</h5>
-              <p>Aplicação para reconhecer objetos usando OCR.</p>
+              <h5>Smile — gestão de vendas</h5>
+              <p>Aplicação desktop associada ao e-commerce Smile (gestão de vendas e clientes). Relatório do projeto.</p>
               <div class="portfolio-links">
-                <a href="https://github.com/GoncaloGarrido2/Android-Photo-Recognizer" class="styled-link" target="_blank">GitHub</a>
+                <a href="assets/files/pap.pdf" class="styled-link" target="_blank" rel="noopener">Relatório</a>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web filter-other">
           <div class="portfolio-card">
-            <a href="https://agrononstop.pt/" class="portfolio-link" target="_blank">
+            <a href="https://agrononstop.pt/" class="portfolio-link" target="_blank" rel="noopener">
               <div class="portfolio-content">
                 <img src="assets/img/ImagemProjetos/1.PNG" class="img-fluid" alt="Agro Non Stop">
                 <div class="portfolio-info">
@@ -283,57 +291,17 @@
             </a>
             <div class="portfolio-description">
               <h5>Agro Non Stop</h5>
-              <p>Loja virtual focada na venda de produtos agrícolas.</p>
+              <p>Loja virtual de produtos agrícolas (freelance). Disponibilidade do site pode variar.</p>
               <div class="portfolio-links">
-                <a href="https://agrononstop.pt/" class="styled-link" target="_blank">Detalhes</a>
+                <a href="https://agrononstop.pt/" class="styled-link" target="_blank" rel="noopener">Site</a>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-desktop">
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web filter-other">
           <div class="portfolio-card">
-            <a href="assets/files/pap.pdf" class="portfolio-link" target="_blank">
-              <div class="portfolio-content">
-                <img src="assets/img/ImagemProjetos/5.png" class="img-fluid" alt="Smile e-commerce">
-                <div class="portfolio-info">
-                  <p>Ver projeto</p>
-                </div>
-              </div>
-            </a>
-            <div class="portfolio-description">
-              <h5>Smile e-commerce</h5>
-              <p>App para gestão de vendas e clientes.</p>
-              <div class="portfolio-links">
-                <a href="assets/files/pap.pdf" class="styled-link" target="_blank">Relatório</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
-          <div class="portfolio-card">
-            <a href="https://github.com/GoncaloGarrido2/Site-Ginasio" class="portfolio-link" target="_blank">
-              <div class="portfolio-content">
-                <img src="assets/img/ImagemProjetos/12.png" class="img-fluid" alt="Site Ginasio">
-                <div class="portfolio-info">
-                  <p>Ver projeto</p>
-                </div>
-              </div>
-            </a>
-            <div class="portfolio-description">
-              <h5>Site Ginasio</h5>
-              <p>Projeto de site para um ginásio, desenvolvido em JavaScript.</p>
-              <div class="portfolio-links">
-                <a href="https://github.com/GoncaloGarrido2/Site-Ginasio" class="styled-link" target="_blank">Detalhes</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
-          <div class="portfolio-card">
-            <a href="https://web.archive.org/web/20240423092826/https://diauto.pt/" class="portfolio-link" target="_blank">
+            <a href="https://web.archive.org/web/20240423092826/https://diauto.pt/" class="portfolio-link" target="_blank" rel="noopener">
               <div class="portfolio-content">
                 <img src="assets/img/ImagemProjetos/3.png" class="img-fluid" alt="DiAuto">
                 <div class="portfolio-info">
@@ -343,58 +311,17 @@
             </a>
             <div class="portfolio-description">
               <h5>DiAuto</h5>
-              <p>Website para visualização e pesquisa de veículos.</p>
+              <p>Website para visualização e pesquisa de veículos. Arquivado.</p>
               <div class="portfolio-links">
-                <a href="https://web.archive.org/web/20240423092826/https://diauto.pt/" class="styled-link" target="_blank">Detalhes</a>
+                <a href="https://web.archive.org/web/20240423092826/https://diauto.pt/" class="styled-link" target="_blank" rel="noopener">Archive</a>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-other">
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web filter-other">
           <div class="portfolio-card">
-            <a href="https://goncalogarrido.blogspot.com/" class="portfolio-link" target="_blank">
-              <div class="portfolio-content">
-                <img src="assets/img/ImagemProjetos/7.png" class="img-fluid" alt="Caderno Digital">
-                <div class="portfolio-info">
-                  <p>Ver projeto</p>
-                </div>
-              </div>
-            </a>
-            <div class="portfolio-description">
-              <h5>Caderno Digital</h5>
-              <p>Aplicação web para edição de fotos e vídeos.</p>
-              <div class="portfolio-links">
-                <a href="https://goncalogarrido.blogspot.com/" class="styled-link" target="_blank">Detalhes</a>
-              </div>
-            </div>
-          </div>
-        </div>   
-        
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
-          <div class="portfolio-card">
-            <a href="https://goncalogarrido2.github.io/Website-News-Fred/" class="portfolio-link" target="_blank">
-              <div class="portfolio-content">
-                <img src="assets/img/ImagemProjetos/9.png" class="img-fluid" alt="Notícias Esmad">
-                <div class="portfolio-info">
-                  <p>Ver projeto</p>
-                </div>
-              </div>
-            </a>
-            <div class="portfolio-description">
-              <h5>Notícias Esmad</h5>
-              <p>Website sobre notícias com informações atualizadas.</p>
-              <div class="portfolio-links">
-                <a href="https://goncalogarrido2.github.io/Website-News-Fred/" class="styled-link" target="_blank">Detalhes</a>
-                <a href="https://github.com/GoncaloGarrido2/Website-News-Fred" class="styled-link" target="_blank">GitHub</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
-          <div class="portfolio-card">
-            <a href="http://www.autodealer.pt/" class="portfolio-link" target="_blank">
+            <a href="http://www.autodealer.pt/" class="portfolio-link" target="_blank" rel="noopener">
               <div class="portfolio-content">
                 <img src="assets/img/ImagemProjetos/4.png" class="img-fluid" alt="AutoDealer">
                 <div class="portfolio-info">
@@ -406,7 +333,7 @@
               <h5>AutoDealer</h5>
               <p>Plataforma para visualizar e comparar veículos à venda.</p>
               <div class="portfolio-links">
-                <a href="http://www.autodealer.pt/" class="styled-link" target="_blank">Detalhes</a>
+                <a href="http://www.autodealer.pt/" class="styled-link" target="_blank" rel="noopener">Site</a>
               </div>
             </div>
           </div>
@@ -414,7 +341,68 @@
 
         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-other">
           <div class="portfolio-card">
-            <a href="https://faculdadelicenciatura.github.io/tiwm22-ti-g02/src/index.html" class="portfolio-link" target="_blank">
+            <a href="https://github.com/GoncaloGarrido2/Android-Photo-Recognizer" class="portfolio-link" target="_blank" rel="noopener">
+              <div class="portfolio-content">
+                <img src="assets/img/ImagemProjetos/11.png" class="img-fluid" alt="Android OCR Detect">
+                <div class="portfolio-info">
+                  <p>Ver projeto</p>
+                </div>
+              </div>
+            </a>
+            <div class="portfolio-description">
+              <h5>Android OCR Detect</h5>
+              <p>Experiência académica de reconhecimento de texto/objectos com OCR.</p>
+              <div class="portfolio-links">
+                <a href="https://github.com/GoncaloGarrido2/Android-Photo-Recognizer" class="styled-link" target="_blank" rel="noopener">GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web filter-other">
+          <div class="portfolio-card">
+            <a href="https://github.com/GoncaloGarrido2/Site-Ginasio" class="portfolio-link" target="_blank" rel="noopener">
+              <div class="portfolio-content">
+                <img src="assets/img/ImagemProjetos/12.png" class="img-fluid" alt="Site Ginásio">
+                <div class="portfolio-info">
+                  <p>Ver projeto</p>
+                </div>
+              </div>
+            </a>
+            <div class="portfolio-description">
+              <h5>Site Ginásio</h5>
+              <p>Projeto académico de site para um ginásio, em JavaScript.</p>
+              <div class="portfolio-links">
+                <a href="https://github.com/GoncaloGarrido2/Site-Ginasio" class="styled-link" target="_blank" rel="noopener">GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web filter-other">
+          <div class="portfolio-card">
+            <a href="https://goncalogarrido2.github.io/Website-News-Fred/" class="portfolio-link" target="_blank" rel="noopener">
+              <div class="portfolio-content">
+                <img src="assets/img/ImagemProjetos/9.png" class="img-fluid" alt="Notícias Esmad">
+                <div class="portfolio-info">
+                  <p>Ver projeto</p>
+                </div>
+              </div>
+            </a>
+            <div class="portfolio-description">
+              <h5>Notícias Esmad</h5>
+              <p>Website académico de notícias.</p>
+              <div class="portfolio-links">
+                <a href="https://goncalogarrido2.github.io/Website-News-Fred/" class="styled-link" target="_blank" rel="noopener">Site</a>
+                <a href="https://github.com/GoncaloGarrido2/Website-News-Fred" class="styled-link" target="_blank" rel="noopener">GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-other">
+          <div class="portfolio-card">
+            <a href="https://faculdadelicenciatura.github.io/tiwm22-ti-g02/src/index.html" class="portfolio-link" target="_blank" rel="noopener">
               <div class="portfolio-content">
                 <img src="assets/img/ImagemProjetos/6.png" class="img-fluid" alt="AHG ZOO">
                 <div class="portfolio-info">
@@ -424,17 +412,17 @@
             </a>
             <div class="portfolio-description">
               <h5>AHG ZOO</h5>
-              <p>Website informativo para um zoológico.</p>
+              <p>Website informativo académico para um zoológico.</p>
               <div class="portfolio-links">
-                <a href="https://faculdadelicenciatura.github.io/tiwm22-ti-g02/src/index.html" class="styled-link" target="_blank">Website</a>
+                <a href="https://faculdadelicenciatura.github.io/tiwm22-ti-g02/src/index.html" class="styled-link" target="_blank" rel="noopener">Website</a>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-desktop">
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-other">
           <div class="portfolio-card">
-            <a href="https://github.com/FaculdadeLicenciatura/ProjetoFarmacia" class="portfolio-link" target="_blank">
+            <a href="https://github.com/FaculdadeLicenciatura/ProjetoFarmacia" class="portfolio-link" target="_blank" rel="noopener">
               <div class="portfolio-content">
                 <img src="assets/img/ImagemProjetos/13.png" class="img-fluid" alt="Gestão de Farmácia">
                 <div class="portfolio-info">
@@ -444,13 +432,34 @@
             </a>
             <div class="portfolio-description">
               <h5>Gestão de Farmácia</h5>
-              <p>Gerenciamento de produtos, funcionários e receitas.</p>
+              <p>Gestão de produtos, funcionários e receitas (projeto académico).</p>
               <div class="portfolio-links">
-                <a href="https://github.com/FaculdadeLicenciatura/ProjetoFarmacia" class="styled-link" target="_blank">GitHub</a>
+                <a href="https://github.com/FaculdadeLicenciatura/ProjetoFarmacia" class="styled-link" target="_blank" rel="noopener">GitHub</a>
               </div>
             </div>
           </div>
         </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-other">
+          <div class="portfolio-card">
+            <a href="https://goncalogarrido.blogspot.com/" class="portfolio-link" target="_blank" rel="noopener">
+              <div class="portfolio-content">
+                <img src="assets/img/ImagemProjetos/7.png" class="img-fluid" alt="Caderno Digital">
+                <div class="portfolio-info">
+                  <p>Ver projeto</p>
+                </div>
+              </div>
+            </a>
+            <div class="portfolio-description">
+              <h5>Caderno Digital</h5>
+              <p>Projeto antigo de edição de fotos e vídeos (blog).</p>
+              <div class="portfolio-links">
+                <a href="https://goncalogarrido.blogspot.com/" class="styled-link" target="_blank" rel="noopener">Blog</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>
@@ -460,12 +469,11 @@
 <section class="page-navigation">
   <div class="container">
     <div class="page-navigation-content" data-aos="fade-up">
-      <h3>Quase no Final</h3>
-      <p>Depois de explorar os meus projetos e competências, está na altura de entrarmos em contacto para futuros projetos.</p>
+      <h3>Quase no final</h3>
+      <p>Depois de explorar os meus projetos, está na altura de entrarmos em contacto.</p>
     </div>
     
     <div class="page-nav-row" data-aos="fade-up" data-aos-delay="200">
-      <!-- Previous Page -->
       <div class="page-nav-item">
         <a href="resume.html" class="nav-btn prev">
           <i class="bi bi-arrow-left"></i>
@@ -473,9 +481,8 @@
         </a>
       </div>
       
-      <!-- Center Info -->
       <div class="nav-info">
-        <h4>Próxima Secção</h4>
+        <h4>Próxima secção</h4>
         <p>Entre em contacto comigo para colaborações</p>
         <div class="nav-progress">
           <div class="nav-progress-bar">
@@ -485,7 +492,6 @@
         </div>
       </div>
       
-      <!-- Next Page -->
       <div class="page-nav-item">
         <a href="contact.html" class="nav-btn">
           Contactos
@@ -503,10 +509,10 @@
     <h3 class="sitename">Gonçalo Garrido</h3>
     <p>Obrigado por visitar o meu portfólio! Se tiver alguma questão ou estiver interessado em colaborar, não hesite em entrar em contacto comigo.</p>
     <div class="social-links d-flex justify-content-center">
-      <a href="https://github.com/GoncaloGarrido2" target="_blank" title="GitHub"><i class="bi bi-github"></i></a>
+      <a href="https://github.com/GoncaloGarrido2" target="_blank" title="GitHub" aria-label="GitHub"><i class="bi bi-github"></i></a>
       <a href="https://play.google.com/store/apps/dev?id=7747928269861211538" target="_blank" title="Play Store" aria-label="Play Store"><i class="bi bi-google-play"></i></a>
-      <a href="https://www.linkedin.com/in/gon%C3%A7alo-garrido-4301a0269/" target="_blank" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
-      <a href="https://stackoverflow.com/users/11312923/gon%C3%A7alo-garrido" target="_blank" title="Stack Overflow"><i class="bi bi-stack-overflow"></i></a>
+      <a href="https://www.linkedin.com/in/gon%C3%A7alo-garrido-4301a0269/" target="_blank" title="LinkedIn" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+      <a href="https://stackoverflow.com/users/11312923/gon%c3%A7alo-garrido" target="_blank" title="Stack Overflow" aria-label="Stack Overflow"><i class="bi bi-stack-overflow"></i></a>
     </div>
   </div>
 </footer>
