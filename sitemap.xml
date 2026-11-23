@@ -13,21 +13,36 @@
   <url>
     <loc>https://goncalogarrido2.github.io/GoncaloGarrido/resume.html</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://goncalogarrido2.github.io/GoncaloGarrido/portfolio.html</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://goncalogarrido2.github.io/GoncaloGarrido/contact.html</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://goncalogarrido2.github.io/GoncaloGarrido/case-papos.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://goncalogarrido2.github.io/GoncaloGarrido/case-focus-launcher.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://goncalogarrido2.github.io/GoncaloGarrido/case-bookly.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
   </url>
   <url>
     <loc>https://goncalogarrido2.github.io/GoncaloGarrido/assets/files/Goncalo-Garrido-CV.pdf</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.8</priority>
   </url>
 </urlset>
