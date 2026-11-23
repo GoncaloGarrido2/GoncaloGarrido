@@ -101,6 +101,7 @@
       once: true,
       mirror: false
     });
+    document.documentElement.classList.add('aos-ready');
   }
   window.addEventListener('load', aosInit);
 
@@ -283,3 +284,4 @@
   });
 
 })();
+

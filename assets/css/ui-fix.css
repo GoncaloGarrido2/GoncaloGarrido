@@ -1,0 +1,199 @@
+/* P4 UI fixes — load after custom-styles + brand */
+.portfolio.section,
+.about.section,
+.skills.section,
+.resume.section,
+.contact.section,
+.recognitions.section {
+  overflow: visible !important;
+}
+
+.header {
+  overflow: visible !important;
+}
+
+/* Keep filter label readable */
+.portfolio .row h5,
+.portfolio .row h5 b {
+  color: var(--brand-fog, #e8eef5);
+}
+
+/* Avoid gradient text vanishing on dark */
+.about .content h2,
+.resume .resume-title,
+.section-title h2,
+.contact-card h3 {
+  -webkit-text-fill-color: unset;
+  background: none;
+  color: #fff;
+}
+
+.portfolio-description h5 {
+  -webkit-text-fill-color: unset;
+  background: none;
+}
+
+/* Sticky filters clear header */
+.isotope-filters.text-center {
+  justify-content: center;
+}
+
+/* Prevent isotope items painting under header while sticky bar active */
+.portfolio .isotope-container {
+  padding-top: 0.5rem;
+}
+
+/* Case current link */
+.case-link[aria-current="page"] {
+  background: var(--brand-accent, #1fb98a);
+  color: var(--brand-ink, #0b1220);
+  border-color: var(--brand-accent, #1fb98a);
+}
+
+/* Index nav cards continuity */
+.navigation-cards.section {
+  background:
+    radial-gradient(ellipse at 50% 0%, rgba(31, 185, 138, 0.14), transparent 50%),
+    #0b1220;
+}
+
+@media (max-width: 768px) {
+  .portfolio-card {
+    margin-bottom: 1rem;
+  }
+}
+
+/* Page title: solid readable text (no invisible clipped gradients) */
+.page-title h1 {
+  background: none !important;
+  -webkit-background-clip: unset !important;
+  background-clip: unset !important;
+  -webkit-text-fill-color: #ffffff !important;
+  color: #ffffff !important;
+  text-shadow: none;
+}
+
+.page-title p {
+  color: color-mix(in srgb, #e8eef5, transparent 12%) !important;
+}
+
+/* AOS safety: never leave content at opacity 0 if AOS stalls */
+[data-aos] {
+  pointer-events: auto;
+}
+
+.js-aos-ready [data-aos]:not(.aos-animate) {
+  /* keep animation when ready */
+}
+
+/* Before AOS boots (or if disabled), show content */
+html:not(.aos-ready) [data-aos] {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+/* About portrait visible */
+.about .img-fluid {
+  opacity: 1;
+  border: 1px solid color-mix(in srgb, #1fb98a, transparent 70%);
+  border-radius: 2px;
+}
+
+/* Ensure portfolio grid not clipped */
+.portfolio .isotope-container,
+.portfolio .portfolio-item {
+  opacity: 1;
+}
+
+.portfolio .portfolio-item[data-aos]:not(.aos-animate) {
+  opacity: 1;
+}
+
+/* Tighten section top after page-title (custom-styles had 80px) */
+.about.section,
+.skills.section,
+.recognitions.section,
+.contact.section,
+.portfolio.section,
+.resume.section,
+.case-study.section {
+  padding-top: 2.25rem !important;
+}
+
+@media (max-width: 768px) {
+  .about.section,
+  .skills.section,
+  .recognitions.section,
+  .contact.section,
+  .portfolio.section,
+  .resume.section,
+  .case-study.section {
+    padding-top: 1.5rem !important;
+  }
+}
+
+/* Mobile language switcher: dock under header, not over cards */
+@media (max-width: 1199px) {
+  .mobile-language-switcher {
+    top: 14px;
+    bottom: auto !important;
+    right: 58px;
+    z-index: 1040;
+  }
+}
+
+/* Reduce empty gap above isotope grid on mobile */
+@media (max-width: 768px) {
+  .isotope-filters,
+  .portfolio-filters {
+    margin-bottom: 1.25rem !important;
+    position: relative;
+    top: auto;
+  }
+
+  .portfolio .isotope-container {
+    min-height: 0 !important;
+  }
+
+  .portfolio .row.gy-4 {
+    --bs-gutter-y: 1.25rem;
+  }
+
+  body:not(.index-page) .header .logo h1 {
+    font-size: 1.25rem;
+  }
+}
+
+/* Full-bleed breadcrumb continuity */
+.page-title nav {
+  border-bottom: 1px solid color-mix(in srgb, #1fb98a, transparent 78%);
+}
+
+/* Mobile: compress page-title so cards enter viewport sooner */
+@media (max-width: 768px) {
+  .page-title .heading {
+    padding: calc(var(--header-offset, 64px) + 20px) 0 20px !important;
+  }
+
+  .page-title h1 {
+    font-size: 2rem !important;
+    margin-bottom: 0.65rem !important;
+  }
+
+  .page-title p {
+    font-size: 0.95rem !important;
+    line-height: 1.45 !important;
+  }
+
+  .isotope-filters,
+  .portfolio-filters {
+    gap: 8px !important;
+    padding: 0.55rem 0.65rem !important;
+  }
+
+  .isotope-filters li,
+  .portfolio-filters li {
+    padding: 0.4rem 0.7rem !important;
+    font-size: 0.85rem !important;
+  }
+}
