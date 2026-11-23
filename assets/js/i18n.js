@@ -5,6 +5,84 @@
   const DEFAULT_LANGUAGE = "pt";
   const SUPPORTED_LANGUAGES = new Set(["pt", "en"]);
 
+  /** Key-based dictionary (preferred). PT is source text in the HTML. */
+  const dictionary = {
+    "nav.home": { en: "Home" },
+    "nav.about": { en: "About" },
+    "nav.resume": { en: "Resume" },
+    "nav.portfolio": { en: "Portfolio" },
+    "nav.contact": { en: "Contacts" },
+    "footer.thanks": {
+      en: "Thank you for visiting my portfolio! If you have any questions or are interested in collaborating, do not hesitate to contact me."
+    },
+    "hero.pitch": {
+      en: "Software developer — backend, mobile and systems integration · Porto"
+    },
+    "hero.cta.projects": { en: "View projects" },
+    "hero.cta.cv": { en: "Download CV" },
+    "hero.scroll": { en: "Scroll to see more" },
+    "case.kicker": { en: "Case study" },
+    "case.problem": { en: "Problem" },
+    "case.role": { en: "Role" },
+    "case.tech": { en: "Tech" },
+    "case.result": { en: "Outcome" },
+    "case.back": { en: "Back to portfolio" },
+    "case.papos.title": { en: "Papos" },
+    "case.papos.tagline": { en: "Daily word game in European Portuguese" },
+    "case.papos.problem": {
+      en: "People who play Wordle in Portugal often hit Brazilian or English dictionaries and spelling. There was no daily game built for PT-PT, with varied modes and offline use."
+    },
+    "case.papos.role": {
+      en: "I designed and built the Android app and the web version: PT-PT dictionary, five game modes, daily flow, and Play Store publication."
+    },
+    "case.papos.tech": { en: "Android · Web · PT-PT dictionary · offline" },
+    "case.papos.result": {
+      en: "Live product on the Play Store and at papos.delty.party, with Papos, Dupla, Roda, Tertúlia and Assembleia modes."
+    },
+    "case.focus-launcher.title": { en: "Focus Launcher" },
+    "case.focus-launcher.tagline": { en: "Minimalist Android launcher to reduce distractions" },
+    "case.focus-launcher.problem": {
+      en: "Default launchers push notifications and dense grids. People who want focus need a calm home screen with focus modes and less friction."
+    },
+    "case.focus-launcher.role": {
+      en: "I designed and published the launcher: focus modes, automations and configurable screens, with ongoing Play Store maintenance."
+    },
+    "case.focus-launcher.tech": { en: "Android · productivity · Play Store" },
+    "case.focus-launcher.result": {
+      en: "Published and updated app — public proof of mobile delivery beyond day-job work."
+    },
+    "case.bookly.title": { en: "Bookly" },
+    "case.bookly.tagline": { en: "School materials and book management for stationery shops" },
+    "case.bookly.problem": {
+      en: "Stationery shops handle school lists, stock and orders with manual or fragmented processes. They needed a coherent web + Android platform."
+    },
+    "case.bookly.role": {
+      en: "IPMAIA degree project: I contributed to the solution (Laravel for backend/web, Kotlin for Android) and to the public documentation."
+    },
+    "case.bookly.tech": { en: "Laravel · Kotlin · public docs" },
+    "case.bookly.result": {
+      en: "Complete academic product with public docs — a full-stack portfolio anchor."
+    },
+    "recog.title": { en: "Highlights" },
+    "recog.intro": {
+      en: "Certifications, published apps and academic mobility — what carries weight for hiring."
+    },
+    "recog.csharp.title": { en: "C# certification with Microsoft" },
+    "recog.csharp.body": {
+      en: "Completed the Foundational C# Certification with Microsoft on 17 January 2024 (freeCodeCamp)."
+    },
+    "recog.apps.title": { en: "Apps on the Play Store" },
+    "recog.apps.body": {
+      en: "Published and maintained Android apps (Papos, Focus Launcher, GlutenFree, PocketCards, and others)."
+    },
+    "recog.mobility.title": { en: "Mobility at UDESC" },
+    "recog.mobility.body": {
+      en: "Computer Science exchange (August–December 2023) at CCT/UDESC, Brazil."
+    },
+    "recog.archive": { en: "Earlier contests (2018–2020)" },
+    "portfolio.case": { en: "Case study" }
+  };
+
   const translations = {
     "Início": "Home",
     "Sobre": "About",
@@ -295,7 +373,50 @@
     if (!node.nodeValue.trim()) return false;
     const parent = node.parentElement;
     if (!parent) return false;
+    if (parent.closest("[data-i18n]")) return false;
     return !parent.closest("script, style, noscript, code, pre, .language-switcher");
+  }
+
+  function translateByKeys(language) {
+    document.querySelectorAll("[data-i18n]").forEach((element) => {
+      const key = element.getAttribute("data-i18n");
+      if (!key) return;
+
+      if (!element.dataset.i18nOriginal) {
+        element.dataset.i18nOriginal = element.textContent;
+      }
+
+      if (language === "pt") {
+        element.textContent = element.dataset.i18nOriginal;
+        return;
+      }
+
+      const entry = dictionary[key];
+      if (entry && entry.en) {
+        element.textContent = entry.en;
+      }
+    });
+
+    document.querySelectorAll("[data-i18n-attr]").forEach((element) => {
+      const spec = element.getAttribute("data-i18n-attr");
+      if (!spec) return;
+      spec.split(";").forEach((pair) => {
+        const [attr, key] = pair.split(":").map((part) => part.trim());
+        if (!attr || !key) return;
+        const originalKey = `i18nOriginalAttr_${attr}`;
+        if (!element.dataset[originalKey]) {
+          element.dataset[originalKey] = element.getAttribute(attr) || "";
+        }
+        if (language === "pt") {
+          element.setAttribute(attr, element.dataset[originalKey]);
+          return;
+        }
+        const entry = dictionary[key];
+        if (entry && entry.en) {
+          element.setAttribute(attr, entry.en);
+        }
+      });
+    });
   }
 
   function translateTextNodes(language) {
@@ -488,6 +609,7 @@
 
     translateDocumentMetadata(normalized);
     translateTypedItems(normalized);
+    translateByKeys(normalized);
     translateTextNodes(normalized);
     syncInternalLinks(normalized);
     updateLanguageButtons(normalized);

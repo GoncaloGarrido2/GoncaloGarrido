@@ -52,7 +52,7 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -64,6 +64,7 @@
 
   <!-- Custom Styles CSS -->
   <link href="assets/css/custom-styles.css" rel="stylesheet">
+  <link href="assets/css/brand.css" rel="stylesheet">
 </head>
 
 <body class="index-page">
@@ -78,11 +79,11 @@
       <nav id="navmenu" class="navmenu">
         <!-- Desktop Menu - Hidden on mobile -->
         <ul class="d-none d-xl-flex">
-          <li><a href="index.html" class="active">Início</a></li>
-          <li><a href="about.html">Sobre</a></li>
-          <li><a href="resume.html">Currículo</a></li>
-          <li><a href="portfolio.html">Portfólio</a></li>
-          <li><a href="contact.html">Contactos</a></li>
+          <li><a href="index.html" class="active" data-i18n="nav.home">Início</a></li>
+          <li><a href="about.html" data-i18n="nav.about">Sobre</a></li>
+          <li><a href="resume.html" data-i18n="nav.resume">Currículo</a></li>
+          <li><a href="portfolio.html" data-i18n="nav.portfolio">Portfólio</a></li>
+          <li><a href="contact.html" data-i18n="nav.contact">Contactos</a></li>
         </ul>
         
         <!-- Modern Mobile Menu Button - Only on mobile -->
@@ -101,19 +102,19 @@
     </div>
     <div class="modern-mobile-menu">
       <a href="index.html" class="modern-mobile-item">
-        <i class="bi bi-house"></i> Início
+        <i class="bi bi-house"></i> <span data-i18n="nav.home">Início</span>
       </a>
       <a href="about.html" class="modern-mobile-item">
-        <i class="bi bi-person"></i> Sobre
+        <i class="bi bi-person"></i> <span data-i18n="nav.about">Sobre</span>
       </a>
       <a href="resume.html" class="modern-mobile-item">
-        <i class="bi bi-file-text"></i> Currículo
+        <i class="bi bi-file-text"></i> <span data-i18n="nav.resume">Currículo</span>
       </a>
       <a href="portfolio.html" class="modern-mobile-item">
-        <i class="bi bi-collection"></i> Portfólio
+        <i class="bi bi-collection"></i> <span data-i18n="nav.portfolio">Portfólio</span>
       </a>
       <a href="contact.html" class="modern-mobile-item">
-        <i class="bi bi-envelope"></i> Contactos
+        <i class="bi bi-envelope"></i> <span data-i18n="nav.contact">Contactos</span>
       </a>
     </div>
   </div>
@@ -128,11 +129,11 @@
       </picture>
       <div class="container" data-aos="zoom-out" data-aos-delay="100">
         <h2>Gonçalo Garrido</h2>
-        <p class="hero-pitch">Desenvolvedor de software — backend, mobile e integração de sistemas · Porto</p>
-        <p>Sou <span class="typed" data-typed-items="desenvolvedor de software, programador backend, desenvolvedor mobile, programador de integração de sistemas">desenvolvedor de software</span><span class="typed-cursor typed-cursor--blink"></span></p>
+        <p class="hero-pitch" data-i18n="hero.pitch">Desenvolvedor de software — backend, mobile e integração de sistemas · Porto</p>
+        <p class="hero-typed-line">Sou <span class="typed" data-typed-items="desenvolvedor de software, programador backend, desenvolvedor mobile, programador de integração de sistemas">desenvolvedor de software</span><span class="typed-cursor typed-cursor--blink"></span></p>
         <div class="hero-cta-group">
-          <a href="portfolio.html" class="hero-cta hero-cta-primary">Ver projetos</a>
-          <a href="assets/files/Goncalo-Garrido-CV.pdf" class="hero-cta hero-cta-secondary" download>Descarregar CV</a>
+          <a href="portfolio.html" class="hero-cta hero-cta-primary" data-i18n="hero.cta.projects">Ver projetos</a>
+          <a href="assets/files/Goncalo-Garrido-CV.pdf" class="hero-cta hero-cta-secondary" download data-i18n="hero.cta.cv">Descarregar CV</a>
         </div>
         <div class="social-links">
           <a href="https://github.com/GoncaloGarrido2" target="_blank" rel="noopener" aria-label="GitHub"><i class="bi bi-github"></i></a>
@@ -146,7 +147,7 @@
         <div class="scroll-indicator-center">
           <a href="#navigation-cards" class="scroll-down-btn">
             <i class="bi bi-chevron-down"></i>
-            <span>Scroll para ver mais</span>
+            <span data-i18n="hero.scroll">Scroll para ver mais</span>
           </a>
         </div>
       </div>
@@ -230,18 +231,20 @@
 
   </main>
 
-  <footer id="footer" class="footer dark-background">
-    <div class="container">
-      <h3 class="sitename">Gonçalo Garrido</h3>
-      <p>Obrigado por visitar o meu portfólio! Se tiver alguma questão ou estiver interessado em colaborar, não hesite em entrar em contacto comigo.</p>
-      <div class="social-links d-flex justify-content-center">
-        <a href="https://github.com/GoncaloGarrido2" target="_blank" rel="noopener" aria-label="GitHub"><i class="bi bi-github"></i></a>
-        <a href="https://play.google.com/store/apps/dev?id=7747928269861211538" target="_blank" title="Play Store" aria-label="Play Store"><i class="bi bi-google-play"></i></a>
-        <a href="https://www.linkedin.com/in/gon%C3%A7alo-garrido-4301a0269/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
-        <a href="https://stackoverflow.com/users/11312923/gon%c3%a7alo-garrido" target="_blank" rel="noopener" aria-label="Stack Overflow"><i class="bi bi-stack-overflow"></i></a>
-      </div>
+  <!-- SITE_FOOTER_START -->
+<footer id="footer" class="footer dark-background">
+  <div class="container">
+    <h3 class="sitename">Gonçalo Garrido</h3>
+    <p data-i18n="footer.thanks">Obrigado por visitar o meu portfólio! Se tiver alguma questão ou estiver interessado em colaborar, não hesite em entrar em contacto comigo.</p>
+    <div class="social-links d-flex justify-content-center">
+      <a href="https://github.com/GoncaloGarrido2" target="_blank" rel="noopener" aria-label="GitHub"><i class="bi bi-github"></i></a>
+      <a href="https://play.google.com/store/apps/dev?id=7747928269861211538" target="_blank" rel="noopener" title="Play Store" aria-label="Play Store"><i class="bi bi-google-play"></i></a>
+      <a href="https://www.linkedin.com/in/gon%C3%A7alo-garrido-4301a0269/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+      <a href="https://stackoverflow.com/users/11312923/gon%c3%a7alo-garrido" target="_blank" rel="noopener" aria-label="Stack Overflow"><i class="bi bi-stack-overflow"></i></a>
     </div>
-  </footer>
+  </div>
+</footer>
+<!-- SITE_FOOTER_END -->
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>

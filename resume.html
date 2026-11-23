@@ -52,7 +52,7 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -64,30 +64,30 @@
 
   <!-- Custom Styles CSS -->
   <link href="assets/css/custom-styles.css" rel="stylesheet">
+  <link href="assets/css/brand.css" rel="stylesheet">
 </head>
 
 <body class="resume-page">
 
-  <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-
-      <a href="index.html" class="logo d-flex align-items-center">
-        <h1 class="sitename">Gonçalo Garrido</h1>
-      </a>
-
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="index.html">Início</a></li>
-          <li><a href="about.html">Sobre</a></li>
-          <li><a href="resume.html" class="active">Currículo</a></li>
-          <li><a href="portfolio.html">Portfólio</a></li>
-          <li><a href="contact.html">Contactos</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
-
-    </div>
-  </header>
+  <!-- SITE_HEADER_START -->
+<header id="header" class="header d-flex align-items-center fixed-top">
+  <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+    <a href="index.html" class="logo d-flex align-items-center">
+      <h1 class="sitename">Gonçalo Garrido</h1>
+    </a>
+    <nav id="navmenu" class="navmenu" aria-label="Principal">
+      <ul>
+        <li><a href="index.html" data-i18n="nav.home">Início</a></li>
+        <li><a href="about.html" data-i18n="nav.about">Sobre</a></li>
+        <li><a href="resume.html" class="active" data-i18n="nav.resume">Currículo</a></li>
+        <li><a href="portfolio.html" data-i18n="nav.portfolio">Portfólio</a></li>
+        <li><a href="contact.html" data-i18n="nav.contact">Contactos</a></li>
+      </ul>
+      <i class="mobile-nav-toggle d-xl-none bi bi-list" aria-label="Abrir menu"></i>
+    </nav>
+  </div>
+</header>
+<!-- SITE_HEADER_END -->
 
   <main class="main">
 
@@ -277,23 +277,20 @@
     </section>
   </main>
 
-  <footer id="footer" class="footer dark-background">
-    <div class="container">
-      <h3 class="sitename">Gonçalo Garrido</h3>
-      <p>Se tiver alguma questão ou estiver interessado em colaborar, não hesite em entrar em contacto comigo.</p>
-      <div class="social-links d-flex justify-content-center">
-        <a href="https://github.com/GoncaloGarrido2" target="_blank" rel="noopener" aria-label="GitHub"><i class="bi bi-github"></i></a>
-        <a href="https://play.google.com/store/apps/dev?id=7747928269861211538" target="_blank" title="Play Store" aria-label="Play Store"><i class="bi bi-google-play"></i></a>
-        <a href="https://www.linkedin.com/in/gon%C3%A7alo-garrido-4301a0269/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
-        <a href="https://stackoverflow.com/users/11312923/gon%c3%a7alo-garrido" target="_blank" rel="noopener" aria-label="Stack Overflow"><i class="bi bi-stack-overflow"></i></a>
-      </div>
-      <div class="container">
-        <div class="copyright">
-          <span>Copyright</span> <strong class="px-1 sitename">Gonçalo Garrido</strong> <span>Todos os direitos reservados</span>
-        </div>
-      </div>
+  <!-- SITE_FOOTER_START -->
+<footer id="footer" class="footer dark-background">
+  <div class="container">
+    <h3 class="sitename">Gonçalo Garrido</h3>
+    <p data-i18n="footer.thanks">Obrigado por visitar o meu portfólio! Se tiver alguma questão ou estiver interessado em colaborar, não hesite em entrar em contacto comigo.</p>
+    <div class="social-links d-flex justify-content-center">
+      <a href="https://github.com/GoncaloGarrido2" target="_blank" rel="noopener" aria-label="GitHub"><i class="bi bi-github"></i></a>
+      <a href="https://play.google.com/store/apps/dev?id=7747928269861211538" target="_blank" rel="noopener" title="Play Store" aria-label="Play Store"><i class="bi bi-google-play"></i></a>
+      <a href="https://www.linkedin.com/in/gon%C3%A7alo-garrido-4301a0269/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+      <a href="https://stackoverflow.com/users/11312923/gon%c3%a7alo-garrido" target="_blank" rel="noopener" aria-label="Stack Overflow"><i class="bi bi-stack-overflow"></i></a>
     </div>
-  </footer>
+  </div>
+</footer>
+<!-- SITE_FOOTER_END -->
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>

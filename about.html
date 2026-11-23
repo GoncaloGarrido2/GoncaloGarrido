@@ -52,7 +52,7 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -64,6 +64,7 @@
 
   <!-- Custom Styles CSS -->
   <link href="assets/css/custom-styles.css" rel="stylesheet">
+  <link href="assets/css/brand.css" rel="stylesheet">
 
   <!-- Devicon: Biblioteca de Ícones para Tecnologias -->
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
@@ -72,26 +73,25 @@
 
 <body class="about-page">
 
-  <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-
-      <a href="index.html" class="logo d-flex align-items-center">
-        <h1 class="sitename">Gonçalo Garrido</h1>
-      </a>
-
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="index.html">Início</a></li>
-          <li><a href="about.html" class="active">Sobre</a></li>
-          <li><a href="resume.html">Currículo</a></li>
-          <li><a href="portfolio.html">Portfólio</a></li>
-          <li><a href="contact.html">Contactos</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
-
-    </div>
-  </header>
+  <!-- SITE_HEADER_START -->
+<header id="header" class="header d-flex align-items-center fixed-top">
+  <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+    <a href="index.html" class="logo d-flex align-items-center">
+      <h1 class="sitename">Gonçalo Garrido</h1>
+    </a>
+    <nav id="navmenu" class="navmenu" aria-label="Principal">
+      <ul>
+        <li><a href="index.html" data-i18n="nav.home">Início</a></li>
+        <li><a href="about.html" class="active" data-i18n="nav.about">Sobre</a></li>
+        <li><a href="resume.html" data-i18n="nav.resume">Currículo</a></li>
+        <li><a href="portfolio.html" data-i18n="nav.portfolio">Portfólio</a></li>
+        <li><a href="contact.html" data-i18n="nav.contact">Contactos</a></li>
+      </ul>
+      <i class="mobile-nav-toggle d-xl-none bi bi-list" aria-label="Abrir menu"></i>
+    </nav>
+  </div>
+</header>
+<!-- SITE_HEADER_END -->
 
   <main class="main">
 
@@ -220,82 +220,42 @@
   </section>
 
   <section id="recognitions" class="recognitions section">
-    <div class="container section-title" data-aos="fade-up">
-      <div>
-        <h2>Reconhecimentos</h2>
-        <p>Algumas conquistas e certificações que marcaram a minha trajetória.</p>
+    <div class="container" data-aos="fade-up">
+      <div class="section-title">
+        <h2 data-i18n="recog.title">Destaques</h2>
+        <p data-i18n="recog.intro">Certificação, apps publicadas e mobilidade académica — o que pesa para hiring.</p>
       </div>
-  
-      <div class="row">
 
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="card">
-            <img src="assets/img/ImagensConcursos/1.png" class="card-img-top" alt="Diploma de Gestão e Programação de Sistemas Informáticos">
-            <div class="card-body">
-              <h5 class="card-title">Gestão e Programação de Sistemas Informáticos</h5>
-              <p class="card-text">Desenvolvimento de aplicações desktop e web, bases de dados e projetos técnicos com integração prática através de estágios profissionais.</p>
-            </div>
-          </div>
+      <div class="recognition-primary row gy-4">
+        <div class="col-lg-4 recog-item">
+          <img src="assets/img/ImagensConcursos/8.jpg" class="img-fluid mb-3" alt="Certificado Fundamentos de C# com Microsoft" loading="lazy">
+          <h3 data-i18n="recog.csharp.title">Certificação C# com Microsoft</h3>
+          <p data-i18n="recog.csharp.body">Concluí a Certificação de Fundamentos de C# com a Microsoft a 17 de janeiro de 2024 (freeCodeCamp).</p>
+          <p><a href="https://freecodecamp.org/certification/goncalogarrido/foundational-c-sharp-with-microsoft" target="_blank" rel="noopener">Ver certificado</a></p>
         </div>
-
-        <!-- Reconhecimento 1 -->
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="card">
-            <img src="assets/img/ImagensConcursos/image7.jpeg" class="card-img-top" alt="Topas 2018">
-            <div class="card-body">
-              <h5 class="card-title">Topas 2018</h5>
-              <p class="card-text">Participação no concurso de programação Topas edição de 2018, realizado pela Faculdade de Ciências do Porto.</p>
-            </div>
-          </div>
+        <div class="col-lg-4 recog-item">
+          <img src="assets/img/ImagemProjetos/8.png" class="img-fluid mb-3" alt="Apps publicadas na Play Store" loading="lazy">
+          <h3 data-i18n="recog.apps.title">Apps na Play Store</h3>
+          <p data-i18n="recog.apps.body">Apps Android publicadas e mantidas (Papos, Focus Launcher, GlutenFree, PocketCards e outras).</p>
+          <p><a href="https://play.google.com/store/apps/dev?id=7747928269861211538" target="_blank" rel="noopener">Página do programador</a></p>
         </div>
-  
-        <!-- Reconhecimento 2 -->
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="card">
-            <img src="assets/img/ImagensConcursos/3.png" class="card-img-top" alt="Topas 2019">
-            <div class="card-body">
-              <h5 class="card-title">Topas 2019</h5>
-              <p class="card-text">Participação no concurso de programação Topas edição de 2019, realizado pela Faculdade de Ciências do Porto.</p>
-            </div>
-          </div>
-        </div>
-  
-        <!-- Reconhecimento 3 -->
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="card">
-            <img src="assets/img/ImagensConcursos/4.png" class="card-img-top" alt="Tecla 2019">
-            <div class="card-body">
-              <h5 class="card-title">Tecla 2019</h5>
-              <p class="card-text">Participação no concurso de programação Tecla edição de 2019, realizado pela ESTGA.</p>
-            </div>
-          </div>
-        </div>
-  
-        <!-- Reconhecimento 4 -->
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="card">
-            <img src="assets/img/ImagensConcursos/5.png" class="card-img-top" alt="Tecla 2020">
-            <div class="card-body">
-              <h5 class="card-title">Tecla 2020</h5>
-              <p class="card-text">Participação no concurso de programação Tecla edição de 2020, realizado pela ESTGA.</p>
-            </div>
-          </div>
-        </div>
-  
-        <!-- Reconhecimento 5 -->
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="card">
-            <img src="assets/img/ImagensConcursos/8.jpg" class="card-img-top" alt="Certificado Fundamentos de C# com Microsoft">
-            <div class="card-body">
-              <h5 class="card-title">Certificação C# com Microsoft</h5>
-              <p class="card-text">Este certificado atesta que <strong>Gonçalo Garrido</strong> completou com sucesso a Certificação de Fundamentos de C# com a Microsoft a 17 de janeiro de 2024.</p>
-              <p class="card-text">Verifique esta certificação em: <a href="https://freecodecamp.org/certification/goncalogarrido/foundational-c-sharp-with-microsoft" target="_blank">freeCodeCamp</a>.</p>
-            </div>
-          </div>
+        <div class="col-lg-4 recog-item">
+          <img src="assets/img/ImagensConcursos/1.png" class="img-fluid mb-3" alt="Formação e mobilidade académica" loading="lazy">
+          <h3 data-i18n="recog.mobility.title">Mobilidade na UDESC</h3>
+          <p data-i18n="recog.mobility.body">Mobilidade em Ciência da Computação (agosto–dezembro 2023) no CCT/UDESC, Brasil.</p>
+          <p><a href="https://www.udesc.br/cct/computacao" target="_blank" rel="noopener">UDESC CCT</a></p>
         </div>
       </div>
+
+      <details class="recognition-archive">
+        <summary data-i18n="recog.archive">Concursos anteriores (2018–2020)</summary>
+        <ul class="archive-list">
+          <li>Topas 2018 e 2019 — participação (Faculdade de Ciências do Porto)</li>
+          <li>Tecla 2019 e 2020 — participação (ESTGA)</li>
+          <li>Curso técnico de Gestão e Programação de Sistemas Informáticos (ESDAS)</li>
+        </ul>
+      </details>
     </div>
-
   </section>
   
   <!-- Page Navigation Section -->
@@ -338,18 +298,20 @@
 
   </main>
 
-  <footer id="footer" class="footer dark-background">
-    <div class="container">
-      <h3 class="sitename">Gonçalo Garrido</h3>
-      <p>Obrigado por visitar o meu portfólio! Se tiver alguma questão ou estiver interessado em colaborar, não hesite em entrar em contacto comigo.</p>
-      <div class="social-links d-flex justify-content-center">
-        <a href="https://github.com/GoncaloGarrido2" target="_blank" rel="noopener" aria-label="GitHub"><i class="bi bi-github"></i></a>
-        <a href="https://play.google.com/store/apps/dev?id=7747928269861211538" target="_blank" title="Play Store" aria-label="Play Store"><i class="bi bi-google-play"></i></a>
-        <a href="https://www.linkedin.com/in/gon%C3%A7alo-garrido-4301a0269/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
-        <a href="https://stackoverflow.com/users/11312923/gon%c3%a7alo-garrido" target="_blank" rel="noopener" aria-label="Stack Overflow"><i class="bi bi-stack-overflow"></i></a>
-      </div>
+  <!-- SITE_FOOTER_START -->
+<footer id="footer" class="footer dark-background">
+  <div class="container">
+    <h3 class="sitename">Gonçalo Garrido</h3>
+    <p data-i18n="footer.thanks">Obrigado por visitar o meu portfólio! Se tiver alguma questão ou estiver interessado em colaborar, não hesite em entrar em contacto comigo.</p>
+    <div class="social-links d-flex justify-content-center">
+      <a href="https://github.com/GoncaloGarrido2" target="_blank" rel="noopener" aria-label="GitHub"><i class="bi bi-github"></i></a>
+      <a href="https://play.google.com/store/apps/dev?id=7747928269861211538" target="_blank" rel="noopener" title="Play Store" aria-label="Play Store"><i class="bi bi-google-play"></i></a>
+      <a href="https://www.linkedin.com/in/gon%C3%A7alo-garrido-4301a0269/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+      <a href="https://stackoverflow.com/users/11312923/gon%c3%a7alo-garrido" target="_blank" rel="noopener" aria-label="Stack Overflow"><i class="bi bi-stack-overflow"></i></a>
     </div>
-  </footer>
+  </div>
+</footer>
+<!-- SITE_FOOTER_END -->
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
