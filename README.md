@@ -1,6 +1,10 @@
-# Portfolio-Goncalo
-Portfolio com projetos e experiencia profissional.
-# Link
-[Ir para o novo site](https://goncalogarrido2.github.io/GoncaloGarrido/) <br>
-[Ir para o site antigo v2](http://127.0.0.1:5500/old/oldv2/index.html) <br>
-[Ir para o site antigo](https://goncalogarrido2.github.io/GoncaloGarrido/old/)
+# Gonçalo Garrido — site pessoal
+
+Desenvolvedor de software — backend, mobile e integração de sistemas · Porto.
+
+Site estático (HTML/CSS/JS) publicado em GitHub Pages:
+
+**https://goncalogarrido2.github.io/GoncaloGarrido/**
+
+- Currículo PDF canónico: [`assets/files/Goncalo-Garrido-CV.pdf`](assets/files/Goncalo-Garrido-CV.pdf)
+- CVs legados (não ligados na UI): [`assets/files/_arquivo/`](assets/files/_arquivo/)

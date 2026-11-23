@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#1a1a2e"/>
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif" font-weight="800" font-size="36" fill="#ffffff" text-anchor="middle">
+    <rect x="198" y="230" width="72" height="72" rx="10" fill="#3aa394"/>
+    <text x="234" y="278">P</text>
+    <rect x="282" y="230" width="72" height="72" rx="10" fill="#d3ad69"/>
+    <text x="318" y="278">A</text>
+    <rect x="366" y="230" width="72" height="72" rx="10" fill="#4c4470"/>
+    <text x="402" y="278">P</text>
+    <rect x="450" y="230" width="72" height="72" rx="10" fill="#3aa394"/>
+    <text x="486" y="278">O</text>
+    <rect x="534" y="230" width="72" height="72" rx="10" fill="#d3ad69"/>
+    <text x="570" y="278">S</text>
+  </g>
+  <text x="400" y="360" text-anchor="middle" fill="#c8c8d8" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="22">palavra do dia · PT-PT</text>
+</svg>
