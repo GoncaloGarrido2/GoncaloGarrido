@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://goncalogarrido2.github.io/GoncaloGarrido/sitemap.xml
