@@ -11,6 +11,43 @@
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link rel="canonical" href="https://goncalogarrido2.github.io/GoncaloGarrido/about.html">
+  <meta property="og:type" content="profile">
+  <meta property="og:locale" content="pt_PT">
+  <meta property="og:locale:alternate" content="en_GB">
+  <meta property="og:site_name" content="Gonçalo Garrido">
+  <meta property="og:title" content="Sobre — Gonçalo Garrido">
+  <meta property="og:description" content="Sobre Gonçalo Garrido, desenvolvedor de software — backend, mobile e integração de sistemas · Porto.">
+  <meta property="og:url" content="https://goncalogarrido2.github.io/GoncaloGarrido/about.html">
+  <meta property="og:image" content="https://goncalogarrido2.github.io/GoncaloGarrido/assets/img/profile.webp">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Sobre — Gonçalo Garrido">
+  <meta name="twitter:description" content="Sobre Gonçalo Garrido, desenvolvedor de software — backend, mobile e integração de sistemas · Porto.">
+  <meta name="twitter:image" content="https://goncalogarrido2.github.io/GoncaloGarrido/assets/img/profile.webp">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Gonçalo Garrido",
+    "url": "https://goncalogarrido2.github.io/GoncaloGarrido/",
+    "image": "https://goncalogarrido2.github.io/GoncaloGarrido/assets/img/profile.webp",
+    "jobTitle": "Desenvolvedor de software",
+    "description": "Desenvolvedor de software — backend, mobile e integração de sistemas · Porto",
+    "email": "mailto:goncalosantosgarrido@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Porto",
+      "addressCountry": "PT"
+    },
+    "sameAs": [
+      "https://github.com/GoncaloGarrido2",
+      "https://www.linkedin.com/in/gon%C3%A7alo-garrido-4301a0269/",
+      "https://stackoverflow.com/users/11312923/gon%c3%a7alo-garrido",
+      "https://play.google.com/store/apps/dev?id=7747928269861211538"
+    ]
+  }
+  </script>
+
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -21,8 +58,6 @@
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
@@ -32,9 +67,6 @@
 
   <!-- Devicon: Biblioteca de Ícones para Tecnologias -->
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-
-<!-- Bootstrap Icons (para uso de outros ícones, como chevron-right, bi-icons, etc.) -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 
 </head>
 
@@ -92,7 +124,10 @@
 
         <div class="row gy-4 justify-content-center">
           <div class="col-lg-4">
-            <img src="assets/img/profile.png" class="img-fluid" alt="Gonçalo Garrido">
+            <picture>
+              <source srcset="assets/img/profile.webp" type="image/webp">
+              <img src="assets/img/profile.jpg" class="img-fluid" alt="Retrato de Gonçalo Garrido" width="400" height="400" loading="eager">
+            </picture>
           </div>
           <div class="col-lg-8 content">
             <h2>Desenvolvedor de software</h2>
@@ -127,72 +162,58 @@
   <section id="skills" class="skills section">
 
     <div class="container section-title" data-aos="fade-up">
-      <h2>Habilitações</h2>
-      <div><span>As minhas</span> <span class="description-title">Competências</span></div>
+      <h2>Competências</h2>
+      <div><span>Stacks</span> <span class="description-title">núcleo</span></div>
     </div>
 
     <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-      <!-- Linguagens de Programação -->
-      <div class="subheading mb-3">Linguagens de Programação</div>
-      <ul class="list-inline dev-icons">
-        <li class="list-inline-item"><i class="devicon-c-plain h2"></i></li>
-        <li class="list-inline-item"><i class="devicon-cplusplus-plain h2"></i></li>
-        <li class="list-inline-item"><i class="devicon-csharp-plain h2"></i></li>
-        <li class="list-inline-item"><i class="devicon-visualbasic-plain h2"></i></li>
-        <li class="list-inline-item"><i class="devicon-blazor-plain h2"></i></li>
-        <li class="list-inline-item"><i class="devicon-go-plain h2"></i></li>
-        <li class="list-inline-item"><i class="devicon-lua-plain h2"></i></li>
-        <li class="list-inline-item"><i class="devicon-p5js-plain h2"></i></li>
-        <li class="list-inline-item"><i class="devicon-mysql-plain h2"></i></li>
-        <li class="list-inline-item"><i class="devicon-microsoftsqlserver-plain h2"></i></li>
-        <li class="list-inline-item"><i class="devicon-php-plain h2"></i></li>
-        <li class="list-inline-item"><i class="devicon-arduino-plain h2"></i></li>
-        <li class="list-inline-item"><i class="devicon-kotlin-plain h2"></i></li>
-        <li class="list-inline-item"><i class="devicon-java-plain h2"></i></li>
-        <li class="list-inline-item"><i class="devicon-javascript-plain h2"></i></li>
-        <li class="list-inline-item"><i class="devicon-html5-plain h2"></i></li>
-        <li class="list-inline-item"><i class="devicon-css3-plain h2"></i></li>
-        <li class="list-inline-item"><i class="devicon-react-original h2"></i></li>
-        <li class="list-inline-item"><i class="devicon-r-plain h2"></i></li>
-        <li class="list-inline-item"><i class="devicon-laravel-original h2"></i></li>
-      </ul>
+      <p class="skills-intro mb-4">Foco atual no trabalho e nos projetos publicados:</p>
 
-      <!-- Ferramentas de Programação -->
-      <div class="subheading mb-3">Ferramentas de Programação</div>
-      <ul class="list-inline dev-icons">
-        <li class="list-inline-item"><i class="devicon-vscode-plain h2"></i></li>
-        <li class="list-inline-item"><i class="devicon-unity-plain h2"></i></li>
-        <li class="list-inline-item"><i class="devicon-androidstudio-plain h2"></i></li>
-        <li class="list-inline-item"><i class="devicon-visualstudio-plain h2"></i></li>
-        <li class="list-inline-item"><i class="devicon-microsoftsqlserver-plain h2"></i></li>
-        <li class="list-inline-item"><i class="devicon-mysql-plain h2"></i></li>
-        <li class="list-inline-item"><i class="devicon-mongodb-plain h2"></i></li>
-        <li class="list-inline-item"><i class="devicon-rstudio-plain h2"></i></li>
-        <li class="list-inline-item"><i class="devicon-github-original h2"></i></li>
-        <li class="list-inline-item"><i class="devicon-eclipse-plain h2"></i></li>
-      </ul>
+      <div class="row gy-4 core-stacks">
+        <div class="col-md-6 col-lg-3">
+          <div class="core-stack">
+            <i class="devicon-csharp-plain" aria-hidden="true"></i>
+            <h3>C# / .NET</h3>
+            <p>Backend, desktop e integrações (também VB.NET no ecossistema InspGest).</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="core-stack">
+            <i class="devicon-kotlin-plain" aria-hidden="true"></i>
+            <h3>Kotlin / Android</h3>
+            <p>Apps móveis publicadas na Play Store e clientes Android de negócio.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="core-stack">
+            <i class="devicon-microsoftsqlserver-plain" aria-hidden="true"></i>
+            <h3>SQL Server</h3>
+            <p>Modelação, consultas e scripts/migrações em software de inspeção e negócio.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="core-stack">
+            <i class="devicon-nodejs-plain" aria-hidden="true"></i>
+            <h3>Node.js</h3>
+            <p>APIs e integração de sistemas (ex.: ParadigmaXis); também PHP/Laravel em projetos web.</p>
+          </div>
+        </div>
+      </div>
 
-      <!-- Outras Ferramentas de Desenvolvimento -->
-      <div class="subheading mb-3">Outras Ferramentas de Desenvolvimento</div>
-      <ul class="list-inline dev-icons">
-        <li class="list-inline-item"><i class="devicon-figma-plain h2"></i></li>
-        <li class="list-inline-item"><i class="devicon-gimp-plain h2"></i></li>
-        <li class="list-inline-item"><i class="devicon-inkscape-plain h2"></i></li>
-        <li class="list-inline-item"><i class="devicon-postman-plain h2"></i></li>
-        <li class="list-inline-item"><i class="devicon-putty-plain h2"></i></li>
-        <li class="list-inline-item"><i class="devicon-swagger-plain h2"></i></li>
-      </ul>
-
-      <!-- Sistemas Operativos -->
-      <div class="subheading mb-3">Sistemas Operativos para os Quais Desenvolvi Software</div>
-      <ul class="list-inline dev-icons">
-        <li class="list-inline-item"><i class="devicon-windows8-original h2"></i></li>
-        <li class="list-inline-item"><i class="devicon-linux-plain h2"></i></li>
-        <li class="list-inline-item"><i class="devicon-android-plain h2"></i></li>
-        <li class="list-inline-item"><i class="devicon-apple-original h2"></i></li>
-        <li class="list-inline-item"><i class="devicon-raspberrypi-plain h2"></i></li>
-      </ul>
+      <details class="skills-also mt-4">
+        <summary>Também usei</summary>
+        <p class="mt-3 mb-2">Ferramentas e linguagens secundárias — contacto pontual, não o foco principal:</p>
+        <ul class="also-used-list">
+          <li>JavaScript / TypeScript, HTML, CSS</li>
+          <li>Java, PHP, Laravel, WordPress</li>
+          <li>MySQL, MongoDB</li>
+          <li>Python, C/C++, Go</li>
+          <li>Blazor, React, Xamarin / MAUI</li>
+          <li>Android Studio, Visual Studio, Git, Postman</li>
+          <li>Windows, Linux, Android</li>
+        </ul>
+      </details>
 
     </div>
 
@@ -209,7 +230,7 @@
 
         <div class="col-lg-4 col-md-6 mb-4">
           <div class="card">
-            <img src="assets/img/ImagensConcursos/1.png" class="card-img-top" alt="Topas 2018">
+            <img src="assets/img/ImagensConcursos/1.png" class="card-img-top" alt="Diploma de Gestão e Programação de Sistemas Informáticos">
             <div class="card-body">
               <h5 class="card-title">Gestão e Programação de Sistemas Informáticos</h5>
               <p class="card-text">Desenvolvimento de aplicações desktop e web, bases de dados e projetos técnicos com integração prática através de estágios profissionais.</p>
@@ -264,7 +285,7 @@
         <!-- Reconhecimento 5 -->
         <div class="col-lg-4 col-md-6 mb-4">
           <div class="card">
-            <img src="assets/img/ImagensConcursos/8.jpg" class="card-img-top" alt="Certificação C#">
+            <img src="assets/img/ImagensConcursos/8.jpg" class="card-img-top" alt="Certificado Fundamentos de C# com Microsoft">
             <div class="card-body">
               <h5 class="card-title">Certificação C# com Microsoft</h5>
               <p class="card-text">Este certificado atesta que <strong>Gonçalo Garrido</strong> completou com sucesso a Certificação de Fundamentos de C# com a Microsoft a 17 de janeiro de 2024.</p>
@@ -281,7 +302,7 @@
   <section class="page-navigation">
     <div class="container">
       <div class="page-navigation-content" data-aos="fade-up">
-        <h3>Continue a Explorar</h3>
+        <h3>Continue a explorar</h3>
         <p>Agora que conhece um pouco sobre mim e as minhas competências, descubra a minha formação e experiência profissional.</p>
       </div>
       
@@ -293,7 +314,7 @@
         
         <!-- Center Info -->
         <div class="nav-info">
-          <h4>Próxima Secção</h4>
+          <h4>Próxima secção</h4>
           <p>Explore o meu percurso académico e profissional</p>
           <div class="nav-progress">
             <div class="nav-progress-bar">
@@ -322,10 +343,10 @@
       <h3 class="sitename">Gonçalo Garrido</h3>
       <p>Obrigado por visitar o meu portfólio! Se tiver alguma questão ou estiver interessado em colaborar, não hesite em entrar em contacto comigo.</p>
       <div class="social-links d-flex justify-content-center">
-        <a href="https://github.com/GoncaloGarrido2" target="_blank"><i class="bi bi-github"></i></a>
+        <a href="https://github.com/GoncaloGarrido2" target="_blank" rel="noopener" aria-label="GitHub"><i class="bi bi-github"></i></a>
         <a href="https://play.google.com/store/apps/dev?id=7747928269861211538" target="_blank" title="Play Store" aria-label="Play Store"><i class="bi bi-google-play"></i></a>
-        <a href="https://www.linkedin.com/in/gon%C3%A7alo-garrido-4301a0269/" target="_blank"><i class="bi bi-linkedin"></i></a>
-        <a href="https://stackoverflow.com/users/11312923/gon%c3%a7alo-garrido" target="_blank"><i class="bi bi-stack-overflow"></i></a>
+        <a href="https://www.linkedin.com/in/gon%C3%A7alo-garrido-4301a0269/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        <a href="https://stackoverflow.com/users/11312923/gon%c3%a7alo-garrido" target="_blank" rel="noopener" aria-label="Stack Overflow"><i class="bi bi-stack-overflow"></i></a>
       </div>
     </div>
   </footer>
@@ -333,14 +354,8 @@
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-
-  <!-- Main JS File -->
   <script src="assets/js/i18n.js"></script>
   <script src="assets/js/main.js"></script>
 

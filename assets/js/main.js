@@ -245,14 +245,37 @@
     });
 
     isotopeItem.querySelectorAll('.isotope-filters li').forEach(function(filters) {
-      filters.addEventListener('click', function() {
-        isotopeItem.querySelector('.isotope-filters .filter-active').classList.remove('filter-active');
-        this.classList.add('filter-active');
-        initIsotope.arrange({
-          filter: this.getAttribute('data-filter')
+      filters.setAttribute('role', 'button');
+      filters.setAttribute('tabindex', '0');
+      if (!filters.getAttribute('aria-pressed')) {
+        filters.setAttribute('aria-pressed', filters.classList.contains('filter-active') ? 'true' : 'false');
+      }
+
+      function applyFilter(el) {
+        isotopeItem.querySelectorAll('.isotope-filters li').forEach(function(item) {
+          item.classList.remove('filter-active');
+          item.setAttribute('aria-pressed', 'false');
         });
+        el.classList.add('filter-active');
+        el.setAttribute('aria-pressed', 'true');
+        if (initIsotope) {
+          initIsotope.arrange({
+            filter: el.getAttribute('data-filter')
+          });
+        }
         if (typeof aosInit === 'function') {
           aosInit();
+        }
+      }
+
+      filters.addEventListener('click', function() {
+        applyFilter(this);
+      }, false);
+
+      filters.addEventListener('keydown', function(event) {
+        if (event.key === 'Enter' || event.key === ' ') {
+          event.preventDefault();
+          applyFilter(this);
         }
       }, false);
     });

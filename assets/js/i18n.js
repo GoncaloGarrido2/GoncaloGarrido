@@ -141,7 +141,7 @@
     "Estágio como Desenvolvedor": "Developer Internship",
     "Dezembro 2020 - Fevereiro 2021": "December 2020 - February 2021",
     "Aplicações web e desktop em C# e SQL.": "Web and desktop applications in C# and SQL.",
-    "Utilização de frameworks modernas como MAUI e Xamarin.": "Use of modern frameworks such as MAUI and Xamarin.",
+    "Utilização de frameworks modernos como MAUI e Xamarin.": "Use of modern frameworks such as MAUI and Xamarin.",
     "Continue a Jornada": "Continue the Journey",
     "Após conhecer a minha formação e experiência, explore os projetos que desenvolvi e as soluções que criei.": "After learning about my background and experience, explore the projects I developed and the solutions I created.",
     "Descubra os meus projetos e trabalhos desenvolvidos": "Discover my projects and completed work",
@@ -230,6 +230,27 @@
     "Website informativo académico para um zoológico.": "Academic informational zoo website.",
     "Projeto antigo de edição de fotos e vídeos (blog).": "Older photo and video editing project (blog).",
     "Depois de explorar os meus projetos, está na altura de entrarmos em contacto.": "After exploring my projects, it is time to get in touch.",
+
+
+    "Stacks": "Stacks",
+    "núcleo": "core",
+    "Foco actual no trabalho e nos projetos publicados:": "Current focus in work and published projects:",
+    "Foco atual no trabalho e nos projetos publicados:": "Current focus in work and published projects:",
+    "C# / .NET": "C# / .NET",
+    "Backend, desktop e integrações (também VB.NET no ecossistema InspGest).": "Backend, desktop and integrations (also VB.NET in the InspGest ecosystem).",
+    "Kotlin / Android": "Kotlin / Android",
+    "Apps móveis publicadas na Play Store e clientes Android de negócio.": "Mobile apps published on the Play Store and Android business clients.",
+    "SQL Server": "SQL Server",
+    "Modelação, consultas e scripts/migrações em software de inspeção e negócio.": "Modelling, queries and scripts/migrations in inspection and business software.",
+    "Node.js": "Node.js",
+    "APIs e integração de sistemas (ex.: ParadigmaXis); também PHP/Laravel em projetos web.": "APIs and systems integration (e.g. ParadigmaXis); also PHP/Laravel on web projects.",
+    "Também usei": "Also used",
+    "Ferramentas e linguagens secundárias — contacto pontual, não o foco principal:": "Secondary tools and languages — occasional use, not the main focus:",
+    "Vamos trabalhar juntos?": "Shall we work together?",
+    "Fim da jornada": "End of the journey",
+    "Continue a explorar": "Keep exploring",
+    "Continue a jornada": "Continue the journey",
+    "Seletor de idioma": "Language selector",
 
     "Todos os direitos reservados": "All rights reserved"
   };
@@ -401,7 +422,7 @@
     const switcher = document.createElement("div");
     switcher.className = `language-switcher${extraClass ? ` ${extraClass}` : ""}`;
     switcher.setAttribute("role", "group");
-    switcher.setAttribute("aria-label", "Language selector");
+    switcher.setAttribute("aria-label", "Seletor de idioma");
 
     ["pt", "en"].forEach((language) => {
       const button = document.createElement("button");

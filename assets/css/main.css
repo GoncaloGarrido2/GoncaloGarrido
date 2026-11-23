@@ -476,6 +476,12 @@ h6 {
   color: var(--contrast-color);
 }
 
+.language-switcher button:focus-visible {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent-color), transparent 55%);
+}
+
 .navmenu .language-switcher {
   margin-left: 10px;
 }

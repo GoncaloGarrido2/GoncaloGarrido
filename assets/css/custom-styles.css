@@ -2714,6 +2714,82 @@ body {
 }
 
 /*--------------------------------------------------------------
+# Skills — core stacks + also-used (P1)
+--------------------------------------------------------------*/
+.skills-intro {
+  color: color-mix(in srgb, var(--default-color, #444), transparent 10%);
+  max-width: 40rem;
+}
+
+.core-stack {
+  height: 100%;
+  padding: 1.25rem 1rem;
+  border-left: 3px solid #18d26e;
+  background: color-mix(in srgb, #18d26e, transparent 94%);
+}
+
+.core-stack i {
+  font-size: 2rem;
+  color: #18d26e;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+}
+
+.core-stack h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+}
+
+.core-stack p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.45;
+  color: #555;
+}
+
+.skills-also {
+  border: 1px solid color-mix(in srgb, #18d26e, transparent 70%);
+  border-radius: 4px;
+  padding: 0.75rem 1rem;
+  background: transparent;
+}
+
+.skills-also summary {
+  cursor: pointer;
+  font-weight: 600;
+  list-style-position: outside;
+}
+
+.skills-also summary:focus-visible {
+  outline: 2px solid #18d26e;
+  outline-offset: 2px;
+}
+
+.also-used-list {
+  margin: 0;
+  padding-left: 1.2rem;
+  columns: 2;
+  column-gap: 2rem;
+}
+
+.also-used-list li {
+  margin-bottom: 0.35rem;
+  break-inside: avoid;
+}
+
+@media (max-width: 575px) {
+  .also-used-list {
+    columns: 1;
+  }
+}
+
+.isotope-filters li:focus-visible {
+  outline: 2px solid #18d26e;
+  outline-offset: 3px;
+}
+
+/*--------------------------------------------------------------
 # Hero pitch + CTAs (P0)
 --------------------------------------------------------------*/
 .hero .hero-pitch {
