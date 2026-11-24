@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="400" viewBox="0 0 640 400" role="img" aria-label="2S Restaurante">
+  <defs>
+    <linearGradient id="g2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#12100c"/>
+      <stop offset="100%" stop-color="#1e1810"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="400" fill="url(#g2)"/>
+  <circle cx="560" cy="320" r="110" fill="#d4a86e" opacity="0.16"/>
+  <text x="48" y="200" font-family="Syne, system-ui, sans-serif" font-size="64" font-weight="700" fill="#f3ebe0">2S</text>
+  <text x="52" y="240" font-family="Figtree, system-ui, sans-serif" font-size="22" fill="#d4a86e">Restaurante &amp; Bar · Paredes</text>
+</svg>

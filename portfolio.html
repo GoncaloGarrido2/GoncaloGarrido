@@ -52,7 +52,7 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -65,35 +65,13 @@
   <!-- Custom Styles CSS -->
   <link href="assets/css/custom-styles.css" rel="stylesheet">
 
+  <link href="assets/css/brand.css?v=5" rel="stylesheet">
+  <link href="assets/css/ui-fix.css?v=5" rel="stylesheet">
 <style id="theme-ink-critical">
-    /* Critical ink theme — defeats cache of old pale panels */
-    html, body { background:#0b1220 !important; color:#e8eef5 !important; }
-    #recognitions, #recognitions.recognitions, section.recognitions,
-    .recognitions, .recognitions.section, .about.section, .skills.section,
-    .resume.section, .portfolio.section, .contact.section, .case-study.section,
-    .page-navigation, .page-title, .page-title .heading, .page-title nav,
-    .navigation-cards, .footer {
-      background:#0b1220 !important;
-      background-color:#0b1220 !important;
-      background-image:none !important;
-      color:#e8eef5 !important;
-    }
-    .recognitions::before, .about.section::before, .skills.section::before,
-    .portfolio.section::before, .resume.section::before, .contact.section::before {
-      background: radial-gradient(ellipse at 20% 20%, rgba(31,185,138,0.12), transparent 50%) !important;
-      opacity:1 !important;
-    }
-    .recog-item, .core-stack, .resume-item, .contact-card, .nav-card,
-    .portfolio-card, .portfolio-description, .cta-section, .skills-also,
-    .card, .card-body {
-      background:#151d2e !important;
-      background-color:#151d2e !important;
-      background-image:none !important;
-      color:#e8eef5 !important;
-      border:1px solid rgba(31,185,138,0.28) !important;
-    }
+    /* Ink base — atmosphere via design50 (loaded after this block) */
+    html, body { background:#070b14; color:#e9eef6; }
     .recog-item img, .recognition-primary img {
-      background:#0f1624 !important;
+      background:#0f1624;
       object-fit:contain;
       max-height:220px;
       width:100%;
@@ -104,13 +82,9 @@
       -webkit-text-fill-color:#fff !important;
       background:none !important;
     }
-    .section-title p, .recog-item p, .skills-intro, .about .content p {
-      color:#c5d0dc !important;
-      -webkit-text-fill-color:#c5d0dc !important;
-      background:none !important;
-    }
-    [data-aos] { opacity:1 !important; transform:none !important; }
+    html:not(.aos-ready) [data-aos] { opacity:1 !important; transform:none !important; }
   </style>
+  <link href="assets/css/design50.css?v=13" rel="stylesheet">
 
 </head>
 
@@ -181,6 +155,53 @@
       </ul>
     
       <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+        <!-- Delty WebSites (destaque) -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-featured filter-web">
+          <div class="portfolio-card">
+            <a href="https://delty.party/" class="portfolio-link" target="_blank" rel="noopener">
+              <div class="portfolio-content">
+                <img src="assets/img/ImagemProjetos/20-delty.svg" class="img-fluid" alt="Delty WebSites" loading="lazy" decoding="async">
+                <div class="portfolio-info">
+                  <p data-i18n="cta.view.project">Ver projeto</p>
+                </div>
+              </div>
+            </a>
+            <div class="portfolio-description">
+              <h5>Delty WebSites</h5>
+              <p data-i18n="proj.delty.body">Marca própria de websites para negócios locais: do site simples ao projecto à medida, com extras de loja e menu QR. Frontpage comercial em Next.js com demos por sector.</p>
+              <p data-i18n="proj.delty.tech">Tech: Next.js · Cloudflare · delty.party</p>
+              <div class="portfolio-links">
+                <a href="https://delty.party/" class="styled-link" target="_blank" rel="noopener">Site</a>
+                <a href="https://delty.party/precos" class="styled-link" target="_blank" rel="noopener">Preços</a>
+                <a href="https://delty.party/templates" class="styled-link" target="_blank" rel="noopener">Demos</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2S Restaurante (destaque / cliente Delty) -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-featured filter-web">
+          <div class="portfolio-card">
+            <a href="https://2srestaurante.com/" class="portfolio-link" target="_blank" rel="noopener">
+              <div class="portfolio-content">
+                <img src="assets/img/ImagemProjetos/21-2s.svg" class="img-fluid" alt="2S Restaurante &amp; Bar" loading="lazy" decoding="async">
+                <div class="portfolio-info">
+                  <p data-i18n="cta.view.project">Ver projeto</p>
+                </div>
+              </div>
+            </a>
+            <div class="portfolio-description">
+              <h5>2S Restaurante &amp; Bar</h5>
+              <p data-i18n="proj.2s.body">Site multi-página para restaurante em Paredes: história, galeria, carta digital (QR), menus, vinhos, reservas e contactos. Publicado com crédito «Site por Delty».</p>
+              <p data-i18n="proj.2s.tech">Tech: Next.js · Cloudflare · cliente Delty</p>
+              <div class="portfolio-links">
+                <a href="https://2srestaurante.com/" class="styled-link" target="_blank" rel="noopener">Site</a>
+                <a href="https://2s.delty.party/" class="styled-link" target="_blank" rel="noopener">Espelho</a>
+              </div>
+            </div>
+          </div>
+        </div>
 
         <!-- Papos (destaque) -->
         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-featured filter-mobile filter-web">

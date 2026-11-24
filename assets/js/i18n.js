@@ -182,6 +182,14 @@
     "portfolio.filter.web": { en: "Web projects" },
     "portfolio.filter.other": { en: "Other" },
 
+    "proj.delty.body": {
+      en: "Own brand of websites for local businesses: from a simple site to a custom build, with shop and QR-menu extras. Commercial frontpage in Next.js with sector demos."
+    },
+    "proj.delty.tech": { en: "Tech: Next.js · Cloudflare · delty.party" },
+    "proj.2s.body": {
+      en: "Multi-page site for a restaurant in Paredes: story, gallery, digital menu (QR), wines, bookings and contacts. Published with a “Site by Delty” credit."
+    },
+    "proj.2s.tech": { en: "Tech: Next.js · Cloudflare · Delty client" },
     "proj.papos.body": {
       en: "Daily word game in European Portuguese (Wordle-style), with five modes and offline play. I built the Android app and the web version."
     },
@@ -292,11 +300,17 @@
     "resume.exp.win2.b2": {
       en: "Custom solutions for clients' operational efficiency."
     },
-    "resume.exp.free.title": { en: "Website developer (freelance)" },
-    "resume.exp.free.dates": { en: "February 2023 – June 2024" },
-    "resume.exp.free.org": { en: "Self-employed" },
+    "resume.exp.free.title": { en: "Delty WebSites — web development (self-employed)" },
+    "resume.exp.free.dates": { en: "February 2023 – Present" },
+    "resume.exp.free.org": { en: "Delty · delty.party" },
     "resume.exp.free.b1": {
-      en: "Online stores and web apps for clients (e-commerce and institutional sites)."
+      en: "Delty brand: custom websites for SMEs (Next.js + Cloudflare), with public pricing and demos."
+    },
+    "resume.exp.free.b2": {
+      en: "2S Restaurant case (Paredes): full site with QR menu, menus and bookings."
+    },
+    "resume.exp.free.b3": {
+      en: "Client/project domains published under the *.delty.party ecosystem."
     },
     "resume.exp.core.title": { en: "Web and Mobile Application Developer" },
     "resume.exp.core.dates": { en: "September 2022 – August 2023" },
@@ -329,9 +343,9 @@
       en: "I am always interested in discussing new projects and interesting opportunities."
     },
 
-    "navcard.section.title": { en: "Explore My Portfolio" },
+    "navcard.section.title": { en: "Keep exploring" },
     "navcard.section.lead": {
-      en: "Browse the different sections to learn more about my work and experience"
+      en: "Background, projects and contact — without the noise."
     },
     "navcard.about.title": { en: "About Me" },
     "navcard.about.body": {
@@ -638,7 +652,13 @@
     }
 
     if (!document.querySelector(".mobile-language-switcher")) {
-      document.body.appendChild(createLanguageSwitcher("mobile-language-switcher"));
+      const header = document.querySelector("#header .container-fluid, #header .container-xl, #header");
+      const switcher = createLanguageSwitcher("mobile-language-switcher");
+      if (header && header.appendChild) {
+        header.appendChild(switcher);
+      } else {
+        document.body.appendChild(switcher);
+      }
     }
   }
 

@@ -52,7 +52,7 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -65,35 +65,13 @@
   <!-- Custom Styles CSS -->
   <link href="assets/css/custom-styles.css" rel="stylesheet">
 
+  <link href="assets/css/brand.css?v=5" rel="stylesheet">
+  <link href="assets/css/ui-fix.css?v=5" rel="stylesheet">
 <style id="theme-ink-critical">
-    /* Critical ink theme — defeats cache of old pale panels */
-    html, body { background:#0b1220 !important; color:#e8eef5 !important; }
-    #recognitions, #recognitions.recognitions, section.recognitions,
-    .recognitions, .recognitions.section, .about.section, .skills.section,
-    .resume.section, .portfolio.section, .contact.section, .case-study.section,
-    .page-navigation, .page-title, .page-title .heading, .page-title nav,
-    .navigation-cards, .footer {
-      background:#0b1220 !important;
-      background-color:#0b1220 !important;
-      background-image:none !important;
-      color:#e8eef5 !important;
-    }
-    .recognitions::before, .about.section::before, .skills.section::before,
-    .portfolio.section::before, .resume.section::before, .contact.section::before {
-      background: radial-gradient(ellipse at 20% 20%, rgba(31,185,138,0.12), transparent 50%) !important;
-      opacity:1 !important;
-    }
-    .recog-item, .core-stack, .resume-item, .contact-card, .nav-card,
-    .portfolio-card, .portfolio-description, .cta-section, .skills-also,
-    .card, .card-body {
-      background:#151d2e !important;
-      background-color:#151d2e !important;
-      background-image:none !important;
-      color:#e8eef5 !important;
-      border:1px solid rgba(31,185,138,0.28) !important;
-    }
+    /* Ink base — atmosphere via design50 (loaded after this block) */
+    html, body { background:#070b14; color:#e9eef6; }
     .recog-item img, .recognition-primary img {
-      background:#0f1624 !important;
+      background:#0f1624;
       object-fit:contain;
       max-height:220px;
       width:100%;
@@ -104,13 +82,9 @@
       -webkit-text-fill-color:#fff !important;
       background:none !important;
     }
-    .section-title p, .recog-item p, .skills-intro, .about .content p {
-      color:#c5d0dc !important;
-      -webkit-text-fill-color:#c5d0dc !important;
-      background:none !important;
-    }
-    [data-aos] { opacity:1 !important; transform:none !important; }
+    html:not(.aos-ready) [data-aos] { opacity:1 !important; transform:none !important; }
   </style>
+  <link href="assets/css/design50.css?v=13" rel="stylesheet">
 
 </head>
 
@@ -134,8 +108,8 @@
         </ul>
         
         <!-- Modern Mobile Menu Button - Only on mobile -->
-        <div class="modern-mobile-nav-toggle d-xl-none">
-          <i class="bi bi-grid-3x3-gap"></i>
+        <div class="modern-mobile-nav-toggle d-xl-none" role="button" tabindex="0" aria-label="Abrir menu">
+          <i class="bi bi-list" aria-hidden="true"></i>
         </div>
       </nav>
 
@@ -174,18 +148,13 @@
         <source srcset="assets/img/grandiosoemagico.webp" type="image/webp">
         <img src="assets/img/grandiosoemagico.jpg" alt="" data-aos="fade-in" width="1920" height="1280" fetchpriority="high" style="filter: brightness(0.75); transition: filter 0.3s ease;">
       </picture>
-      <div class="container" data-aos="zoom-out" data-aos-delay="100">
+      <div class="container" data-aos="fade-up" data-aos-delay="80">
         <h2>Gonçalo Garrido</h2>
         <p class="hero-pitch" data-i18n="hero.pitch">Desenvolvedor de software — backend, mobile e integração de sistemas · Porto</p>
-        <p class="hero-typed-line"><span data-i18n="hero.im">Sou</span> <span class="typed" data-typed-items="desenvolvedor de software, programador backend, desenvolvedor mobile, programador de integração de sistemas">desenvolvedor de software</span><span class="typed-cursor typed-cursor--blink"></span></p>
+        <p class="hero-typed-line visually-hidden" aria-hidden="true"><span data-i18n="hero.im">Sou</span> <span class="typed" data-typed-items="desenvolvedor de software, programador backend, desenvolvedor mobile, programador de integração de sistemas">desenvolvedor de software</span></p>
         <div class="hero-cta-group">
           <a href="portfolio.html" class="hero-cta hero-cta-primary" data-i18n="hero.cta.projects">Ver projetos</a>
           <a href="assets/files/Goncalo-Garrido-CV.pdf" class="hero-cta hero-cta-secondary" download data-i18n="hero.cta.cv">Descarregar CV</a>
-        </div>
-        <div class="social-links">
-          <a href="https://github.com/GoncaloGarrido2" target="_blank" rel="noopener" aria-label="GitHub"><i class="bi bi-github"></i></a>
-          <a href="https://www.linkedin.com/in/gon%C3%A7alo-garrido-4301a0269/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
-          <a href="about.html" aria-label="Sobre"><i class="bi bi-file-earmark-person"></i></a>
         </div>
       </div>
       
@@ -205,8 +174,8 @@
       <div class="container" data-aos="fade-up">
         <div class="row d-flex justify-content-center text-center">
           <div class="col-lg-8">
-            <h2 data-i18n="navcard.section.title">Explorar o Meu Portfólio</h2>
-            <p class="mb-4" data-i18n="navcard.section.lead">Navegue pelas diferentes secções para conhecer melhor o meu trabalho e experiência</p>
+            <h2 data-i18n="navcard.section.title">Continuar a explorar</h2>
+            <p class="mb-4" data-i18n="navcard.section.lead">Percurso, projectos e contacto — sem ruído.</p>
           </div>
         </div>
         
