@@ -64,7 +64,7 @@
     },
     "page.portfolio.title": { en: "Portfolio" },
     "page.portfolio.lead": {
-      en: "Featured projects with public proof (Play Store, demos and docs). Current WorkInNet/InspGest work is detailed on the resume."
+      en: "Featured work with public proof: Delty, 2S, Play Store apps, Bookly and current WorkInNet/InspGest work. Academic sites under “Other”."
     },
     "page.contact.title": { en: "Contacts" },
     "page.contact.lead": {
@@ -82,27 +82,32 @@
     "about.value.education": { en: "Degree in IT" },
     "about.value.available": { en: "Available" },
     "about.bio": {
-      en: "Throughout my career I have mainly worked with C#, Kotlin and SQL on backends, Android apps and systems integration — including the InspGest ecosystem for vehicle inspection and freelance website projects."
+      en: "Three anchors: WorkInNet/InspGest (C#, VB.NET, Kotlin, SQL), Android apps on the Play Store, and Delty WebSites (Next.js + Cloudflare) for local businesses — including the 2S Restaurant case."
     },
     "skills.title": { en: "Skills" },
     "skills.stacks": { en: "Stacks" },
     "skills.core": { en: "core" },
-    "skills.intro": { en: "Current focus in work and published projects:" },
+    "skills.intro": {
+      en: "Hierarchy from current work, the Delty brand and published apps — not an icon soup."
+    },
     "skills.csharp.body": {
-      en: "Backend, desktop and integrations (also VB.NET in the InspGest ecosystem)."
+      en: "WorkInNet / InspGest: desktop, services and inspection-line integrations (also .NET Core)."
     },
     "skills.kotlin.body": {
-      en: "Mobile apps published on the Play Store and Android business clients."
+      en: "InspGest mobile clients and Play Store apps (Papos, Focus Launcher, GlutenFree, PocketCards)."
     },
     "skills.sql.body": {
-      en: "Modelling, queries and scripts/migrations in inspection and business software."
+      en: "Modelling, queries and T-SQL migrations in the inspection and business ecosystem."
+    },
+    "skills.web.body": {
+      en: "Delty WebSites and the 2S case: commercial sites in Next.js with Cloudflare (DNS/CDN)."
     },
     "skills.node.body": {
       en: "APIs and systems integration (e.g. ParadigmaXis); also PHP/Laravel on web projects."
     },
     "skills.also": { en: "Also used" },
     "skills.also.intro": {
-      en: "Secondary tools and languages — occasional use, not the main focus:"
+      en: "Secondary — project contact, IPMAIA coursework or occasional roles:"
     },
 
     "case.kicker": { en: "Case study" },
@@ -213,8 +218,12 @@
     "proj.sushi.body": {
       en: "Android sushi-stacking game with Google Play Games. Published on the Play Store."
     },
+    "proj.win.body": {
+      en: "Software for vehicle inspection centres (Portugal, with links to Brazil and Angola). Current role: desktop, mobile and services in the InspGest ecosystem."
+    },
+    "proj.win.tech": { en: "Tech: C# · VB.NET · Kotlin · SQL" },
     "proj.smile.body": {
-      en: "Stationery e-commerce (freelance). Site currently offline — copy on the Internet Archive."
+      en: "Stationery e-commerce in Vila do Conde (freelance). Site online."
     },
     "proj.smile.desktop.title": { en: "Smile — sales management" },
     "proj.smile.desktop.body": {
@@ -276,15 +285,15 @@
     "resume.exp.title": { en: "Professional Experience" },
     "resume.exp.win.title": { en: "Software Developer" },
     "resume.exp.win.dates": { en: "August 2025 – Present" },
-    "resume.exp.win.org": { en: "WorkInNet — InspGest (vehicle inspection)" },
+    "resume.exp.win.org": { en: "WorkInNet — IT Consultancy · InspGest" },
     "resume.exp.win.b1": {
       en: "Development in the InspGest ecosystem for vehicle inspection centres in Portugal, with links to Brazil and Angola."
     },
     "resume.exp.win.b2": {
-      en: "Main stack: C#, VB.NET, Kotlin and SQL — desktop, mobile and services."
+      en: "Stack: C#, VB.NET, Kotlin and SQL — desktop, mobile apps, APIs/services and database scripts."
     },
     "resume.exp.win.b3": {
-      en: "Integration with workshop equipment and inspection-line operational flows."
+      en: "Integration with workshop equipment (OBD, line, cameras) and inspection operational flows."
     },
     "resume.exp.px.title": { en: "Full Stack Developer" },
     "resume.exp.px.dates": { en: "March 2025 – August 2025" },
