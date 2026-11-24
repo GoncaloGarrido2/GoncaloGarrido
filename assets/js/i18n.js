@@ -47,7 +47,7 @@
     },
     "meta.portfolio.title": { en: "Portfolio — Gonçalo Garrido" },
     "meta.portfolio.desc": {
-      en: "Gonçalo Garrido's projects: Papos, Focus Launcher, GlutenFree, Bookly, PocketCards and more — backend, mobile and systems integration."
+      en: "Portfolio: Delty WebSites (2S, 504 Automóveis, São Tomé, Carpintaria CP), Bookly (Navalha Negra, Smile), WorkInNet/InspGest, Papos and Android apps."
     },
     "meta.contact.title": { en: "Contacts — Gonçalo Garrido" },
     "meta.contact.desc": {
@@ -356,7 +356,7 @@
       en: "2S Restaurant case (Paredes): full site with QR menu, menus and bookings."
     },
     "resume.exp.free.b3": {
-      en: "Client/project domains published under the *.delty.party ecosystem."
+      en: "Clients on *.delty.party / *.bookly.party — e.g. 504 Automóveis, Navalha Negra, Smile Papelaria, São Tomé Turismo, Carpintaria CP."
     },
     "resume.exp.core.title": { en: "Web and Mobile Application Developer" },
     "resume.exp.core.dates": { en: "September 2022 – August 2023" },
