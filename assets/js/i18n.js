@@ -88,8 +88,17 @@
     "skills.stacks": { en: "Stacks" },
     "skills.core": { en: "core" },
     "skills.intro": {
-      en: "Hierarchy from current work, the Delty brand and published apps — not an icon soup."
+      en: "Hierarchy from current work, the Delty brand and published apps — with icons for the languages and tools I actually use."
     },
+    "skills.langs.spoken": { en: "Languages" },
+    "skills.langs.prog": { en: "Programming languages" },
+    "skills.tools": { en: "Tools" },
+    "skills.lang.pt": { en: "Portuguese" },
+    "skills.lang.pt.level": { en: "native" },
+    "skills.lang.en": { en: "English" },
+    "skills.lang.en.level": { en: "work / bilingual site" },
+    "resume.edu.badge.degree": { en: "Primary degree" },
+    "resume.edu.badge.mobility": { en: "Exchange (not a standalone degree)" },
     "skills.csharp.body": {
       en: "WorkInNet / InspGest: desktop, services and inspection-line integrations (also .NET Core)."
     },
@@ -187,8 +196,11 @@
     "portfolio.filter.web": { en: "Web projects" },
     "portfolio.filter.other": { en: "Other" },
 
+    "proj.delty.tagline": {
+      en: "We turn ideas into digital experiences."
+    },
     "proj.delty.body": {
-      en: "Own brand of websites for local businesses: from a simple site to a custom build, with shop and QR-menu extras. Commercial frontpage in Next.js with sector demos."
+      en: "Websites with presence and excellence — from a simple site to a custom build, with shop bundles and QR menus. Own brand (Next.js + Cloudflare); public case: 2S Restaurant."
     },
     "proj.delty.tech": { en: "Tech: Next.js · Cloudflare · delty.party" },
     "proj.2s.body": {
@@ -263,11 +275,11 @@
       en: "Course focused on technological solutions and systems management, with an emphasis on backend development and system integration."
     },
     "resume.edu.udesc.title": {
-      en: "Bachelor's in Computer Science (exchange)"
+      en: "Bachelor's in Computer Science — exchange"
     },
     "resume.edu.udesc.dates": { en: "August 2023 - December 2023" },
     "resume.edu.udesc.body": {
-      en: "Participation in an exchange program focused on IT solutions and system integration."
+      en: "Exchange during the IPMAIA degree (does not replace it): focus on software development and systems integration."
     },
     "resume.edu.ctesp.title": {
       en: "Higher Professional Technical Course in Information Systems Technologies and Programming"

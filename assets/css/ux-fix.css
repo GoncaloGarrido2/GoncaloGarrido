@@ -319,3 +319,189 @@ body.resume-page .page-title .heading,
 .resume-page .page-title .heading {
   padding-bottom: 1.75rem !important;
 }
+
+/*--------------------------------------------------------------
+# Skills icons + idiomas (repôr main, hovers calmos)
+--------------------------------------------------------------*/
+.skills-icons-block {
+  margin-top: 2.25rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid color-mix(in srgb, var(--brand-fog, #e9eef6), transparent 90%);
+}
+
+.skills-subhead {
+  font-family: var(--heading-font, Syne, sans-serif);
+  font-size: 1.05rem;
+  color: #fff;
+  letter-spacing: -0.02em;
+  margin: 1.35rem 0 0.85rem;
+}
+
+.spoken-langs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.25rem;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0.5rem;
+}
+
+.spoken-lang {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.45rem;
+  color: var(--brand-fog, #e9eef6);
+  font-size: 0.95rem;
+}
+
+.spoken-lang i {
+  color: var(--brand-accent, #2ecf9a);
+  font-size: 1.1rem;
+}
+
+.spoken-lang em {
+  color: var(--brand-muted, #93a0b3);
+  font-style: normal;
+  font-size: 0.82rem;
+}
+
+.skills .dev-icons,
+.dev-icons {
+  display: flex !important;
+  flex-wrap: wrap;
+  gap: 0.65rem 0.85rem;
+  justify-content: flex-start;
+  margin: 0 0 1.25rem !important;
+  padding: 0.85rem 0 !important;
+  background: none !important;
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  overflow: visible !important;
+  position: static !important;
+}
+
+.skills .dev-icons::before,
+.dev-icons::before {
+  display: none !important;
+  content: none !important;
+}
+
+.skills .dev-icons .list-inline-item,
+.dev-icons .list-inline-item {
+  margin: 0 !important;
+  padding: 0.55rem 0.65rem !important;
+  border-radius: 0.4rem;
+  background: color-mix(in srgb, var(--brand-fog, #e9eef6), transparent 94%) !important;
+  border: 1px solid color-mix(in srgb, var(--brand-fog, #e9eef6), transparent 88%) !important;
+  transition: border-color 0.2s ease, color 0.2s ease !important;
+  transform: none !important;
+  overflow: visible !important;
+}
+
+.skills .dev-icons .list-inline-item::before,
+.dev-icons .list-inline-item::before {
+  display: none !important;
+  content: none !important;
+}
+
+.skills .dev-icons .list-inline-item:hover,
+.dev-icons .list-inline-item:hover {
+  transform: none !important;
+  box-shadow: none !important;
+  border-color: color-mix(in srgb, var(--brand-accent, #2ecf9a), transparent 45%) !important;
+  background: color-mix(in srgb, var(--brand-accent, #2ecf9a), transparent 90%) !important;
+}
+
+.skills .dev-icons i,
+.dev-icons i {
+  font-size: 1.65rem !important;
+  color: var(--brand-accent, #2ecf9a) !important;
+  filter: none !important;
+  transition: color 0.2s ease !important;
+}
+
+.skills .dev-icons .list-inline-item:hover i,
+.dev-icons .list-inline-item:hover i {
+  transform: none !important;
+  filter: none !important;
+  color: #fff !important;
+}
+
+/*--------------------------------------------------------------
+# Educação — licenciatura > mobilidade
+--------------------------------------------------------------*/
+.edu-badge {
+  display: inline-block;
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--brand-ink, #0b1220);
+  background: var(--brand-accent, #2ecf9a);
+  padding: 0.2rem 0.5rem;
+  margin-bottom: 0.45rem;
+  font-weight: 700;
+}
+
+.edu-badge-muted {
+  background: transparent;
+  color: var(--brand-muted, #93a0b3);
+  border: 1px solid color-mix(in srgb, var(--brand-fog, #e9eef6), transparent 80%);
+  font-weight: 600;
+}
+
+.edu-entry.edu-primary {
+  grid-column: 1 / -1;
+  border-left-width: 3px;
+  padding: 0.35rem 0 0.35rem 1.15rem;
+}
+
+.edu-entry.edu-primary h4 {
+  font-size: 1.2rem;
+}
+
+.edu-entry.edu-mobility {
+  opacity: 0.92;
+}
+
+.edu-entry.edu-mobility h4 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: color-mix(in srgb, var(--brand-fog, #e9eef6), transparent 8%);
+}
+
+.edu-entry.edu-mobility .edu-place {
+  font-size: 0.85rem;
+}
+
+.resume-item--primary {
+  border-left-width: 3px !important;
+}
+
+.resume-item--primary h4 {
+  font-size: 1.15rem !important;
+}
+
+.resume-item--mobility {
+  opacity: 0.9;
+  border-left-color: color-mix(in srgb, var(--brand-accent, #2ecf9a), transparent 55%) !important;
+}
+
+.resume-item--mobility h4 {
+  font-size: 0.95rem !important;
+  font-weight: 600 !important;
+  color: color-mix(in srgb, var(--brand-fog, #e9eef6), transparent 5%) !important;
+}
+
+.resume .edu-badge {
+  margin-bottom: 0.55rem;
+}
+
+.portfolio-tagline {
+  color: #fff !important;
+  font-family: var(--heading-font, Syne, sans-serif);
+  font-size: 0.95rem;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.35rem !important;
+}
