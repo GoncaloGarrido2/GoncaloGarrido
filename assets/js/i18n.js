@@ -64,7 +64,7 @@
     },
     "page.portfolio.title": { en: "Portfolio" },
     "page.portfolio.lead": {
-      en: "Featured work with public proof: Delty, 2S, Play Store apps, Bookly and current WorkInNet/InspGest work. Academic sites under “Other”."
+      en: "Featured: Delty, 2S, WorkInNet/InspGest and apps. Under Web: Delty/Bookly clients (504, Navalha Negra, Smile, São Tomé, Carpintaria CP, RENOVSTAR) and 4 Em Linha. Academic work under “Other”."
     },
     "page.contact.title": { en: "Contacts" },
     "page.contact.lead": {
@@ -220,9 +220,9 @@
     },
     "proj.gluten.tech": { en: "Tech: Android · maps." },
     "proj.bookly.body": {
-      en: "Web and Android management platform for stationery shops (school materials and books). IPMAIA degree project with public documentation."
+      en: "Web and Android management platform for stationery shops (school materials and books). IPMAIA degree project — distinct from client hosting on bookly.party."
     },
-    "proj.bookly.tech": { en: "Tech: Laravel · Kotlin." },
+    "proj.bookly.tech": { en: "Tech: Laravel · Kotlin · public docs." },
     "proj.pocket.body": {
       en: "Digital manager for cards, coupons and tickets with QR codes and barcodes always at hand. Android app published on the Play Store."
     },
@@ -241,11 +241,11 @@
     "proj.navalha.body": {
       en: "Barbershop in Vila do Conde: online bookings, shop and a distinct digital brand."
     },
-    "proj.navalha.tech": { en: "Tech: Next.js · Cloudflare · Bookly" },
+    "proj.navalha.tech": { en: "Tech: Next.js · Cloudflare · bookly.party" },
     "proj.smile.body": {
       en: "Online stationery and gifts shop in Vila do Conde: catalogue, campaigns and in-store pickup."
     },
-    "proj.smile.tech": { en: "Tech: Next.js · Cloudflare · Bookly" },
+    "proj.smile.tech": { en: "Tech: Next.js · Cloudflare · bookly.party" },
     "proj.smile.desktop.title": { en: "Smile — sales management" },
     "proj.smile.desktop.body": {
       en: "Desktop app linked to the Smile e-commerce (sales and customer management). Project report."
@@ -259,7 +259,7 @@
     },
     "proj.cp.tech": { en: "Tech: Next.js · Cloudflare · Delty client" },
     "proj.renovstar.body": {
-      en: "Interior renovation: kitchens, bathrooms, rehabilitation and finishes with close follow-up."
+      en: "Interior renovation: kitchens, bathrooms, rehabilitation and finishes. Note: the public site may still show staging “[TESTE]” labels."
     },
     "proj.renovstar.tech": { en: "Tech: Next.js · Cloudflare · Delty client" },
     "proj.4emlinha.body": {
@@ -344,7 +344,7 @@
       en: "Desktop applications with Visual Basic and SQL, plus web components with Laravel."
     },
     "resume.exp.win2.b2": {
-      en: "Custom solutions for clients' operational efficiency."
+      en: "Evolution and maintenance of WorkInNet internal tools (desktop + SQL) for client operations."
     },
     "resume.exp.free.title": { en: "Delty WebSites — web development (self-employed)" },
     "resume.exp.free.dates": { en: "February 2023 – Present" },
