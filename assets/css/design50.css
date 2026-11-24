@@ -1073,3 +1073,64 @@ a.hero-cta-secondary:hover {
     font-size: clamp(2rem, 10vw, 2.6rem) !important;
   }
 }
+
+/*--------------------------------------------------------------
+# Uniformidade tipografia / ritmo (todas as páginas)
+--------------------------------------------------------------*/
+.main,
+.about .content,
+.resume,
+.portfolio-description,
+.contact-card,
+.case-body {
+  font-family: var(--default-font);
+}
+
+.section-title h2,
+.page-title h1,
+.resume .resume-title,
+.about .content h2,
+.portfolio-description h5,
+.contact-card h3,
+.core-stack h3 {
+  font-family: var(--heading-font) !important;
+  letter-spacing: -0.03em;
+}
+
+.portfolio-description p,
+.about .content p,
+.resume .resume-item p,
+.resume .resume-item li,
+.contact-card p,
+.case-body p {
+  line-height: 1.65;
+  color: color-mix(in srgb, var(--brand-fog), transparent 8%);
+}
+
+.core-stacks .core-stack h3 {
+  font-size: 1.05rem;
+  margin-top: 0.75rem;
+}
+
+.core-stacks .core-stack p {
+  font-size: 0.92rem;
+  color: var(--brand-muted);
+}
+
+.skills-intro {
+  max-width: 40rem;
+  color: var(--brand-muted);
+}
+
+.also-used-list {
+  columns: 2;
+  gap: 1.5rem;
+  color: var(--brand-muted);
+  font-size: 0.92rem;
+}
+
+@media (max-width: 576px) {
+  .also-used-list {
+    columns: 1;
+  }
+}
