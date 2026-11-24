@@ -1,0 +1,321 @@
+/*--------------------------------------------------------------
+# UX fix — hero scale, resume hovers, educação visível
+# Load AFTER design50.css
+--------------------------------------------------------------*/
+
+/* 1) Hero tipografia — forte mas não gigante */
+#hero h2,
+.hero h2 {
+  font-size: clamp(2.15rem, 4.5vw, 3.35rem) !important;
+  line-height: 1.08 !important;
+  max-width: 18ch !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.03em !important;
+}
+
+#hero .hero-pitch,
+.hero .hero-pitch {
+  font-size: clamp(1rem, 1.8vw, 1.15rem) !important;
+  max-width: 32rem !important;
+}
+
+@media (max-width: 767px) {
+  #hero h2,
+  .hero h2 {
+    font-size: clamp(1.65rem, 7.2vw, 2.05rem) !important;
+    max-width: 12ch !important;
+    letter-spacing: -0.025em !important;
+  }
+
+  #hero .hero-pitch,
+  .hero .hero-pitch {
+    font-size: 0.95rem !important;
+  }
+}
+
+/* Page titles — menos “billboard” */
+.page-title h1 {
+  font-size: clamp(2rem, 4.2vw, 2.85rem) !important;
+}
+
+/* 2) Resume — matar hovers agressivos do custom-styles */
+.resume .resume-item,
+.resume .resume-item:hover,
+.resume .resume-item:focus-within {
+  transform: none !important;
+  box-shadow: none !important;
+  background: transparent !important;
+  border-radius: 0 !important;
+  border: none !important;
+  border-left: 2px solid var(--brand-accent, #2ecf9a) !important;
+  padding: 0 0 0 1.25rem !important;
+  margin-bottom: 2rem !important;
+  overflow: visible !important;
+  backdrop-filter: none !important;
+  transition: border-color 0.2s ease !important;
+}
+
+.resume .resume-item::before,
+.resume .resume-item:hover::before,
+.resume .resume-item::after {
+  display: none !important;
+  content: none !important;
+  animation: none !important;
+  left: auto !important;
+  background: none !important;
+}
+
+.resume .resume-item h4,
+.resume .resume-item:hover h4 {
+  color: #fff !important;
+  text-shadow: none !important;
+  font-size: 1.05rem !important;
+  margin-bottom: 0.35rem !important;
+  transition: none !important;
+}
+
+.resume .resume-item h5,
+.resume .resume-item:hover h5 {
+  background: none !important;
+  border: none !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+  color: var(--brand-muted, #93a0b3) !important;
+  font-style: normal !important;
+  font-size: 0.78rem !important;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 0.45rem !important;
+}
+
+.resume .resume-item p,
+.resume .resume-item li,
+.resume .resume-item em {
+  text-shadow: none !important;
+}
+
+.resume .resume-item em {
+  color: color-mix(in srgb, var(--brand-fog, #e9eef6), transparent 5%) !important;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.resume .resume-item a {
+  color: var(--brand-accent, #2ecf9a) !important;
+  text-decoration: none;
+  border-bottom: 1px solid color-mix(in srgb, var(--brand-accent, #2ecf9a), transparent 55%);
+}
+
+.resume .resume-item a:hover {
+  border-bottom-color: var(--brand-accent, #2ecf9a);
+  transform: none !important;
+  text-shadow: none !important;
+}
+
+.resume .resume-item a::before,
+.resume .resume-item a:hover::before {
+  display: none !important;
+  content: none !important;
+}
+
+.resume .resume-item ul {
+  margin: 0.5rem 0 0 !important;
+  padding-left: 1.15rem !important;
+}
+
+.resume .resume-item ul li {
+  margin: 0.45rem 0 !important;
+  padding-left: 0 !important;
+  list-style: disc !important;
+  position: static !important;
+  color: color-mix(in srgb, var(--brand-fog, #e9eef6), transparent 10%) !important;
+  font-size: 0.95rem !important;
+  line-height: 1.55 !important;
+}
+
+.resume .resume-item ul li::before {
+  display: none !important;
+  content: none !important;
+  box-shadow: none !important;
+  background: none !important;
+}
+
+.resume .resume-item li::marker {
+  color: var(--brand-accent, #2ecf9a);
+}
+
+.resume .resume-item p {
+  color: color-mix(in srgb, var(--brand-fog, #e9eef6), transparent 8%) !important;
+  font-weight: 400 !important;
+  margin-bottom: 0.5rem !important;
+}
+
+/* Meta line under education titles */
+.resume-item .edu-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.85rem;
+  align-items: baseline;
+  margin-bottom: 0.55rem;
+  font-size: 0.9rem;
+  color: var(--brand-muted, #93a0b3);
+}
+
+.resume-item .edu-meta .edu-place {
+  color: #fff;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.resume-title {
+  font-size: 1.25rem !important;
+  margin-bottom: 1.5rem !important;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid color-mix(in srgb, var(--brand-fog, #e9eef6), transparent 88%);
+}
+
+/* 3) About — educação sempre visível (sem acordeão) */
+.education-path {
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid color-mix(in srgb, var(--brand-fog, #e9eef6), transparent 90%);
+}
+
+.education-path > h3 {
+  font-family: var(--heading-font, Syne, sans-serif);
+  font-size: 1.35rem;
+  letter-spacing: -0.03em;
+  margin-bottom: 1.25rem;
+  color: #fff;
+}
+
+.edu-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem 1.75rem;
+}
+
+@media (max-width: 767px) {
+  .edu-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.edu-entry {
+  border-left: 2px solid var(--brand-accent, #2ecf9a);
+  padding-left: 1rem;
+}
+
+.edu-entry .edu-years {
+  display: block;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--brand-muted, #93a0b3);
+  margin-bottom: 0.25rem;
+}
+
+.edu-entry h4 {
+  font-family: var(--heading-font, Syne, sans-serif);
+  font-size: 1rem;
+  color: #fff;
+  margin: 0 0 0.25rem;
+  letter-spacing: -0.02em;
+}
+
+.edu-entry .edu-place {
+  font-size: 0.9rem;
+  color: color-mix(in srgb, var(--brand-fog, #e9eef6), transparent 15%);
+  margin-bottom: 0.35rem;
+}
+
+.edu-entry p {
+  font-size: 0.9rem;
+  color: var(--brand-muted, #93a0b3);
+  margin: 0 0 0.4rem;
+  line-height: 1.5;
+}
+
+.edu-entry a {
+  font-size: 0.85rem;
+  color: var(--brand-accent, #2ecf9a);
+}
+
+/* Skills secundárias — sempre abertas */
+.skills-also-open {
+  margin-top: 2rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid color-mix(in srgb, var(--brand-fog, #e9eef6), transparent 90%);
+}
+
+.skills-also-open h3 {
+  font-family: var(--heading-font, Syne, sans-serif);
+  font-size: 1.1rem;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.skills-also-open .also-used-list {
+  margin-top: 0.75rem;
+}
+
+/* Arquivo de concursos — lista visível, sem details */
+.recognition-archive-open {
+  margin-top: 2rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid color-mix(in srgb, var(--brand-fog, #e9eef6), transparent 90%);
+}
+
+.recognition-archive-open h3 {
+  font-family: var(--heading-font, Syne, sans-serif);
+  font-size: 1.05rem;
+  color: #fff;
+  margin-bottom: 0.75rem;
+}
+
+.recognition-archive-open .archive-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.65rem;
+}
+
+.recognition-archive-open .archive-list li {
+  border-left: 2px solid color-mix(in srgb, var(--brand-accent, #2ecf9a), transparent 40%);
+  padding-left: 0.85rem;
+  color: var(--brand-muted, #93a0b3);
+  font-size: 0.92rem;
+  line-height: 1.45;
+}
+
+.recognition-archive-open .archive-list strong {
+  color: #fff;
+  font-weight: 600;
+}
+
+/* Suavizar hovers residuais em about/recog/cta */
+.recog-item:hover,
+.core-stack:hover {
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+.resume .cta-btn:hover,
+.resume a.cta-btn:hover,
+.page-title .cta-btn:hover {
+  transform: none !important;
+  box-shadow: none !important;
+  filter: brightness(1.05);
+}
+
+/* Timeline dots do custom-styles */
+.resume .resume-item::after {
+  display: none !important;
+}
+
+/* Empurrar formação completa para cima no fold — menos padding hero resume */
+body.resume-page .page-title .heading,
+.resume-page .page-title .heading {
+  padding-bottom: 1.75rem !important;
+}

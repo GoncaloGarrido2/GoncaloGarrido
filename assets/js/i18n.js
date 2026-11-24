@@ -169,7 +169,7 @@
     "recog.mobility.body": {
       en: "Computer Science exchange (August–December 2023) at CCT/UDESC, Brazil."
     },
-    "recog.archive": { en: "Earlier contests (2018–2020)" },
+    "recog.archive": { en: "Earlier contests and training (2017–2020)" },
     "recog.archive.topas": {
       en: "Topas 2018 and 2019 — participation (Faculty of Sciences of Porto)"
     },
