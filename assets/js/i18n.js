@@ -234,13 +234,38 @@
       en: "Software for vehicle inspection centres (Portugal, with links to Brazil and Angola). Current role: desktop, mobile and services in the InspGest ecosystem."
     },
     "proj.win.tech": { en: "Tech: C# · VB.NET · Kotlin · SQL" },
-    "proj.smile.body": {
-      en: "Stationery e-commerce in Vila do Conde (freelance). Site online."
+    "proj.504.body": {
+      en: "Car dealership and stock in Vila do Conde / Rio Mau: search by brand, model, price and mileage."
     },
+    "proj.504.tech": { en: "Tech: Next.js · Cloudflare · Delty client" },
+    "proj.navalha.body": {
+      en: "Barbershop in Vila do Conde: online bookings, shop and a distinct digital brand."
+    },
+    "proj.navalha.tech": { en: "Tech: Next.js · Cloudflare · Bookly" },
+    "proj.smile.body": {
+      en: "Online stationery and gifts shop in Vila do Conde: catalogue, campaigns and in-store pickup."
+    },
+    "proj.smile.tech": { en: "Tech: Next.js · Cloudflare · Bookly" },
     "proj.smile.desktop.title": { en: "Smile — sales management" },
     "proj.smile.desktop.body": {
       en: "Desktop app linked to the Smile e-commerce (sales and customer management). Project report."
     },
+    "proj.saotome.body": {
+      en: "Tourism and mobility in São Tomé and Príncipe: local support to plan the stay and explore the islands."
+    },
+    "proj.saotome.tech": { en: "Tech: Next.js · Cloudflare · Delty client" },
+    "proj.cp.body": {
+      en: "Made-to-measure carpentry in Chaves: kitchens, wardrobes, doors, flooring and floating floors."
+    },
+    "proj.cp.tech": { en: "Tech: Next.js · Cloudflare · Delty client" },
+    "proj.renovstar.body": {
+      en: "Interior renovation: kitchens, bathrooms, rehabilitation and finishes with close follow-up."
+    },
+    "proj.renovstar.tech": { en: "Tech: Next.js · Cloudflare · Delty client" },
+    "proj.4emlinha.body": {
+      en: "Connect Four web game: vs computer, local 1v1 or online rooms — fast on desktop and mobile."
+    },
+    "proj.4emlinha.tech": { en: "Tech: Next.js · Cloudflare · delty.party" },
     "proj.agro.body": {
       en: "Online store for agricultural products (freelance). Site availability may vary."
     },
