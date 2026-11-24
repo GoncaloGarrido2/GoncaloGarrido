@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="400" viewBox="0 0 640 400" role="img" aria-label="Delty">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b1220"/>
+      <stop offset="100%" stop-color="#1a2a3d"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="400" fill="url(#g)"/>
+  <circle cx="520" cy="80" r="90" fill="#2ecf9a" opacity="0.18"/>
+  <text x="48" y="210" font-family="Syne, system-ui, sans-serif" font-size="72" font-weight="700" fill="#e9eef6">Delty</text>
+  <text x="52" y="250" font-family="Figtree, system-ui, sans-serif" font-size="22" fill="#2ecf9a">WebSites · delty.party</text>
+</svg>
