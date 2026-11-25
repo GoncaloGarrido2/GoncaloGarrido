@@ -56,8 +56,7 @@
 }
 
 .resume .resume-item::before,
-.resume .resume-item:hover::before,
-.resume .resume-item::after {
+.resume .resume-item:hover::before {
   display: none !important;
   content: none !important;
   animation: none !important;
@@ -307,11 +306,6 @@
   transform: none !important;
   box-shadow: none !important;
   filter: brightness(1.05);
-}
-
-/* Timeline dots do custom-styles */
-.resume .resume-item::after {
-  display: none !important;
 }
 
 /* Empurrar formação completa para cima no fold — menos padding hero resume */
@@ -575,5 +569,148 @@ body.resume-page .page-title .heading,
     flex-wrap: nowrap;
     -webkit-overflow-scrolling: touch;
     padding-bottom: 0.35rem;
+  }
+}
+
+/*--------------------------------------------------------------
+# Phase 2 — premium polish (ink / Syne / Figtree preserved)
+--------------------------------------------------------------*/
+
+.hero-cta-ghost,
+a.hero-cta-ghost {
+  background: transparent !important;
+  border: 1px solid transparent !important;
+  color: color-mix(in srgb, #fff, transparent 18%) !important;
+  padding-left: 0.85rem !important;
+  padding-right: 0.85rem !important;
+  text-decoration: underline;
+  text-underline-offset: 0.28em;
+  text-decoration-thickness: 1px;
+}
+
+.hero-cta-ghost:hover,
+a.hero-cta-ghost:hover {
+  color: var(--brand-accent, #2ecf9a) !important;
+  border-color: transparent !important;
+  transform: none;
+}
+
+.proj-meta {
+  font-size: 0.9rem;
+  line-height: 1.45;
+  margin-bottom: 0.45rem !important;
+  color: color-mix(in srgb, var(--brand-fog, #e9eef6), transparent 12%) !important;
+}
+
+.proj-meta-label {
+  display: inline-block;
+  font-family: var(--heading-font, Syne, sans-serif);
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--brand-accent, #2ecf9a) !important;
+  margin-right: 0.4rem;
+  vertical-align: baseline;
+}
+
+.portfolio-card {
+  transition: border-color 0.25s ease, background-color 0.25s ease !important;
+}
+
+.portfolio-links .styled-link {
+  transition: color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+.portfolio-links .styled-link:hover {
+  transform: translateY(-1px);
+}
+
+.contact-card {
+  transition: border-color 0.25s ease, transform 0.25s ease !important;
+}
+
+.contact-card:hover {
+  transform: translateY(-2px);
+  border-color: color-mix(in srgb, var(--brand-accent, #2ecf9a), transparent 40%) !important;
+}
+
+.case-body h2 {
+  font-family: var(--heading-font, Syne, sans-serif);
+  font-size: 0.78rem !important;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--brand-accent, #2ecf9a) !important;
+  margin-top: 1.35rem;
+  margin-bottom: 0.4rem;
+}
+
+.case-body h2:first-child {
+  margin-top: 0;
+}
+
+.case-kicker {
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--brand-muted, #93a0b3);
+}
+
+.case-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 2rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid color-mix(in srgb, var(--brand-fog, #e9eef6), transparent 90%);
+}
+
+/* Resume timeline calm accent */
+.resume .resume-item {
+  position: relative;
+}
+
+.resume .resume-item::after {
+  content: "";
+  position: absolute;
+  left: -0.42rem;
+  top: 0.35rem;
+  width: 0.55rem;
+  height: 0.55rem;
+  border-radius: 50%;
+  background: var(--brand-accent, #2ecf9a);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--brand-accent, #2ecf9a), transparent 75%);
+}
+
+@media (max-width: 767px) {
+  .hero-cta-group {
+    flex-direction: column;
+    align-items: stretch;
+    max-width: 16rem;
+  }
+
+  .hero-cta,
+  a.hero-cta {
+    text-align: center;
+  }
+
+  .hero-cta-ghost,
+  a.hero-cta-ghost {
+    text-align: left;
+    padding-left: 0.25rem !important;
+  }
+
+  .proj-meta-label {
+    display: block;
+    margin-bottom: 0.15rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-cta,
+  .portfolio-card,
+  .contact-card,
+  .portfolio-links .styled-link {
+    transition: none !important;
+    transform: none !important;
   }
 }

@@ -125,6 +125,21 @@
     "case.tech": { en: "Tech" },
     "case.result": { en: "Outcome" },
     "case.back": { en: "Back to portfolio" },
+    "case.delty.title": { en: "Delty WebSites" },
+    "case.delty.tagline": { en: "Websites with presence for local businesses" },
+    "case.delty.problem": {
+      en: "SMEs and local businesses need a clear web presence — from a simple site to a custom build — without generic templates or a freelancer with no brand."
+    },
+    "case.delty.role": {
+      en: "I built the Delty brand (delty.party): positioning, pricing, demos and client sites on Next.js + Cloudflare; public case 2S Restaurant and others on *.delty.party / *.bookly.party."
+    },
+    "case.delty.tech": { en: "Next.js · Cloudflare · sector demos · client sites" },
+    "case.delty.result": {
+      en: "Live commercial frontpage, 2S case with a “Site by Delty” credit, and a public client portfolio (504 Automóveis, Navalha Negra, Smile, São Tomé, Carpintaria CP, among others)."
+    },
+    "hero.cta.contact": { en: "Contact" },
+    "proj.meta.role": { en: "Role" },
+    "proj.meta.problem": { en: "Context" },
     "case.papos.title": { en: "Papos" },
     "case.papos.tagline": { en: "Daily word game in European Portuguese" },
     "case.papos.problem": {
@@ -197,33 +212,52 @@
     "portfolio.filter.other": { en: "Other" },
     "portfolio.band.clients": { en: "Delty / Bookly clients · web projects" },
 
+
+    "proj.delty.problem": { en: "Local businesses need a clear web presence — from a simple site to a custom build." },
+    "proj.delty.role": { en: "I built the Delty brand: positioning, pricing, demos and client sites." },
+    "proj.2s.problem": { en: "A restaurant in Paredes needed a multi-page site with a digital menu and bookings." },
+    "proj.2s.role": { en: "Built and published via Delty; “Site by Delty” credit in the footer." },
+    "proj.win.problem": { en: "Vehicle inspection centres (Portugal, with links to Brazil and Angola) need reliable desktop/mobile software." },
+    "proj.win.role": { en: "Current role in the InspGest ecosystem: desktop, mobile and services." },
+    "proj.papos.problem": { en: "There was no daily word game designed from the ground up for PT-PT." },
+    "proj.papos.role": { en: "I designed and built the Android app and the web version (five modes, offline)." },
+    "proj.focus.problem": { en: "Stock launchers push notifications and apps that distract." },
+    "proj.focus.role": { en: "I build and maintain a minimalist launcher with focus modes and automations." },
+    "proj.bookly.problem": { en: "Stationery shops need management for school materials and books (web + Android)." },
+    "proj.bookly.role": { en: "IPMAIA degree project — distinct from client hosting on bookly.party." },
+    "proj.gluten.problem": { en: "People avoiding gluten need reliable venues and products, in many languages." },
+    "proj.gluten.role": { en: "I build and maintain the Android app (map, products, 17 languages)." },
+    "proj.504.problem": { en: "A dealership in Vila do Conde / Rio Mau needed searchable stock online." },
+    "proj.504.role": { en: "Delty client site: search by brand, model, price and mileage." },
+    "proj.navalha.problem": { en: "A barbershop in Vila do Conde needed a digital brand and online bookings." },
+    "proj.navalha.role": { en: "Bookly/Delty client site: bookings, shop and visual identity." },
     "proj.delty.tagline": {
-      en: "We turn ideas into digital experiences."
+      en: "Own brand of websites for SMEs"
     },
     "proj.delty.body": {
       en: "Websites with presence and excellence — from a simple site to a custom build, with shop bundles and QR menus. Own brand (Next.js + Cloudflare); public case: 2S Restaurant."
     },
-    "proj.delty.tech": { en: "Tech: Next.js · Cloudflare · delty.party" },
+    "proj.delty.tech": { en: "Next.js · Cloudflare · delty.party" },
     "proj.2s.body": {
       en: "Multi-page site for a restaurant in Paredes: story, gallery, digital menu (QR), wines, bookings and contacts. Published with a “Site by Delty” credit."
     },
-    "proj.2s.tech": { en: "Tech: Next.js · Cloudflare · Delty client" },
+    "proj.2s.tech": { en: "Next.js · Cloudflare · Delty client" },
     "proj.papos.body": {
       en: "Daily word game in European Portuguese (Wordle-style), with five modes and offline play. I built the Android app and the web version."
     },
-    "proj.papos.tech": { en: "Tech: Android / web · PT-PT dictionary." },
+    "proj.papos.tech": { en: "Android / web · PT-PT dictionary" },
     "proj.focus.body": {
       en: "Minimalist Android launcher to reduce distractions: focus modes, automations and configurable screens. Published and maintained on the Play Store."
     },
-    "proj.focus.tech": { en: "Tech: Android · productivity." },
+    "proj.focus.tech": { en: "Android · productivity" },
     "proj.gluten.body": {
       en: "App for people with gluten intolerance: venue map, product info and a multilingual UI (17 languages). Maintained on the Play Store."
     },
-    "proj.gluten.tech": { en: "Tech: Android · maps." },
+    "proj.gluten.tech": { en: "Android · maps" },
     "proj.bookly.body": {
       en: "Web and Android management platform for stationery shops (school materials and books). IPMAIA degree project — distinct from client hosting on bookly.party."
     },
-    "proj.bookly.tech": { en: "Tech: Laravel · Kotlin · public docs." },
+    "proj.bookly.tech": { en: "Laravel · Kotlin · public docs" },
     "proj.pocket.body": {
       en: "Digital manager for cards, coupons and tickets with QR codes and barcodes always at hand. Android app published on the Play Store."
     },
@@ -234,15 +268,15 @@
     "proj.win.body": {
       en: "Software for vehicle inspection centres (Portugal, with links to Brazil and Angola). Current role: desktop, mobile and services in the InspGest ecosystem."
     },
-    "proj.win.tech": { en: "Tech: C# · VB.NET · Kotlin · SQL" },
+    "proj.win.tech": { en: "C# · VB.NET · Kotlin · SQL" },
     "proj.504.body": {
       en: "Car dealership and stock in Vila do Conde / Rio Mau: search by brand, model, price and mileage."
     },
-    "proj.504.tech": { en: "Tech: Next.js · Cloudflare · Delty client" },
+    "proj.504.tech": { en: "Next.js · Cloudflare · Delty client" },
     "proj.navalha.body": {
       en: "Barbershop in Vila do Conde: online bookings, shop and a distinct digital brand."
     },
-    "proj.navalha.tech": { en: "Tech: Next.js · Cloudflare · bookly.party" },
+    "proj.navalha.tech": { en: "Next.js · Cloudflare · bookly.party" },
     "proj.smile.body": {
       en: "Online stationery and gifts shop in Vila do Conde: catalogue, campaigns and in-store pickup."
     },
@@ -378,7 +412,7 @@
     "contact.location.detail": {
       en: "Available for remote and on-site work in the Porto area"
     },
-    "contact.email.detail": { en: "Reply guaranteed within 24 hours" },
+    "contact.email.detail": { en: "Preferred: email" },
     "contact.social": { en: "Social Networks" },
     "contact.social.detail": { en: "Follow me to keep up with my projects" },
     "contact.availability": { en: "Availability" },
