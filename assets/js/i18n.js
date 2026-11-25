@@ -47,7 +47,7 @@
     },
     "meta.portfolio.title": { en: "Portfolio — Gonçalo Garrido" },
     "meta.portfolio.desc": {
-      en: "Portfolio: Delty WebSites (2S, 504 Automóveis, São Tomé, Carpintaria CP), Bookly (Navalha Negra, Smile), WorkInNet/InspGest, Papos and Android apps."
+      en: "Portfolio: Delty WebSites (2S, 504 Automóveis, São Tomé, Carpintaria CP), Bookly (Navalha Negra, Smile), Papos and Android apps."
     },
     "meta.contact.title": { en: "Contacts — Gonçalo Garrido" },
     "meta.contact.desc": {
@@ -64,7 +64,7 @@
     },
     "page.portfolio.title": { en: "Portfolio" },
     "page.portfolio.lead": {
-      en: "Featured: Delty, 2S, WorkInNet/InspGest and apps. Under Web: Delty/Bookly clients (504, Navalha Negra, Smile, São Tomé, Carpintaria CP, RENOVSTAR) and 4 Em Linha. Academic work under “Other”."
+      en: "Featured: Delty, 2S and apps. Under Web: Delty/Bookly clients (504, Navalha Negra, Smile, São Tomé, Carpintaria CP, RENOVSTAR) and 4 Em Linha. Academic work under “Other”."
     },
     "page.contact.title": { en: "Contacts" },
     "page.contact.lead": {
