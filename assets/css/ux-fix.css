@@ -746,3 +746,14 @@ a.hero-cta-ghost:hover {
     gap: 0.5rem;
   }
 }
+
+/* Band as isotope item — full row, no flow CLS */
+.isotope-item.portfolio-band {
+  position: relative;
+  width: 100% !important;
+  left: 0 !important;
+  margin: 0.75rem 0 0.35rem !important;
+  padding: 1rem 0 0.35rem !important;
+  border-top: 1px solid color-mix(in srgb, var(--brand-fog, #e9eef6), transparent 90%);
+  pointer-events: none;
+}
