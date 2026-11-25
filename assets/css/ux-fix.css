@@ -714,3 +714,35 @@ a.hero-cta-ghost:hover {
     transform: none !important;
   }
 }
+
+/*--------------------------------------------------------------
+# Phase 2 cont — portfolio perf / media
+--------------------------------------------------------------*/
+.portfolio .portfolio-content picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.portfolio .portfolio-content picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.isotope-item.isotope-hidden {
+  content-visibility: hidden;
+}
+
+@media (max-width: 767px) {
+  .portfolio-description .proj-meta {
+    font-size: 0.88rem;
+  }
+
+  .case-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+}

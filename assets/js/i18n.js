@@ -125,6 +125,18 @@
     "case.tech": { en: "Tech" },
     "case.result": { en: "Outcome" },
     "case.back": { en: "Back to portfolio" },
+    "case.2s.title": { en: "2S Restaurant & Bar" },
+    "case.2s.tagline": { en: "Multi-page site for a restaurant in Paredes" },
+    "case.2s.problem": {
+      en: "A restaurant in Paredes needed a multi-page site with story, gallery, digital menu (QR), wines, bookings and contacts — without a generic hospitality template."
+    },
+    "case.2s.role": {
+      en: "Built and published via Delty (Next.js + Cloudflare); “Site by Delty” credit in the footer; mirror at 2s.delty.party."
+    },
+    "case.2s.tech": { en: "Next.js · Cloudflare · Delty client" },
+    "case.2s.result": {
+      en: "Live site at 2srestaurante.com with digital menu, bookings and a Delty credit in the footer."
+    },
     "case.delty.title": { en: "Delty WebSites" },
     "case.delty.tagline": { en: "Websites with presence for local businesses" },
     "case.delty.problem": {
