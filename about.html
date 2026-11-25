@@ -11,6 +11,8 @@
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#0b1220">
   <link rel="canonical" href="https://goncalogarrido2.github.io/GoncaloGarrido/about.html">
   <meta property="og:type" content="profile">
   <meta property="og:locale" content="pt_PT">
@@ -89,6 +91,7 @@
     html:not(.aos-ready) [data-aos] { opacity:1 !important; transform:none !important; }
   </style>
   <link href="assets/css/design50.css?v=20" rel="stylesheet">
+  <link href="assets/css/ux-fix.css?v=6" rel="stylesheet">
 
 </head>
 
@@ -189,7 +192,7 @@
 
     <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-      <p class="skills-intro mb-4" data-i18n="skills.intro">Hierarquia a partir do trabalho actual, da marca Delty e das apps publicadas — não uma sopa de ícones.</p>
+      <p class="skills-intro mb-4" data-i18n="skills.intro">Hierarquia a partir do trabalho actual, da marca Delty e das apps publicadas — com ícones das linguagens e ferramentas que uso de facto.</p>
 
       <div class="row gy-4 core-stacks">
         <div class="col-md-6 col-lg-3">
@@ -222,18 +225,102 @@
         </div>
       </div>
 
-      <details class="skills-also mt-4">
-        <summary data-i18n="skills.also">Também usei</summary>
-        <p class="mt-3 mb-2" data-i18n="skills.also.intro">Secundário — contacto em projetos, formação IPMAIA ou papéis pontuais:</p>
+      <!-- Idiomas (site PT/EN) + linguagens/ferramentas com ícones — reposto do main -->
+      <div class="skills-icons-block" id="linguagens">
+        <h3 class="skills-subhead" data-i18n="skills.langs.spoken">Idiomas</h3>
+        <ul class="list-inline spoken-langs" aria-label="Idiomas">
+          <li class="list-inline-item spoken-lang">
+            <i class="bi bi-translate" aria-hidden="true"></i>
+            <span data-i18n="skills.lang.pt">Português</span>
+            <em data-i18n="skills.lang.pt.level">nativo</em>
+          </li>
+          <li class="list-inline-item spoken-lang">
+            <i class="bi bi-globe2" aria-hidden="true"></i>
+            <span data-i18n="skills.lang.en">Inglês</span>
+            <em data-i18n="skills.lang.en.level">trabalho / site bilingue</em>
+          </li>
+        </ul>
+
+        <h3 class="skills-subhead" data-i18n="skills.langs.prog">Linguagens de programação</h3>
+        <ul class="list-inline dev-icons" aria-label="Linguagens de programação">
+          <li class="list-inline-item" title="C#"><i class="devicon-csharp-plain" aria-hidden="true"></i><span class="visually-hidden">C#</span></li>
+          <li class="list-inline-item" title="VB.NET"><i class="devicon-visualbasic-plain" aria-hidden="true"></i><span class="visually-hidden">VB.NET</span></li>
+          <li class="list-inline-item" title="Kotlin"><i class="devicon-kotlin-plain" aria-hidden="true"></i><span class="visually-hidden">Kotlin</span></li>
+          <li class="list-inline-item" title="Java"><i class="devicon-java-plain" aria-hidden="true"></i><span class="visually-hidden">Java</span></li>
+          <li class="list-inline-item" title="JavaScript"><i class="devicon-javascript-plain" aria-hidden="true"></i><span class="visually-hidden">JavaScript</span></li>
+          <li class="list-inline-item" title="TypeScript"><i class="devicon-typescript-plain" aria-hidden="true"></i><span class="visually-hidden">TypeScript</span></li>
+          <li class="list-inline-item" title="HTML5"><i class="devicon-html5-plain" aria-hidden="true"></i><span class="visually-hidden">HTML5</span></li>
+          <li class="list-inline-item" title="CSS3"><i class="devicon-css3-plain" aria-hidden="true"></i><span class="visually-hidden">CSS3</span></li>
+          <li class="list-inline-item" title="PHP"><i class="devicon-php-plain" aria-hidden="true"></i><span class="visually-hidden">PHP</span></li>
+          <li class="list-inline-item" title="SQL Server"><i class="devicon-microsoftsqlserver-plain" aria-hidden="true"></i><span class="visually-hidden">SQL Server</span></li>
+          <li class="list-inline-item" title="MySQL"><i class="devicon-mysql-plain" aria-hidden="true"></i><span class="visually-hidden">MySQL</span></li>
+          <li class="list-inline-item" title="Python"><i class="devicon-python-plain" aria-hidden="true"></i><span class="visually-hidden">Python</span></li>
+        </ul>
+
+        <h3 class="skills-subhead" data-i18n="skills.tools">Ferramentas</h3>
+        <ul class="list-inline dev-icons" aria-label="Ferramentas">
+          <li class="list-inline-item" title="Visual Studio"><i class="devicon-visualstudio-plain" aria-hidden="true"></i><span class="visually-hidden">Visual Studio</span></li>
+          <li class="list-inline-item" title="VS Code"><i class="devicon-vscode-plain" aria-hidden="true"></i><span class="visually-hidden">VS Code</span></li>
+          <li class="list-inline-item" title="Android Studio"><i class="devicon-androidstudio-plain" aria-hidden="true"></i><span class="visually-hidden">Android Studio</span></li>
+          <li class="list-inline-item" title="Git"><i class="devicon-git-plain" aria-hidden="true"></i><span class="visually-hidden">Git</span></li>
+          <li class="list-inline-item" title="GitHub"><i class="devicon-github-original" aria-hidden="true"></i><span class="visually-hidden">GitHub</span></li>
+          <li class="list-inline-item" title="Next.js"><i class="devicon-nextjs-plain" aria-hidden="true"></i><span class="visually-hidden">Next.js</span></li>
+          <li class="list-inline-item" title="Node.js"><i class="devicon-nodejs-plain" aria-hidden="true"></i><span class="visually-hidden">Node.js</span></li>
+          <li class="list-inline-item" title="Laravel"><i class="devicon-laravel-original" aria-hidden="true"></i><span class="visually-hidden">Laravel</span></li>
+          <li class="list-inline-item" title="WordPress"><i class="devicon-wordpress-plain" aria-hidden="true"></i><span class="visually-hidden">WordPress</span></li>
+          <li class="list-inline-item" title="Android"><i class="devicon-android-plain" aria-hidden="true"></i><span class="visually-hidden">Android</span></li>
+          <li class="list-inline-item" title="Linux"><i class="devicon-linux-plain" aria-hidden="true"></i><span class="visually-hidden">Linux</span></li>
+          <li class="list-inline-item" title="Windows"><i class="devicon-windows8-original" aria-hidden="true"></i><span class="visually-hidden">Windows</span></li>
+        </ul>
+      </div>
+
+      <div class="skills-also-open">
+        <h3 data-i18n="skills.also">Também usei</h3>
+        <p class="mb-2" data-i18n="skills.also.intro">Secundário — contacto em projetos, formação IPMAIA ou papéis pontuais:</p>
         <ul class="also-used-list">
           <li>Node.js, PHP, Laravel, WordPress (ParadigmaXis / web)</li>
           <li>JavaScript / TypeScript, HTML, CSS</li>
           <li>Jetpack Compose, Java, Xamarin / MAUI</li>
           <li>MySQL; Python pontual (integrações)</li>
           <li>Android Studio, Visual Studio, Git</li>
-          <li>Formação: IPMAIA (licenciatura TIWM + CTeSP) · mobilidade UDESC</li>
         </ul>
-      </details>
+      </div>
+
+      <div class="education-path" id="formacao">
+        <h3 data-i18n="resume.edu.title">Formação Académica</h3>
+        <div class="edu-grid">
+          <article class="edu-entry edu-primary">
+            <span class="edu-badge" data-i18n="resume.edu.badge.degree">Grau principal</span>
+            <span class="edu-years" data-i18n="resume.edu.lic.dates">2022 - Setembro 2025</span>
+            <h4 data-i18n="resume.edu.lic.title">Licenciatura em Tecnologias de Informação, Web e Multimédia</h4>
+            <div class="edu-place">IPMAIA — Instituto Politécnico da Maia</div>
+            <p data-i18n="resume.edu.lic.body">Curso centrado no desenvolvimento de soluções tecnológicas e gestão de sistemas, com foco em desenvolvimento backend e integração de sistemas.</p>
+            <a href="https://www.ipmaia.pt/pt/ensino/oferta-formativa/licenciaturas/tecnologias-informacao-web-multimedia" target="_blank" rel="noopener" data-i18n="cta.course.page">Página do curso</a>
+          </article>
+          <article class="edu-entry edu-mobility">
+            <span class="edu-badge edu-badge-muted" data-i18n="resume.edu.badge.mobility">Mobilidade (não grau autónomo)</span>
+            <span class="edu-years" data-i18n="resume.edu.udesc.dates">Agosto 2023 - Dezembro 2023</span>
+            <h4 data-i18n="resume.edu.udesc.title">Bacharelado em Ciência da Computação — mobilidade</h4>
+            <div class="edu-place">CCT / UDESC — Brasil</div>
+            <p data-i18n="resume.edu.udesc.body">Programa de mobilidade durante a licenciatura (não substitui o grau IPMAIA): foco em desenvolvimento e integração de sistemas.</p>
+            <a href="https://www.udesc.br/cct/computacao" target="_blank" rel="noopener" data-i18n="cta.course.page">Página do curso</a>
+          </article>
+          <article class="edu-entry">
+            <span class="edu-years">2020 - 2022</span>
+            <h4 data-i18n="resume.edu.ctesp.title">CTeSP em Tecnologias e Programação de Sistemas de Informação</h4>
+            <div class="edu-place">IPMAIA — Instituto Politécnico da Maia</div>
+            <p data-i18n="resume.edu.ctesp.body">Curso técnico especializado em programação e gestão de sistemas, com estágios práticos de 6 meses.</p>
+            <a href="https://www.ipmaia.pt/pt/ensino/oferta-formativa/ctesp/tecnologias-e-programacao-de-sistemas-de-informacao" target="_blank" rel="noopener" data-i18n="cta.course.page">Página do curso</a>
+          </article>
+          <article class="edu-entry">
+            <span class="edu-years">2017 - 2020</span>
+            <h4 data-i18n="resume.edu.sec.title">Curso Técnico de Gestão e Programação de Sistemas Informáticos</h4>
+            <div class="edu-place">Escola Secundária D. Afonso Sanches (ESDAS)</div>
+            <p data-i18n="resume.edu.sec.body">Desenvolvimento de aplicações desktop e web, bases de dados e projetos técnicos com integração prática através de estágios profissionais.</p>
+            <p data-i18n="resume.edu.sec.grade">Média: 17</p>
+          </article>
+        </div>
+      </div>
 
     </div>
 
@@ -267,14 +354,14 @@
         </div>
       </div>
 
-      <details class="recognition-archive">
-        <summary data-i18n="recog.archive">Concursos anteriores (2018–2020)</summary>
+      <div class="recognition-archive-open">
+        <h3 data-i18n="recog.archive">Concursos e formação anterior (2017–2020)</h3>
         <ul class="archive-list">
-          <li data-i18n="recog.archive.topas">Topas 2018 e 2019 — participação (Faculdade de Ciências do Porto)</li>
-          <li data-i18n="recog.archive.tecla">Tecla 2019 e 2020 — participação (ESTGA)</li>
-          <li data-i18n="recog.archive.esdas">Curso técnico de Gestão e Programação de Sistemas Informáticos (ESDAS)</li>
+          <li><strong>Topas 2018 e 2019</strong> — participação na Faculdade de Ciências da Universidade do Porto (FCUP)</li>
+          <li><strong>Tecla 2019 e 2020</strong> — participação na ESTGA (Águeda)</li>
+          <li><strong>ESDAS</strong> — Curso técnico de Gestão e Programação de Sistemas Informáticos (Escola Secundária D. Afonso Sanches)</li>
         </ul>
-      </details>
+      </div>
     </div>
   </section>
   

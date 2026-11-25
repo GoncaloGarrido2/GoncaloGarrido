@@ -1,0 +1,22 @@
+{
+  "name": "Gonçalo Garrido",
+  "short_name": "Garrido",
+  "description": "Desenvolvedor de software — backend, mobile e integração de sistemas · Porto",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#0b1220",
+  "theme_color": "#0b1220",
+  "lang": "pt-PT",
+  "icons": [
+    {
+      "src": "assets/img/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/img/favicon.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    }
+  ]
+}

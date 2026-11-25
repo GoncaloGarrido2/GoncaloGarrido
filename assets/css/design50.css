@@ -217,12 +217,12 @@ a.logo .sitename {
 
 #hero h2,
 .hero h2 {
-  font-size: clamp(3.2rem, 9vw, 6.5rem) !important;
-  line-height: 0.92 !important;
-  font-weight: 800 !important;
+  font-size: clamp(2.15rem, 4.5vw, 3.35rem) !important;
+  line-height: 1.08 !important;
+  font-weight: 700 !important;
   color: #fff !important;
   margin: 0 0 1.1rem !important;
-  max-width: 12ch;
+  max-width: 18ch;
   text-shadow: 0 2px 40px rgba(0, 0, 0, 0.35);
   animation: brand-rise 1s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
@@ -999,8 +999,8 @@ a.hero-cta-secondary:hover {
 
   #hero h2,
   .hero h2 {
-    max-width: 9ch;
-    font-size: clamp(2.6rem, 14vw, 3.4rem) !important;
+    max-width: 12ch;
+    font-size: clamp(1.65rem, 7.2vw, 2.05rem) !important;
   }
 
   .hero-cta-group {

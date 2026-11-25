@@ -47,7 +47,7 @@
     },
     "meta.portfolio.title": { en: "Portfolio — Gonçalo Garrido" },
     "meta.portfolio.desc": {
-      en: "Gonçalo Garrido's projects: Papos, Focus Launcher, GlutenFree, Bookly, PocketCards and more — backend, mobile and systems integration."
+      en: "Portfolio: Delty WebSites (2S, 504 Automóveis, São Tomé, Carpintaria CP), Bookly (Navalha Negra, Smile), Papos and Android apps."
     },
     "meta.contact.title": { en: "Contacts — Gonçalo Garrido" },
     "meta.contact.desc": {
@@ -64,7 +64,7 @@
     },
     "page.portfolio.title": { en: "Portfolio" },
     "page.portfolio.lead": {
-      en: "Featured work with public proof: Delty, 2S, Play Store apps, Bookly and current WorkInNet/InspGest work. Academic sites under “Other”."
+      en: "Featured: Delty, 2S and apps. Under Web: Delty/Bookly clients (504, Navalha Negra, Smile, São Tomé, Carpintaria CP, RENOVSTAR) and 4 Em Linha. Academic work under “Other”."
     },
     "page.contact.title": { en: "Contacts" },
     "page.contact.lead": {
@@ -88,8 +88,17 @@
     "skills.stacks": { en: "Stacks" },
     "skills.core": { en: "core" },
     "skills.intro": {
-      en: "Hierarchy from current work, the Delty brand and published apps — not an icon soup."
+      en: "Hierarchy from current work, the Delty brand and published apps — with icons for the languages and tools I actually use."
     },
+    "skills.langs.spoken": { en: "Languages" },
+    "skills.langs.prog": { en: "Programming languages" },
+    "skills.tools": { en: "Tools" },
+    "skills.lang.pt": { en: "Portuguese" },
+    "skills.lang.pt.level": { en: "native" },
+    "skills.lang.en": { en: "English" },
+    "skills.lang.en.level": { en: "work / bilingual site" },
+    "resume.edu.badge.degree": { en: "Primary degree" },
+    "resume.edu.badge.mobility": { en: "Exchange (not a standalone degree)" },
     "skills.csharp.body": {
       en: "WorkInNet / InspGest: desktop, services and inspection-line integrations (also .NET Core)."
     },
@@ -116,6 +125,33 @@
     "case.tech": { en: "Tech" },
     "case.result": { en: "Outcome" },
     "case.back": { en: "Back to portfolio" },
+    "case.2s.title": { en: "2S Restaurant & Bar" },
+    "case.2s.tagline": { en: "Multi-page site for a restaurant in Paredes" },
+    "case.2s.problem": {
+      en: "A restaurant in Paredes needed a multi-page site with story, gallery, digital menu (QR), wines, bookings and contacts — without a generic hospitality template."
+    },
+    "case.2s.role": {
+      en: "Built and published via Delty (Next.js + Cloudflare); “Site by Delty” credit in the footer; mirror at 2s.delty.party."
+    },
+    "case.2s.tech": { en: "Next.js · Cloudflare · Delty client" },
+    "case.2s.result": {
+      en: "Live site at 2srestaurante.com with digital menu, bookings and a Delty credit in the footer."
+    },
+    "case.delty.title": { en: "Delty WebSites" },
+    "case.delty.tagline": { en: "Websites with presence for local businesses" },
+    "case.delty.problem": {
+      en: "SMEs and local businesses need a clear web presence — from a simple site to a custom build — without generic templates or a freelancer with no brand."
+    },
+    "case.delty.role": {
+      en: "I built the Delty brand (delty.party): positioning, pricing, demos and client sites on Next.js + Cloudflare; public case 2S Restaurant and others on *.delty.party / *.bookly.party."
+    },
+    "case.delty.tech": { en: "Next.js · Cloudflare · sector demos · client sites" },
+    "case.delty.result": {
+      en: "Live commercial frontpage, 2S case with a “Site by Delty” credit, and a public client portfolio (504 Automóveis, Navalha Negra, Smile, São Tomé, Carpintaria CP, among others)."
+    },
+    "hero.cta.contact": { en: "Contact" },
+    "proj.meta.role": { en: "Role" },
+    "proj.meta.problem": { en: "Context" },
     "case.papos.title": { en: "Papos" },
     "case.papos.tagline": { en: "Daily word game in European Portuguese" },
     "case.papos.problem": {
@@ -169,7 +205,7 @@
     "recog.mobility.body": {
       en: "Computer Science exchange (August–December 2023) at CCT/UDESC, Brazil."
     },
-    "recog.archive": { en: "Earlier contests (2018–2020)" },
+    "recog.archive": { en: "Earlier contests and training (2017–2020)" },
     "recog.archive.topas": {
       en: "Topas 2018 and 2019 — participation (Faculty of Sciences of Porto)"
     },
@@ -186,31 +222,54 @@
     "portfolio.filter.mobile": { en: "Mobile apps" },
     "portfolio.filter.web": { en: "Web projects" },
     "portfolio.filter.other": { en: "Other" },
+    "portfolio.band.clients": { en: "Delty / Bookly clients · web projects" },
 
-    "proj.delty.body": {
-      en: "Own brand of websites for local businesses: from a simple site to a custom build, with shop and QR-menu extras. Commercial frontpage in Next.js with sector demos."
+
+    "proj.delty.problem": { en: "Local businesses need a clear web presence — from a simple site to a custom build." },
+    "proj.delty.role": { en: "I built the Delty brand: positioning, pricing, demos and client sites." },
+    "proj.2s.problem": { en: "A restaurant in Paredes needed a multi-page site with a digital menu and bookings." },
+    "proj.2s.role": { en: "Built and published via Delty; “Site by Delty” credit in the footer." },
+    "proj.win.problem": { en: "Vehicle inspection centres (Portugal, with links to Brazil and Angola) need reliable desktop/mobile software." },
+    "proj.win.role": { en: "Current role in the InspGest ecosystem: desktop, mobile and services." },
+    "proj.papos.problem": { en: "There was no daily word game designed from the ground up for PT-PT." },
+    "proj.papos.role": { en: "I designed and built the Android app and the web version (five modes, offline)." },
+    "proj.focus.problem": { en: "Stock launchers push notifications and apps that distract." },
+    "proj.focus.role": { en: "I build and maintain a minimalist launcher with focus modes and automations." },
+    "proj.bookly.problem": { en: "Stationery shops need management for school materials and books (web + Android)." },
+    "proj.bookly.role": { en: "IPMAIA degree project — distinct from client hosting on bookly.party." },
+    "proj.gluten.problem": { en: "People avoiding gluten need reliable venues and products, in many languages." },
+    "proj.gluten.role": { en: "I build and maintain the Android app (map, products, 17 languages)." },
+    "proj.504.problem": { en: "A dealership in Vila do Conde / Rio Mau needed searchable stock online." },
+    "proj.504.role": { en: "Delty client site: search by brand, model, price and mileage." },
+    "proj.navalha.problem": { en: "A barbershop in Vila do Conde needed a digital brand and online bookings." },
+    "proj.navalha.role": { en: "Bookly/Delty client site: bookings, shop and visual identity." },
+    "proj.delty.tagline": {
+      en: "Own brand of websites for SMEs"
     },
-    "proj.delty.tech": { en: "Tech: Next.js · Cloudflare · delty.party" },
+    "proj.delty.body": {
+      en: "Websites with presence and excellence — from a simple site to a custom build, with shop bundles and QR menus. Own brand (Next.js + Cloudflare); public case: 2S Restaurant."
+    },
+    "proj.delty.tech": { en: "Next.js · Cloudflare · delty.party" },
     "proj.2s.body": {
       en: "Multi-page site for a restaurant in Paredes: story, gallery, digital menu (QR), wines, bookings and contacts. Published with a “Site by Delty” credit."
     },
-    "proj.2s.tech": { en: "Tech: Next.js · Cloudflare · Delty client" },
+    "proj.2s.tech": { en: "Next.js · Cloudflare · Delty client" },
     "proj.papos.body": {
       en: "Daily word game in European Portuguese (Wordle-style), with five modes and offline play. I built the Android app and the web version."
     },
-    "proj.papos.tech": { en: "Tech: Android / web · PT-PT dictionary." },
+    "proj.papos.tech": { en: "Android / web · PT-PT dictionary" },
     "proj.focus.body": {
       en: "Minimalist Android launcher to reduce distractions: focus modes, automations and configurable screens. Published and maintained on the Play Store."
     },
-    "proj.focus.tech": { en: "Tech: Android · productivity." },
+    "proj.focus.tech": { en: "Android · productivity" },
     "proj.gluten.body": {
       en: "App for people with gluten intolerance: venue map, product info and a multilingual UI (17 languages). Maintained on the Play Store."
     },
-    "proj.gluten.tech": { en: "Tech: Android · maps." },
+    "proj.gluten.tech": { en: "Android · maps" },
     "proj.bookly.body": {
-      en: "Web and Android management platform for stationery shops (school materials and books). IPMAIA degree project with public documentation."
+      en: "Web and Android management platform for stationery shops (school materials and books). IPMAIA degree project — distinct from client hosting on bookly.party."
     },
-    "proj.bookly.tech": { en: "Tech: Laravel · Kotlin." },
+    "proj.bookly.tech": { en: "Laravel · Kotlin · public docs" },
     "proj.pocket.body": {
       en: "Digital manager for cards, coupons and tickets with QR codes and barcodes always at hand. Android app published on the Play Store."
     },
@@ -221,14 +280,39 @@
     "proj.win.body": {
       en: "Software for vehicle inspection centres (Portugal, with links to Brazil and Angola). Current role: desktop, mobile and services in the InspGest ecosystem."
     },
-    "proj.win.tech": { en: "Tech: C# · VB.NET · Kotlin · SQL" },
-    "proj.smile.body": {
-      en: "Stationery e-commerce in Vila do Conde (freelance). Site online."
+    "proj.win.tech": { en: "C# · VB.NET · Kotlin · SQL" },
+    "proj.504.body": {
+      en: "Car dealership and stock in Vila do Conde / Rio Mau: search by brand, model, price and mileage."
     },
+    "proj.504.tech": { en: "Next.js · Cloudflare · Delty client" },
+    "proj.navalha.body": {
+      en: "Barbershop in Vila do Conde: online bookings, shop and a distinct digital brand."
+    },
+    "proj.navalha.tech": { en: "Next.js · Cloudflare · bookly.party" },
+    "proj.smile.body": {
+      en: "Online stationery and gifts shop in Vila do Conde: catalogue, campaigns and in-store pickup."
+    },
+    "proj.smile.tech": { en: "Tech: Next.js · Cloudflare · bookly.party" },
     "proj.smile.desktop.title": { en: "Smile — sales management" },
     "proj.smile.desktop.body": {
       en: "Desktop app linked to the Smile e-commerce (sales and customer management). Project report."
     },
+    "proj.saotome.body": {
+      en: "Tourism and mobility in São Tomé and Príncipe: local support to plan the stay and explore the islands."
+    },
+    "proj.saotome.tech": { en: "Tech: Next.js · Cloudflare · Delty client" },
+    "proj.cp.body": {
+      en: "Made-to-measure carpentry in Chaves: kitchens, wardrobes, doors, flooring and floating floors."
+    },
+    "proj.cp.tech": { en: "Tech: Next.js · Cloudflare · Delty client" },
+    "proj.renovstar.body": {
+      en: "Interior renovation: kitchens, bathrooms, rehabilitation and finishes. Note: the public site may still show staging “[TESTE]” labels."
+    },
+    "proj.renovstar.tech": { en: "Tech: Next.js · Cloudflare · Delty client" },
+    "proj.4emlinha.body": {
+      en: "Connect Four web game: vs computer, local 1v1 or online rooms — fast on desktop and mobile."
+    },
+    "proj.4emlinha.tech": { en: "Tech: Next.js · Cloudflare · delty.party" },
     "proj.agro.body": {
       en: "Online store for agricultural products (freelance). Site availability may vary."
     },
@@ -263,11 +347,11 @@
       en: "Course focused on technological solutions and systems management, with an emphasis on backend development and system integration."
     },
     "resume.edu.udesc.title": {
-      en: "Bachelor's in Computer Science (exchange)"
+      en: "Bachelor's in Computer Science — exchange"
     },
     "resume.edu.udesc.dates": { en: "August 2023 - December 2023" },
     "resume.edu.udesc.body": {
-      en: "Participation in an exchange program focused on IT solutions and system integration."
+      en: "Exchange during the IPMAIA degree (does not replace it): focus on software development and systems integration."
     },
     "resume.edu.ctesp.title": {
       en: "Higher Professional Technical Course in Information Systems Technologies and Programming"
@@ -307,7 +391,7 @@
       en: "Desktop applications with Visual Basic and SQL, plus web components with Laravel."
     },
     "resume.exp.win2.b2": {
-      en: "Custom solutions for clients' operational efficiency."
+      en: "Evolution and maintenance of WorkInNet internal tools (desktop + SQL) for client operations."
     },
     "resume.exp.free.title": { en: "Delty WebSites — web development (self-employed)" },
     "resume.exp.free.dates": { en: "February 2023 – Present" },
@@ -319,7 +403,7 @@
       en: "2S Restaurant case (Paredes): full site with QR menu, menus and bookings."
     },
     "resume.exp.free.b3": {
-      en: "Client/project domains published under the *.delty.party ecosystem."
+      en: "Clients on *.delty.party / *.bookly.party — e.g. 504 Automóveis, Navalha Negra, Smile Papelaria, São Tomé Turismo, Carpintaria CP."
     },
     "resume.exp.core.title": { en: "Web and Mobile Application Developer" },
     "resume.exp.core.dates": { en: "September 2022 – August 2023" },
@@ -340,7 +424,7 @@
     "contact.location.detail": {
       en: "Available for remote and on-site work in the Porto area"
     },
-    "contact.email.detail": { en: "Reply guaranteed within 24 hours" },
+    "contact.email.detail": { en: "Preferred: email" },
     "contact.social": { en: "Social Networks" },
     "contact.social.detail": { en: "Follow me to keep up with my projects" },
     "contact.availability": { en: "Availability" },
@@ -488,15 +572,19 @@
     document.querySelectorAll("[data-i18n-attr]").forEach((element) => {
       const spec = element.getAttribute("data-i18n-attr");
       if (!spec) return;
+      let originals = attributeOriginals.get(element);
+      if (!originals) {
+        originals = Object.create(null);
+        attributeOriginals.set(element, originals);
+      }
       spec.split(";").forEach((pair) => {
         const [attr, key] = pair.split(":").map((part) => part.trim());
         if (!attr || !key) return;
-        const originalKey = `i18nOriginalAttr_${attr}`;
-        if (!element.dataset[originalKey]) {
-          element.dataset[originalKey] = element.getAttribute(attr) || "";
+        if (!(attr in originals)) {
+          originals[attr] = element.getAttribute(attr) || "";
         }
         if (language === "pt") {
-          element.setAttribute(attr, element.dataset[originalKey]);
+          element.setAttribute(attr, originals[attr]);
           return;
         }
         const entry = dictionary[key];
