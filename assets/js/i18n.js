@@ -195,6 +195,7 @@
     "portfolio.filter.mobile": { en: "Mobile apps" },
     "portfolio.filter.web": { en: "Web projects" },
     "portfolio.filter.other": { en: "Other" },
+    "portfolio.band.clients": { en: "Delty / Bookly clients · web projects" },
 
     "proj.delty.tagline": {
       en: "We turn ideas into digital experiences."
@@ -525,15 +526,19 @@
     document.querySelectorAll("[data-i18n-attr]").forEach((element) => {
       const spec = element.getAttribute("data-i18n-attr");
       if (!spec) return;
+      let originals = attributeOriginals.get(element);
+      if (!originals) {
+        originals = Object.create(null);
+        attributeOriginals.set(element, originals);
+      }
       spec.split(";").forEach((pair) => {
         const [attr, key] = pair.split(":").map((part) => part.trim());
         if (!attr || !key) return;
-        const originalKey = `i18nOriginalAttr_${attr}`;
-        if (!element.dataset[originalKey]) {
-          element.dataset[originalKey] = element.getAttribute(attr) || "";
+        if (!(attr in originals)) {
+          originals[attr] = element.getAttribute(attr) || "";
         }
         if (language === "pt") {
-          element.setAttribute(attr, element.dataset[originalKey]);
+          element.setAttribute(attr, originals[attr]);
           return;
         }
         const entry = dictionary[key];
