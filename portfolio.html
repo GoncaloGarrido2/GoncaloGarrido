@@ -138,7 +138,7 @@
           <div class="row d-flex justify-content-center text-center">
             <div class="col-lg-8">
               <h1 data-i18n="page.portfolio.title">Portfólio</h1>
-              <p class="mb-0" data-i18n="page.portfolio.lead">Destaques: Delty, Smile Papelaria e apps. Em Projetos web: 2S, clientes Delty/Bookly (504, Navalha Negra, São Tomé, Carpintaria CP, RENOVSTAR) e 4 Em Linha. Académicos em «Outros».</p>
+              <p class="mb-0" data-i18n="page.portfolio.lead">Começa pelos destaques. Sites de clientes em Sites; académicos e o resto em Outros.</p>
             </div>
           </div>
         </div>
@@ -161,47 +161,46 @@
 
       <div class="row d-flex justify-content-center text-center">
         <div class="col-lg-8" data-aos="fade-up">
-          <h5><b data-i18n="portfolio.filters">Filtros:</b><br></h5>
+          <h5><b data-i18n="portfolio.filters">Ver:</b><br></h5>
         </div>
       </div>
       
-      <ul class="isotope-filters text-center" data-aos="fade-up" data-aos-delay="100" role="toolbar" aria-label="Filtros do portfólio">
+      <ul class="isotope-filters text-center" data-aos="fade-up" data-aos-delay="100" role="toolbar" aria-label="Filtros do portefólio">
         <li data-filter=".filter-featured" class="filter-active portfolio-filter-btn" data-i18n="portfolio.filter.featured">Destaques</li>
         <li data-filter="*" class="portfolio-filter-btn" data-i18n="portfolio.filter.all">Todos</li>
-        <li data-filter=".filter-mobile" class="portfolio-filter-btn" data-i18n="portfolio.filter.mobile">Aplicações móveis</li>
-        <li data-filter=".filter-web" class="portfolio-filter-btn" data-i18n="portfolio.filter.web">Projetos web</li>
+        <li data-filter=".filter-mobile" class="portfolio-filter-btn" data-i18n="portfolio.filter.mobile">Apps</li>
+        <li data-filter=".filter-web" class="portfolio-filter-btn" data-i18n="portfolio.filter.web">Sites</li>
         <li data-filter=".filter-other" class="portfolio-filter-btn" data-i18n="portfolio.filter.other">Outros</li>
       </ul>
     
       <div class="row gy-4 isotope-container">
 
-        <!-- Delty WebSites (destaque) -->
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-featured filter-web">
+        <!-- GlutenFree -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-featured filter-mobile">
           <div class="portfolio-card">
-            <a href="https://delty.party/" class="portfolio-link" target="_blank" rel="noopener">
+            <a href="https://play.google.com/store/apps/details?id=com.goncalogarrido.glutenfree&amp;hl=pt" class="portfolio-link" target="_blank" rel="noopener">
               <div class="portfolio-content">
-                <picture><source srcset="assets/img/ImagemProjetos/20-delty.webp" type="image/webp" sizes="(max-width: 767px) 100vw, (max-width: 991px) 50vw, 400px"><img src="assets/img/ImagemProjetos/20-delty.png" class="img-fluid" alt="Delty WebSites, hero delty.party" loading="eager" decoding="async" fetchpriority="high" sizes="(max-width: 767px) 100vw, (max-width: 991px) 50vw, 400px"></picture>
+                <picture><source srcset="assets/img/ImagemProjetos/8.webp" type="image/webp" sizes="(max-width: 767px) 100vw, (max-width: 991px) 50vw, 400px"><img src="assets/img/ImagemProjetos/8.png" class="img-fluid" alt="Captura da app GlutenFree na Play Store" loading="lazy" decoding="async" sizes="(max-width: 767px) 100vw, (max-width: 991px) 50vw, 400px"></picture>
                 <div class="portfolio-info">
                   <p data-i18n="cta.view.project">Ver projeto</p>
                 </div>
               </div>
             </a>
             <div class="portfolio-description">
-              <h5>Delty WebSites</h5>
-              <p class="portfolio-body" data-i18n="proj.delty.role">Criei a marca Delty: posicionamento, preços, demos e sites de clientes.</p>
-              <p class="proj-tech"><span class="proj-meta-label" data-i18n="case.tech">Tecnologias utilizadas</span> <span data-i18n="proj.delty.tech">Next.js, Cloudflare, delty.party</span></p>
+              <h5>GlutenFree</h5>
+              <p class="portfolio-body" data-i18n="proj.gluten.role">Desenvolvi e mantenho a app Android (mapa, produtos, 17 idiomas).</p>
+              <p class="proj-tech"><span class="proj-meta-label" data-i18n="case.tech">Tecnologias utilizadas</span> <span data-i18n="proj.gluten.tech">Android, mapas</span></p>
               <div class="portfolio-links">
-                <a href="case-delty.html" class="styled-link">Case</a>
-                <a href="https://delty.party/" class="styled-link" target="_blank" rel="noopener">Site</a>
-                <a href="https://delty.party/precos" class="styled-link" target="_blank" rel="noopener">Preços</a>
+                <a href="case-glutenfree.html" class="styled-link" data-i18n="portfolio.case">Caso de estudo</a>
+                <a href="https://play.google.com/store/apps/details?id=com.goncalogarrido.glutenfree&amp;hl=pt" class="styled-link" target="_blank" rel="noopener">Play Store</a>
+                <a href="https://projetoslendarios.github.io/GlutenFreeApp-Docs/" class="styled-link" target="_blank" rel="noopener">Docs</a>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- Smile Papelaria (destaque) -->
-
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-featured filter-web">
+        <!-- Smile Papelaria -->
+<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-featured filter-web">
           <div class="portfolio-card">
             <a href="https://smile.bookly.party/" class="portfolio-link" target="_blank" rel="noopener">
               <div class="portfolio-content">
@@ -218,30 +217,6 @@
               <div class="portfolio-links">
                 <a href="case-smile.html" class="styled-link" data-i18n="portfolio.case">Caso de estudo</a>
                 <a href="https://smile.bookly.party/" class="styled-link" target="_blank" rel="noopener">Site</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Papos (destaque) -->
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-featured filter-mobile filter-web">
-          <div class="portfolio-card">
-            <a href="https://papos.delty.party" class="portfolio-link" target="_blank" rel="noopener">
-              <div class="portfolio-content">
-                <picture><source srcset="assets/img/ImagemProjetos/19-papos.webp" type="image/webp" sizes="(max-width: 767px) 100vw, (max-width: 991px) 50vw, 400px"><img src="assets/img/ImagemProjetos/19-papos.png" class="img-fluid" alt="Papos, palavra do dia" loading="eager" decoding="async" sizes="(max-width: 767px) 100vw, (max-width: 991px) 50vw, 400px"></picture>
-                <div class="portfolio-info">
-                  <p data-i18n="cta.view.project">Ver projeto</p>
-                </div>
-              </div>
-            </a>
-            <div class="portfolio-description">
-              <h5>Papos</h5>
-              <p class="portfolio-body" data-i18n="proj.papos.role">Concebi e desenvolvi a app Android e a versão web (cinco modos, offline).</p>
-              <p class="proj-tech"><span class="proj-meta-label" data-i18n="case.tech">Tecnologias utilizadas</span> <span data-i18n="proj.papos.tech">Android, web, dicionário PT-PT</span></p>
-              <div class="portfolio-links">
-                <a href="case-papos.html" class="styled-link" data-i18n="portfolio.case">Caso de estudo</a>
-                <a href="https://play.google.com/store/apps/details?id=com.goncalogarrido.papos" class="styled-link" target="_blank" rel="noopener">Play Store</a>
-                <a href="https://papos.delty.party" class="styled-link" target="_blank" rel="noopener">Web</a>
               </div>
             </div>
           </div>
@@ -271,32 +246,8 @@
           </div>
         </div>
 
-        <!-- GlutenFree -->
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-featured filter-mobile">
-          <div class="portfolio-card">
-            <a href="https://play.google.com/store/apps/details?id=com.goncalogarrido.glutenfree&amp;hl=pt" class="portfolio-link" target="_blank" rel="noopener">
-              <div class="portfolio-content">
-                <picture><source srcset="assets/img/ImagemProjetos/8.webp" type="image/webp" sizes="(max-width: 767px) 100vw, (max-width: 991px) 50vw, 400px"><img src="assets/img/ImagemProjetos/8.png" class="img-fluid" alt="Captura da app GlutenFree na Play Store" loading="lazy" decoding="async" sizes="(max-width: 767px) 100vw, (max-width: 991px) 50vw, 400px"></picture>
-                <div class="portfolio-info">
-                  <p data-i18n="cta.view.project">Ver projeto</p>
-                </div>
-              </div>
-            </a>
-            <div class="portfolio-description">
-              <h5>GlutenFree</h5>
-              <p class="portfolio-body" data-i18n="proj.gluten.role">Desenvolvi e mantenho a app Android (mapa, produtos, 17 idiomas).</p>
-              <p class="proj-tech"><span class="proj-meta-label" data-i18n="case.tech">Tecnologias utilizadas</span> <span data-i18n="proj.gluten.tech">Android, mapas</span></p>
-              <div class="portfolio-links">
-                <a href="case-glutenfree.html" class="styled-link" data-i18n="portfolio.case">Caso de estudo</a>
-                <a href="https://play.google.com/store/apps/details?id=com.goncalogarrido.glutenfree&amp;hl=pt" class="styled-link" target="_blank" rel="noopener">Play Store</a>
-                <a href="https://projetoslendarios.github.io/GlutenFreeApp-Docs/" class="styled-link" target="_blank" rel="noopener">Docs</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
         <!-- Bookly -->
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-featured filter-web filter-mobile">
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-featured filter-mobile">
           <div class="portfolio-card">
             <a href="https://projetobookly.github.io/Bookly-Docs/" class="portfolio-link" target="_blank" rel="noopener">
               <div class="portfolio-content">
@@ -319,8 +270,56 @@
           </div>
         </div>
 
-        <!-- PocketCards (secundário) -->
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-mobile">
+        <!-- Delty WebSites -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-featured">
+          <div class="portfolio-card">
+            <a href="https://delty.party/" class="portfolio-link" target="_blank" rel="noopener">
+              <div class="portfolio-content">
+                <picture><source srcset="assets/img/ImagemProjetos/20-delty.webp" type="image/webp" sizes="(max-width: 767px) 100vw, (max-width: 991px) 50vw, 400px"><img src="assets/img/ImagemProjetos/20-delty.png" class="img-fluid" alt="Delty WebSites, hero delty.party" loading="eager" decoding="async" fetchpriority="high" sizes="(max-width: 767px) 100vw, (max-width: 991px) 50vw, 400px"></picture>
+                <div class="portfolio-info">
+                  <p data-i18n="cta.view.project">Ver projeto</p>
+                </div>
+              </div>
+            </a>
+            <div class="portfolio-description">
+              <h5>Delty WebSites</h5>
+              <p class="portfolio-body" data-i18n="proj.delty.role">Criei a marca Delty: posicionamento, preços, demos e sites de clientes.</p>
+              <p class="proj-tech"><span class="proj-meta-label" data-i18n="case.tech">Tecnologias utilizadas</span> <span data-i18n="proj.delty.tech">Next.js, Cloudflare, delty.party</span></p>
+              <div class="portfolio-links">
+                <a href="case-delty.html" class="styled-link">Case</a>
+                <a href="https://delty.party/" class="styled-link" target="_blank" rel="noopener">Site</a>
+                <a href="https://delty.party/precos" class="styled-link" target="_blank" rel="noopener">Preços</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Papos -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-featured filter-mobile">
+          <div class="portfolio-card">
+            <a href="https://papos.delty.party" class="portfolio-link" target="_blank" rel="noopener">
+              <div class="portfolio-content">
+                <picture><source srcset="assets/img/ImagemProjetos/19-papos.webp" type="image/webp" sizes="(max-width: 767px) 100vw, (max-width: 991px) 50vw, 400px"><img src="assets/img/ImagemProjetos/19-papos.png" class="img-fluid" alt="Papos, palavra do dia" loading="eager" decoding="async" sizes="(max-width: 767px) 100vw, (max-width: 991px) 50vw, 400px"></picture>
+                <div class="portfolio-info">
+                  <p data-i18n="cta.view.project">Ver projeto</p>
+                </div>
+              </div>
+            </a>
+            <div class="portfolio-description">
+              <h5>Papos</h5>
+              <p class="portfolio-body" data-i18n="proj.papos.role">Concebi e desenvolvi a app Android e a versão web (cinco modos, offline).</p>
+              <p class="proj-tech"><span class="proj-meta-label" data-i18n="case.tech">Tecnologias utilizadas</span> <span data-i18n="proj.papos.tech">Android, web, dicionário PT-PT</span></p>
+              <div class="portfolio-links">
+                <a href="case-papos.html" class="styled-link" data-i18n="portfolio.case">Caso de estudo</a>
+                <a href="https://play.google.com/store/apps/details?id=com.goncalogarrido.papos" class="styled-link" target="_blank" rel="noopener">Play Store</a>
+                <a href="https://papos.delty.party" class="styled-link" target="_blank" rel="noopener">Web</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PocketCards -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-mobile filter-other">
           <div class="portfolio-card">
             <a href="https://play.google.com/store/apps/details?id=com.goncalogarrido.pocketcards" class="portfolio-link" target="_blank" rel="noopener">
               <div class="portfolio-content">
@@ -332,8 +331,8 @@
             </a>
             <div class="portfolio-description">
               <h5>PocketCards</h5>
-              <p data-i18n="proj.pocket.body">Gestor digital de cartões, cupões e bilhetes com QR e códigos de barras sempre à mão. App Android publicada na Play Store.</p>
-              <p data-i18n="proj.pocket.tech">Jetpack Compose.</p>
+              <p class="portfolio-body" data-i18n="proj.pocket.body">Gestor digital de cartões, cupões e bilhetes com QR e códigos de barras sempre à mão. App Android publicada na Play Store.</p>
+              <p class="proj-tech"><span class="proj-meta-label" data-i18n="case.tech">Tecnologias utilizadas</span> <span data-i18n="proj.pocket.tech">Jetpack Compose</span></p>
               <div class="portfolio-links">
                 <a href="case-pocketcards.html" class="styled-link" data-i18n="portfolio.case">Caso de estudo</a>
                 <a href="https://play.google.com/store/apps/details?id=com.goncalogarrido.pocketcards" class="styled-link" target="_blank" rel="noopener">Play Store</a>
@@ -343,7 +342,7 @@
           </div>
         </div>
 
-        <!-- Sushi Stack (outros / secundário) -->
+        <!-- Sushi Stack -->
         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-mobile filter-other">
           <div class="portfolio-card">
             <a href="https://play.google.com/store/apps/details?id=com.goncalogarrido.sushistack" class="portfolio-link" target="_blank" rel="noopener">
@@ -356,7 +355,7 @@
             </a>
             <div class="portfolio-description">
               <h5>Sushi Stack</h5>
-              <p data-i18n="proj.sushi.body">Jogo Android de empilhar sushi com Google Play Games. Publicado na Play Store.</p>
+              <p class="portfolio-body" data-i18n="proj.sushi.body">Jogo Android de empilhar sushi com Google Play Games. Publicado na Play Store.</p>
               <div class="portfolio-links">
                 <a href="case-sushistack.html" class="styled-link" data-i18n="portfolio.case">Caso de estudo</a>
                 <a href="https://play.google.com/store/apps/details?id=com.goncalogarrido.sushistack" class="styled-link" target="_blank" rel="noopener">Play Store</a>
@@ -366,9 +365,9 @@
           </div>
         </div>
 
-        <div class="col-12 portfolio-band isotope-item filter-web" data-i18n="portfolio.band.clients">Clientes Delty / Bookly · projetos web</div>
+        <div class="col-12 portfolio-band isotope-item filter-web" data-i18n="portfolio.band.clients">Sites de clientes</div>
 
-        <!-- 2S Restaurante (cliente Delty - projetos web) -->
+        <!-- 2S Restaurante &amp; Bar -->
         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
           <div class="portfolio-card">
             <a href="https://2srestaurante.com/" class="portfolio-link" target="_blank" rel="noopener">
@@ -392,7 +391,7 @@
           </div>
         </div>
 
-        <!-- Clientes Delty / Bookly (web - fora dos destaques principais) -->
+        <!-- 504 Automóveis -->
         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
           <div class="portfolio-card">
             <a href="https://504automoveis.delty.party/" class="portfolio-link" target="_blank" rel="noopener">
@@ -415,6 +414,7 @@
           </div>
         </div>
 
+        <!-- Navalha Negra -->
         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
           <div class="portfolio-card">
             <a href="https://navalhanegra.bookly.party/" class="portfolio-link" target="_blank" rel="noopener">
@@ -437,6 +437,7 @@
           </div>
         </div>
 
+        <!-- São Tomé Turismo -->
         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
           <div class="portfolio-card">
             <a href="https://saotome.delty.party/" class="portfolio-link" target="_blank" rel="noopener">
@@ -449,7 +450,7 @@
             </a>
             <div class="portfolio-description">
               <h5>São Tomé Turismo</h5>
-              <p data-i18n="proj.saotome.body">Turismo e mobilidade em São Tomé e Príncipe: apoio local para organizar a estadia e descobrir as ilhas.</p>
+              <p class="portfolio-body" data-i18n="proj.saotome.body">Turismo e mobilidade em São Tomé e Príncipe: apoio local para organizar a estadia e descobrir as ilhas.</p>
               <p class="proj-tech"><span class="proj-meta-label" data-i18n="case.technologies">Tecnologias utilizadas</span> <span data-i18n="proj.saotome.tech">Vite · React · Leaflet · Tailwind · Cloudflare</span></p>
               <div class="portfolio-links">
                 <a href="case-sao-tome.html" class="styled-link" data-i18n="portfolio.case">Caso de estudo</a>
@@ -459,6 +460,7 @@
           </div>
         </div>
 
+        <!-- Carpintaria CP -->
         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
           <div class="portfolio-card">
             <a href="https://carpintariacp.delty.party/" class="portfolio-link" target="_blank" rel="noopener">
@@ -471,7 +473,7 @@
             </a>
             <div class="portfolio-description">
               <h5>Carpintaria CP</h5>
-              <p data-i18n="proj.cp.body">Carpintaria à medida em Chaves: cozinhas, roupeiros, portas, soalhos e pavimentos.</p>
+              <p class="portfolio-body" data-i18n="proj.cp.body">Carpintaria à medida em Chaves: cozinhas, roupeiros, portas, soalhos e pavimentos.</p>
               <p class="proj-tech"><span class="proj-meta-label" data-i18n="case.technologies">Tecnologias utilizadas</span> <span data-i18n="proj.cp.tech">Next.js · Nodemailer · Tailwind · Cloudflare</span></p>
               <div class="portfolio-links">
                 <a href="case-carpintaria-cp.html" class="styled-link" data-i18n="portfolio.case">Caso de estudo</a>
@@ -481,6 +483,7 @@
           </div>
         </div>
 
+        <!-- RENOVSTAR -->
         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
           <div class="portfolio-card">
             <a href="https://renovstar.delty.party/" class="portfolio-link" target="_blank" rel="noopener">
@@ -503,8 +506,8 @@
           </div>
         </div>
 
-        <!-- Web app própria (Delty) - web, sem roubar destaques -->
-        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web filter-other">
+        <!-- 4 Em Linha -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
           <div class="portfolio-card">
             <a href="https://4emlinha.delty.party/" class="portfolio-link" target="_blank" rel="noopener">
               <div class="portfolio-content">
@@ -516,7 +519,7 @@
             </a>
             <div class="portfolio-description">
               <h5>4 Em Linha</h5>
-              <p data-i18n="proj.4emlinha.body">Jogo web de quatro em linha: contra o PC, 1 vs 1 local ou salas online. Rápido no PC e no telemóvel.</p>
+              <p class="portfolio-body" data-i18n="proj.4emlinha.body">Jogo web de quatro em linha: contra o PC, 1 vs 1 local ou salas online. Rápido no PC e no telemóvel.</p>
               <p class="proj-tech"><span class="proj-meta-label" data-i18n="case.technologies">Tecnologias utilizadas</span> <span data-i18n="proj.4emlinha.tech">Next.js · Cloudflare · delty.party</span></p>
               <div class="portfolio-links">
                 <a href="case-4emlinha.html" class="styled-link" data-i18n="portfolio.case">Caso de estudo</a>
@@ -526,6 +529,7 @@
           </div>
         </div>
 
+        <!-- Smile, gestão de vendas -->
         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-other">
           <div class="portfolio-card">
             <a href="assets/files/pap.pdf" class="portfolio-link" target="_blank" rel="noopener">
@@ -538,7 +542,7 @@
             </a>
             <div class="portfolio-description">
               <h5 data-i18n="proj.smile.desktop.title">Smile, gestão de vendas</h5>
-              <p data-i18n="proj.smile.desktop.body">Aplicação desktop associada ao e-commerce Smile (gestão de vendas e clientes). Relatório do projeto.</p>
+              <p class="portfolio-body" data-i18n="proj.smile.desktop.body">Aplicação desktop associada ao e-commerce Smile (gestão de vendas e clientes). Relatório do projeto.</p>
               <div class="portfolio-links">
                 <a href="case-smile-desktop.html" class="styled-link" data-i18n="portfolio.case">Caso de estudo</a>
                 <a href="assets/files/pap.pdf" class="styled-link" target="_blank" rel="noopener" data-i18n="proj.report">Relatório</a>
@@ -547,10 +551,7 @@
           </div>
         </div>
 
-        
-
-        
-
+        <!-- AutoDealer -->
         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-other">
           <div class="portfolio-card">
             <a href="https://autodealer.pt/" class="portfolio-link" target="_blank" rel="noopener">
@@ -563,7 +564,7 @@
             </a>
             <div class="portfolio-description">
               <h5>AutoDealer</h5>
-              <p data-i18n="proj.autodealer.body">Plataforma para visualizar e comparar veículos à venda.</p>
+              <p class="portfolio-body" data-i18n="proj.autodealer.body">Plataforma para visualizar e comparar veículos à venda.</p>
               <div class="portfolio-links">
                 <a href="case-autodealer.html" class="styled-link" data-i18n="portfolio.case">Caso de estudo</a>
                 <a href="https://autodealer.pt/" class="styled-link" target="_blank" rel="noopener">Site</a>
@@ -572,8 +573,7 @@
           </div>
         </div>
 
-        
-
+        <!-- Site Ginásio -->
         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-other">
           <div class="portfolio-card">
             <a href="https://github.com/GoncaloGarrido2/Site-Ginasio" class="portfolio-link" target="_blank" rel="noopener">
@@ -586,7 +586,7 @@
             </a>
             <div class="portfolio-description">
               <h5 data-i18n="proj.gym.title">Site Ginásio</h5>
-              <p data-i18n="proj.gym.body">Projeto académico de site para um ginásio, em JavaScript.</p>
+              <p class="portfolio-body" data-i18n="proj.gym.body">Projeto académico de site para um ginásio, em JavaScript.</p>
               <div class="portfolio-links">
                 <a href="case-ginasio.html" class="styled-link" data-i18n="portfolio.case">Caso de estudo</a>
                 <a href="https://github.com/GoncaloGarrido2/Site-Ginasio" class="styled-link" target="_blank" rel="noopener">GitHub</a>
@@ -595,6 +595,7 @@
           </div>
         </div>
 
+        <!-- Notícias Esmad -->
         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-other">
           <div class="portfolio-card">
             <a href="https://goncalogarrido2.github.io/Website-News-Fred/" class="portfolio-link" target="_blank" rel="noopener">
@@ -607,7 +608,7 @@
             </a>
             <div class="portfolio-description">
               <h5>Notícias Esmad</h5>
-              <p data-i18n="proj.news.body">Website académico de notícias.</p>
+              <p class="portfolio-body" data-i18n="proj.news.body">Website académico de notícias.</p>
               <div class="portfolio-links">
                 <a href="case-noticias-esmad.html" class="styled-link" data-i18n="portfolio.case">Caso de estudo</a>
                 <a href="https://goncalogarrido2.github.io/Website-News-Fred/" class="styled-link" target="_blank" rel="noopener">Site</a>
@@ -617,6 +618,7 @@
           </div>
         </div>
 
+        <!-- AHG ZOO -->
         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-other">
           <div class="portfolio-card">
             <a href="https://faculdadelicenciatura.github.io/tiwm22-ti-g02/src/index.html" class="portfolio-link" target="_blank" rel="noopener">
@@ -629,7 +631,7 @@
             </a>
             <div class="portfolio-description">
               <h5>AHG ZOO</h5>
-              <p data-i18n="proj.zoo.body">Website informativo académico para um zoológico.</p>
+              <p class="portfolio-body" data-i18n="proj.zoo.body">Website informativo académico para um zoológico.</p>
               <div class="portfolio-links">
                 <a href="case-ahg-zoo.html" class="styled-link" data-i18n="portfolio.case">Caso de estudo</a>
                 <a href="https://faculdadelicenciatura.github.io/tiwm22-ti-g02/src/index.html" class="styled-link" target="_blank" rel="noopener">Website</a>
@@ -638,6 +640,7 @@
           </div>
         </div>
 
+        <!-- Gestão de Farmácia -->
         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-other">
           <div class="portfolio-card">
             <a href="https://github.com/FaculdadeLicenciatura/ProjetoFarmacia" class="portfolio-link" target="_blank" rel="noopener">
@@ -650,7 +653,7 @@
             </a>
             <div class="portfolio-description">
               <h5 data-i18n="proj.pharmacy.title">Gestão de Farmácia</h5>
-              <p data-i18n="proj.pharmacy.body">Gestão de produtos, funcionários e receitas (projeto académico).</p>
+              <p class="portfolio-body" data-i18n="proj.pharmacy.body">Gestão de produtos, funcionários e receitas (projeto académico).</p>
               <div class="portfolio-links">
                 <a href="case-farmacia.html" class="styled-link" data-i18n="portfolio.case">Caso de estudo</a>
                 <a href="https://github.com/FaculdadeLicenciatura/ProjetoFarmacia" class="styled-link" target="_blank" rel="noopener">GitHub</a>
@@ -659,6 +662,7 @@
           </div>
         </div>
 
+        <!-- Caderno Digital -->
         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-other">
           <div class="portfolio-card">
             <a href="https://goncalogarrido.blogspot.com/" class="portfolio-link" target="_blank" rel="noopener">
@@ -671,7 +675,7 @@
             </a>
             <div class="portfolio-description">
               <h5>Caderno Digital</h5>
-              <p data-i18n="proj.edit.body">Projeto antigo de edição de fotos e vídeos (blog).</p>
+              <p class="portfolio-body" data-i18n="proj.edit.body">Projeto antigo de edição de fotos e vídeos (blog).</p>
               <div class="portfolio-links">
                 <a href="case-caderno-digital.html" class="styled-link" data-i18n="portfolio.case">Caso de estudo</a>
                 <a href="https://goncalogarrido.blogspot.com/" class="styled-link" target="_blank" rel="noopener">Blog</a>

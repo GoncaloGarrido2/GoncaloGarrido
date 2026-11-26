@@ -64,7 +64,7 @@
     },
     "page.portfolio.title": { en: "Portfolio" },
     "page.portfolio.lead": {
-      en: "Featured: Delty, Smile stationery and apps. Under Web: 2S and Delty/Bookly clients (504, Navalha Negra, São Tomé, Carpintaria CP, RENOVSTAR) and 4 Em Linha. Academic work under “Other”."
+      en: "Start with the featured work. Client sites under Sites; academic projects and the rest under Other."
     },
     "page.contact.title": { en: "Contacts" },
     "page.contact.lead": {
@@ -302,13 +302,13 @@
       en: "Technical course in IT Systems Management and Programming (ESDAS)"
     },
     "portfolio.case": { en: "Case study" },
-    "portfolio.filters": { en: "Filters:" },
+    "portfolio.filters": { en: "Browse:" },
     "portfolio.filter.featured": { en: "Featured" },
     "portfolio.filter.all": { en: "All" },
-    "portfolio.filter.mobile": { en: "Mobile apps" },
-    "portfolio.filter.web": { en: "Web projects" },
+    "portfolio.filter.mobile": { en: "Apps" },
+    "portfolio.filter.web": { en: "Sites" },
     "portfolio.filter.other": { en: "Other" },
-    "portfolio.band.clients": { en: "Delty / Bookly clients · web projects" },
+    "portfolio.band.clients": { en: "Client sites" },
 
 
     "proj.delty.problem": { en: "Local businesses need a clear web presence, from a simple site to a custom build." },
@@ -359,7 +359,7 @@
     "proj.pocket.body": {
       en: "Digital manager for cards, coupons and tickets with QR codes and barcodes always at hand. Android app published on the Play Store."
     },
-    "proj.pocket.tech": { en: "Jetpack Compose." },
+    "proj.pocket.tech": { en: "Jetpack Compose" },
     "proj.sushi.body": {
       en: "Android sushi-stacking game with Google Play Games. Published on the Play Store."
     },

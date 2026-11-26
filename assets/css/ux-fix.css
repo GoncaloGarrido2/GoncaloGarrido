@@ -530,12 +530,9 @@ body.resume-page .page-title .heading,
   object-position: center top;
 }
 
-.portfolio-item.filter-featured .portfolio-description h5 {
-  font-size: 1.2rem !important;
-}
-
-.portfolio-item.filter-web:not(.filter-featured) .portfolio-description h5 {
-  font-size: 1.05rem !important;
+/* Títulos dos cards: tamanho único (featured / sites / apps / outros) */
+.portfolio-item .portfolio-description h5 {
+  font-size: 1.12rem !important;
 }
 
 .portfolio-description .proj-tech,
