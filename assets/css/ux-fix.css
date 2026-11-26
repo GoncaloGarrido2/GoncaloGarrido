@@ -1334,3 +1334,13 @@ body.mobile-nav-active.contact-page .contact-svg-close { display: inline-block; 
   margin: 0;
   color: #fff;
 }
+
+/* Case note (web cases) */
+.case-note {
+  margin-top: 0.75rem;
+  padding: 0.85rem 1rem;
+  border-left: 2px solid var(--brand-accent, #2ecf9a);
+  background: color-mix(in srgb, var(--brand-accent, #2ecf9a), transparent 92%);
+  color: color-mix(in srgb, var(--brand-fog, #e9eef6), transparent 8%);
+  font-size: 0.92rem;
+}
