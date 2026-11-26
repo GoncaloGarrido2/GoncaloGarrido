@@ -469,7 +469,7 @@ body.resume-page .page-title .heading,
   font-size: 0.85rem;
 }
 
-.resume-item--primary {
+.resume .resume-item.resume-item--primary {
   border-left-width: 3px !important;
 }
 
@@ -477,8 +477,9 @@ body.resume-page .page-title .heading,
   font-size: 1.15rem !important;
 }
 
-.resume-item--mobility {
+.resume .resume-item.resume-item--mobility {
   opacity: 0.9;
+  border-left-width: 2px !important;
   border-left-color: color-mix(in srgb, var(--brand-accent, #2ecf9a), transparent 55%) !important;
 }
 
@@ -664,7 +665,7 @@ a.hero-cta-ghost:hover {
   border-top: 1px solid color-mix(in srgb, var(--brand-fog, #e9eef6), transparent 90%);
 }
 
-/* Resume timeline calm accent */
+/* Resume timeline — bolinha centrada na rail (incl. itens com badge) */
 .resume .resume-item {
   position: relative;
 }
@@ -672,13 +673,26 @@ a.hero-cta-ghost:hover {
 .resume .resume-item::after {
   content: "";
   position: absolute;
-  left: -0.42rem;
-  top: 0.35rem;
+  /* padding-edge = 0; centro da rail 2px = -1px */
+  left: -1px;
+  top: 0.2rem;
   width: 0.55rem;
   height: 0.55rem;
   border-radius: 50%;
   background: var(--brand-accent, #2ecf9a);
   box-shadow: 0 0 0 3px color-mix(in srgb, var(--brand-accent, #2ecf9a), transparent 75%);
+  transform: translateX(-50%);
+}
+
+.resume .resume-item.resume-item--primary::after {
+  /* rail 3px: centro a -1.5px */
+  left: -1.5px;
+  top: 0.45rem; /* alinha ao badge «Grau principal» */
+}
+
+.resume .resume-item.resume-item--mobility::after {
+  left: -1px;
+  top: 0.45rem; /* alinha ao badge «Mobilidade» */
 }
 
 @media (max-width: 767px) {
