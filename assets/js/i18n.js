@@ -404,10 +404,6 @@
     "proj.ocr.body": {
       en: "Academic experiment in text/object recognition with OCR."
     },
-    "proj.gym.title": { en: "Gym website" },
-    "proj.gym.body": {
-      en: "Academic gym website project in JavaScript."
-    },
     "proj.report": { en: "Report" },
 
     "resume.edu.title": { en: "Education" },
