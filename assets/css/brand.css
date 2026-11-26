@@ -583,3 +583,58 @@ a.hero-cta-secondary:hover {
     top: var(--header-offset);
   }
 }
+
+
+/* Case site screen galleries */
+.case-gallery {
+  margin-top: 2.75rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--brand-line);
+}
+
+.case-gallery-title {
+  font-family: var(--heading-font, Syne, sans-serif);
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--brand-accent);
+  margin: 0 0 1.1rem;
+}
+
+.case-gallery-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .case-gallery-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1200px) {
+  .case-gallery-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.case-gallery-item {
+  margin: 0;
+  overflow: hidden;
+  border-radius: 2px;
+  background: var(--brand-ink-soft);
+  border: 1px solid var(--brand-line);
+}
+
+.case-gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.case-gallery-item figcaption {
+  padding: 0.65rem 0.75rem 0.8rem;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: color-mix(in srgb, var(--default-color), transparent 12%);
+}
