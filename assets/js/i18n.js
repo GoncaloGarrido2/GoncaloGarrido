@@ -394,7 +394,7 @@
     },
     "proj.cp.tech": { en: "Tech: Next.js, Cloudflare (Delty client)" },
     "proj.renovstar.body": {
-      en: "Interior renovation: kitchens, bathrooms, rehabilitation and finishes. Note: the public site may still show staging “[TESTE]” labels."
+      en: "Interior remodeling (kitchens, bathrooms)."
     },
     "proj.renovstar.tech": { en: "Tech: Next.js, Cloudflare (Delty client)" },
     "proj.4emlinha.body": {
