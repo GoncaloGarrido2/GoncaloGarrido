@@ -98,7 +98,7 @@
     "skills.lang.en": { en: "English" },
     "skills.lang.en.level": { en: "work / bilingual site" },
     "resume.edu.badge.degree": { en: "Primary degree" },
-    "resume.edu.badge.mobility": { en: "Exchange (not a standalone degree)" },
+    "resume.edu.badge.mobility": { en: "Mobility" },
     "skills.csharp.body": {
       en: "WorkInNet / InspGest: desktop, services and inspection-line integrations (also .NET Core)."
     },
@@ -119,7 +119,7 @@
       en: "Also in occasional contact or IPMAIA coursework:"
     },
 
-    "case.technologies": { en: "Technologies" },
+    "case.technologies": { en: "Technologies used" },
     "case.504.title": { en: '504 Automóveis' },
     "case.504.tagline": { en: 'Dealership with searchable stock online' },
     "case.504.about": { en: 'Website for the 504 Automóveis dealership in Vila do Conde / Rio Mau. Visitors search stock by brand, model, price and mileage.' },
@@ -175,7 +175,7 @@
     
     "case.about": { en: "The project" },
     "case.did": { en: "What I did" },
-    "case.technologies": { en: "Technologies" },
+    "case.technologies": { en: "Technologies used" },
     "case.status": { en: "Status" },
     "case.smile.title": { en: "Smile stationery" },
     "case.smile.tagline": { en: "Online stationery and gifts shop in Vila do Conde" },
@@ -289,9 +289,9 @@
     },
     "recog.mobility.title": { en: "Mobility at UDESC" },
     "recog.mobility.body": {
-      en: "Computer Science exchange (August–December 2023) at CCT/UDESC, Brazil."
+      en: "Computer Science exchange (August-December 2023) at CCT/UDESC, Brazil."
     },
-    "recog.archive": { en: "Earlier contests and training (2017–2020)" },
+    "recog.archive": { en: "Earlier contests and training (2017-2020)" },
     "recog.archive.topas": {
       en: "Topas 2018 and 2019, participation (Faculty of Sciences of Porto)"
     },
@@ -439,7 +439,7 @@
     },
     "resume.edu.udesc.dates": { en: "August 2023 - December 2023" },
     "resume.edu.udesc.body": {
-      en: "Exchange during the IPMAIA degree (does not replace it): focus on software development and systems integration."
+      en: "Exchange programme during the degree: focus on development and systems integration."
     },
     "resume.edu.ctesp.title": {
       en: "Higher Professional Technical Course in Information Systems Technologies and Programming"
@@ -456,7 +456,7 @@
     "resume.edu.sec.grade": { en: "Final grade: 17" },
     "resume.exp.title": { en: "Professional Experience" },
     "resume.exp.win.title": { en: "Software Developer" },
-    "resume.exp.win.dates": { en: "August 2025 – Present" },
+    "resume.exp.win.dates": { en: "August 2025 - Present" },
     "resume.exp.win.org": { en: "WorkInNet, IT Consultancy · InspGest" },
     "resume.exp.win.b1": {
       en: "Development in the InspGest ecosystem for vehicle inspection centres in Portugal, with links to Brazil and Angola."
@@ -468,13 +468,13 @@
       en: "Integration with workshop equipment (OBD, line, cameras) and inspection operational flows."
     },
     "resume.exp.px.title": { en: "Full Stack Developer" },
-    "resume.exp.px.dates": { en: "March 2025 – August 2025" },
+    "resume.exp.px.dates": { en: "March 2025 - August 2025" },
     "resume.exp.px.b1": {
       en: "Development of applications and APIs with Kotlin and Node.js."
     },
     "resume.exp.px.b2": { en: "Systems integration with WordPress." },
     "resume.exp.win2.title": { en: "Desktop Application Developer" },
-    "resume.exp.win2.dates": { en: "March 2024 – June 2024" },
+    "resume.exp.win2.dates": { en: "March 2024 - June 2024" },
     "resume.exp.win2.b1": {
       en: "Desktop applications with Visual Basic and SQL, plus web components with Laravel."
     },
@@ -482,7 +482,7 @@
       en: "Evolution and maintenance of WorkInNet internal tools (desktop + SQL) for client operations."
     },
     "resume.exp.free.title": { en: "Delty WebSites, web development (self-employed)" },
-    "resume.exp.free.dates": { en: "February 2023 – Present" },
+    "resume.exp.free.dates": { en: "February 2023 - Present" },
     "resume.exp.free.org": { en: "Delty · delty.party" },
     "resume.exp.free.b1": {
       en: "Delty brand: custom websites for SMEs (Next.js + Cloudflare), with public pricing and demos."
@@ -494,13 +494,13 @@
       en: "Clients on *.delty.party / *.bookly.party, for example 504 Automóveis, Navalha Negra, Smile Papelaria, São Tomé Turismo and Carpintaria CP."
     },
     "resume.exp.core.title": { en: "Web and Mobile Application Developer" },
-    "resume.exp.core.dates": { en: "September 2022 – August 2023" },
+    "resume.exp.core.dates": { en: "September 2022 - August 2023" },
     "resume.exp.core.b1": { en: "Applications in C#, PHP and Xamarin." },
     "resume.exp.core.b2": {
       en: "Integration with business management systems."
     },
     "resume.exp.edi.title": { en: "Developer Internship" },
-    "resume.exp.edi.dates": { en: "December 2020 – February 2021" },
+    "resume.exp.edi.dates": { en: "December 2020 - February 2021" },
     "resume.exp.edi.b1": {
       en: "Web and desktop applications in C# and SQL."
     },
