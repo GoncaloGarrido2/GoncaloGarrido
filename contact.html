@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title data-i18n="meta.contact.title">Contactos — Gonçalo Garrido</title>
-  <meta name="description" content="Contactos de Gonçalo Garrido, desenvolvedor de software — backend, mobile e integração de sistemas · Porto." data-i18n-attr="content:meta.contact.desc">
-  <meta name="keywords" content="Gonçalo Garrido, Desenvolvedor de software, Contactos, Porto">
+  <title data-i18n="meta.contact.title">Contactos · Gonçalo Garrido</title>
+  <meta name="description" content="Contactos de Gonçalo Garrido: email, LinkedIn, GitHub. Porto." data-i18n-attr="content:meta.contact.desc">
+  <meta name="keywords" content="Gonçalo Garrido, Desenvolvedor de software, Contactos, Email, LinkedIn, Porto">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -18,13 +18,13 @@
   <meta property="og:locale" content="pt_PT">
   <meta property="og:locale:alternate" content="en_GB">
   <meta property="og:site_name" content="Gonçalo Garrido">
-  <meta property="og:title" content="Contactos — Gonçalo Garrido">
-  <meta property="og:description" content="Contactos de Gonçalo Garrido, desenvolvedor de software — backend, mobile e integração de sistemas · Porto.">
+  <meta property="og:title" content="Contactos · Gonçalo Garrido" data-i18n-attr="content:meta.contact.title">
+  <meta property="og:description" content="Contactos de Gonçalo Garrido: email, LinkedIn, GitHub. Porto." data-i18n-attr="content:meta.contact.desc">
   <meta property="og:url" content="https://goncalogarrido2.github.io/GoncaloGarrido/contact.html">
   <meta property="og:image" content="https://goncalogarrido2.github.io/GoncaloGarrido/assets/img/profile.webp">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Contactos — Gonçalo Garrido">
-  <meta name="twitter:description" content="Contactos de Gonçalo Garrido, desenvolvedor de software — backend, mobile e integração de sistemas · Porto.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Contactos · Gonçalo Garrido" data-i18n-attr="content:meta.contact.title">
+  <meta name="twitter:description" content="Contactos de Gonçalo Garrido: email, LinkedIn, GitHub. Porto." data-i18n-attr="content:meta.contact.desc">
   <meta name="twitter:image" content="https://goncalogarrido2.github.io/GoncaloGarrido/assets/img/profile.webp">
   <script type="application/ld+json">
   {
@@ -34,12 +34,19 @@
     "url": "https://goncalogarrido2.github.io/GoncaloGarrido/",
     "image": "https://goncalogarrido2.github.io/GoncaloGarrido/assets/img/profile.webp",
     "jobTitle": "Desenvolvedor de software",
-    "description": "Desenvolvedor de software — backend, mobile e integração de sistemas · Porto",
+    "description": "Desenvolvedor de software: backend, mobile e integração de sistemas. Porto.",
     "email": "mailto:goncalosantosgarrido@gmail.com",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Porto",
       "addressCountry": "PT"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "professional",
+      "email": "goncalosantosgarrido@gmail.com",
+      "availableLanguage": ["Portuguese", "English"],
+      "areaServed": "PT"
     },
     "sameAs": [
       "https://github.com/GoncaloGarrido2",
@@ -54,11 +61,10 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Syne:wght@500;600;700;800&display=optional" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
 
   <!-- Main CSS File -->
@@ -70,16 +76,8 @@
   <link href="assets/css/brand.css?v=5" rel="stylesheet">
   <link href="assets/css/ui-fix.css?v=5" rel="stylesheet">
 <style id="theme-ink-critical">
-    /* Ink base — atmosphere via design50 (loaded after this block) */
     html, body { background:#070b14; color:#e9eef6; }
-    .recog-item img, .recognition-primary img {
-      background:#0f1624;
-      object-fit:contain;
-      max-height:220px;
-      width:100%;
-      padding:8px;
-    }
-    .section-title h2, .recog-item h3, .page-title h1, .about .content h2 {
+    .section-title h2, .page-title h1, .about .content h2 {
       color:#fff !important;
       -webkit-text-fill-color:#fff !important;
       background:none !important;
@@ -87,7 +85,7 @@
     html:not(.aos-ready) [data-aos] { opacity:1 !important; transform:none !important; }
   </style>
   <link href="assets/css/design50.css?v=20" rel="stylesheet">
-  <link href="assets/css/ux-fix.css?v=6" rel="stylesheet">
+  <link href="assets/css/ux-fix.css?v=9" rel="stylesheet">
 
 </head>
 
@@ -107,178 +105,192 @@
         <li><a href="portfolio.html" data-i18n="nav.portfolio">Portfólio</a></li>
         <li><a href="contact.html" class="active" data-i18n="nav.contact">Contactos</a></li>
       </ul>
-      <i class="mobile-nav-toggle d-xl-none bi bi-list" aria-label="Abrir menu"></i>
+      <button type="button" class="mobile-nav-toggle d-xl-none contact-icon-btn" aria-label="Abrir menu">
+        <svg class="contact-svg contact-svg-menu" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false">
+          <path fill="currentColor" d="M3 6h18v2H3V6zm0 5h18v2H3v-2zm0 5h18v2H3v-2z"/>
+        </svg>
+        <svg class="contact-svg contact-svg-close" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false">
+          <path fill="currentColor" d="M18.3 5.71 12 12.01 5.7 5.7 4.29 7.11 10.59 13.4 4.29 19.7 5.7 21.11 12 14.82l6.3 6.29 1.41-1.41-6.29-6.3 6.29-6.29z"/>
+        </svg>
+      </button>
     </nav>
   </div>
 </header>
 <!-- SITE_HEADER_END -->
 
-  <main class="main">
+  <main class="main" id="main">
 
-    <!-- Page Title -->
     <div class="page-title" data-aos="fade">
       <div class="heading">
         <div class="container">
           <div class="row d-flex justify-content-center text-center">
             <div class="col-lg-8">
+              <p class="contact-kicker" data-i18n="contact.kicker">Contacto</p>
               <h1 data-i18n="page.contact.title">Contactos</h1>
-              <p class="mb-0" data-i18n="page.contact.lead">Entre em contacto comigo para mais informações sobre o meu trabalho e portfólio.</p>
+              <p class="mb-0 contact-lead" data-i18n="page.contact.lead">O melhor canal é o email. Estou no Porto; remoto ou presencial na região.</p>
             </div>
           </div>
         </div>
       </div>
-      <nav class="breadcrumbs">
+      <nav class="breadcrumbs" aria-label="Breadcrumb">
         <div class="container">
           <ol>
             <li><a href="index.html" data-i18n="nav.home">Início</a></li>
-            <li class="current" data-i18n="page.contact.title">Contactos</li>
+            <li class="current" aria-current="page" data-i18n="page.contact.title">Contactos</li>
           </ol>
         </div>
       </nav>
-    </div><!-- End Page Title -->
+    </div>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <section id="contact" class="contact section" aria-labelledby="contact-heading">
+      <div class="container" data-aos="fade-up" data-aos-delay="60">
 
-        <div class="row gy-4 justify-content-center">
+        <h2 id="contact-heading" class="visually-hidden" data-i18n="page.contact.title">Contactos</h2>
 
-          <!-- Localização Card -->
-          <div class="col-lg-6 col-md-6">
-            <div class="contact-card" data-aos="zoom-in" data-aos-delay="100">
-              <div class="contact-icon">
-                <i class="bi bi-geo-alt"></i>
-              </div>
-              <div class="contact-content">
-                <h3 data-i18n="contact.location">Localização</h3>
-                <p>Porto, Portugal</p>
-                <div class="contact-detail">
-                  <span data-i18n="contact.location.detail">Disponível para trabalho remoto e presencial na região do Porto</span>
-                </div>
-              </div>
-            </div>
+        <div class="contact-primary">
+          <p class="contact-primary-note" data-i18n="contact.primary.note">Não há formulário neste site. O botão abre o teu cliente de email.</p>
+          <div class="contact-primary-actions">
+            <a
+              href="mailto:goncalosantosgarrido@gmail.com?subject=Contacto%20profissional%20-%20Goncalo%20Garrido"
+              class="contact-action contact-action-primary"
+            >
+              <svg class="contact-svg" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">
+                <path fill="currentColor" d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5L4 8V6l8 5 8-5v2z"/>
+              </svg>
+              <span data-i18n="cta.send.email">Enviar Email</span>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/gon%C3%A7alo-garrido-4301a0269/"
+              class="contact-action contact-action-secondary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg class="contact-svg" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">
+                <path fill="currentColor" d="M6.94 8.5H3.56V20h3.38V8.5zM5.25 7.12a1.96 1.96 0 1 0 0-3.92 1.96 1.96 0 0 0 0 3.92zM20.44 20h-3.37v-5.6c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94V20H9.7V8.5h3.24v1.57h.05c.45-.85 1.55-1.75 3.19-1.75 3.41 0 4.04 2.25 4.04 5.17V20z"/>
+              </svg>
+              <span>LinkedIn</span>
+            </a>
+            <a
+              href="assets/files/Goncalo-Garrido-CV.pdf"
+              class="contact-action contact-action-ghost"
+              download
+            >
+              <svg class="contact-svg" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">
+                <path fill="currentColor" d="M12 3a1 1 0 0 1 1 1v9.59l2.3-2.3a1 1 0 1 1 1.4 1.42l-4 4a1 1 0 0 1-1.4 0l-4-4a1 1 0 1 1 1.4-1.42L11 13.59V4a1 1 0 0 1 1-1zM5 19a1 1 0 0 1 1-1h12a1 1 0 1 1 0 2H6a1 1 0 0 1-1-1z"/>
+              </svg>
+              <span data-i18n="hero.cta.cv">Descarregar CV</span>
+            </a>
           </div>
-
-          <!-- Email Card -->
-          <div class="col-lg-6 col-md-6">
-            <div class="contact-card" data-aos="zoom-in" data-aos-delay="200">
-              <div class="contact-icon">
-                <i class="bi bi-envelope"></i>
-              </div>
-              <div class="contact-content">
-                <h3>Email</h3>
-                <a href="mailto:goncalosantosgarrido@gmail.com" class="contact-link">
-                  goncalosantosgarrido@gmail.com
-                </a>
-                <div class="contact-detail">
-                  <span data-i18n="contact.email.detail">Preferência: email</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Redes Sociais Card -->
-          <div class="col-lg-6 col-md-6">
-            <div class="contact-card" data-aos="zoom-in" data-aos-delay="300">
-              <div class="contact-icon">
-                <i class="bi bi-share"></i>
-              </div>
-              <div class="contact-content">
-                <h3 data-i18n="contact.social">Redes Sociais</h3>
-                <div class="social-links-contact">
-                  <a href="https://github.com/GoncaloGarrido2" target="_blank" class="social-btn" rel="noopener" aria-label="GitHub">
-                    <i class="bi bi-github"></i>
-                    <span>GitHub</span>
-                  </a>
-                  <a href="https://www.linkedin.com/in/gon%C3%A7alo-garrido-4301a0269/" target="_blank" class="social-btn" rel="noopener" aria-label="LinkedIn">
-                    <i class="bi bi-linkedin"></i>
-                    <span>LinkedIn</span>
-                  </a>
-                  <a href="https://stackoverflow.com/users/11312923/gon%C3%A7alo-garrido" target="_blank" class="social-btn" rel="noopener" aria-label="Stack Overflow">
-                    <i class="bi bi-stack-overflow"></i>
-                    <span>Stack Overflow</span>
-                  </a>
-                </div>
-                <div class="contact-detail">
-                  <span data-i18n="contact.social.detail">Siga-me para acompanhar os meus projetos</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Disponibilidade Card -->
-          <div class="col-lg-6 col-md-6">
-            <div class="contact-card" data-aos="zoom-in" data-aos-delay="400">
-              <div class="contact-icon">
-                <i class="bi bi-clock"></i>
-              </div>
-              <div class="contact-content">
-                <h3 data-i18n="contact.availability">Disponibilidade</h3>
-                <p data-i18n="contact.availability.body">Disponível para novos projetos</p>
-                <div class="contact-detail">
-                  <span data-i18n="contact.availability.modes">Freelancer • Full-time • Part-time</span>
-                </div>
-                <div class="availability-status">
-                  <span class="status-indicator"></span>
-                  <span class="status-text" data-i18n="contact.availability.status">Atualmente disponível</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
         </div>
 
-        <!-- Call to Action -->
-        <div class="row mt-5">
-          <div class="col-12 text-center" data-aos="fade-up" data-aos-delay="500">
-            <div class="cta-section">
-              <h3 data-i18n="contact.cta.title">Vamos trabalhar juntos?</h3>
-              <p data-i18n="contact.cta.body">Tenho sempre interesse em discutir novos projetos e oportunidades interessantes.</p>
-              <a href="mailto:goncalosantosgarrido@gmail.com" class="cta-btn">
-                <i class="bi bi-envelope"></i>
-                <span data-i18n="cta.send.email">Enviar Email</span>
-              </a>
-            </div>
+        <dl class="contact-list">
+          <div class="contact-row">
+            <dt data-i18n="contact.email.label">Email</dt>
+            <dd>
+              <a href="mailto:goncalosantosgarrido@gmail.com" class="contact-link">goncalosantosgarrido@gmail.com</a>
+              <span class="contact-detail" data-i18n="contact.email.detail">Canal preferido</span>
+            </dd>
+          </div>
+
+          <div class="contact-row">
+            <dt data-i18n="contact.location">Localização</dt>
+            <dd>
+              <span>Porto, Portugal</span>
+              <span class="contact-detail" data-i18n="contact.location.detail">Remoto ou presencial na região do Porto</span>
+            </dd>
+          </div>
+
+          <div class="contact-row">
+            <dt data-i18n="contact.social">Perfis</dt>
+            <dd>
+              <ul class="contact-profile-links" role="list">
+                <li>
+                  <a href="https://github.com/GoncaloGarrido2" target="_blank" rel="noopener noreferrer" class="contact-profile-link">
+                    <svg class="contact-svg" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false">
+                      <path fill="currentColor" d="M12 2C6.48 2 2 6.58 2 12.26c0 4.52 2.87 8.35 6.84 9.7.5.1.68-.22.68-.48 0-.24-.01-.87-.01-1.7-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.7 0 0 .84-.27 2.75 1.05A9.3 9.3 0 0 1 12 6.8c.85 0 1.71.12 2.51.35 1.91-1.32 2.75-1.05 2.75-1.05.55 1.4.2 2.44.1 2.7.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.8 0 .27.18.59.69.49A10.03 10.03 0 0 0 22 12.26C22 6.58 17.52 2 12 2z"/>
+                    </svg>
+                    <span>GitHub</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/in/gon%C3%A7alo-garrido-4301a0269/" target="_blank" rel="noopener noreferrer" class="contact-profile-link">
+                    <svg class="contact-svg" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false">
+                      <path fill="currentColor" d="M6.94 8.5H3.56V20h3.38V8.5zM5.25 7.12a1.96 1.96 0 1 0 0-3.92 1.96 1.96 0 0 0 0 3.92zM20.44 20h-3.37v-5.6c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94V20H9.7V8.5h3.24v1.57h.05c.45-.85 1.55-1.75 3.19-1.75 3.41 0 4.04 2.25 4.04 5.17V20z"/>
+                    </svg>
+                    <span>LinkedIn</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://stackoverflow.com/users/11312923/gon%C3%A7alo-garrido" target="_blank" rel="noopener noreferrer" class="contact-profile-link">
+                    <svg class="contact-svg" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false">
+                      <path fill="currentColor" d="M17.12 19.12v-5.01h1.63V20.7H4.4v-6.59h1.62v5.01h11.1zM7.3 17.5h9.03v-1.5H7.3v1.5zm.19-3.4 8.8 1.84.34-1.47-8.8-1.85-.34 1.48zm1.15-3.54 8.15 3.8.67-1.36-8.15-3.8-.67 1.36zm2.23-3.36 6.92 5.76 1.03-1.12-6.92-5.76-1.03 1.12zM15.5 4.3l-1.25.9 5.36 7.2 1.25-.9-5.36-7.2z"/>
+                    </svg>
+                    <span>Stack Overflow</span>
+                  </a>
+                </li>
+              </ul>
+            </dd>
+          </div>
+
+          <div class="contact-row">
+            <dt data-i18n="contact.availability">Disponibilidade</dt>
+            <dd>
+              <span data-i18n="contact.availability.body">Aberto a conversas sobre projetos e oportunidades</span>
+              <span class="contact-detail" data-i18n="contact.availability.modes">Freelance, full-time ou part-time</span>
+            </dd>
+          </div>
+        </dl>
+
+        <div class="contact-cta-block">
+          <h3 data-i18n="contact.cta.title">Vamos falar?</h3>
+          <p data-i18n="contact.cta.body">Se tiveres uma ideia, uma vaga ou uma colaboração em mente, escreve-me.</p>
+          <div class="contact-cta-actions">
+            <a
+              href="mailto:goncalosantosgarrido@gmail.com?subject=Contacto%20profissional%20-%20Goncalo%20Garrido"
+              class="cta-btn"
+            >
+              <svg class="contact-svg" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">
+                <path fill="currentColor" d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5L4 8V6l8 5 8-5v2z"/>
+              </svg>
+              <span data-i18n="cta.send.email">Enviar Email</span>
+            </a>
+            <a href="portfolio.html" class="cta-btn cta-btn-ghost">
+              <span data-i18n="hero.cta.projects">Ver projetos</span>
+            </a>
           </div>
         </div>
 
       </div>
-    </section><!-- /Contact Section -->
+    </section>
 
-    <!-- Page Navigation Section -->
-    <section class="page-navigation">
+    <section class="page-navigation" aria-label="Navegação entre páginas">
       <div class="container">
         <div class="page-navigation-content" data-aos="fade-up">
-          <h3 data-i18n="pagenav.contact.title">Fim da jornada</h3>
-          <p data-i18n="pagenav.contact.body">Obrigado por explorar o meu portfólio! Espero que tenha encontrado o que procurava. Volte sempre que quiser.</p>
+          <h3 data-i18n="pagenav.contact.title">Fim do percurso</h3>
+          <p data-i18n="pagenav.contact.body">Obrigado por ver o portfólio. Volta quando quiseres.</p>
         </div>
-        
-        <div class="page-nav-row" data-aos="fade-up" data-aos-delay="200">
-          <!-- Previous Page -->
+
+        <div class="page-nav-row" data-aos="fade-up" data-aos-delay="80">
           <div class="page-nav-item">
             <a href="portfolio.html" class="nav-btn prev">
-              <i class="bi bi-arrow-left"></i>
+              <svg class="contact-svg" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">
+                <path fill="currentColor" d="M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+              </svg>
               <span data-i18n="nav.portfolio">Portfólio</span>
             </a>
           </div>
-          
-          <!-- Center Info -->
+
           <div class="nav-info">
             <h4 data-i18n="pagenav.restart">Recomeçar</h4>
-            <p data-i18n="pagenav.restart.body">Volte ao início para rever tudo novamente</p>
-            <div class="nav-progress">
-              <div class="nav-progress-bar">
-                <div class="nav-progress-fill" style="width: 100%;"></div>
-              </div>
-              <div class="nav-progress-text" data-i18n="pagenav.contact.progress">4 de 4 - Contactos</div>
-            </div>
+            <p data-i18n="pagenav.restart.body">Voltar ao início</p>
           </div>
-          
-          <!-- Back to Start -->
+
           <div class="page-nav-item">
             <a href="index.html" class="nav-btn">
               <span data-i18n="nav.home">Início</span>
-              <i class="bi bi-house"></i>
+              <svg class="contact-svg" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">
+                <path fill="currentColor" d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+              </svg>
             </a>
           </div>
         </div>
@@ -291,21 +303,41 @@
 <footer id="footer" class="footer dark-background">
   <div class="container">
     <h3 class="sitename">Gonçalo Garrido</h3>
-    <p data-i18n="footer.thanks">Obrigado por visitar o meu portfólio! Se tiver alguma questão ou estiver interessado em colaborar, não hesite em entrar em contacto comigo.</p>
+    <p data-i18n="footer.thanks">Obrigado pela visita. Se quiseres colaborar, manda um email.</p>
     <div class="social-links d-flex justify-content-center">
-      <a href="https://github.com/GoncaloGarrido2" target="_blank" rel="noopener" aria-label="GitHub"><i class="bi bi-github"></i></a>
-      <a href="https://play.google.com/store/apps/dev?id=7747928269861211538" target="_blank" rel="noopener" title="Play Store" aria-label="Play Store"><i class="bi bi-google-play"></i></a>
-      <a href="https://www.linkedin.com/in/gon%C3%A7alo-garrido-4301a0269/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
-      <a href="https://stackoverflow.com/users/11312923/gon%c3%a7alo-garrido" target="_blank" rel="noopener" aria-label="Stack Overflow"><i class="bi bi-stack-overflow"></i></a>
+      <a href="https://github.com/GoncaloGarrido2" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+        <svg class="contact-svg" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">
+          <path fill="currentColor" d="M12 2C6.48 2 2 6.58 2 12.26c0 4.52 2.87 8.35 6.84 9.7.5.1.68-.22.68-.48 0-.24-.01-.87-.01-1.7-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.7 0 0 .84-.27 2.75 1.05A9.3 9.3 0 0 1 12 6.8c.85 0 1.71.12 2.51.35 1.91-1.32 2.75-1.05 2.75-1.05.55 1.4.2 2.44.1 2.7.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.8 0 .27.18.59.69.49A10.03 10.03 0 0 0 22 12.26C22 6.58 17.52 2 12 2z"/>
+        </svg>
+      </a>
+      <a href="https://play.google.com/store/apps/dev?id=7747928269861211538" target="_blank" rel="noopener noreferrer" aria-label="Play Store">
+        <svg class="contact-svg" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">
+          <path fill="currentColor" d="M3.6 2.8a1.2 1.2 0 0 0-.5 1v16.4c0 .4.2.8.5 1l.1.1 9.3-9.3v-.1L3.7 2.7l-.1.1zm12.1 7 2.5 1.4-2.5 1.4-2.2-1.4 2.2-1.4zm-1.6 1.6 2.4 2.4-7.5 4.3 5.1-6.7zm0-1.3L6.9 3.4l7.6 4.3-2.4 2.4z"/>
+        </svg>
+      </a>
+      <a href="https://www.linkedin.com/in/gon%C3%A7alo-garrido-4301a0269/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+        <svg class="contact-svg" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">
+          <path fill="currentColor" d="M6.94 8.5H3.56V20h3.38V8.5zM5.25 7.12a1.96 1.96 0 1 0 0-3.92 1.96 1.96 0 0 0 0 3.92zM20.44 20h-3.37v-5.6c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94V20H9.7V8.5h3.24v1.57h.05c.45-.85 1.55-1.75 3.19-1.75 3.41 0 4.04 2.25 4.04 5.17V20z"/>
+        </svg>
+      </a>
+      <a href="https://stackoverflow.com/users/11312923/gon%c3%a7alo-garrido" target="_blank" rel="noopener noreferrer" aria-label="Stack Overflow">
+        <svg class="contact-svg" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">
+          <path fill="currentColor" d="M17.12 19.12v-5.01h1.63V20.7H4.4v-6.59h1.62v5.01h11.1zM7.3 17.5h9.03v-1.5H7.3v1.5zm.19-3.4 8.8 1.84.34-1.47-8.8-1.85-.34 1.48zm1.15-3.54 8.15 3.8.67-1.36-8.15-3.8-.67 1.36zm2.23-3.36 6.92 5.76 1.03-1.12-6.92-5.76-1.03 1.12zM15.5 4.3l-1.25.9 5.36 7.2 1.25-.9-5.36-7.2z"/>
+        </svg>
+      </a>
     </div>
   </div>
 </footer>
 <!-- SITE_FOOTER_END -->
 
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#main" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" aria-label="Topo">
+    <svg class="contact-svg" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false">
+      <path fill="currentColor" d="M7.41 15.41 12 10.83l4.59 4.58L18 14l-6-6-6 6z"/>
+    </svg>
+  </a>
 
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js" defer></script>
   <script src="assets/js/i18n.js"></script>
   <script src="assets/js/main.js"></script>
 
