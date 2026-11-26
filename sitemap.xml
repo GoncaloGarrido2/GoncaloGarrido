@@ -55,4 +55,34 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://goncalogarrido2.github.io/GoncaloGarrido/case-504.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://goncalogarrido2.github.io/GoncaloGarrido/case-navalha.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://goncalogarrido2.github.io/GoncaloGarrido/case-sao-tome.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://goncalogarrido2.github.io/GoncaloGarrido/case-carpintaria-cp.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://goncalogarrido2.github.io/GoncaloGarrido/case-renovstar.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://goncalogarrido2.github.io/GoncaloGarrido/case-4emlinha.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>
