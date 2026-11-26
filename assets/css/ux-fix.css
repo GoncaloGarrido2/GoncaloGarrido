@@ -3,6 +3,14 @@
 # Load AFTER design50.css
 --------------------------------------------------------------*/
 
+/* Sem bolinha teal no logo sitename */
+.header .logo h1::after,
+.header .logo .sitename::after,
+.logo h1.sitename::after {
+  content: none !important;
+  display: none !important;
+}
+
 /* 1) Hero tipografia — forte mas não gigante */
 #hero h2,
 .hero h2 {
