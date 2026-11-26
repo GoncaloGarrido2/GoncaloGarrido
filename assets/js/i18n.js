@@ -51,7 +51,7 @@
     },
     "meta.contact.title": { en: "Contacts — Gonçalo Garrido" },
     "meta.contact.desc": {
-      en: "Contact details for Gonçalo Garrido, software developer — backend, mobile and systems integration · Porto."
+      en: "Contact details for Gonçalo Garrido, software developer — email, LinkedIn, GitHub and Porto."
     },
 
     "page.about.title": { en: "About" },
@@ -68,7 +68,7 @@
     },
     "page.contact.title": { en: "Contacts" },
     "page.contact.lead": {
-      en: "Get in touch for more information about my work and portfolio."
+      en: "Email is the preferred channel. Porto · remote or on-site in the area."
     },
 
     "about.role": { en: "Software developer" },
@@ -424,16 +424,19 @@
     "contact.location.detail": {
       en: "Available for remote and on-site work in the Porto area"
     },
+    "contact.kicker": { en: "Professional contact" },
+    "contact.primary.note": { en: "No on-site form — email opens in your mail client." },
+    "contact.email.label": { en: "Email" },
     "contact.email.detail": { en: "Preferred: email" },
-    "contact.social": { en: "Social Networks" },
-    "contact.social.detail": { en: "Follow me to keep up with my projects" },
+    "contact.social": { en: "Profiles" },
+    "contact.social.detail": { en: "Public profiles — projects and path" },
     "contact.availability": { en: "Availability" },
-    "contact.availability.body": { en: "Available for new projects" },
-    "contact.availability.modes": { en: "Freelancer • Full-time • Part-time" },
-    "contact.availability.status": { en: "Currently available" },
-    "contact.cta.title": { en: "Shall we work together?" },
+    "contact.availability.body": { en: "Open to conversations about projects and opportunities" },
+    "contact.availability.modes": { en: "Freelance · full-time · part-time" },
+    "contact.availability.status": { en: "Reply by email" },
+    "contact.cta.title": { en: "Shall we talk?" },
     "contact.cta.body": {
-      en: "I am always interested in discussing new projects and interesting opportunities."
+      en: "If you have an idea, a role or a collaboration in mind, write to me."
     },
 
     "navcard.section.title": { en: "Keep exploring" },
@@ -475,11 +478,11 @@
     "pagenav.portfolio.progress": { en: "3 of 4 - Portfolio" },
     "pagenav.contact.title": { en: "End of the journey" },
     "pagenav.contact.body": {
-      en: "Thank you for exploring my portfolio! I hope you found what you were looking for. Come back anytime."
+      en: "Thanks for exploring the portfolio. Come back whenever you like."
     },
     "pagenav.restart": { en: "Start Again" },
-    "pagenav.restart.body": { en: "Return to the start to review everything again" },
-    "pagenav.contact.progress": { en: "4 of 4 - Contacts" },
+    "pagenav.restart.body": { en: "Back to the start" },
+    "pagenav.contact.progress": { en: "4 of 4 — Contacts" },
 
     "lang.switcher": { en: "Language selector" }
   };
