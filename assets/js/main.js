@@ -231,18 +231,41 @@
   document.querySelectorAll('.isotope-layout').forEach(function(isotopeItem) {
     if (!window.imagesLoaded || !window.Isotope) return;
 
-    let layout = isotopeItem.getAttribute('data-layout') ?? 'masonry';
+    let layout = isotopeItem.getAttribute('data-layout') ?? 'fitRows';
     let filter = isotopeItem.getAttribute('data-default-filter') ?? '*';
     let sort = isotopeItem.getAttribute('data-sort') ?? 'original-order';
+    const container = isotopeItem.querySelector('.isotope-container');
+    if (!container) return;
 
-    let initIsotope;
-    imagesLoaded(isotopeItem.querySelector('.isotope-container'), function() {
-      initIsotope = new Isotope(isotopeItem.querySelector('.isotope-container'), {
+    let initIsotope = null;
+    let pendingFilter = null;
+
+    function arrange(nextFilter) {
+      if (!initIsotope) {
+        pendingFilter = nextFilter;
+        return;
+      }
+      initIsotope.arrange({ filter: nextFilter });
+      // Keep container height in sync after images/fonts
+      requestAnimationFrame(function() {
+        if (initIsotope) initIsotope.layout();
+      });
+    }
+
+    imagesLoaded(container, function() {
+      initIsotope = new Isotope(container, {
         itemSelector: '.isotope-item',
         layoutMode: layout,
-        filter: filter,
-        sortBy: sort
+        percentPosition: true,
+        filter: pendingFilter || filter,
+        sortBy: sort,
+        fitRows: { gutter: 0 },
+        masonry: {
+          columnWidth: '.portfolio-item',
+          gutter: 0
+        }
       });
+      pendingFilter = null;
     });
 
     isotopeItem.querySelectorAll('.isotope-filters li').forEach(function(filters) {
@@ -259,14 +282,8 @@
         });
         el.classList.add('filter-active');
         el.setAttribute('aria-pressed', 'true');
-        if (initIsotope) {
-          initIsotope.arrange({
-            filter: el.getAttribute('data-filter')
-          });
-        }
-        if (typeof aosInit === 'function') {
-          aosInit();
-        }
+        arrange(el.getAttribute('data-filter'));
+        // Do not re-init AOS here — it collapses/shifts the grid
       }
 
       filters.addEventListener('click', function() {
