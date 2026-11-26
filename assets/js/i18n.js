@@ -47,7 +47,7 @@
     },
     "meta.portfolio.title": { en: "Portfolio · Gonçalo Garrido" },
     "meta.portfolio.desc": {
-      en: "Portfolio: Delty WebSites (2S, 504 Automóveis, São Tomé, Carpintaria CP), Bookly (Navalha Negra, Smile), Papos and Android apps."
+      en: "Portfolio: Delty and Bookly client sites (2S, 504 Automóveis, São Tomé, Smile), Papos and Android apps."
     },
     "meta.contact.title": { en: "Contacts · Gonçalo Garrido" },
     "meta.contact.desc": {
@@ -311,8 +311,6 @@
     "portfolio.band.clients": { en: "Client sites" },
 
 
-    "proj.delty.problem": { en: "Local businesses need a clear web presence, from a simple site to a custom build." },
-    "proj.delty.role": { en: "I built the Delty brand: positioning, pricing, demos and client sites." },
     "proj.2s.problem": { en: "A restaurant in Paredes needed a multi-page site with a digital menu and bookings." },
     "proj.2s.role": { en: "Restaurant website with QR code menu at the tables." },
     "proj.win.problem": { en: "Vehicle inspection centres (Portugal, with links to Brazil and Angola) need reliable desktop/mobile software." },
@@ -329,13 +327,6 @@
     "proj.504.role": { en: "Delty client site: search by brand, model, price and mileage." },
     "proj.navalha.problem": { en: "A barbershop in Vila do Conde needed a digital brand and online bookings." },
     "proj.navalha.role": { en: "Bookly/Delty client site: bookings, shop and visual identity." },
-    "proj.delty.tagline": {
-      en: "Own brand of websites for SMEs"
-    },
-    "proj.delty.body": {
-      en: "Websites with presence and excellence, from a simple site to a custom build, with shop bundles and QR menus. Own brand (Next.js + Cloudflare); public case: 2S Restaurant."
-    },
-    "proj.delty.tech": { en: "Next.js, Cloudflare, delty.party" },
     "proj.2s.body": {
       en: "Multi-page site for a restaurant in Paredes: story, gallery, digital menu (QR), wines, bookings and contacts. Published with a “Site by Delty” credit."
     },
