@@ -1073,3 +1073,142 @@ a.hero-cta-ghost:hover {
     transform: none !important;
   }
 }
+
+/*--------------------------------------------------------------
+# Contact polish2 — list layout, SVG icons, no floating badges
+--------------------------------------------------------------*/
+.contact-page .contact-svg {
+  display: inline-block;
+  flex-shrink: 0;
+  vertical-align: middle;
+  fill: currentColor;
+}
+
+.contact-page .contact-icon-btn {
+  background: transparent;
+  border: 0;
+  color: #fff;
+  padding: 0.35rem;
+  line-height: 0;
+}
+
+.contact-page .contact-svg-close { display: none; }
+body.mobile-nav-active.contact-page .contact-svg-menu { display: none; }
+body.mobile-nav-active.contact-page .contact-svg-close { display: inline-block; }
+
+.contact-page .contact-primary {
+  max-width: 42rem;
+  margin: 0 auto 2.5rem;
+  text-align: center;
+  padding-bottom: 1.75rem;
+  border-bottom: 1px solid color-mix(in srgb, var(--brand-fog, #e9eef6), transparent 90%);
+}
+
+.contact-page .contact-list {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.contact-page .contact-row {
+  display: grid;
+  grid-template-columns: minmax(7rem, 9.5rem) 1fr;
+  gap: 0.75rem 1.5rem;
+  align-items: start;
+  padding: 1.15rem 0;
+  border-top: 1px solid color-mix(in srgb, var(--brand-fog, #e9eef6), transparent 90%);
+  margin: 0;
+}
+
+.contact-page .contact-row:last-child {
+  border-bottom: 1px solid color-mix(in srgb, var(--brand-fog, #e9eef6), transparent 90%);
+}
+
+.contact-page .contact-row dt {
+  font-family: var(--heading-font, Syne, sans-serif);
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--brand-accent, #2ecf9a);
+  margin: 0.2rem 0 0;
+  line-height: 1.4;
+}
+
+.contact-page .contact-row dd {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  color: #fff;
+  font-size: 1rem;
+  line-height: 1.45;
+}
+
+.contact-page .contact-row .contact-detail {
+  font-size: 0.9rem;
+  color: var(--brand-muted, #93a0b3);
+}
+
+.contact-page .contact-profile-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+}
+
+.contact-page .contact-profile-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  min-height: 2.4rem;
+  padding: 0.4rem 0.75rem;
+  border: 1px solid color-mix(in srgb, var(--brand-fog, #e9eef6), transparent 80%);
+  border-radius: 2px;
+  color: #fff !important;
+  text-decoration: none !important;
+  font-size: 0.9rem;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.contact-page .contact-profile-link:hover,
+.contact-page .contact-profile-link:focus-visible {
+  border-color: var(--brand-accent, #2ecf9a);
+  color: var(--brand-accent, #2ecf9a) !important;
+}
+
+.contact-page .contact-action .contact-svg,
+.contact-page .cta-btn .contact-svg,
+.contact-page .nav-btn .contact-svg {
+  margin-top: -1px;
+}
+
+/* Hide legacy card chrome if any residual classes appear */
+.contact-page .contact-card,
+.contact-page .contact-icon {
+  display: none !important;
+}
+
+.contact-page .footer .social-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.contact-page #scroll-top .contact-svg {
+  display: block;
+}
+
+@media (max-width: 767px) {
+  .contact-page .contact-row {
+    grid-template-columns: 1fr;
+    gap: 0.35rem;
+  }
+
+  .contact-page .contact-row dt {
+    margin-top: 0;
+  }
+}

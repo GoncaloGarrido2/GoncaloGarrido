@@ -49,9 +49,9 @@
     "meta.portfolio.desc": {
       en: "Portfolio: Delty WebSites (2S, 504 Automóveis, São Tomé, Carpintaria CP), Bookly (Navalha Negra, Smile), Papos and Android apps."
     },
-    "meta.contact.title": { en: "Contacts — Gonçalo Garrido" },
+    "meta.contact.title": { en: "Contacts · Gonçalo Garrido" },
     "meta.contact.desc": {
-      en: "Contact details for Gonçalo Garrido, software developer — email, LinkedIn, GitHub and Porto."
+      en: "Contact details for Gonçalo Garrido: email, LinkedIn, GitHub. Porto."
     },
 
     "page.about.title": { en: "About" },
@@ -68,7 +68,7 @@
     },
     "page.contact.title": { en: "Contacts" },
     "page.contact.lead": {
-      en: "Email is the preferred channel. Porto · remote or on-site in the area."
+      en: "Email works best. Based in Porto; remote or on-site in the area."
     },
 
     "about.role": { en: "Software developer" },
@@ -422,17 +422,17 @@
 
     "contact.location": { en: "Location" },
     "contact.location.detail": {
-      en: "Available for remote and on-site work in the Porto area"
+      en: "Remote or on-site in the Porto area"
     },
-    "contact.kicker": { en: "Professional contact" },
-    "contact.primary.note": { en: "No on-site form — email opens in your mail client." },
+    "contact.kicker": { en: "Contact" },
+    "contact.primary.note": { en: "There is no form on this site. The button opens your email client." },
     "contact.email.label": { en: "Email" },
-    "contact.email.detail": { en: "Preferred: email" },
+    "contact.email.detail": { en: "Preferred channel" },
     "contact.social": { en: "Profiles" },
-    "contact.social.detail": { en: "Public profiles — projects and path" },
+    "contact.social.detail": { en: "Public profiles" },
     "contact.availability": { en: "Availability" },
     "contact.availability.body": { en: "Open to conversations about projects and opportunities" },
-    "contact.availability.modes": { en: "Freelance · full-time · part-time" },
+    "contact.availability.modes": { en: "Freelance, full-time or part-time" },
     "contact.availability.status": { en: "Reply by email" },
     "contact.cta.title": { en: "Shall we talk?" },
     "contact.cta.body": {
@@ -476,13 +476,13 @@
     },
     "pagenav.portfolio.next": { en: "Get in touch with me for collaborations" },
     "pagenav.portfolio.progress": { en: "3 of 4 - Portfolio" },
-    "pagenav.contact.title": { en: "End of the journey" },
+    "pagenav.contact.title": { en: "End of the path" },
     "pagenav.contact.body": {
-      en: "Thanks for exploring the portfolio. Come back whenever you like."
+      en: "Thanks for looking around. Come back anytime."
     },
     "pagenav.restart": { en: "Start Again" },
     "pagenav.restart.body": { en: "Back to the start" },
-    "pagenav.contact.progress": { en: "4 of 4 — Contacts" },
+    "pagenav.contact.progress": { en: "4 of 4 · Contacts" },
 
     "lang.switcher": { en: "Language selector" }
   };
