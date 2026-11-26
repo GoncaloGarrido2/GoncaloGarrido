@@ -409,10 +409,6 @@
       en: "Academic gym website project in JavaScript."
     },
     "proj.edit.body": { en: "Older photo and video editing project (blog)." },
-    "proj.pharmacy.title": { en: "Pharmacy Management" },
-    "proj.pharmacy.body": {
-      en: "Management of products, employees and prescriptions (academic project)."
-    },
     "proj.report": { en: "Report" },
 
     "resume.edu.title": { en: "Education" },
