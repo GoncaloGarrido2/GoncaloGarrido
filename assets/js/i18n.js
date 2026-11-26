@@ -408,7 +408,6 @@
     "proj.gym.body": {
       en: "Academic gym website project in JavaScript."
     },
-    "proj.edit.body": { en: "Older photo and video editing project (blog)." },
     "proj.report": { en: "Report" },
 
     "resume.edu.title": { en: "Education" },
