@@ -168,6 +168,57 @@
     "case.2s.result": {
       en: "Live site at 2srestaurante.com with digital menu, bookings and a Delty credit in the footer."
     },
+    
+    "case.about": { en: "The project" },
+    "case.did": { en: "What I did" },
+    "case.technologies": { en: "Technologies" },
+    "case.status": { en: "Status" },
+    "case.smile.title": { en: "Smile stationery" },
+    "case.smile.tagline": { en: "Online stationery and gifts shop in Vila do Conde" },
+    "case.smile.about": {
+      en: "Smile stationery in Vila do Conde needed a clear online presence: catalogue, campaigns and in-store pickup, not just the physical counter."
+    },
+    "case.smile.did": {
+      en: "I built and published the client site at smile.bookly.party, with catalogue, campaigns and a digital identity aligned with the shop."
+    },
+    "case.smile.tech": { en: "Next.js · Cloudflare · bookly.party" },
+    "case.smile.status": { en: "Live site at smile.bookly.party." },
+    "case.glutenfree.title": { en: "GlutenFree" },
+    "case.glutenfree.tagline": { en: "Android app for people avoiding gluten" },
+    "case.glutenfree.about": {
+      en: "People avoiding gluten need to check products and find safe places. GlutenFree combines barcode scanning, restaurant suggestions and gluten-free recipes in one Android app."
+    },
+    "case.glutenfree.did": {
+      en: "I design and maintain the app: barcode scanning, venue map, recipes and a multi-language UI. Public docs and a Play Store release."
+    },
+    "case.glutenfree.tech": { en: "Kotlin · XML · OpenFoodFacts · osmdroid · Android" },
+    "case.glutenfree.status": {
+      en: "Published on the Play Store (com.goncalogarrido.glutenfree), with docs at projetoslendarios.github.io/GlutenFreeApp-Docs/."
+    },
+    "case.pocketcards.title": { en: "PocketCards" },
+    "case.pocketcards.tagline": { en: "Digital cards, coupons and tickets in your pocket" },
+    "case.pocketcards.about": {
+      en: "Loyalty cards, coupons and tickets end up scattered across emails and screenshots. PocketCards brings barcodes, QR codes and images into one simple visual collection."
+    },
+    "case.pocketcards.did": {
+      en: "I built the Android app: creation flow, code scanning, icons, front/back images and in-detail editing. Public docs and a Play Store release."
+    },
+    "case.pocketcards.tech": { en: "Jetpack Compose · Room · ZXing · Android" },
+    "case.pocketcards.status": {
+      en: "Published on the Play Store (com.goncalogarrido.pocketcards), with docs at projetoslendarios.github.io/PocketCardsApp-Docs/."
+    },
+    "case.sushistack.title": { en: "Sushi Stack" },
+    "case.sushistack.tagline": { en: "Android sushi stacking game" },
+    "case.sushistack.about": {
+      en: "Sushi Stack is a fast arcade game: drop sushi pieces at the right time to build the tower without letting it fall, with its own visual identity."
+    },
+    "case.sushistack.did": {
+      en: "I programmed and shipped the game from code to the Android release, including Google Play Games. Public project docs are available."
+    },
+    "case.sushistack.tech": { en: "Godot · GDScript · Google Play Games · Android" },
+    "case.sushistack.status": {
+      en: "Published on the Play Store (com.goncalogarrido.sushistack), with docs at projetoslendarios.github.io/Sushi-Stack-Docs/."
+    },
     "case.delty.title": { en: "Delty WebSites" },
     "case.delty.tagline": { en: "Websites with presence for local businesses" },
     "case.delty.problem": {
