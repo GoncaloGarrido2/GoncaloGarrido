@@ -320,11 +320,11 @@
     "proj.papos.problem": { en: "There was no daily word game designed from the ground up for PT-PT." },
     "proj.papos.role": { en: "I designed and built the Android app and the web version (five modes, offline)." },
     "proj.focus.problem": { en: "Stock launchers push notifications and apps that distract." },
-    "proj.focus.role": { en: "I build and maintain a minimalist launcher with focus modes and automations." },
+    "proj.focus.role": { en: "Minimalist launcher app for focus and automations." },
     "proj.bookly.problem": { en: "Stationery shops need management for school materials and books (web + Android)." },
-    "proj.bookly.role": { en: "degree project, distinct from client hosting on bookly.party." },
+    "proj.bookly.role": { en: "Final degree project and school manuals and bookings management system." },
     "proj.gluten.problem": { en: "People avoiding gluten need reliable venues and products, in many languages." },
-    "proj.gluten.role": { en: "I build and maintain the Android app (map, products, 17 languages)." },
+    "proj.gluten.role": { en: "App to help people with celiac disease, certified by APC (Associação Portuguesa de Celíacos). Map, products and 17 languages." },
     "proj.504.problem": { en: "A dealership in Vila do Conde / Rio Mau needed searchable stock online." },
     "proj.504.role": { en: "Delty client site: search by brand, model, price and mileage." },
     "proj.navalha.problem": { en: "A barbershop in Vila do Conde needed a digital brand and online bookings." },
@@ -376,7 +376,7 @@
     },
     "proj.navalha.tech": { en: "Next.js, Cloudflare, bookly.party" },
     "proj.smile.problem": { en: "A stationery shop in Vila do Conde needed an online store with catalogue and in-store pickup." },
-    "proj.smile.role": { en: "Bookly/Delty client site: catalogue, campaigns and digital identity." },
+    "proj.smile.role": { en: "Online shop and stationery site." },
     "proj.smile.body": {
       en: "Online stationery and gifts shop in Vila do Conde: catalogue, campaigns and in-store pickup."
     },
