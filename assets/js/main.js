@@ -127,9 +127,13 @@
     typedInstance = new Typed('.typed', {
       strings: typed_strings,
       loop: true,
-      typeSpeed: 100,
-      backSpeed: 50,
-      backDelay: 2000
+      typeSpeed: 48,
+      backSpeed: 28,
+      backDelay: 2400,
+      smartBackspace: true,
+      showCursor: true,
+      cursorChar: '|',
+      fadeOut: false
     });
   }
 
