@@ -1262,3 +1262,75 @@ body.mobile-nav-active.contact-page .contact-svg-close { display: inline-block; 
     margin-top: 0;
   }
 }
+
+/*--------------------------------------------------------------
+# Cases polish — títulos iguais + bloco Tecnologias
+--------------------------------------------------------------*/
+.portfolio .portfolio-description h5,
+.portfolio-item.filter-featured .portfolio-description h5,
+.portfolio-item.filter-web:not(.filter-featured) .portfolio-description h5,
+.portfolio-item.filter-mobile .portfolio-description h5,
+.portfolio-item.filter-other .portfolio-description h5 {
+  font-family: var(--heading-font, Syne, sans-serif) !important;
+  font-size: 1.12rem !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.02em !important;
+  line-height: 1.25 !important;
+  color: #fff !important;
+  margin-bottom: 0.45rem !important;
+}
+
+.portfolio-description .portfolio-body {
+  font-size: 0.92rem;
+  line-height: 1.45;
+  margin-bottom: 0.55rem !important;
+  color: color-mix(in srgb, var(--brand-fog, #e9eef6), transparent 8%) !important;
+}
+
+.portfolio-description .proj-tech {
+  font-size: 0.82rem;
+  line-height: 1.4;
+  margin-bottom: 0.65rem !important;
+  color: var(--brand-muted, #93a0b3) !important;
+}
+
+.portfolio-description .proj-tech .proj-meta-label {
+  display: inline-block;
+  font-family: var(--heading-font, Syne, sans-serif);
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--brand-accent, #2ecf9a) !important;
+  margin-right: 0.4rem;
+}
+
+.case-body .case-about,
+.case-body .case-outro {
+  font-size: 1.02rem;
+  line-height: 1.55;
+  margin-bottom: 1.25rem;
+  color: color-mix(in srgb, var(--brand-fog, #e9eef6), transparent 6%);
+}
+
+.case-stack {
+  margin: 1.5rem 0 1.25rem;
+  padding: 1rem 0 0;
+  border-top: 1px solid color-mix(in srgb, var(--brand-fog, #e9eef6), transparent 90%);
+}
+
+.case-stack h2,
+.case-body .case-stack h2 {
+  font-family: var(--heading-font, Syne, sans-serif);
+  font-size: 0.78rem !important;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--brand-accent, #2ecf9a) !important;
+  margin: 0 0 0.45rem !important;
+}
+
+.case-stack .case-tech {
+  font-size: 1rem;
+  line-height: 1.45;
+  margin: 0;
+  color: #fff;
+}

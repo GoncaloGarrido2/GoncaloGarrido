@@ -120,9 +120,40 @@
     },
 
     "case.kicker": { en: "Case study" },
+
+    "case.papos.about": {
+      en: "Papos is a daily word game in European Portuguese. I built the Android app and the web version, with a PT-PT dictionary, five modes and offline play, and published it on the Play Store."
+    },
+    "case.papos.outro": {
+      en: "It is on the Play Store and at papos.delty.party, with the Papos, Dupla, Roda, Tertúlia and Assembleia modes."
+    },
+    "case.bookly.about": {
+      en: "Bookly is a web and Android platform for stationery shops (school materials and books). It was my IPMAIA degree project: I worked on the Laravel backend/web, the Kotlin Android app, and the public docs. It is distinct from client hosting on bookly.party."
+    },
+    "case.bookly.outro": {
+      en: "The project shipped with public documentation and remains a full-stack reference in the portfolio."
+    },
+    "case.focus.about": {
+      en: "Focus Launcher is a minimalist Android launcher to cut distractions. I build and maintain the app with focus modes, automations and configurable screens, published on the Play Store."
+    },
+    "case.focus.outro": {
+      en: "It stays published and updated on the Play Store, with public documentation."
+    },
+    "case.delty.about": {
+      en: "Delty WebSites is my brand of sites for SMEs. I built the positioning, pricing, demos and client sites on Next.js and Cloudflare, with a public case at 2S Restaurant and others on *.delty.party and *.bookly.party."
+    },
+    "case.delty.outro": {
+      en: "The commercial frontpage is live, 2S carries a “Site by Delty” credit, and there is a public client portfolio (504 Automóveis, Navalha Negra, Smile, São Tomé, Carpintaria CP, among others)."
+    },
+    "case.2s.about": {
+      en: "A multi-page site for 2S Restaurant & Bar in Paredes: story, gallery, digital menu with QR, wines, bookings and contacts. I built and published it via Delty, with a “Site by Delty” credit in the footer and a mirror at 2s.delty.party."
+    },
+    "case.2s.outro": {
+      en: "The site is live at 2srestaurante.com, with a digital menu and bookings."
+    },
     "case.problem": { en: "Problem" },
     "case.role": { en: "Role" },
-    "case.tech": { en: "Tech" },
+    "case.tech": { en: "Technologies" },
     "case.result": { en: "Outcome" },
     "case.back": { en: "Back to portfolio" },
     "case.2s.title": { en: "2S Restaurant & Bar" },
@@ -133,7 +164,7 @@
     "case.2s.role": {
       en: "Built and published via Delty (Next.js + Cloudflare); “Site by Delty” credit in the footer; mirror at 2s.delty.party."
     },
-    "case.2s.tech": { en: "Next.js · Cloudflare · Delty client" },
+    "case.2s.tech": { en: "Next.js, Cloudflare, Delty client" },
     "case.2s.result": {
       en: "Live site at 2srestaurante.com with digital menu, bookings and a Delty credit in the footer."
     },
@@ -145,7 +176,7 @@
     "case.delty.role": {
       en: "I built the Delty brand (delty.party): positioning, pricing, demos and client sites on Next.js + Cloudflare; public case 2S Restaurant and others on *.delty.party / *.bookly.party."
     },
-    "case.delty.tech": { en: "Next.js · Cloudflare · sector demos · client sites" },
+    "case.delty.tech": { en: "Next.js, Cloudflare, sector demos, client sites" },
     "case.delty.result": {
       en: "Live commercial frontpage, 2S case with a “Site by Delty” credit, and a public client portfolio (504 Automóveis, Navalha Negra, Smile, São Tomé, Carpintaria CP, among others)."
     },
@@ -160,7 +191,7 @@
     "case.papos.role": {
       en: "I designed and built the Android app and the web version: PT-PT dictionary, five game modes, daily flow, and Play Store publication."
     },
-    "case.papos.tech": { en: "Android · Web · PT-PT dictionary · offline" },
+    "case.papos.tech": { en: "Android, Web, PT-PT dictionary, offline" },
     "case.papos.result": {
       en: "Live product on the Play Store and at papos.delty.party, with Papos, Dupla, Roda, Tertúlia and Assembleia modes."
     },
@@ -184,7 +215,7 @@
     "case.bookly.role": {
       en: "IPMAIA degree project: I contributed to the solution (Laravel for backend/web, Kotlin for Android) and to the public documentation."
     },
-    "case.bookly.tech": { en: "Laravel · Kotlin · public docs" },
+    "case.bookly.tech": { en: "Laravel, Kotlin, public docs" },
     "case.bookly.result": {
       en: "Complete academic product with public docs — a full-stack portfolio anchor."
     },
@@ -225,7 +256,7 @@
     "portfolio.band.clients": { en: "Delty / Bookly clients · web projects" },
 
 
-    "proj.delty.problem": { en: "Local businesses need a clear web presence — from a simple site to a custom build." },
+    "proj.delty.problem": { en: "Local businesses need a clear web presence, from a simple site to a custom build." },
     "proj.delty.role": { en: "I built the Delty brand: positioning, pricing, demos and client sites." },
     "proj.2s.problem": { en: "A restaurant in Paredes needed a multi-page site with a digital menu and bookings." },
     "proj.2s.role": { en: "Built and published via Delty; “Site by Delty” credit in the footer." },
@@ -236,7 +267,7 @@
     "proj.focus.problem": { en: "Stock launchers push notifications and apps that distract." },
     "proj.focus.role": { en: "I build and maintain a minimalist launcher with focus modes and automations." },
     "proj.bookly.problem": { en: "Stationery shops need management for school materials and books (web + Android)." },
-    "proj.bookly.role": { en: "IPMAIA degree project — distinct from client hosting on bookly.party." },
+    "proj.bookly.role": { en: "IPMAIA degree project. Distinct from client hosting on bookly.party." },
     "proj.gluten.problem": { en: "People avoiding gluten need reliable venues and products, in many languages." },
     "proj.gluten.role": { en: "I build and maintain the Android app (map, products, 17 languages)." },
     "proj.504.problem": { en: "A dealership in Vila do Conde / Rio Mau needed searchable stock online." },
@@ -249,72 +280,72 @@
     "proj.delty.body": {
       en: "Websites with presence and excellence — from a simple site to a custom build, with shop bundles and QR menus. Own brand (Next.js + Cloudflare); public case: 2S Restaurant."
     },
-    "proj.delty.tech": { en: "Next.js · Cloudflare · delty.party" },
+    "proj.delty.tech": { en: "Next.js, Cloudflare, delty.party" },
     "proj.2s.body": {
       en: "Multi-page site for a restaurant in Paredes: story, gallery, digital menu (QR), wines, bookings and contacts. Published with a “Site by Delty” credit."
     },
-    "proj.2s.tech": { en: "Next.js · Cloudflare · Delty client" },
+    "proj.2s.tech": { en: "Next.js, Cloudflare, Delty client" },
     "proj.papos.body": {
       en: "Daily word game in European Portuguese (Wordle-style), with five modes and offline play. I built the Android app and the web version."
     },
-    "proj.papos.tech": { en: "Android / web · PT-PT dictionary" },
+    "proj.papos.tech": { en: "Android / web, PT-PT dictionary" },
     "proj.focus.body": {
       en: "Minimalist Android launcher to reduce distractions: focus modes, automations and configurable screens. Published and maintained on the Play Store."
     },
-    "proj.focus.tech": { en: "Android · productivity" },
+    "proj.focus.tech": { en: "Android, productivity" },
     "proj.gluten.body": {
       en: "App for people with gluten intolerance: venue map, product info and a multilingual UI (17 languages). Maintained on the Play Store."
     },
-    "proj.gluten.tech": { en: "Android · maps" },
+    "proj.gluten.tech": { en: "Android, maps" },
     "proj.bookly.body": {
-      en: "Web and Android management platform for stationery shops (school materials and books). IPMAIA degree project — distinct from client hosting on bookly.party."
+      en: "Web and Android management platform for stationery shops (school materials and books). IPMAIA degree project. Distinct from client hosting on bookly.party."
     },
-    "proj.bookly.tech": { en: "Laravel · Kotlin · public docs" },
+    "proj.bookly.tech": { en: "Laravel, Kotlin, public docs" },
     "proj.pocket.body": {
       en: "Digital manager for cards, coupons and tickets with QR codes and barcodes always at hand. Android app published on the Play Store."
     },
-    "proj.pocket.tech": { en: "Tech: Jetpack Compose." },
+    "proj.pocket.tech": { en: "Jetpack Compose." },
     "proj.sushi.body": {
       en: "Android sushi-stacking game with Google Play Games. Published on the Play Store."
     },
     "proj.win.body": {
       en: "Software for vehicle inspection centres (Portugal, with links to Brazil and Angola). Current role: desktop, mobile and services in the InspGest ecosystem."
     },
-    "proj.win.tech": { en: "C# · VB.NET · Kotlin · SQL" },
+    "proj.win.tech": { en: "C#, VB.NET, Kotlin, SQL" },
     "proj.504.body": {
       en: "Car dealership and stock in Vila do Conde / Rio Mau: search by brand, model, price and mileage."
     },
-    "proj.504.tech": { en: "Next.js · Cloudflare · Delty client" },
+    "proj.504.tech": { en: "Next.js, Cloudflare, Delty client" },
     "proj.navalha.body": {
       en: "Barbershop in Vila do Conde: online bookings, shop and a distinct digital brand."
     },
-    "proj.navalha.tech": { en: "Next.js · Cloudflare · bookly.party" },
+    "proj.navalha.tech": { en: "Next.js, Cloudflare, bookly.party" },
     "proj.smile.problem": { en: "A stationery shop in Vila do Conde needed an online store with catalogue and in-store pickup." },
     "proj.smile.role": { en: "Bookly/Delty client site: catalogue, campaigns and digital identity." },
     "proj.smile.body": {
       en: "Online stationery and gifts shop in Vila do Conde: catalogue, campaigns and in-store pickup."
     },
-    "proj.smile.tech": { en: "Next.js · Cloudflare · bookly.party" },
-    "proj.smile.desktop.title": { en: "Smile — sales management" },
+    "proj.smile.tech": { en: "Next.js, Cloudflare, bookly.party" },
+    "proj.smile.desktop.title": { en: "Smile, sales management" },
     "proj.smile.desktop.body": {
       en: "Desktop app linked to the Smile e-commerce (sales and customer management). Project report."
     },
     "proj.saotome.body": {
       en: "Tourism and mobility in São Tomé and Príncipe: local support to plan the stay and explore the islands."
     },
-    "proj.saotome.tech": { en: "Tech: Next.js · Cloudflare · Delty client" },
+    "proj.saotome.tech": { en: "Next.js, Cloudflare, Delty client" },
     "proj.cp.body": {
       en: "Made-to-measure carpentry in Chaves: kitchens, wardrobes, doors, flooring and floating floors."
     },
-    "proj.cp.tech": { en: "Tech: Next.js · Cloudflare · Delty client" },
+    "proj.cp.tech": { en: "Next.js, Cloudflare, Delty client" },
     "proj.renovstar.body": {
       en: "Interior renovation: kitchens, bathrooms, rehabilitation and finishes. Note: the public site may still show staging “[TESTE]” labels."
     },
-    "proj.renovstar.tech": { en: "Tech: Next.js · Cloudflare · Delty client" },
+    "proj.renovstar.tech": { en: "Next.js, Cloudflare, Delty client" },
     "proj.4emlinha.body": {
-      en: "Connect Four web game: vs computer, local 1v1 or online rooms — fast on desktop and mobile."
+      en: "Connect Four web game: vs computer, local 1v1 or online rooms. Fast on desktop and mobile."
     },
-    "proj.4emlinha.tech": { en: "Tech: Next.js · Cloudflare · delty.party" },
+    "proj.4emlinha.tech": { en: "Next.js, Cloudflare, delty.party" },
     "proj.agro.body": {
       en: "Online store for agricultural products (freelance). Site availability may vary."
     },
