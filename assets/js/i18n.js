@@ -320,7 +320,7 @@
     "proj.papos.problem": { en: "There was no daily word game designed from the ground up for PT-PT." },
     "proj.papos.role": { en: "I designed and built the Android app and the web version (five modes, offline)." },
     "proj.focus.problem": { en: "Stock launchers push notifications and apps that distract." },
-    "proj.focus.role": { en: "I build and maintain a minimalist launcher with focus modes and automations." },
+    "proj.focus.role": { en: "Minimalist launcher app for focus and automations." },
     "proj.bookly.problem": { en: "Stationery shops need management for school materials and books (web + Android)." },
     "proj.bookly.role": { en: "degree project, distinct from client hosting on bookly.party." },
     "proj.gluten.problem": { en: "People avoiding gluten need reliable venues and products, in many languages." },
