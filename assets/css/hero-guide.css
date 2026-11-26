@@ -1,0 +1,142 @@
+/*--------------------------------------------------------------
+# Hero typed + guia (index) — carregar depois de design50 / ux-fix
+--------------------------------------------------------------*/
+
+/* Trazer Typed de volta (design50 esconde a linha) */
+#hero .hero-typed-line,
+.hero .hero-typed-line {
+  display: block !important;
+  margin: 0 0 1.35rem !important;
+  max-width: 36rem;
+  font-family: var(--default-font, Figtree, sans-serif);
+  font-size: clamp(1rem, 1.7vw, 1.15rem);
+  font-weight: 450;
+  letter-spacing: 0.01em;
+  color: color-mix(in srgb, var(--brand-fog, #e9eef6), transparent 12%) !important;
+  animation: brand-rise 1s cubic-bezier(0.22, 1, 0.36, 1) 0.14s both;
+}
+
+#hero .hero-typed-line .typed,
+.hero .hero-typed-line .typed {
+  color: #fff !important;
+  font-weight: 550;
+}
+
+#hero .typed-cursor,
+.hero .typed-cursor {
+  font-weight: 300;
+  color: var(--brand-accent, #2ecf9a) !important;
+  opacity: 0.85;
+  animation: hero-cursor-blink 1.05s steps(1, end) infinite;
+}
+
+@keyframes hero-cursor-blink {
+  0%,
+  45% {
+    opacity: 0.9;
+  }
+  50%,
+  100% {
+    opacity: 0.15;
+  }
+}
+
+/* Motion 1: fundo com drift lento (não kitsch) */
+#hero > picture,
+#hero > picture img,
+.hero > picture,
+.hero > picture img {
+  transform-origin: center center;
+  will-change: transform;
+  animation: hero-bg-drift 28s ease-in-out infinite alternate;
+}
+
+@keyframes hero-bg-drift {
+  from {
+    transform: scale(1.02) translate3d(0, 0, 0);
+  }
+  to {
+    transform: scale(1.08) translate3d(-1.2%, -0.8%, 0);
+  }
+}
+
+/* Motion 2: véu de luz suave no contentor */
+#hero .container::before,
+.hero .container::before {
+  content: "";
+  position: absolute;
+  inset: -2rem -1rem auto auto;
+  width: min(42vw, 22rem);
+  height: min(42vw, 22rem);
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    color-mix(in srgb, var(--brand-accent, #2ecf9a), transparent 78%) 0%,
+    transparent 70%
+  );
+  pointer-events: none;
+  opacity: 0.55;
+  animation: hero-glow-breathe 7s ease-in-out infinite;
+  z-index: -1;
+}
+
+#hero .container,
+.hero .container {
+  position: relative;
+}
+
+@keyframes hero-glow-breathe {
+  0%,
+  100% {
+    opacity: 0.35;
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    opacity: 0.65;
+    transform: translate3d(-4%, 6%, 0) scale(1.08);
+  }
+}
+
+/* Motion 3: indicador de scroll mais presente */
+#hero .scroll-down-btn,
+.hero .scroll-down-btn {
+  transition: color 0.25s ease, transform 0.25s ease, opacity 0.25s ease;
+}
+
+#hero .scroll-down-btn:hover,
+.hero .scroll-down-btn:hover {
+  color: var(--brand-accent, #2ecf9a);
+  transform: translateY(3px);
+}
+
+body.index-page.hero-scrolled #hero .scroll-down-indicator {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.35s ease;
+}
+
+/* Guia (page-navigation) no index */
+body.index-page .page-navigation {
+  scroll-margin-top: 5rem;
+}
+
+body.index-page .page-navigation.is-guide-active .nav-progress-fill {
+  transition: width 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+body.index-page .page-navigation .nav-btn .bi-house {
+  display: none !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #hero > picture,
+  #hero > picture img,
+  .hero > picture,
+  .hero > picture img,
+  #hero .container::before,
+  .hero .container::before,
+  #hero .typed-cursor,
+  .hero .typed-cursor {
+    animation: none !important;
+  }
+}

@@ -16,11 +16,11 @@
       en: "Thank you for visiting my portfolio! If you have any questions or are interested in collaborating, do not hesitate to contact me."
     },
     "hero.pitch": {
-      en: "Software developer — backend, mobile and systems integration · Porto"
+      en: "Software developer in Porto. Backend, mobile and systems integration."
     },
     "hero.cta.projects": { en: "View projects" },
     "hero.cta.cv": { en: "Download CV" },
-    "hero.scroll": { en: "Scroll to see more" },
+    "hero.scroll": { en: "Scroll to start the guide" },
     "hero.im": { en: "I'm" },
     "cta.cv.pdf": { en: "Download CV (PDF)" },
     "cta.view.project": { en: "View project" },
@@ -33,9 +33,9 @@
     "cta.view.projects": { en: "View Projects" },
     "cta.contact": { en: "Contact" },
 
-    "meta.home.title": { en: "Gonçalo Garrido — Software developer" },
+    "meta.home.title": { en: "Gonçalo Garrido · Software developer" },
     "meta.home.desc": {
-      en: "Software developer — backend, mobile and systems integration · Porto. Resume and portfolio of Gonçalo Garrido."
+      en: "Software developer in Porto. Backend, mobile and systems integration. Resume and portfolio of Gonçalo Garrido."
     },
     "meta.about.title": { en: "About — Gonçalo Garrido" },
     "meta.about.desc": {
@@ -443,21 +443,28 @@
 
     "navcard.section.title": { en: "Keep exploring" },
     "navcard.section.lead": {
-      en: "Background, projects and contact — without the noise."
+      en: "Background, projects and contact, without the noise."
     },
-    "navcard.about.title": { en: "About Me" },
+    "navcard.about.title": { en: "About" },
     "navcard.about.body": {
-      en: "Learn about my story, skills and passion for software development."
+      en: "Who I am, what I do and the tools I work with."
     },
     "navcard.resume.body": {
-      en: "Explore my education, professional experience and technical skills."
+      en: "Education, experience and what I use day to day."
     },
     "navcard.portfolio.body": {
-      en: "Discover the projects I have worked on, from web apps to mobile and desktop solutions."
+      en: "Apps, sites and projects with public proof."
     },
     "navcard.contact.body": {
-      en: "Get in touch with me to discuss opportunities or future collaborations."
+      en: "Email and socials if you want to talk about work."
     },
+    "pagenav.index.title": { en: "Start the guide" },
+    "pagenav.index.body": {
+      en: "Four steps: about me, resume, portfolio and contacts. Jump to any page whenever you want."
+    },
+    "pagenav.index.next": { en: "Start by learning who I am and what I do" },
+    "pagenav.index.progress": { en: "Home · guide 0 of 4" },
+    "pagenav.voltar": { en: "Back to home" },
 
     "pagenav.about.title": { en: "Keep exploring" },
     "pagenav.about.body": {
