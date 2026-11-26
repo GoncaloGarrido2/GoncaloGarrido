@@ -64,7 +64,7 @@
     },
     "page.portfolio.title": { en: "Portfolio" },
     "page.portfolio.lead": {
-      en: "Start with the featured work. Client sites under Sites; academic projects and the rest under Other."
+      en: "Apps, sites and other work I have built."
     },
     "page.contact.title": { en: "Contacts" },
     "page.contact.lead": {
@@ -301,7 +301,7 @@
     "recog.archive.esdas": {
       en: "Technical course in IT Systems Management and Programming (ESDAS)"
     },
-    "portfolio.case": { en: "Case study" },
+    "portfolio.case": { en: "About" },
     "portfolio.filters": { en: "Browse:" },
     "portfolio.filter.featured": { en: "Featured" },
     "portfolio.filter.all": { en: "All" },
