@@ -368,7 +368,7 @@
     },
     "proj.win.tech": { en: "C#, VB.NET, Kotlin, SQL" },
     "proj.504.body": {
-      en: "Dealership in Vila do Conde / Rio Mau with stock searchable by brand, model, price and mileage."
+      en: "Car dealership website with searchable stock."
     },
     "proj.504.tech": { en: "Next.js, Cloudflare (Delty client)" },
     "proj.navalha.body": {
