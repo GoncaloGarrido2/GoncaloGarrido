@@ -8,7 +8,7 @@ Desenvolvedor de software — backend, mobile e integração de sistemas · Port
 
 - Páginas: início, sobre, currículo, portfólio, contactos
 - Case studies: [Papos](case-papos.html), [Focus Launcher](case-focus-launcher.html), [Bookly](case-bookly.html)
-- CV PDF canónico: [`assets/files/Goncalo-Garrido-CV.pdf`](assets/files/Goncalo-Garrido-CV.pdf)
+- CV PDF canónico: [`assets/files/Goncalo-Garrido-CV.pdf`](assets/files/Goncalo-Garrido-CV.pdf) (fonte tip-style em [`assets/files/cv-source/`](assets/files/cv-source/))
 - SEO: `robots.txt`, `sitemap.xml`, Open Graph, JSON-LD Person
 
 ## Servir localmente

@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="utf-8">
+  <title>CV · Gonçalo Garrido · Desenvolvedor de software</title>
+  <meta name="author" content="Gonçalo Garrido">
+  <meta name="description" content="Currículo: backend, mobile e integração de sistemas · Porto">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink: #070b14;
+      --ink-soft: #101827;
+      --ink-mid: #182234;
+      --fog: #e9eef6;
+      --muted: #93a0b3;
+      --accent: #2ecf9a;
+      --accent-deep: #1aa87a;
+      --line: rgba(46, 207, 154, 0.22);
+      --fog-line: rgba(233, 238, 246, 0.12);
+      --heading: "Syne", "Sora", system-ui, sans-serif;
+      --body: "Figtree", "IBM Plex Sans", system-ui, sans-serif;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    @page {
+      size: A4;
+      margin: 0;
+    }
+
+    html, body {
+      background: var(--ink);
+      color: var(--fog);
+      font-family: var(--body);
+      font-size: 9.6pt;
+      line-height: 1.42;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    body {
+      width: 210mm;
+      min-height: 297mm;
+      margin: 0 auto;
+      background:
+        radial-gradient(ellipse 70% 40% at 8% -5%, rgba(46, 207, 154, 0.12), transparent 55%),
+        radial-gradient(ellipse 50% 35% at 100% 0%, rgba(212, 168, 110, 0.1), transparent 50%),
+        var(--ink);
+    }
+
+    .page {
+      width: 210mm;
+      min-height: 297mm;
+      padding: 14mm 15mm 12mm;
+      position: relative;
+      page-break-after: always;
+      break-after: page;
+    }
+    .page:last-child {
+      page-break-after: auto;
+      break-after: auto;
+    }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    h1, h2, h3, .brand {
+      font-family: var(--heading);
+      letter-spacing: -0.03em;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    /* -- Header -- */
+    .hero {
+      display: grid;
+      grid-template-columns: 34mm 1fr;
+      gap: 7mm;
+      align-items: center;
+      padding-bottom: 6mm;
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 6mm;
+    }
+
+    .photo {
+      width: 34mm;
+      height: 34mm;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid color-mix(in srgb, var(--accent) 55%, transparent);
+      box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent) 12%, transparent);
+      background: var(--ink-soft);
+    }
+
+    .hero-text .brand {
+      font-size: 22pt;
+      line-height: 1.05;
+      margin-bottom: 1.5mm;
+    }
+
+    .role {
+      font-family: var(--heading);
+      font-size: 11pt;
+      font-weight: 600;
+      color: var(--accent);
+      letter-spacing: -0.02em;
+      margin-bottom: 2mm;
+    }
+
+    .pitch {
+      color: color-mix(in srgb, var(--fog) 88%, transparent);
+      font-size: 9.5pt;
+      max-width: 135mm;
+      margin-bottom: 3.5mm;
+    }
+
+    .contacts {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5mm 4.5mm;
+      font-size: 8.4pt;
+      color: var(--muted);
+    }
+    .contacts a { color: var(--fog); }
+    .contacts span::before {
+      content: "";
+      display: inline-block;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: var(--accent);
+      margin-right: 5px;
+      vertical-align: middle;
+      opacity: 0.85;
+    }
+
+    /* -- Layout -- */
+    .cols {
+      display: grid;
+      grid-template-columns: 1.22fr 0.78fr;
+      gap: 7mm;
+    }
+
+    .section {
+      margin-bottom: 5.5mm;
+    }
+
+    .section-title {
+      font-size: 9.2pt;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--accent);
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 1.6mm;
+      margin-bottom: 3.2mm;
+      font-weight: 700;
+    }
+
+    .item { margin-bottom: 3.8mm; }
+    .item:last-child { margin-bottom: 0; }
+
+    .item-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 3mm;
+      margin-bottom: 0.6mm;
+    }
+
+    .item h3 {
+      font-size: 10pt;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+
+    .dates {
+      font-size: 8pt;
+      color: var(--accent);
+      white-space: nowrap;
+      font-weight: 600;
+      font-family: var(--heading);
+      letter-spacing: 0.02em;
+    }
+
+    .org {
+      font-size: 8.6pt;
+      color: var(--muted);
+      font-style: italic;
+      margin-bottom: 1.2mm;
+    }
+
+    .item ul {
+      padding-left: 3.5mm;
+      color: color-mix(in srgb, var(--fog) 90%, transparent);
+    }
+    .item li {
+      margin-bottom: 0.7mm;
+      padding-left: 1mm;
+    }
+    .item li::marker { color: var(--accent); }
+
+    .badge {
+      display: inline-block;
+      font-size: 7pt;
+      font-family: var(--heading);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--ink);
+      background: var(--accent);
+      padding: 0.8mm 2.2mm;
+      border-radius: 2px;
+      margin-bottom: 1.2mm;
+      font-weight: 700;
+    }
+    .badge-muted {
+      background: transparent;
+      color: var(--muted);
+      border: 1px solid var(--fog-line);
+    }
+
+    .edu-place {
+      font-size: 8.4pt;
+      color: var(--muted);
+      margin-bottom: 1mm;
+    }
+
+    .item p.body {
+      color: color-mix(in srgb, var(--fog) 88%, transparent);
+      font-size: 8.8pt;
+    }
+
+    /* Skills */
+    .stack {
+      margin-bottom: 3mm;
+      padding-left: 2.5mm;
+      border-left: 2px solid var(--accent);
+    }
+    .stack h3 {
+      font-size: 9.2pt;
+      margin-bottom: 0.6mm;
+    }
+    .stack p {
+      font-size: 8.2pt;
+      color: var(--muted);
+      line-height: 1.35;
+    }
+
+    .chip-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.4mm;
+      margin-top: 1.5mm;
+    }
+    .chip {
+      font-size: 7.6pt;
+      color: var(--fog);
+      background: color-mix(in srgb, var(--fog) 6%, transparent);
+      border: 1px solid var(--fog-line);
+      padding: 1mm 2.2mm;
+      border-radius: 3px;
+    }
+
+    .lang-row {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5mm;
+    }
+    .lang-row div {
+      display: flex;
+      justify-content: space-between;
+      font-size: 8.4pt;
+      border-bottom: 1px solid var(--fog-line);
+      padding-bottom: 1.2mm;
+    }
+    .lang-row strong { color: #fff; font-weight: 600; }
+    .lang-row span { color: var(--muted); }
+
+    .proj {
+      margin-bottom: 2.8mm;
+      padding-bottom: 2.4mm;
+      border-bottom: 1px solid var(--fog-line);
+    }
+    .proj:last-child { border-bottom: 0; margin-bottom: 0; padding-bottom: 0; }
+    .proj h3 { font-size: 9.4pt; margin-bottom: 0.5mm; }
+    .proj .meta {
+      font-size: 7.6pt;
+      color: var(--accent-deep);
+      margin-bottom: 0.8mm;
+      font-family: var(--heading);
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+    .proj p {
+      font-size: 8.2pt;
+      color: var(--muted);
+    }
+
+    .footnote {
+      margin-top: 5mm;
+      padding-top: 3mm;
+      border-top: 1px solid var(--fog-line);
+      font-size: 7.6pt;
+      color: var(--muted);
+      display: flex;
+      justify-content: space-between;
+      gap: 4mm;
+    }
+    .footnote a { color: var(--muted); }
+
+    .aside-note {
+      font-size: 7.8pt;
+      color: var(--muted);
+      margin-top: 2mm;
+      line-height: 1.35;
+    }
+
+    @media screen {
+      body { padding: 12mm 0; }
+      .page {
+        box-shadow: 0 12px 40px rgba(0,0,0,0.45);
+        margin-bottom: 10mm;
+        background:
+          radial-gradient(ellipse 70% 40% at 8% -5%, rgba(46, 207, 154, 0.12), transparent 55%),
+          radial-gradient(ellipse 50% 35% at 100% 0%, rgba(212, 168, 110, 0.1), transparent 50%),
+          var(--ink);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Página 1 -->
+  <section class="page" aria-label="CV página 1">
+    <header class="hero">
+      <img class="photo" src="profile.jpg" width="160" height="160" alt="Retrato de Gonçalo Garrido">
+      <div class="hero-text">
+        <h1 class="brand">Gonçalo Garrido</h1>
+        <p class="role">Desenvolvedor de software</p>
+        <p class="pitch">Backend, mobile e integração de sistemas · Porto. Apps na Play Store, software de negócio e sites para PME.</p>
+        <div class="contacts">
+          <span><a href="mailto:goncalosantosgarrido@gmail.com">goncalosantosgarrido@gmail.com</a></span>
+          <span>Porto, Portugal</span>
+          <span><a href="https://goncalogarrido2.github.io/GoncaloGarrido/">Site</a></span>
+          <span><a href="https://github.com/GoncaloGarrido2">GitHub</a></span>
+          <span><a href="https://www.linkedin.com/in/gon%C3%A7alo-garrido-4301a0269/">LinkedIn</a></span>
+        </div>
+      </div>
+    </header>
+
+    <div class="cols">
+      <div class="main-col">
+        <section class="section">
+          <h2 class="section-title">Experiência profissional</h2>
+
+          <article class="item">
+            <div class="item-head">
+              <h3>Desenvolvedor de Software</h3>
+              <span class="dates">Ago 2025 - Presente</span>
+            </div>
+            <p class="org">WorkInNet, Consultoria Informática · InspGest · workinnet.com</p>
+            <ul>
+              <li>Desenvolvimento no ecossistema InspGest para centros de inspeção automóvel em Portugal, com ligações a Brasil e Angola.</li>
+              <li>Stack: C#, VB.NET, Kotlin e SQL (desktop, apps móveis, APIs/serviços e scripts de base de dados).</li>
+              <li>Integração com equipamentos de oficina (OBD, linha, câmaras) e fluxos operacionais de inspeção.</li>
+            </ul>
+          </article>
+
+          <article class="item">
+            <div class="item-head">
+              <h3>Desenvolvedor Full Stack</h3>
+              <span class="dates">Mar 2025 - Ago 2025</span>
+            </div>
+            <p class="org">ParadigmaXis</p>
+            <ul>
+              <li>Desenvolvimento de aplicações e APIs com Kotlin e Node.js.</li>
+              <li>Integração de sistemas com WordPress.</li>
+            </ul>
+          </article>
+
+          <article class="item">
+            <div class="item-head">
+              <h3>Desenvolvedor de Aplicações Desktop</h3>
+              <span class="dates">Mar 2024 - Jun 2024</span>
+            </div>
+            <p class="org">WorkInNet</p>
+            <ul>
+              <li>Aplicações desktop com Visual Basic e SQL, e componentes web com Laravel.</li>
+              <li>Evolução e manutenção de ferramentas internas WorkInNet (desktop + SQL) para operação dos clientes.</li>
+            </ul>
+          </article>
+
+          <article class="item">
+            <div class="item-head">
+              <h3>Delty WebSites (conta própria)</h3>
+              <span class="dates">Fev 2023 - Presente</span>
+            </div>
+            <p class="org">Delty · delty.party</p>
+            <ul>
+              <li>Marca Delty: websites à medida para PME (Next.js + Cloudflare), com preços e demos públicos.</li>
+              <li>Case 2S Restaurante (Paredes): site completo com carta QR, menus e reservas.</li>
+              <li>Clientes em *.delty.party / *.bookly.party, por exemplo 504 Automóveis, Navalha Negra, Smile Papelaria, São Tomé Turismo e Carpintaria CP.</li>
+            </ul>
+          </article>
+
+          <article class="item">
+            <div class="item-head">
+              <h3>Desenvolvedor de Aplicações Web e Mobile</h3>
+              <span class="dates">Set 2022 - Ago 2023</span>
+            </div>
+            <p class="org">Core Soluções</p>
+            <ul>
+              <li>Aplicações em C#, PHP e Xamarin.</li>
+              <li>Integração com sistemas de gestão empresarial.</li>
+            </ul>
+          </article>
+
+          <article class="item">
+            <div class="item-head">
+              <h3>Estágio como Desenvolvedor</h3>
+              <span class="dates">Dez 2020 - Fev 2021</span>
+            </div>
+            <p class="org">EdiPrinter</p>
+            <ul>
+              <li>Aplicações web e desktop em C# e SQL.</li>
+              <li>Utilização de frameworks modernos como MAUI e Xamarin.</li>
+            </ul>
+          </article>
+        </section>
+      </div>
+
+      <aside class="side-col">
+        <section class="section">
+          <h2 class="section-title">Stacks núcleo</h2>
+          <div class="stack">
+            <h3>C# / VB.NET</h3>
+            <p>WorkInNet / InspGest: desktop, serviços e integrações de linha de inspeção (também .NET Core).</p>
+          </div>
+          <div class="stack">
+            <h3>Kotlin / Android</h3>
+            <p>Clientes móveis InspGest e apps na Play Store (Papos, Focus Launcher, GlutenFree, PocketCards).</p>
+          </div>
+          <div class="stack">
+            <h3>SQL Server</h3>
+            <p>Modelação, consultas e migrações T-SQL no ecossistema de inspeção e negócio.</p>
+          </div>
+          <div class="stack">
+            <h3>Next.js / Web</h3>
+            <p>Delty WebSites e case 2S: sites comerciais em Next.js com Cloudflare (DNS/CDN).</p>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2 class="section-title">Linguagens</h2>
+          <div class="chip-row">
+            <span class="chip">C#</span>
+            <span class="chip">VB.NET</span>
+            <span class="chip">Kotlin</span>
+            <span class="chip">Java</span>
+            <span class="chip">JavaScript</span>
+            <span class="chip">TypeScript</span>
+            <span class="chip">HTML5</span>
+            <span class="chip">CSS3</span>
+            <span class="chip">PHP</span>
+            <span class="chip">SQL Server</span>
+            <span class="chip">MySQL</span>
+            <span class="chip">Python</span>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2 class="section-title">Ferramentas</h2>
+          <div class="chip-row">
+            <span class="chip">Visual Studio</span>
+            <span class="chip">VS Code</span>
+            <span class="chip">Android Studio</span>
+            <span class="chip">Git</span>
+            <span class="chip">GitHub</span>
+            <span class="chip">Next.js</span>
+            <span class="chip">Node.js</span>
+            <span class="chip">Laravel</span>
+            <span class="chip">Cloudflare</span>
+            <span class="chip">Android</span>
+            <span class="chip">Linux</span>
+            <span class="chip">Windows</span>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2 class="section-title">Idiomas</h2>
+          <div class="lang-row">
+            <div><strong>Português</strong><span>nativo</span></div>
+            <div><strong>Inglês</strong><span>trabalho / site bilingue</span></div>
+          </div>
+        </section>
+      </aside>
+    </div>
+  </section>
+
+  <!-- Página 2 -->
+  <section class="page" aria-label="CV página 2">
+    <div class="cols">
+      <div class="main-col">
+        <section class="section">
+          <h2 class="section-title">Formação académica</h2>
+
+          <article class="item">
+            <span class="badge">Grau principal</span>
+            <div class="item-head">
+              <h3>Licenciatura em Tecnologias de Informação, Web e Multimédia</h3>
+              <span class="dates">2022 - Set 2025</span>
+            </div>
+            <p class="edu-place">IPMAIA, Instituto Politécnico da Maia</p>
+            <p class="body">Curso centrado no desenvolvimento de soluções tecnológicas e gestão de sistemas, com foco em desenvolvimento backend e integração de sistemas.</p>
+          </article>
+
+          <article class="item">
+            <span class="badge badge-muted">Mobilidade</span>
+            <div class="item-head">
+              <h3>Bacharelado em Ciência da Computação (mobilidade)</h3>
+              <span class="dates">Ago 2023 - Dez 2023</span>
+            </div>
+            <p class="edu-place">CCT / UDESC, Centro de Ciências Tecnológicas (Brasil)</p>
+            <p class="body">Programa de mobilidade durante a licenciatura: foco em desenvolvimento e integração de sistemas.</p>
+          </article>
+
+          <article class="item">
+            <div class="item-head">
+              <h3>CTeSP em Tecnologias e Programação de Sistemas de Informação</h3>
+              <span class="dates">2020 - 2022</span>
+            </div>
+            <p class="edu-place">IPMAIA, Instituto Politécnico da Maia</p>
+            <p class="body">Curso técnico especializado em programação e gestão de sistemas, com estágios práticos de 6 meses.</p>
+          </article>
+
+          <article class="item">
+            <div class="item-head">
+              <h3>Curso Técnico de Gestão e Programação de Sistemas Informáticos</h3>
+              <span class="dates">2017 - 2020</span>
+            </div>
+            <p class="edu-place">ESDAS, Escola Secundária D. Afonso Sanches</p>
+            <p class="body">Desenvolvimento de aplicações desktop e web, bases de dados e projetos técnicos com integração prática através de estágios profissionais. Média: 17.</p>
+          </article>
+        </section>
+
+        <section class="section">
+          <h2 class="section-title">Destaques</h2>
+          <article class="item">
+            <div class="item-head">
+              <h3>Certificação C# com Microsoft</h3>
+              <span class="dates">Jan 2024</span>
+            </div>
+            <p class="body">Fundamentos de C# com a Microsoft (freeCodeCamp), concluída a 17 de janeiro de 2024.</p>
+          </article>
+          <article class="item">
+            <div class="item-head">
+              <h3>Apps na Play Store</h3>
+            </div>
+            <p class="body">Apps Android publicadas e mantidas (Papos, Focus Launcher, GlutenFree, PocketCards e outras).</p>
+          </article>
+          <p class="aside-note">Concursos e formação anterior (2017-2020): Topas 2018 e 2019 (FCUP); Tecla 2019 e 2020 (ESTGA).</p>
+        </section>
+      </div>
+
+      <aside class="side-col">
+        <section class="section">
+          <h2 class="section-title">Projectos relevantes</h2>
+
+          <article class="proj">
+            <p class="meta">Mobile · Play Store</p>
+            <h3>Papos</h3>
+            <p>Jogo de palavras, uma por dia. Android e web.</p>
+          </article>
+          <article class="proj">
+            <p class="meta">Mobile · Play Store</p>
+            <h3>Focus Launcher</h3>
+            <p>Launcher minimalista para foco e automações.</p>
+          </article>
+          <article class="proj">
+            <p class="meta">Mobile · APC</p>
+            <h3>GlutenFree</h3>
+            <p>App para ajudar pessoas celíacas, certificada pela APC. Mapa, produtos e 17 idiomas.</p>
+          </article>
+          <article class="proj">
+            <p class="meta">Licenciatura</p>
+            <h3>Bookly</h3>
+            <p>Projeto final de licenciatura e sistema de gestão de manuais e reservas escolares (Laravel, Kotlin).</p>
+          </article>
+          <article class="proj">
+            <p class="meta">Web · Delty</p>
+            <h3>2S Restaurante &amp; Bar</h3>
+            <p>Website de restaurante com menu QR code nas mesas (Next.js, Cloudflare).</p>
+          </article>
+          <article class="proj">
+            <p class="meta">Web · Delty / Bookly</p>
+            <h3>Clientes PME</h3>
+            <p>504 Automóveis, Diauto, Navalha Negra, Smile Papelaria, São Tomé Turismo, Carpintaria CP.</p>
+          </article>
+          <article class="proj">
+            <p class="meta">Mobile · Play Store</p>
+            <h3>PocketCards</h3>
+            <p>Gestor digital de cartões, cupões e bilhetes com QR e códigos de barras.</p>
+          </article>
+        </section>
+
+        <section class="section">
+          <h2 class="section-title">Contactos</h2>
+          <div class="lang-row">
+            <div><strong>Email</strong><span><a href="mailto:goncalosantosgarrido@gmail.com">preferido</a></span></div>
+            <div><strong>Local</strong><span>Porto · remoto/presencial</span></div>
+            <div><strong>GitHub</strong><span><a href="https://github.com/GoncaloGarrido2">GoncaloGarrido2</a></span></div>
+            <div><strong>LinkedIn</strong><span><a href="https://www.linkedin.com/in/gon%C3%A7alo-garrido-4301a0269/">perfil</a></span></div>
+            <div><strong>Play Store</strong><span><a href="https://play.google.com/store/apps/dev?id=7747928269861211538">developer</a></span></div>
+            <div><strong>Stack Overflow</strong><span><a href="https://stackoverflow.com/users/11312923/gon%c3%a7alo-garrido">perfil</a></span></div>
+          </div>
+        </section>
+      </aside>
+    </div>
+
+    <footer class="footnote">
+      <span>Fonte alinhada a resume.html / about.html / portfolio.html do site.</span>
+      <span><a href="https://goncalogarrido2.github.io/GoncaloGarrido/">goncalogarrido2.github.io/GoncaloGarrido</a></span>
+    </footer>
+  </section>
+
+</body>
+</html>
