@@ -497,7 +497,7 @@
       en: "Remote or on-site in the Porto area"
     },
     "contact.kicker": { en: "Contact" },
-    "contact.primary.note": { en: "There is no form on this site. The button opens your email client." },
+    "contact.actions.label": { en: "Write" },
     "contact.email.label": { en: "Email" },
     "contact.email.detail": { en: "Preferred channel" },
     "contact.social": { en: "Profiles" },
@@ -506,10 +506,6 @@
     "contact.availability.body": { en: "Open to conversations about projects and opportunities" },
     "contact.availability.modes": { en: "Freelance, full-time or part-time" },
     "contact.availability.status": { en: "Reply by email" },
-    "contact.cta.title": { en: "Shall we talk?" },
-    "contact.cta.body": {
-      en: "If you have an idea, a role or a collaboration in mind, write to me."
-    },
 
     "navcard.section.title": { en: "Navigation" },
     "navcard.section.lead": {
