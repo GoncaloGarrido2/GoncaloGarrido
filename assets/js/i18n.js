@@ -314,7 +314,7 @@
     "proj.delty.problem": { en: "Local businesses need a clear web presence, from a simple site to a custom build." },
     "proj.delty.role": { en: "I built the Delty brand: positioning, pricing, demos and client sites." },
     "proj.2s.problem": { en: "A restaurant in Paredes needed a multi-page site with a digital menu and bookings." },
-    "proj.2s.role": { en: "Built and published via Delty; “Site by Delty” credit in the footer." },
+    "proj.2s.role": { en: "Restaurant website with QR code menu at the tables." },
     "proj.win.problem": { en: "Vehicle inspection centres (Portugal, with links to Brazil and Angola) need reliable desktop/mobile software." },
     "proj.win.role": { en: "Current role in the InspGest ecosystem: desktop, mobile and services." },
     "proj.papos.problem": { en: "There was no daily word game designed from the ground up for PT-PT." },
