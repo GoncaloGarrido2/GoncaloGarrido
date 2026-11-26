@@ -230,6 +230,49 @@
   }
 
   /**
+   * Stack «Tecnologias utilizadas» chips under the label (not inline).
+   * Re-run after i18n language switches.
+   */
+  function stackTechElement(el, chipClass) {
+    const raw = (el.getAttribute('data-tech-raw') || el.textContent || '').trim();
+    if (!raw) return;
+    el.setAttribute('data-tech-raw', raw);
+    const parts = raw.split(/\s*[·,]\s*/).map(function(part) {
+      return part.trim();
+    }).filter(Boolean);
+    el.textContent = '';
+    el.classList.add('tech-stack-list');
+    const list = parts.length ? parts : [raw];
+    list.forEach(function(part) {
+      const chip = document.createElement('span');
+      chip.className = chipClass;
+      chip.textContent = part;
+      el.appendChild(chip);
+    });
+  }
+
+  function stackPortfolioTechLists(root) {
+    const scope = root || document;
+    scope.querySelectorAll('.proj-tech-list').forEach(function(el) {
+      stackTechElement(el, 'proj-tech-chip');
+    });
+    scope.querySelectorAll('.case-body > h2[data-i18n="case.technologies"] + p, .case-stack .case-tech').forEach(function(el) {
+      stackTechElement(el, 'case-tech-chip');
+    });
+  }
+
+  function restackPortfolioTechLists() {
+    document.querySelectorAll('.proj-tech-list, .case-body > h2[data-i18n="case.technologies"] + p, .case-stack .case-tech').forEach(function(el) {
+      const text = el.textContent.trim();
+      if (text) el.setAttribute('data-tech-raw', text);
+    });
+    stackPortfolioTechLists(document);
+  }
+
+  restackPortfolioTechLists();
+  window.addEventListener('portfolio:languageChanged', restackPortfolioTechLists);
+
+  /**
    * Init isotope layout and filters
    */
   document.querySelectorAll('.isotope-layout').forEach(function(isotopeItem) {
@@ -244,12 +287,20 @@
     let initIsotope = null;
     let pendingFilter = null;
 
+    function sortForFilter(nextFilter) {
+      // Sites: clientes / 2S / 4 Em Linha primeiro; Smile (featured+web) depois
+      return nextFilter === '.filter-web' ? 'sitesOrder' : (sort || 'original-order');
+    }
+
     function arrange(nextFilter) {
       if (!initIsotope) {
         pendingFilter = nextFilter;
         return;
       }
-      initIsotope.arrange({ filter: nextFilter });
+      initIsotope.arrange({
+        filter: nextFilter,
+        sortBy: sortForFilter(nextFilter)
+      });
       // Keep container height in sync after images/fonts
       requestAnimationFrame(function() {
         if (initIsotope) initIsotope.layout();
@@ -257,12 +308,16 @@
     }
 
     imagesLoaded(container, function() {
+      const initialFilter = pendingFilter || filter;
       initIsotope = new Isotope(container, {
         itemSelector: '.isotope-item',
         layoutMode: layout,
         percentPosition: true,
-        filter: pendingFilter || filter,
-        sortBy: sort,
+        filter: initialFilter,
+        sortBy: sortForFilter(initialFilter),
+        getSortData: {
+          sitesOrder: '[data-sites-order] parseInt'
+        },
         fitRows: { gutter: 0 },
         masonry: {
           columnWidth: '.portfolio-item',
