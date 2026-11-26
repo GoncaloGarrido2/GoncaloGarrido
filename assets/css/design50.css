@@ -96,20 +96,8 @@ a.logo .sitename {
 .header .logo h1::after,
 .header .logo .sitename::after,
 .logo h1.sitename::after {
-  content: "" !important;
-  display: inline-block !important;
-  position: static !important;
-  width: 6px !important;
-  height: 6px !important;
-  margin-left: 0.35rem;
-  margin-bottom: 0.15rem;
-  border-radius: 50% !important;
-  background: var(--brand-accent) !important;
-  box-shadow: 0 0 10px var(--brand-glow);
-  vertical-align: middle;
-  opacity: 1 !important;
-  bottom: auto !important;
-  left: auto !important;
+  content: none !important;
+  display: none !important;
 }
 
 .navmenu ul {
@@ -1019,13 +1007,6 @@ a.hero-cta-secondary:hover {
   }
 }
 
-@media (max-width: 768px) {
-  .header .logo .sitename::after,
-  .header .logo h1::after {
-    width: 5px;
-    height: 5px;
-  }
-}
 
 /* Cycles 33–40 polish */
 #preloader {

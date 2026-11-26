@@ -3,6 +3,14 @@
 # Load AFTER design50.css
 --------------------------------------------------------------*/
 
+/* Sem bolinha teal no logo sitename */
+.header .logo h1::after,
+.header .logo .sitename::after,
+.logo h1.sitename::after {
+  content: none !important;
+  display: none !important;
+}
+
 /* 1) Hero tipografia — forte mas não gigante */
 #hero h2,
 .hero h2 {
@@ -1301,7 +1309,8 @@ body.mobile-nav-active.contact-page .contact-svg-close { display: inline-block; 
 .portfolio-description .proj-tech {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+  text-align: center;
   gap: 0.2rem;
   font-size: 0.82rem;
   line-height: 1.4;
@@ -1317,12 +1326,14 @@ body.mobile-nav-active.contact-page .contact-svg-close { display: inline-block; 
   text-transform: uppercase;
   color: var(--brand-accent, #2ecf9a) !important;
   margin: 0;
+  text-align: center;
 }
 
 .portfolio-description .proj-tech .proj-tech-list {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+  text-align: center;
   gap: 0.12rem;
   color: color-mix(in srgb, var(--brand-fog, #e9eef6), transparent 12%);
 }
