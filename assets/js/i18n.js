@@ -376,7 +376,7 @@
     },
     "proj.navalha.tech": { en: "Next.js, Cloudflare, bookly.party" },
     "proj.smile.problem": { en: "A stationery shop in Vila do Conde needed an online store with catalogue and in-store pickup." },
-    "proj.smile.role": { en: "Bookly/Delty client site: catalogue, campaigns and digital identity." },
+    "proj.smile.role": { en: "Online shop and stationery site." },
     "proj.smile.body": {
       en: "Online stationery and gifts shop in Vila do Conde: catalogue, campaigns and in-store pickup."
     },
