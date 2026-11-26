@@ -13,14 +13,14 @@
     "nav.portfolio": { en: "Portfolio" },
     "nav.contact": { en: "Contacts" },
     "footer.thanks": {
-      en: "Thank you for visiting my portfolio! If you have any questions or are interested in collaborating, do not hesitate to contact me."
+      en: "Thanks for stopping by. Questions or work talk: use the contact page."
     },
     "hero.pitch": {
-      en: "Software developer. backend, mobile and systems integration · Porto"
+      en: "Software developer. Backend, mobile and systems integration · Porto"
     },
     "hero.cta.projects": { en: "View projects" },
     "hero.cta.cv": { en: "Download CV" },
-    "hero.scroll": { en: "Scroll to start the guide" },
+    "hero.scroll": { en: "See more" },
     "hero.im": { en: "I'm" },
     "cta.cv.pdf": { en: "Download CV (PDF)" },
     "cta.view.project": { en: "View project" },
@@ -33,34 +33,34 @@
     "cta.view.projects": { en: "View Projects" },
     "cta.contact": { en: "Contact" },
 
-    "meta.home.title": { en: "Gonçalo Garrido. Software developer" },
+    "meta.home.title": { en: "Gonçalo Garrido · Software developer" },
     "meta.home.desc": {
-      en: "Software developer. backend, mobile and systems integration · Porto. Resume and portfolio of Gonçalo Garrido."
+      en: "Software developer. Backend, mobile and systems integration · Porto. Resume and portfolio of Gonçalo Garrido."
     },
-    "meta.about.title": { en: "About. Gonçalo Garrido" },
+    "meta.about.title": { en: "About · Gonçalo Garrido" },
     "meta.about.desc": {
-      en: "About Gonçalo Garrido, software developer. backend, mobile and systems integration · Porto."
+      en: "About Gonçalo Garrido. Software developer. Backend, mobile and systems integration · Porto."
     },
-    "meta.resume.title": { en: "Resume. Gonçalo Garrido" },
+    "meta.resume.title": { en: "Resume · Gonçalo Garrido" },
     "meta.resume.desc": {
-      en: "Resume of Gonçalo Garrido, software developer. backend, mobile and systems integration · Porto."
+      en: "Resume of Gonçalo Garrido. Software developer. Backend, mobile and systems integration · Porto."
     },
-    "meta.portfolio.title": { en: "Portfolio. Gonçalo Garrido" },
+    "meta.portfolio.title": { en: "Portfolio · Gonçalo Garrido" },
     "meta.portfolio.desc": {
       en: "Portfolio: Delty WebSites (2S, 504 Automóveis, São Tomé, Carpintaria CP), Bookly (Navalha Negra, Smile), Papos and Android apps."
     },
-    "meta.contact.title": { en: "Contacts. Gonçalo Garrido" },
+    "meta.contact.title": { en: "Contacts · Gonçalo Garrido" },
     "meta.contact.desc": {
-      en: "Contact details for Gonçalo Garrido, software developer. backend, mobile and systems integration · Porto."
+      en: "Contact details for Gonçalo Garrido. Software developer. Backend, mobile and systems integration · Porto."
     },
 
     "page.about.title": { en: "About" },
     "page.about.lead": {
-      en: "Software developer. backend, mobile and systems integration · Porto."
+      en: "Software developer. Backend, mobile and systems integration · Porto."
     },
     "page.resume.title": { en: "Resume" },
     "page.resume.lead": {
-      en: "Education and professional experience as a software developer. backend, mobile and systems integration."
+      en: "Education and experience. Backend, mobile and systems integration."
     },
     "page.portfolio.title": { en: "Portfolio" },
     "page.portfolio.lead": {
@@ -73,7 +73,7 @@
 
     "about.role": { en: "Software developer" },
     "about.tagline": {
-      en: "Backend, mobile and systems integration. with apps published on the Play Store and experience in business software."
+      en: "Backend, mobile and systems integration, with apps published on the Play Store and experience in business software."
     },
     "about.label.email": { en: "Email:" },
     "about.label.city": { en: "City:" },
@@ -82,13 +82,13 @@
     "about.value.education": { en: "Degree in IT" },
     "about.value.available": { en: "Available" },
     "about.bio": {
-      en: "Three anchors: WorkInNet/InspGest (C#, VB.NET, Kotlin, SQL), Android apps on the Play Store, and Delty WebSites (Next.js + Cloudflare) for local businesses. including the 2S Restaurant case."
+      en: "Current role at WorkInNet/InspGest (C#, VB.NET, Kotlin, SQL). Android apps on the Play Store. Delty brand (Next.js + Cloudflare) for local businesses, including the 2S Restaurant case."
     },
     "skills.title": { en: "Skills" },
     "skills.stacks": { en: "Stacks" },
     "skills.core": { en: "core" },
     "skills.intro": {
-      en: "Hierarchy from current work, the Delty brand and published apps. with icons for the languages and tools I actually use."
+      en: "Ordered by what I use day to day: current work, Delty and published apps."
     },
     "skills.langs.spoken": { en: "Languages" },
     "skills.langs.prog": { en: "Programming languages" },
@@ -116,7 +116,7 @@
     },
     "skills.also": { en: "Also used" },
     "skills.also.intro": {
-      en: "Secondary. project contact, IPMAIA coursework or occasional roles:"
+      en: "Also in occasional contact or IPMAIA coursework:"
     },
 
     "case.technologies": { en: "Technologies" },
@@ -152,53 +152,25 @@
     "case.4emlinha.did": { en: 'I built and published the game under the Delty brand, with a fast UI and rooms for remote play.' },
     "case.4emlinha.tech": { en: 'Next.js · Cloudflare · delty.party' },
     "case.kicker": { en: "Case study" },
-
-    "case.papos.about": {
-      en: "Papos is a daily word game in European Portuguese. I built the Android app and the web version, with a PT-PT dictionary, five modes and offline play, and published it on the Play Store."
-    },
-    "case.papos.outro": {
-      en: "It is on the Play Store and at papos.delty.party, with the Papos, Dupla, Roda, Tertúlia and Assembleia modes."
-    },
-    "case.bookly.about": {
-      en: "Bookly is a web and Android platform for stationery shops (school materials and books). It was my IPMAIA degree project: I worked on the Laravel backend/web, the Kotlin Android app, and the public docs. It is distinct from client hosting on bookly.party."
-    },
-    "case.bookly.outro": {
-      en: "The project shipped with public documentation and remains a full-stack reference in the portfolio."
-    },
-    "case.focus.about": {
-      en: "Focus Launcher is a minimalist Android launcher to cut distractions. I build and maintain the app with focus modes, automations and configurable screens, published on the Play Store."
-    },
-    "case.focus.outro": {
-      en: "It stays published and updated on the Play Store, with public documentation."
-    },
-    "case.delty.about": {
-      en: "Delty WebSites is my brand of sites for SMEs. I built the positioning, pricing, demos and client sites on Next.js and Cloudflare, with a public case at 2S Restaurant and others on *.delty.party and *.bookly.party."
-    },
-    "case.delty.outro": {
-      en: "The commercial frontpage is live, 2S carries a “Site by Delty” credit, and there is a public client portfolio (504 Automóveis, Navalha Negra, Smile, São Tomé, Carpintaria CP, among others)."
-    },
-    "case.2s.about": {
-      en: "A multi-page site for 2S Restaurant & Bar in Paredes: story, gallery, digital menu with QR, wines, bookings and contacts. I built and published it via Delty, with a “Site by Delty” credit in the footer and a mirror at 2s.delty.party."
-    },
-    "case.2s.outro": {
-      en: "The site is live at 2srestaurante.com, with a digital menu and bookings."
-    },
-    "case.problem": { en: "Problem" },
-    "case.role": { en: "Role" },
-    "case.tech": { en: "Technologies" },
-    "case.result": { en: "Outcome" },
+    "case.what": { en: "The project" },
+    "case.did": { en: "What I did" },
+    "case.status": { en: "Status" },
+    "case.tech": { en: "Tech stack" },
+    "case.problem": { en: "The project" },
+    "case.role": { en: "What I did" },
+    "case.result": { en: "Status" },
     "case.back": { en: "Back to portfolio" },
     "case.2s.title": { en: "2S Restaurant & Bar" },
     "case.2s.tagline": { en: "Multi-page site for a restaurant in Paredes" },
     "case.2s.problem": {
-      en: "A restaurant in Paredes needed a multi-page site with story, gallery, digital menu (QR), wines, bookings and contacts. without a generic hospitality template."
+      en: "Multi-page site for 2S Restaurant & Bar in Paredes: story, gallery, digital menu (QR), wines, bookings and contacts."
     },
     "case.2s.role": {
-      en: "Built and published via Delty (Next.js + Cloudflare); “Site by Delty” credit in the footer; mirror at 2s.delty.party."
+      en: "Built and published via Delty (Next.js and Cloudflare), with a “Site by Delty” credit in the footer and a mirror at 2s.delty.party."
     },
-    "case.2s.tech": { en: "Next.js, Cloudflare, Delty client" },
+    "case.2s.tech": { en: "Next.js, Cloudflare (Delty client)" },
     "case.2s.result": {
-      en: "Live site at 2srestaurante.com with digital menu, bookings and a Delty credit in the footer."
+      en: "Live at 2srestaurante.com, with digital menu and bookings."
     },
     
     "case.about": { en: "The project" },
@@ -254,14 +226,14 @@
     "case.delty.title": { en: "Delty WebSites" },
     "case.delty.tagline": { en: "Websites with presence for local businesses" },
     "case.delty.problem": {
-      en: "SMEs and local businesses need a clear web presence. from a simple site to a custom build. without generic templates or a freelancer with no brand."
+      en: "Own brand of websites for SMEs: from a simple site to a custom build, with public demos and pricing at delty.party."
     },
     "case.delty.role": {
-      en: "I built the Delty brand (delty.party): positioning, pricing, demos and client sites on Next.js + Cloudflare; public case 2S Restaurant and others on *.delty.party / *.bookly.party."
+      en: "I built the Delty brand: positioning, pricing, demos and client sites on Next.js and Cloudflare. Public case 2S Restaurant and other sites on *.delty.party / *.bookly.party."
     },
     "case.delty.tech": { en: "Next.js, Cloudflare, sector demos, client sites" },
     "case.delty.result": {
-      en: "Live commercial frontpage, 2S case with a “Site by Delty” credit, and a public client portfolio (504 Automóveis, Navalha Negra, Smile, São Tomé, Carpintaria CP, among others)."
+      en: "Commercial frontpage at delty.party; 2S case with a “Site by Delty” credit; public clients such as 504 Automóveis, Navalha Negra, Smile, São Tomé and Carpintaria CP."
     },
     "hero.cta.contact": { en: "Contact" },
     "proj.meta.role": { en: "Role" },
@@ -288,7 +260,7 @@
     },
     "case.focus-launcher.tech": { en: "Android · productivity · Play Store" },
     "case.focus-launcher.result": {
-      en: "Published and updated app. public proof of mobile delivery beyond day-job work."
+      en: "Published and updated app, public proof of mobile delivery beyond day-job work."
     },
     "case.bookly.title": { en: "Bookly" },
     "case.bookly.tagline": { en: "School materials and book management for stationery shops" },
@@ -300,12 +272,12 @@
     },
     "case.bookly.tech": { en: "Laravel, Kotlin, public docs" },
     "case.bookly.result": {
-      en: "Complete academic product with public docs. a full-stack portfolio anchor."
+      en: "Complete academic product with public docs, a full-stack portfolio anchor."
     },
 
     "recog.title": { en: "Highlights" },
     "recog.intro": {
-      en: "Certifications, published apps and academic mobility. what carries weight in recruiting."
+      en: "Certifications, published apps and academic mobility, what carries weight in recruiting."
     },
     "recog.csharp.title": { en: "C# certification with Microsoft" },
     "recog.csharp.body": {
@@ -321,10 +293,10 @@
     },
     "recog.archive": { en: "Earlier contests and training (2017–2020)" },
     "recog.archive.topas": {
-      en: "Topas 2018 and 2019. participation (Faculty of Sciences of Porto)"
+      en: "Topas 2018 and 2019, participation (Faculty of Sciences of Porto)"
     },
     "recog.archive.tecla": {
-      en: "Tecla 2019 and 2020. participation (ESTGA)"
+      en: "Tecla 2019 and 2020, participation (ESTGA)"
     },
     "recog.archive.esdas": {
       en: "Technical course in IT Systems Management and Programming (ESDAS)"
@@ -339,7 +311,7 @@
     "portfolio.band.clients": { en: "Delty / Bookly clients · web projects" },
 
 
-    "proj.delty.problem": { en: "Local businesses need a clear web presence. from a simple site to a custom build." },
+    "proj.delty.problem": { en: "Local businesses need a clear web presence, from a simple site to a custom build." },
     "proj.delty.role": { en: "I built the Delty brand: positioning, pricing, demos and client sites." },
     "proj.2s.problem": { en: "A restaurant in Paredes needed a multi-page site with a digital menu and bookings." },
     "proj.2s.role": { en: "Built and published via Delty; “Site by Delty” credit in the footer." },
@@ -350,7 +322,7 @@
     "proj.focus.problem": { en: "Stock launchers push notifications and apps that distract." },
     "proj.focus.role": { en: "I build and maintain a minimalist launcher with focus modes and automations." },
     "proj.bookly.problem": { en: "Stationery shops need management for school materials and books (web + Android)." },
-    "proj.bookly.role": { en: "IPMAIA degree project. distinct from client hosting on bookly.party." },
+    "proj.bookly.role": { en: "degree project, distinct from client hosting on bookly.party." },
     "proj.gluten.problem": { en: "People avoiding gluten need reliable venues and products, in many languages." },
     "proj.gluten.role": { en: "I build and maintain the Android app (map, products, 17 languages)." },
     "proj.504.problem": { en: "A dealership in Vila do Conde / Rio Mau needed searchable stock online." },
@@ -361,13 +333,13 @@
       en: "Own brand of websites for SMEs"
     },
     "proj.delty.body": {
-      en: "Websites with presence and excellence. from a simple site to a custom build, with shop bundles and QR menus. Own brand (Next.js + Cloudflare); public case: 2S Restaurant."
+      en: "Websites with presence and excellence, from a simple site to a custom build, with shop bundles and QR menus. Own brand (Next.js + Cloudflare); public case: 2S Restaurant."
     },
     "proj.delty.tech": { en: "Next.js, Cloudflare, delty.party" },
     "proj.2s.body": {
       en: "Multi-page site for a restaurant in Paredes: story, gallery, digital menu (QR), wines, bookings and contacts. Published with a “Site by Delty” credit."
     },
-    "proj.2s.tech": { en: "Next.js, Cloudflare, Delty client" },
+    "proj.2s.tech": { en: "Next.js, Cloudflare (Delty client)" },
     "proj.papos.body": {
       en: "Daily word game in European Portuguese (Wordle-style), with five modes and offline play. I built the Android app and the web version."
     },
@@ -381,7 +353,7 @@
     },
     "proj.gluten.tech": { en: "Android, maps" },
     "proj.bookly.body": {
-      en: "Web and Android management platform for stationery shops (school materials and books). IPMAIA degree project. distinct from client hosting on bookly.party."
+      en: "Web and Android management platform for stationery shops (school materials and books). degree project, distinct from client hosting on bookly.party."
     },
     "proj.bookly.tech": { en: "Laravel, Kotlin, public docs" },
     "proj.pocket.body": {
@@ -398,7 +370,7 @@
     "proj.504.body": {
       en: "Dealership in Vila do Conde / Rio Mau with stock searchable by brand, model, price and mileage."
     },
-    "proj.504.tech": { en: "Next.js, Cloudflare, Delty client" },
+    "proj.504.tech": { en: "Next.js, Cloudflare (Delty client)" },
     "proj.navalha.body": {
       en: "Barbershop in Vila do Conde: digital brand, services and online bookings."
     },
@@ -408,25 +380,25 @@
     "proj.smile.body": {
       en: "Online stationery and gifts shop in Vila do Conde: catalogue, campaigns and in-store pickup."
     },
-    "proj.smile.tech": { en: "Next.js · Cloudflare · bookly.party" },
-    "proj.smile.desktop.title": { en: "Smile. sales management" },
+    "proj.smile.tech": { en: "Tech: Next.js · Cloudflare · bookly.party" },
+    "proj.smile.desktop.title": { en: "Smile, sales management" },
     "proj.smile.desktop.body": {
       en: "Desktop app linked to the Smile e-commerce (sales and customer management). Project report."
     },
     "proj.saotome.body": {
       en: "Tourism and mobility in São Tomé and Príncipe: local support to plan the stay and explore the islands."
     },
-    "proj.saotome.tech": { en: "Vite · React · Leaflet · Tailwind · Cloudflare" },
+    "proj.saotome.tech": { en: "Tech: Next.js, Cloudflare (Delty client)" },
     "proj.cp.body": {
       en: "Made-to-measure carpentry in Chaves: kitchens, wardrobes, doors, flooring and floating floors."
     },
-    "proj.cp.tech": { en: "Next.js · Nodemailer · Tailwind · Cloudflare" },
+    "proj.cp.tech": { en: "Tech: Next.js, Cloudflare (Delty client)" },
     "proj.renovstar.body": {
       en: "Interior renovation: kitchens, bathrooms, rehabilitation and finishes. Note: the public site may still show staging “[TESTE]” labels."
     },
-    "proj.renovstar.tech": { en: "Next.js · Prisma · Auth.js · Tailwind · Cloudflare" },
+    "proj.renovstar.tech": { en: "Tech: Next.js, Cloudflare (Delty client)" },
     "proj.4emlinha.body": {
-      en: "Connect Four web game: vs computer, local 1v1 or online rooms. fast on desktop and mobile."
+      en: "Connect Four web game: vs computer, local 1v1 or online rooms, fast on desktop and mobile."
     },
     "proj.4emlinha.tech": { en: "Next.js · Cloudflare · delty.party" },
     "proj.agro.body": {
@@ -463,7 +435,7 @@
       en: "Course focused on technological solutions and systems management, with an emphasis on backend development and system integration."
     },
     "resume.edu.udesc.title": {
-      en: "Bachelor's in Computer Science. exchange"
+      en: "Bachelor's in Computer Science, exchange"
     },
     "resume.edu.udesc.dates": { en: "August 2023 - December 2023" },
     "resume.edu.udesc.body": {
@@ -485,12 +457,12 @@
     "resume.exp.title": { en: "Professional Experience" },
     "resume.exp.win.title": { en: "Software Developer" },
     "resume.exp.win.dates": { en: "August 2025 – Present" },
-    "resume.exp.win.org": { en: "WorkInNet. IT Consultancy · InspGest" },
+    "resume.exp.win.org": { en: "WorkInNet, IT Consultancy · InspGest" },
     "resume.exp.win.b1": {
       en: "Development in the InspGest ecosystem for vehicle inspection centres in Portugal, with links to Brazil and Angola."
     },
     "resume.exp.win.b2": {
-      en: "Stack: C#, VB.NET, Kotlin and SQL. desktop, mobile apps, APIs/services and database scripts."
+      en: "Stack: C#, VB.NET, Kotlin and SQL (desktop, mobile apps, APIs/services and database scripts)."
     },
     "resume.exp.win.b3": {
       en: "Integration with workshop equipment (OBD, line, cameras) and inspection operational flows."
@@ -509,7 +481,7 @@
     "resume.exp.win2.b2": {
       en: "Evolution and maintenance of WorkInNet internal tools (desktop + SQL) for client operations."
     },
-    "resume.exp.free.title": { en: "Delty WebSites. web development (self-employed)" },
+    "resume.exp.free.title": { en: "Delty WebSites, web development (self-employed)" },
     "resume.exp.free.dates": { en: "February 2023 – Present" },
     "resume.exp.free.org": { en: "Delty · delty.party" },
     "resume.exp.free.b1": {
@@ -519,7 +491,7 @@
       en: "2S Restaurant case (Paredes): full site with QR menu, menus and bookings."
     },
     "resume.exp.free.b3": {
-      en: "Clients on *.delty.party / *.bookly.party. e.g. 504 Automóveis, Navalha Negra, Smile Papelaria, São Tomé Turismo, Carpintaria CP."
+      en: "Clients on *.delty.party / *.bookly.party, for example 504 Automóveis, Navalha Negra, Smile Papelaria, São Tomé Turismo and Carpintaria CP."
     },
     "resume.exp.core.title": { en: "Web and Mobile Application Developer" },
     "resume.exp.core.dates": { en: "September 2022 – August 2023" },
@@ -555,13 +527,13 @@
       en: "If you have an idea, a role or a collaboration in mind, write to me."
     },
 
-    "navcard.section.title": { en: "Keep exploring" },
+    "navcard.section.title": { en: "Navigation" },
     "navcard.section.lead": {
-      en: "Background, projects and contact. without the noise."
+      en: "Background, projects and contact, without the noise."
     },
     "navcard.about.title": { en: "About" },
     "navcard.about.body": {
-      en: "Who I am, what I do and the tools I work with."
+      en: "Who I am, what I do and the tools I use."
     },
     "navcard.resume.body": {
       en: "Education, experience and what I use day to day."
@@ -580,18 +552,18 @@
     "pagenav.index.progress": { en: "Home · guide 0 of 4" },
     "pagenav.voltar": { en: "Back to home" },
 
-    "pagenav.about.title": { en: "Keep exploring" },
+    "pagenav.about.title": { en: "Navigation" },
     "pagenav.about.body": {
       en: "Now that you know a little about me and my skills, discover my education and professional experience."
     },
     "pagenav.next": { en: "Next section" },
     "pagenav.about.next": { en: "Explore my academic and professional path" },
     "pagenav.about.progress": { en: "1 of 4 - About" },
-    "pagenav.resume.title": { en: "Continue the journey" },
+    "pagenav.resume.title": { en: "Next" },
     "pagenav.resume.body": {
       en: "After learning about my background and experience, explore the projects I developed and the solutions I created."
     },
-    "pagenav.resume.next": { en: "Discover my projects and completed work" },
+    "pagenav.resume.next": { en: "Projects and work with public proof." },
     "pagenav.resume.progress": { en: "2 of 4 - Resume" },
     "pagenav.portfolio.title": { en: "Almost there" },
     "pagenav.portfolio.body": {
@@ -612,16 +584,16 @@
 
   /** Legacy string-match fallback (titles/meta still translated when not keyed). */
   const translations = {
-    "Contactos - Gonçalo Garrido": "Contacts. Gonçalo Garrido",
-    "Contactos. Gonçalo Garrido": "Contacts. Gonçalo Garrido",
-    "Sobre. Gonçalo Garrido": "About. Gonçalo Garrido",
-    "Currículo. Gonçalo Garrido": "Resume. Gonçalo Garrido",
-    "Portfólio. Gonçalo Garrido": "Portfolio. Gonçalo Garrido",
-    "Gonçalo Garrido. Desenvolvedor de software": "Gonçalo Garrido. Software developer",
-    "Desenvolvedor de software. backend, mobile e integração de sistemas · Porto. Currículo e portefólio de Gonçalo Garrido.": "Software developer. backend, mobile and systems integration · Porto. Resume and portfolio of Gonçalo Garrido.",
-    "Sobre Gonçalo Garrido, desenvolvedor de software. backend, mobile e integração de sistemas · Porto.": "About Gonçalo Garrido, software developer. backend, mobile and systems integration · Porto.",
-    "Currículo de Gonçalo Garrido, desenvolvedor de software. backend, mobile e integração de sistemas · Porto.": "Resume of Gonçalo Garrido, software developer. backend, mobile and systems integration · Porto.",
-    "Contactos de Gonçalo Garrido, desenvolvedor de software. backend, mobile e integração de sistemas · Porto.": "Contact details for Gonçalo Garrido, software developer. backend, mobile and systems integration · Porto.",
+    "Contactos - Gonçalo Garrido": "Contacts · Gonçalo Garrido",
+    "Contactos, Gonçalo Garrido": "Contacts · Gonçalo Garrido",
+    "Sobre, Gonçalo Garrido": "About · Gonçalo Garrido",
+    "Currículo, Gonçalo Garrido": "Resume · Gonçalo Garrido",
+    "Portfólio, Gonçalo Garrido": "Portfolio · Gonçalo Garrido",
+    "Gonçalo Garrido, Desenvolvedor de software": "Gonçalo Garrido · Software developer",
+    "Desenvolvedor de software, backend, mobile e integração de sistemas · Porto. Currículo e portefólio de Gonçalo Garrido.": "Software developer. Backend, mobile and systems integration · Porto. Resume and portfolio of Gonçalo Garrido.",
+    "Sobre Gonçalo Garrido, desenvolvedor de software, backend, mobile e integração de sistemas · Porto.": "About Gonçalo Garrido. Software developer. Backend, mobile and systems integration · Porto.",
+    "Currículo de Gonçalo Garrido, desenvolvedor de software, backend, mobile e integração de sistemas · Porto.": "Resume of Gonçalo Garrido. Software developer. Backend, mobile and systems integration · Porto.",
+    "Contactos de Gonçalo Garrido, desenvolvedor de software, backend, mobile e integração de sistemas · Porto.": "Contact details for Gonçalo Garrido. Software developer. Backend, mobile and systems integration · Porto.",
     "Projetos em destaque com prova pública (Play Store, demos e documentação). O trabalho atual na WorkInNet/InspGest está detalhado no currículo.": "Featured projects with public proof (Play Store, demos and docs). Current WorkInNet/InspGest work is detailed on the resume.",
     "Gonçalo Garrido, Desenvolvedor de software, Backend, Mobile, Integração de sistemas, Porto, Portfólio, Currículo": "Gonçalo Garrido, Software developer, Backend, Mobile, Systems integration, Porto, Portfolio, Resume",
     "Sobre, Gonçalo Garrido, Desenvolvedor de software, Backend, Mobile, Porto, Currículo, Portfólio": "About, Gonçalo Garrido, Software developer, Backend, Mobile, Porto, Resume, Portfolio",
