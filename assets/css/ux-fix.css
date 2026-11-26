@@ -757,3 +757,53 @@ a.hero-cta-ghost:hover {
   border-top: 1px solid color-mix(in srgb, var(--brand-fog, #e9eef6), transparent 90%);
   pointer-events: none;
 }
+
+/*--------------------------------------------------------------
+# Portfolio grid fix — fitRows 3-col estável
+--------------------------------------------------------------*/
+.portfolio .isotope-container {
+  display: block;
+  min-height: 12rem;
+}
+
+.portfolio .isotope-container.row {
+  /* Isotope owns positioning; avoid Bootstrap flex fighting absolute items */
+  display: block;
+  margin-left: -12px;
+  margin-right: -12px;
+}
+
+.portfolio .isotope-item.portfolio-item {
+  float: left;
+  width: 33.3333%;
+  padding-left: 12px;
+  padding-right: 12px;
+  margin-bottom: 1.5rem;
+  box-sizing: border-box;
+}
+
+.portfolio .isotope-item.portfolio-band {
+  float: left;
+  width: 100% !important;
+  padding-left: 12px;
+  padding-right: 12px;
+  margin-bottom: 0.5rem;
+}
+
+/* Prefer display none for hidden — avoid content-visibility layout bugs */
+.portfolio .isotope-item.isotope-hidden {
+  content-visibility: visible;
+  pointer-events: none;
+}
+
+@media (max-width: 991.98px) {
+  .portfolio .isotope-item.portfolio-item {
+    width: 50%;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .portfolio .isotope-item.portfolio-item {
+    width: 100%;
+  }
+}

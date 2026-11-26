@@ -64,7 +64,7 @@
     },
     "page.portfolio.title": { en: "Portfolio" },
     "page.portfolio.lead": {
-      en: "Featured: Delty, 2S and apps. Under Web: Delty/Bookly clients (504, Navalha Negra, Smile, São Tomé, Carpintaria CP, RENOVSTAR) and 4 Em Linha. Academic work under “Other”."
+      en: "Featured: Delty, Smile stationery and apps. Under Web: 2S and Delty/Bookly clients (504, Navalha Negra, São Tomé, Carpintaria CP, RENOVSTAR) and 4 Em Linha. Academic work under “Other”."
     },
     "page.contact.title": { en: "Contacts" },
     "page.contact.lead": {
@@ -289,10 +289,12 @@
       en: "Barbershop in Vila do Conde: online bookings, shop and a distinct digital brand."
     },
     "proj.navalha.tech": { en: "Next.js · Cloudflare · bookly.party" },
+    "proj.smile.problem": { en: "A stationery shop in Vila do Conde needed an online store with catalogue and in-store pickup." },
+    "proj.smile.role": { en: "Bookly/Delty client site: catalogue, campaigns and digital identity." },
     "proj.smile.body": {
       en: "Online stationery and gifts shop in Vila do Conde: catalogue, campaigns and in-store pickup."
     },
-    "proj.smile.tech": { en: "Tech: Next.js · Cloudflare · bookly.party" },
+    "proj.smile.tech": { en: "Next.js · Cloudflare · bookly.party" },
     "proj.smile.desktop.title": { en: "Smile — sales management" },
     "proj.smile.desktop.body": {
       en: "Desktop app linked to the Smile e-commerce (sales and customer management). Project report."
