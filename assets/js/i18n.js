@@ -324,7 +324,7 @@
     "proj.bookly.problem": { en: "Stationery shops need management for school materials and books (web + Android)." },
     "proj.bookly.role": { en: "degree project, distinct from client hosting on bookly.party." },
     "proj.gluten.problem": { en: "People avoiding gluten need reliable venues and products, in many languages." },
-    "proj.gluten.role": { en: "I build and maintain the Android app (map, products, 17 languages)." },
+    "proj.gluten.role": { en: "App to help people with celiac disease, certified by APC (Associação Portuguesa de Celíacos). Map, products and 17 languages." },
     "proj.504.problem": { en: "A dealership in Vila do Conde / Rio Mau needed searchable stock online." },
     "proj.504.role": { en: "Delty client site: search by brand, model, price and mileage." },
     "proj.navalha.problem": { en: "A barbershop in Vila do Conde needed a digital brand and online bookings." },
