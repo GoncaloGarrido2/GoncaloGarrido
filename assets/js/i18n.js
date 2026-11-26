@@ -408,8 +408,6 @@
     "proj.gym.body": {
       en: "Academic gym website project in JavaScript."
     },
-    "proj.news.body": { en: "Academic news website." },
-    "proj.zoo.body": { en: "Academic informational zoo website." },
     "proj.edit.body": { en: "Older photo and video editing project (blog)." },
     "proj.pharmacy.title": { en: "Pharmacy Management" },
     "proj.pharmacy.body": {
