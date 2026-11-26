@@ -125,6 +125,11 @@
     "case.504.about": { en: 'Website for the 504 Automóveis dealership in Vila do Conde / Rio Mau. Visitors search stock by brand, model, price and mileage.' },
     "case.504.did": { en: 'I published the site as a Delty client, with stock and contact pages aligned to the dealership brand.' },
     "case.504.tech": { en: 'Next.js · Cloudflare · Delty client' },
+    "case.diauto.title": { en: 'Diauto' },
+    "case.diauto.tagline": { en: 'Car dealership in Mindelo, Vila do Conde' },
+    "case.diauto.about": { en: 'Website for the Diauto dealership in Mindelo, Vila do Conde. Visitors search stock and find contact, trade-ins and financing.' },
+    "case.diauto.did": { en: 'I published the site as a Delty client, with a hero, vehicle search and pages aligned to the dealership brand.' },
+    "case.diauto.tech": { en: 'Next.js · Cloudflare · Delty client' },
     "case.navalha.title": { en: 'Navalha Negra' },
     "case.navalha.tagline": { en: 'Barbershop in Vila do Conde' },
     "case.navalha.about": { en: 'Website for Navalha Negra barbershop in Vila do Conde. Digital brand, services and booking flow.' },
@@ -396,11 +401,9 @@
       en: "Online store for agricultural products (freelance). Site availability may vary."
     },
     "proj.diauto.body": {
-      en: "Website for viewing and searching vehicles. Archived."
+      en: "Dealership in Mindelo, Vila do Conde, with searchable stock, warranty and financing."
     },
-    "proj.autodealer.body": {
-      en: "Platform for viewing and comparing vehicles for sale."
-    },
+    "proj.diauto.tech": { en: "Next.js, Cloudflare (Delty client)" },
     "proj.ocr.body": {
       en: "Academic experiment in text/object recognition with OCR."
     },
