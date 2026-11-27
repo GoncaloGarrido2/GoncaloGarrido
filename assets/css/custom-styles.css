@@ -2393,22 +2393,22 @@
 }
 
 /*--------------------------------------------------------------
-# Center Header Title on Mobile (All Pages Except Index)
+# Mobile header (non-index): keep nav + hamburger usable
+# (Previously hid .navmenu and centered the logo, which made the
+# mobile menu unreachable on about/resume/portfolio/contact/cases.)
 --------------------------------------------------------------*/
 @media (max-width: 767px) {
-  /* Hide navigation menu on mobile for all pages except index */
   body:not(.index-page) .navmenu {
-    display: none !important;
+    display: flex !important;
+    align-items: center !important;
   }
-  
-  /* Center the logo/title on mobile for all pages except index */
+
   body:not(.index-page) .header .container-fluid {
-    justify-content: center !important;
+    justify-content: space-between !important;
   }
-  
-  /* Ensure the logo is centered */
+
   body:not(.index-page) .header .logo {
-    margin: 0 auto !important;
+    margin: 0 !important;
   }
 }
 
