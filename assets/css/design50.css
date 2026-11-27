@@ -894,7 +894,8 @@ a.hero-cta-secondary:hover {
     display: flex !important;
   }
 
-  .navmenu {
+  .navmenu,
+  body:not(.index-page) .navmenu {
     display: flex !important;
     align-items: center !important;
   }
@@ -903,8 +904,54 @@ a.hero-cta-secondary:hover {
     display: none !important;
   }
 
+  /* header backdrop-filter creates a fixed containing block (~42px);
+     disable it while the menu is open so inset:0 covers the viewport */
+  body.mobile-nav-active .header {
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+  }
+
+  body.mobile-nav-active .navmenu {
+    position: fixed !important;
+    inset: 0 !important;
+    top: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    height: 100dvh !important;
+    display: block !important;
+    align-items: unset !important;
+    overflow: hidden !important;
+    background: rgba(7, 11, 20, 0.92) !important;
+    z-index: 9999998 !important;
+  }
+
   body.mobile-nav-active .navmenu > ul {
     display: block !important;
+    position: absolute !important;
+    inset: 72px 16px 24px 16px !important;
+    width: auto !important;
+    max-height: calc(100vh - 96px) !important;
+    overflow-y: auto !important;
+    border-radius: 12px !important;
+    padding: 0.75rem 0 !important;
+    background: rgba(10, 16, 28, 0.96) !important;
+    border: 1px solid color-mix(in srgb, var(--brand-fog), transparent 82%) !important;
+  }
+
+  body.mobile-nav-active .navmenu > ul > li {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  body.mobile-nav-active .navmenu a {
+    display: flex !important;
+    width: 100% !important;
+    padding: 0.9rem 1.25rem !important;
+    font-size: 1rem !important;
+    letter-spacing: 0.04em !important;
   }
 
   body:not(.index-page) .header .container-fluid {
@@ -919,7 +966,9 @@ a.hero-cta-secondary:hover {
   .navmenu .mobile-nav-toggle,
   .mobile-nav-toggle.bi-list,
   i.mobile-nav-toggle,
-  .navmenu i.mobile-nav-toggle.d-xl-none {
+  button.mobile-nav-toggle,
+  .navmenu i.mobile-nav-toggle.d-xl-none,
+  .navmenu button.mobile-nav-toggle.d-xl-none {
     display: inline-flex !important;
     visibility: visible !important;
     opacity: 1 !important;
@@ -932,6 +981,8 @@ a.hero-cta-secondary:hover {
     border-radius: 6px !important;
     width: 42px !important;
     height: 42px !important;
+    min-width: 42px !important;
+    min-height: 42px !important;
     padding: 0 !important;
     box-shadow: none !important;
     z-index: 1050 !important;
